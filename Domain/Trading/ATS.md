@@ -22,7 +22,7 @@ tags:
 
 # Mục đích
 
-ATS chuẩn hóa cách ghi nhận Thực tế.
+ATS chuẩn hóa cách quan sát và ghi nhận Thực tế.
 
 ATS đảm bảo mọi lần quan sát đều có cùng cấu trúc, cùng thứ tự và cùng phạm vi thông tin.
 
@@ -69,8 +69,8 @@ Bao gồm:
 ## Volume Profile M30
 
 - POC30: Point of Control của Volume Profile M30.
-- VAH30: Value Area High.
-- VAL30: Value Area Low.
+- VAH30: Value Area High của Volume Profile M30.
+- VAL30: Value Area Low của Volume Profile M30.
 
 ---
 
@@ -267,6 +267,8 @@ Quan sát:
 
 - Các cụm thanh khoản còn tồn tại tại thời điểm quan sát.
 
+Không ghi nhận các cụm đã bị quét.
+
 ### Heatmap Sổ lệnh
 
 Quan sát:
@@ -276,17 +278,23 @@ Quan sát:
 
 ### Volume Profile M30
 
-Quan sát:
+Quan sát từ bảng thông tin của indicator Volume Profile M30.
+
+Thứ tự quan sát:
 
 - POC30
 - VAH30
 - VAL30
+
+Luôn ưu tiên đọc trực tiếp từ bảng thông tin của indicator thay vì ước lượng bằng mắt trên biểu đồ.
 
 ---
 
 # Metrics
 
 ## Chỉ số cốt lõi
+
+Các chỉ số được ghi nhận theo giá trị quan sát trực tiếp từ indicator tương ứng.
 
 - Giá
 - VP1
@@ -320,24 +328,20 @@ Quan sát:
 # Vai trò trong Trading
 
 ```text
-ATS
-
-↓
-
-Hệ thống suy luận
-
-↓
-
 Thực tế
 
 ↓
 
 ATS
+
+↓
+
+Hệ thống suy luận
 ```
 
-ATS là điểm bắt đầu của quá trình suy luận trong Trading.
+Trading vận hành như một hệ thống học hỏi liên tục từ Thực tế.
 
-ATS chuẩn hóa Quan sát trước khi chuyển sang Hệ thống suy luận.
+ATS chuẩn hóa cách ghi nhận Thực tế trước khi chuyển sang Hệ thống suy luận.
 
 ---
 
