@@ -6,7 +6,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-19
-last_updated: 2026-07-19
+last_updated: 2026-07-20
 review_cycle: Manual
 confidence: 100%
 tags:
@@ -43,6 +43,34 @@ Quan sát nhất quán tạo nên suy luận nhất quán.
 ATS ghi nhận Thực tế tại thời điểm quan sát.
 
 Quan sát luôn nhất quán về cấu trúc, thứ tự và phạm vi thông tin.
+
+---
+
+# Quy ước
+
+Các ký hiệu trong ATS được hiểu như sau.
+
+## Auction Flow
+
+- VP1: Chỉ số VP1 của indicator Auction Flow.
+- POC5: Point of Control trên biểu đồ BTC khung 5m của indicator Auction Flow.
+- Auction Line: Đường Auction Flow.
+- EMA20: Đường EMA20 của Auction Flow.
+
+## SonicR
+
+Bao gồm:
+
+- EMA34 (xanh dương)
+- EMA89 (cam)
+- EMA200 (tím)
+- EMA610 (trắng)
+
+## Volume Profile M30
+
+- POC30: Point of Control của Volume Profile M30.
+- VAH30: Value Area High.
+- VAL30: Value Area Low.
 
 ---
 
@@ -115,7 +143,7 @@ Trên mỗi khung thời gian, quan sát:
 
 - Giá
 - Cấu trúc
-- Cấu trúc SonicR: EMA34 (xanh dương), EMA89 (cam), EMA200 (tím), EMA610 (trắng)
+- Cấu trúc SonicR
 - Khối lượng
 - RSI
 
@@ -190,6 +218,8 @@ Quan sát:
 - Auction Line
 - EMA20
 
+---
+
 # Ảnh 3 · Thực thi
 
 ## Bố cục
@@ -198,7 +228,7 @@ Quan sát:
 ┌─────────────────────────┬─────────────────────────┐
 │      5m + Delta         │ Heatmap Thanh lý 24H   │
 ├─────────────────────────┼─────────────────────────┤
-│ Heatmap Sổ lệnh 1H      │ Volume Profile M30      │
+│ Heatmap Sổ lệnh 1H      │ Volume Profile M30     │
 └─────────────────────────┴─────────────────────────┘
 ```
 
@@ -227,7 +257,7 @@ Volume Profile M30
 Quan sát:
 
 - Giá
-- Cấu trúc SonicR: EMA34 (xanh dương), EMA89 (cam), EMA200 (tím), EMA610 (trắng)
+- Cấu trúc SonicR
 - Delta
 - Khối lượng
 
@@ -242,7 +272,6 @@ Quan sát:
 Quan sát:
 
 - Tường mua còn tồn tại.
-
 - Tường bán còn tồn tại.
 
 ### Volume Profile M30
@@ -265,7 +294,7 @@ Quan sát:
 - POC30
 - VAH30
 - VAL30
-- Cấu trúc SonicR: EMA34 (xanh dương), EMA89 (cam), EMA200 (tím), EMA610 (trắng)
+- Cấu trúc SonicR
 - EMA20
 - RSI
 - OI
@@ -285,6 +314,30 @@ Quan sát:
   - Global
   - Top Accounts
   - Top Positions
+
+---
+
+# Vai trò trong Trading
+
+```text
+ATS
+
+↓
+
+Hệ thống suy luận
+
+↓
+
+Thực tế
+
+↓
+
+ATS
+```
+
+ATS là điểm bắt đầu của quá trình suy luận trong Trading.
+
+ATS chuẩn hóa Quan sát trước khi chuyển sang Hệ thống suy luận.
 
 ---
 
@@ -321,6 +374,6 @@ ATS định nghĩa:
 - Nội dung quan sát.
 - Metrics.
 
-ATS chuẩn hóa cách ghi nhận Thực tế.
+ATS chuẩn hoá cách ghi nhận Thực tế.
 
-ATS là nền tảng quan sát của Trading.
+ATS là tầng Quan sát của Trading.

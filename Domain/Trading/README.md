@@ -6,7 +6,7 @@
 
 # Mục đích
 
-Trading chuẩn hóa toàn bộ quy trình từ Quan sát đến Thực tế.
+Trading chuẩn hóa toàn bộ quá trình Quan sát, Suy luận và Học hỏi từ Thực tế.
 
 Trading giúp mọi quyết định được xây dựng trên cùng một hệ thống và cùng một ngôn ngữ.
 
@@ -26,19 +26,19 @@ Trading
 
 # Thành phần
 
-## ATS
+ATS
 
 Chuẩn hóa cách ghi nhận Thực tế.
 
 ↓
 
-## Hệ thống suy luận
+Hệ thống suy luận
 
 Chuẩn hóa quá trình chuyển Thực tế thành Kết luận.
 
 ↓
 
-## Tri thức nền
+Tri thức nền
 
 Chuẩn hóa thuật ngữ, quy ước và nền tảng của Trading.
 
@@ -47,6 +47,10 @@ Chuẩn hóa thuật ngữ, quy ước và nền tảng của Trading.
 # Luồng hoạt động
 
 ```text
+Thực tế
+
+↓
+
 ATS
 
 ↓
@@ -56,13 +60,9 @@ Hệ thống suy luận
 ↓
 
 Thực tế
-
-↓
-
-ATS
 ```
 
-Trading vận hành như một Chu trình học hỏi liên tục.
+Trading vận hành như một hệ thống học hỏi liên tục từ Thực tế.
 
 ---
 
@@ -92,9 +92,9 @@ Trading
 │     Suy luận
 │
 └── Tri thức nền
-      Chuẩn hóa
+      Thuật ngữ · Quy ước · Nền tảng
 ```
 
 Trading là Domain của ccOS dành cho giao dịch.
 
-Trading chuẩn hóa cách Quan sát, Suy luận và Học hỏi từ Thực tế.
+Trading chuẩn hóa cách Quan sát, Suy luận và Học hỏi từ Thực tế nhằm xây dựng một hệ thống giao dịch nhất quán.
