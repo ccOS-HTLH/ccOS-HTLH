@@ -1,33 +1,100 @@
 # Trading
 
-> Trading là Domain chuẩn hóa toàn bộ quá trình quan sát, suy luận, lập kế hoạch và học hỏi trong giao dịch.
+> Trading là Domain chuẩn hóa toàn bộ quá trình quan sát, suy luận và học hỏi trong giao dịch.
 
 ---
 
-## Thành phần
+# Mục đích
 
+Trading chuẩn hóa toàn bộ quy trình từ Quan sát đến Thực tế.
+
+Trading giúp mọi quyết định được xây dựng trên cùng một hệ thống và cùng một ngôn ngữ.
+
+---
+
+# Kiến trúc
+
+```text
+Trading
+
+├── ATS
+├── Hệ thống suy luận
+└── Tri thức nền
+```
+
+---
+
+# Thành phần
+
+## ATS
+
+Chuẩn hóa cách ghi nhận Thực tế.
+
+↓
+
+## Hệ thống suy luận
+
+Chuẩn hóa quá trình chuyển Thực tế thành Kết luận.
+
+↓
+
+## Tri thức nền
+
+Chuẩn hóa thuật ngữ, quy ước và nền tảng của Trading.
+
+---
+
+# Luồng hoạt động
+
+```text
 ATS
 
 ↓
 
-Chu trình học hỏi
+Hệ thống suy luận
+
+↓
+
+Thực tế
+
+↓
+
+ATS
+```
+
+Trading vận hành như một Chu trình học hỏi liên tục.
 
 ---
 
-## Kiến trúc
-
-ATS chuẩn hóa Quan sát.
-
-Chu trình học hỏi chuẩn hóa Suy luận.
-
-Hai thành phần tạo nên Trading.
-
----
-
-## Triết lý
+# Triết lý
 
 Quan sát nhất quán.
 
+↓
+
 Suy luận nhất quán.
 
+↓
+
 Học hỏi liên tục.
+
+---
+
+# Tóm tắt
+
+```text
+Trading
+
+├── ATS
+│     Quan sát
+│
+├── Hệ thống suy luận
+│     Suy luận
+│
+└── Tri thức nền
+      Chuẩn hóa
+```
+
+Trading là Domain của ccOS dành cho giao dịch.
+
+Trading chuẩn hóa cách Quan sát, Suy luận và Học hỏi từ Thực tế.
