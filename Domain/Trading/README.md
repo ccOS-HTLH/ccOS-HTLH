@@ -1,16 +1,33 @@
+---
+title: Trading
+id: trading-domain
+version: 1.0
+status: Stable
+author: HTLH
+language: vi
+created: 2026-07-19
+last_updated: 2026-07-21
+review_cycle: Monthly
+confidence: 100%
+tags:
+  - trading
+  - reasoning
+  - knowledge
+---
+
 # Trading
 
-> Trading là Domain chuẩn hóa toàn bộ quá trình quan sát, suy luận và học hỏi trong giao dịch.
+> Trading là Domain chuẩn hóa toàn bộ quá trình tiếp nhận Thực tế, suy luận và học hỏi trong giao dịch.
 
 ---
 
 # Mục đích
 
-Trading chuẩn hóa toàn bộ quy trình từ Quan sát đến Thực tế.
+Trading chuẩn hóa toàn bộ quy trình từ Thực tế đến Quyết định.
 
 Trading giúp mọi quyết định được xây dựng trên cùng một hệ thống và cùng một ngôn ngữ.
 
-Trading tích lũy tri thức qua từng chu kỳ để cải thiện Hệ thống suy luận.
+Trading tích lũy kinh nghiệm để hỗ trợ Hệ thống suy luận trong các chu kỳ tiếp theo.
 
 ---
 
@@ -19,7 +36,7 @@ Trading tích lũy tri thức qua từng chu kỳ để cải thiện Hệ thố
 ```text
 Trading
 
-├── ATS
+├── Nguồn dữ liệu
 ├── Hệ thống suy luận
 ├── Tri thức nền
 └── Tri thức tích lũy
@@ -29,81 +46,92 @@ Trading
 
 # Thành phần
 
-## ATS
+## Nguồn dữ liệu
 
-Chuẩn hóa cách ghi nhận Thực tế.
+Tiếp nhận và chuẩn hóa dữ liệu từ Thực tế.
+
+Bao gồm:
+
+- ATS
+- Dữ liệu rời rạc
 
 ↓
 
 ## Hệ thống suy luận
 
-Chuẩn hóa quá trình chuyển Quan sát thành Kết luận và học hỏi từ Thực tế.
+Chuẩn hóa quá trình chuyển dữ liệu thành Quyết định.
 
 ↓
 
 ## Tri thức nền
 
-Chuẩn hóa thuật ngữ, quy ước và nền tảng của Trading.
+Chuẩn hóa:
+
+- Thuật ngữ.
+- Khái niệm.
+- Quy ước.
+- Nền tảng của Trading.
+
+Tri thức nền được Nguồn dữ liệu và Hệ thống suy luận tham khảo trong mọi chu kỳ.
 
 ↓
 
 ## Tri thức tích lũy
 
-Lưu trữ các bài học và kinh nghiệm được Hệ thống suy luận hình thành sau khi đánh giá Thực tế.
+Lưu giữ và tái sử dụng kinh nghiệm được hình thành sau khi Hệ thống suy luận đánh giá Thực tế.
+
+Tri thức tích lũy hỗ trợ Hệ thống suy luận trong các chu kỳ tiếp theo.
 
 ---
 
 # Luồng hoạt động
 
 ```text
-             Tri thức nền
-                  │
-                  ▼
+                 Tri thức nền
+                  │        │
+                  ▼        ▼
 
 Thực tế
 
 ↓
 
-ATS
+Nguồn dữ liệu
 
 ↓
 
 Hệ thống suy luận
-
-↓
-
-Tri thức tích lũy
-
-↓
-
-Hệ thống suy luận
-(chu kỳ tiếp theo)
+▲              │
+│              ▼
+└──── Tri thức tích lũy
+      (chu kỳ tiếp theo)
 ```
 
-ATS luôn bắt đầu từ Thực tế tại thời điểm quan sát.
+Trong đó:
 
-Hệ thống suy luận chuyển Quan sát thành Kết luận.
-
-Sau mỗi chu kỳ, Tri thức tích lũy được cập nhật từ Hệ thống suy luận và trở thành đầu vào cho chu kỳ suy luận tiếp theo..
+- Thực tế liên tục tạo ra dữ liệu mới.
+- Nguồn dữ liệu tiếp nhận và chuẩn hóa dữ liệu từ Thực tế.
+- Tri thức nền cung cấp các khái niệm và quy ước để chuẩn hóa dữ liệu và suy luận.
+- Hệ thống suy luận chuyển dữ liệu thành Quyết định.
+- Sau mỗi chu kỳ, Tri thức tích lũy được cập nhật và trở thành nguồn tham khảo cho các chu kỳ suy luận tiếp theo.
 
 ---
 
 # Triết lý
 
 ```text
-Quan sát nhất quán
+Thực tế
 
 ↓
 
-Suy luận nhất quán
+Dữ liệu
 
 ↓
 
-Học hỏi liên tục
+Suy luận
 
 ↓
 
-Tri thức tích lũy
+Tri thức
 ```
 
 ---
@@ -113,24 +141,25 @@ Tri thức tích lũy
 ```text
 Trading
 
-├── ATS
-│     Quan sát
+├── Nguồn dữ liệu
+│      Tiếp nhận
 │
 ├── Hệ thống suy luận
-│     Suy luận
+│      Suy luận
 │
 ├── Tri thức nền
-│     Chuẩn hóa
+│      Chuẩn hóa
 │
 └── Tri thức tích lũy
-      Học hỏi
+       Học hỏi
 ```
 
 Trading là Domain của ccOS dành cho giao dịch.
 
-Trading chuẩn hóa cách:
+Trading chuẩn hóa:
 
-- Quan sát.
-- Suy luận.
+- Tiếp nhận Thực tế.
+- Chuẩn hóa dữ liệu.
+- Chuyển dữ liệu thành Quyết định.
 - Học hỏi từ Thực tế.
-- Tích lũy tri thức qua từng chu kỳ.
+- Tích lũy và tái sử dụng kinh nghiệm qua từng chu kỳ.
