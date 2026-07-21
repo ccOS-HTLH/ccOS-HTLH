@@ -1,4 +1,4 @@
-# K · Tri thức tích luỹ
+# Tri thức tích luỹ
 
 > Lưu giữ và tái sử dụng kinh nghiệm của Hệ thống suy luận.
 
