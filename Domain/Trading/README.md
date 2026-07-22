@@ -1,7 +1,7 @@
 ---
 title: Trading
 id: trading-domain
-version: 1.1
+version: 1.4.0
 status: Stable
 author: HTLH
 language: vi
@@ -27,10 +27,11 @@ Trading chuẩn hóa toàn bộ chu trình từ Thực tế đến Quyết đị
 
 Trading cung cấp một kiến trúc thống nhất để:
 
-- Tiếp nhận dữ liệu.
-- Chuẩn hóa tri thức.
-- Thực hiện suy luận.
-- Tích lũy kinh nghiệm.
+- Tiếp nhận dữ liệu
+- Chuẩn hóa tri thức
+- Thực hiện suy luận
+- Kiểm chứng bằng Thực tế
+- Tích lũy kinh nghiệm
 
 Mọi quyết định đều được xây dựng trên cùng một hệ thống và cùng một ngôn ngữ.
 
@@ -42,10 +43,17 @@ Mọi quyết định đều được xây dựng trên cùng một hệ thống
 Trading
 
 ├── README.md
-├── Trading-Knowledge-Pack.md
-├── AI-Guide.md
-├── Domain-Manifest.md
+├── Boot.md
 ├── System-Instruction.md
+├── Domain-Manifest.md
+├── AI-Guide.md
+├── Trading-Knowledge-Pack.md
+├── VERSION.md
+├── CHANGELOG.md
+├── ROADMAP.md
+├── GLOSSARY.md
+├── ACKNOWLEDGEMENTS.md
+├── READY.md
 │
 ├── Nguồn dữ liệu
 ├── Hệ thống suy luận
@@ -66,41 +74,69 @@ Bao gồm:
 - ATS
 - Dữ liệu rời rạc
 
-↓
+---
 
 ## Hệ thống suy luận
 
-Chuẩn hóa quá trình chuyển dữ liệu thành Quyết định.
+Chuyển dữ liệu thành Quyết định.
 
-↓
+Bao gồm 10 tầng:
+
+```text
+01 · Hành vi
+
+02 · Bối cảnh
+
+03 · Động lượng
+
+04 · Cấu trúc
+
+05 · Chất lượng
+
+06 · Quyết định
+
+07 · Trọng số tín hiệu
+
+08 · Không gian kịch bản
+
+09 · Kế hoạch thực thi
+
+10 · Phản hồi thực tế
+```
+
+---
 
 ## Tri thức nền
 
 Chuẩn hóa:
 
-- Thuật ngữ.
-- Khái niệm.
-- Quy ước.
-- Nền tảng của Trading.
-
-Tri thức nền được tham khảo trong toàn bộ Domain.
-
-↓
-
-## Tri thức tích lũy
-
-Lưu giữ và tái sử dụng kinh nghiệm được hình thành sau khi Hệ thống suy luận đánh giá Thực tế.
-
-Tri thức tích lũy hỗ trợ Hệ thống suy luận trong các chu kỳ tiếp theo.
+- Thuật ngữ
+- Khái niệm
+- Quy ước
+- Kiến thức nền tảng
 
 ---
 
-# Luồng hoạt động
+## Tri thức tích lũy
+
+Lưu giữ kinh nghiệm đã được Thực tế kiểm chứng.
+
+Chỉ dùng để:
+
+- Tham khảo
+- Đánh giá
+- Hiệu chỉnh
+
+Không tham gia trực tiếp vào quá trình suy luận.
+
+---
+
+# Chu trình hoạt động
 
 ```text
                  Tri thức nền
-                  │        │
-                  ▼        ▼
+                      │
+                      ▼
 
 Thực tế
 
@@ -111,27 +147,44 @@ Nguồn dữ liệu
 ↓
 
 Hệ thống suy luận
-▲              │
-│              ▼
-└──── Tri thức tích lũy
-      (chu kỳ tiếp theo)
+
+↓
+
+Quyết định
+
+↓
+
+Thực tế
+
+↓
+
+Tri thức tích lũy
+
+↓
+
+Chu kỳ suy luận tiếp theo
 ```
 
 Trong đó:
 
-- Thực tế liên tục tạo ra dữ liệu mới.
-- Nguồn dữ liệu tiếp nhận và chuẩn hóa dữ liệu từ Thực tế.
-- Tri thức nền cung cấp các khái niệm và quy ước cho toàn bộ Domain.
+- Thực tế tạo dữ liệu.
+- Nguồn dữ liệu chuẩn hóa dữ liệu.
 - Hệ thống suy luận chuyển dữ liệu thành Quyết định.
-- Sau mỗi chu kỳ, Tri thức tích lũy được cập nhật và trở thành nguồn tham khảo cho các chu kỳ tiếp theo.
+- Quyết định được Thực tế kiểm chứng.
+- Tri thức tích lũy lưu giữ kinh nghiệm đã được xác nhận.
+- Tri thức nền chuẩn hóa toàn bộ Trading Domain.
 
 ---
 
-# Điều hướng Domain
+# Điều hướng
 
 Trading Domain được nạp theo thứ tự:
 
 ```text
+Boot
+
+↓
+
 System Instruction
 
 ↓
@@ -152,15 +205,43 @@ Trading README
 
 ↓
 
+README của các Module
+
+↓
+
 Các Module
+
+↓
+
+READY
 ```
 
-Các tài liệu điều hướng định nghĩa:
+Chỉ sau khi:
 
-- Cách AI nạp Domain.
-- Kiến trúc Domain.
-- Quy tắc vận hành.
-- Thứ tự sử dụng các Module.
+```text
+Trading Domain READY
+```
+
+AI mới được phép sử dụng Trading Domain.
+
+---
+
+# Tài liệu Core
+
+| Tài liệu | Vai trò |
+|----------|----------|
+| Boot | Thứ tự nạp |
+| System Instruction | Quy tắc vận hành |
+| Domain Manifest | Kiến trúc |
+| AI Guide | Hướng dẫn AI |
+| Trading Knowledge Pack | Chỉ mục tri thức |
+| README | Tổng quan Domain |
+| VERSION | Phiên bản |
+| CHANGELOG | Lịch sử thay đổi |
+| ROADMAP | Định hướng phát triển |
+| GLOSSARY | Thuật ngữ |
+| ACKNOWLEDGEMENTS | Ghi nhận phát triển |
+| READY | Xác nhận Domain sẵn sàng |
 
 ---
 
@@ -179,6 +260,14 @@ Suy luận
 
 ↓
 
+Quyết định
+
+↓
+
+Thực tế
+
+↓
+
 Tri thức
 ```
 
@@ -193,7 +282,7 @@ Trading
 │      Tiếp nhận
 │
 ├── Hệ thống suy luận
-│      Suy luận
+│      Phân tích
 │
 ├── Tri thức nền
 │      Chuẩn hóa
@@ -210,5 +299,5 @@ Trading chuẩn hóa:
 - Chuẩn hóa dữ liệu.
 - Chuẩn hóa suy luận.
 - Chuyển dữ liệu thành Quyết định.
-- Học hỏi từ Thực tế.
+- Kiểm chứng Quyết định bằng Thực tế.
 - Tích lũy và tái sử dụng kinh nghiệm qua từng chu kỳ.
