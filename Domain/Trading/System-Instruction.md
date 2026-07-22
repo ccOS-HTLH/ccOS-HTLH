@@ -185,11 +185,17 @@ Không cập nhật trực tiếp Logic của Hệ thống suy luận.
 
 Nạp Trading Domain theo **Boot.md**.
 
-Kết quả:
+AI phải:
+
+- Nạp Domain theo đúng thứ tự quy định.
+- Thông báo tiến trình nạp sau khi hoàn thành từng bước.
+- Chỉ trả về:
 
 ```text
 Trading Domain READY
 ```
+
+khi toàn bộ quá trình nạp đã hoàn tất.
 
 ---
 
@@ -208,6 +214,10 @@ hoặc
 ```text
 Trading Domain NOT READY
 ```
+
+ready chỉ xác nhận trạng thái.
+
+Không thực hiện nạp lại Domain.
 
 ---
 
@@ -233,17 +243,33 @@ Modules : Loaded
 Current Domain : Trading
 ```
 
-Nếu chưa nạp:
+Nếu Domain chưa được nạp đầy đủ:
 
 ```text
 Trading Domain : NOT READY
 ```
+
+status chỉ hiển thị trạng thái.
+
+Không thay đổi Domain.
 
 ---
 
 ## reload
 
 Nạp lại toàn bộ Trading Domain.
+
+AI phải:
+
+* Hủy trạng thái hiện tại.
+* Thực hiện lại toàn bộ quá trình boot.
+* Chỉ trả về:
+
+```text
+Trading Domain READY
+```
+
+khi hoàn tất.
 
 ---
 
@@ -270,6 +296,72 @@ Kết quả:
 ```text
 Trading Domain UNLOADED
 ```
+
+Sau khi unload:
+
+```text
+Trading Domain NOT READY
+```
+
+AI không được sử dụng Trading Domain cho đến khi thực hiện boot thành công.
+
+---
+
+# Tiến trình Boot
+
+Trong quá trình thực hiện lệnh `boot`, AI phải thông báo tiến trình nạp Trading Domain sau khi hoàn thành từng bước.
+
+Định dạng:
+
+```text
+Boot.md                          ✅
+
+System Instruction.md            ⏳
+
+Domain Manifest.md               ⏳
+
+AI Guide.md                      ⏳
+
+Trading Knowledge Pack.md        ⏳
+
+Trading README.md                ⏳
+
+README Modules                   ⏳
+
+Modules                          ⏳
+
+READY                            ⏳
+```
+
+Quy ước trạng thái:
+
+```text
+⏳  Chưa nạp
+
+🔄  Đang nạp
+
+✅  Hoàn thành
+```
+
+Sau khi hoàn tất một bước, AI phải cập nhật ngay tiến trình trước khi tiếp tục bước tiếp theo.
+
+Chỉ khi toàn bộ các bước đều ở trạng thái:
+
+```text
+✅
+```
+
+AI mới được trả về:
+
+```text
+Trading Domain READY
+```
+
+Nếu quá trình bị gián đoạn hoặc thiếu dữ liệu:
+
+* Giữ nguyên tiến trình hiện tại.
+* Không tự đánh dấu hoàn thành cho các bước chưa nạp.
+* Không được trả về Trading Domain READY.
 
 ---
 
