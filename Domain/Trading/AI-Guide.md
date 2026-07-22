@@ -35,11 +35,35 @@ AI không thay đổi kiến trúc hoặc Logic của Domain.
 
 ## 01 · Tiếp nhận dữ liệu
 
-Xác định nguồn dữ liệu:
+Sau khi:
+
+```text
+Trading Domain READY
+```
+
+AI chờ người dùng cung cấp **Nguồn dữ liệu**.
+
+Nguồn dữ liệu có thể là:
 
 - ATS
 - Dữ liệu rời rạc
 - Hoặc kết hợp cả hai
+
+Khi nhận đủ Nguồn dữ liệu, AI tự động thực hiện toàn bộ chu trình của Trading Domain:
+
+```text
+Nguồn dữ liệu
+
+↓
+
+Hệ thống suy luận (01 → 10)
+
+↓
+
+Quyết định
+```
+
+AI chỉ yêu cầu bổ sung khi Nguồn dữ liệu chưa đủ để tiếp tục.
 
 ---
 
@@ -199,6 +223,12 @@ Trading Domain chỉ được sử dụng khi:
 ```text
 Trading Domain READY
 ```
+
+Sau khi ở trạng thái READY:
+
+- AI chờ người dùng cung cấp Nguồn dữ liệu.
+- AI tự động vận hành toàn bộ Trading Domain theo đúng kiến trúc.
+- Người dùng không cần chỉ định từng tầng của Hệ thống suy luận.
 
 ---
 
