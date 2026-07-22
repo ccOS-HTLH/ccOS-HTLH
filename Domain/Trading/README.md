@@ -1,12 +1,12 @@
 ---
 title: Trading
 id: trading-domain
-version: 1.0
+version: 1.1
 status: Stable
 author: HTLH
 language: vi
 created: 2026-07-19
-last_updated: 2026-07-21
+last_updated: 2026-07-22
 review_cycle: Monthly
 confidence: 100%
 tags:
@@ -23,11 +23,16 @@ tags:
 
 # Mục đích
 
-Trading chuẩn hóa toàn bộ quy trình từ Thực tế đến Quyết định.
+Trading chuẩn hóa toàn bộ chu trình từ Thực tế đến Quyết định.
 
-Trading giúp mọi quyết định được xây dựng trên cùng một hệ thống và cùng một ngôn ngữ.
+Trading cung cấp một kiến trúc thống nhất để:
 
-Trading tích lũy kinh nghiệm để hỗ trợ Hệ thống suy luận trong các chu kỳ tiếp theo.
+- Tiếp nhận dữ liệu.
+- Chuẩn hóa tri thức.
+- Thực hiện suy luận.
+- Tích lũy kinh nghiệm.
+
+Mọi quyết định đều được xây dựng trên cùng một hệ thống và cùng một ngôn ngữ.
 
 ---
 
@@ -36,6 +41,12 @@ Trading tích lũy kinh nghiệm để hỗ trợ Hệ thống suy luận trong 
 ```text
 Trading
 
+├── README.md
+├── Trading-Knowledge-Pack.md
+├── AI-Guide.md
+├── Domain-Manifest.md
+├── System-Instruction.md
+│
 ├── Nguồn dữ liệu
 ├── Hệ thống suy luận
 ├── Tri thức nền
@@ -72,7 +83,7 @@ Chuẩn hóa:
 - Quy ước.
 - Nền tảng của Trading.
 
-Tri thức nền được Nguồn dữ liệu và Hệ thống suy luận tham khảo trong mọi chu kỳ.
+Tri thức nền được tham khảo trong toàn bộ Domain.
 
 ↓
 
@@ -110,9 +121,46 @@ Trong đó:
 
 - Thực tế liên tục tạo ra dữ liệu mới.
 - Nguồn dữ liệu tiếp nhận và chuẩn hóa dữ liệu từ Thực tế.
-- Tri thức nền cung cấp các khái niệm và quy ước để chuẩn hóa dữ liệu và suy luận.
+- Tri thức nền cung cấp các khái niệm và quy ước cho toàn bộ Domain.
 - Hệ thống suy luận chuyển dữ liệu thành Quyết định.
-- Sau mỗi chu kỳ, Tri thức tích lũy được cập nhật và trở thành nguồn tham khảo cho các chu kỳ suy luận tiếp theo.
+- Sau mỗi chu kỳ, Tri thức tích lũy được cập nhật và trở thành nguồn tham khảo cho các chu kỳ tiếp theo.
+
+---
+
+# Điều hướng Domain
+
+Trading Domain được nạp theo thứ tự:
+
+```text
+System Instruction
+
+↓
+
+Domain Manifest
+
+↓
+
+AI Guide
+
+↓
+
+Trading Knowledge Pack
+
+↓
+
+Trading README
+
+↓
+
+Các Module
+```
+
+Các tài liệu điều hướng định nghĩa:
+
+- Cách AI nạp Domain.
+- Kiến trúc Domain.
+- Quy tắc vận hành.
+- Thứ tự sử dụng các Module.
 
 ---
 
@@ -160,6 +208,7 @@ Trading chuẩn hóa:
 
 - Tiếp nhận Thực tế.
 - Chuẩn hóa dữ liệu.
+- Chuẩn hóa suy luận.
 - Chuyển dữ liệu thành Quyết định.
 - Học hỏi từ Thực tế.
 - Tích lũy và tái sử dụng kinh nghiệm qua từng chu kỳ.
