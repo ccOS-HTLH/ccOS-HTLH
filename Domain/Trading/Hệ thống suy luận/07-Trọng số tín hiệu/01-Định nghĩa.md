@@ -12,19 +12,23 @@ Trọng số tín hiệu không tạo ra Trạng thái quyết định.
 
 Trọng số tín hiệu giải thích vì sao Trạng thái quyết định được hình thành.
 
+Từ Trọng số tín hiệu, Hệ thống chuẩn hóa thành một Chữ ký tín hiệu để phục vụ các tầng tiếp theo.
+
 ---
 
 # Thành phần
 
 Trọng số tín hiệu được hình thành từ:
 
-- Trọng số của Hành vi.
-- Trọng số của Bối cảnh.
-- Trọng số của Động lượng.
-- Trọng số của Cấu trúc.
-- Trọng số của Chất lượng.
+- Hành vi.
+- Bối cảnh.
+- Động lượng.
+- Cấu trúc.
+- Chất lượng.
 
-Những thành phần này cùng phản ánh mức độ đóng góp của từng tầng vào Trạng thái quyết định.
+Mỗi thành phần phản ánh mức độ đóng góp của một tầng suy luận vào Trạng thái quyết định.
+
+Tổng hợp các thành phần tạo nên Trọng số tín hiệu của toàn bộ quá trình suy luận.
 
 ---
 
@@ -32,15 +36,22 @@ Những thành phần này cùng phản ánh mức độ đóng góp của từn
 
 - Giải thích.
 - Lượng hóa.
+- Chuẩn hóa.
 - Truy vết.
 
 ---
 
 # Đầu ra
 
-Tầng Trọng số tín hiệu lượng hóa mức độ đóng góp của từng tầng suy luận.
+Tầng Trọng số tín hiệu tạo ra:
 
-Từ các Trọng số tín hiệu, Hệ thống chuẩn hóa thành một Chữ ký tín hiệu.
+- Trọng số tín hiệu.
+- Chữ ký tín hiệu.
+
+Trong đó:
+
+- Trọng số tín hiệu giải thích cách Trạng thái quyết định được hình thành.
+- Chữ ký tín hiệu chuẩn hóa toàn bộ kết quả suy luận thành một dấu vết duy nhất để Tri thức tích luỹ tra cứu các Trường hợp tương tự.
 
 ---
 
@@ -48,4 +59,6 @@ Từ các Trọng số tín hiệu, Hệ thống chuẩn hóa thành một Chữ
 
 Mỗi Trạng thái quyết định đều có thể được giải thích.
 
-Trọng số tín hiệu phản ánh mức độ đóng góp của từng tầng vào Trạng thái quyết định.
+Trọng số tín hiệu lượng hóa mức độ đóng góp của từng tầng.
+
+Chữ ký tín hiệu chuẩn hóa toàn bộ quá trình suy luận thành một dấu vết có thể truy vết và tái sử dụng.

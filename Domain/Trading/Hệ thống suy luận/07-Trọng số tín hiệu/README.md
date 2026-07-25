@@ -35,6 +35,7 @@ Tầng này lượng hóa mức độ ảnh hưởng của từng tầng suy lu�
 
 # Đầu ra
 
+- Trọng số tín hiệu.
 - Chữ ký tín hiệu.
 
 Chữ ký tín hiệu trở thành đầu vào của tầng Không gian kịch bản, đồng thời là khóa tra cứu của Tri thức tích luỹ.
@@ -44,18 +45,20 @@ Chữ ký tín hiệu trở thành đầu vào của tầng Không gian kịch b
 # Vai trò trong Hệ thống suy luận
 
 ```text
-Ra quyết định
-
-↓
-
-Trọng số tín hiệu
-
-↓
-
-Chữ ký tín hiệu
-
-├────────► 08 · Không gian kịch bản
-└────────► Tri thức tích luỹ
+06 · Quyết định
+        │
+        ▼
+07 · Trọng số tín hiệu
+        │
+        ▼
+   Chữ ký tín hiệu
+      │        │
+      │        ├────────► 08 · Không gian kịch bản
+      │
+      └────────► Tri thức tích luỹ
+                         │
+                         ▼
+                  Tra cứu Trường hợp
 ```
 
 ---
@@ -71,11 +74,15 @@ Chữ ký tín hiệu
 
 ↓
 
-03 · Chữ ký tín hiệu
+03 · Trọng số tín hiệu
 
 ↓
 
-04 · Ví dụ
+04 · Chữ ký tín hiệu
+
+↓
+
+05 · Ví dụ
 ```
 
 ---
@@ -86,4 +93,6 @@ Mọi Trạng thái quyết định đều có thể được giải thích.
 
 Trọng số tín hiệu phản ánh mức độ đóng góp của từng tầng vào Trạng thái quyết định.
 
-Chữ ký tín hiệu chuẩn hóa toàn bộ kết quả suy luận thành một dấu vết duy nhất, giúp Hệ thống suy luận tham khảo kinh nghiệm đã được tích luỹ.
+Chữ ký tín hiệu chuẩn hóa toàn bộ kết quả suy luận thành một dấu vết duy nhất.
+
+Dấu vết đó giúp Tri thức tích luỹ tra cứu các Trường hợp tương tự để tham khảo kinh nghiệm đã được tích luỹ.

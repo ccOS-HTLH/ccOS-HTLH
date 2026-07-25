@@ -12,11 +12,11 @@
 
 ## Trọng số tín hiệu
 
-- Trọng số của Động lượng: **42%**
-- Trọng số của Bối cảnh: **28%**
-- Trọng số của Cấu trúc: **16%**
-- Trọng số của Hành vi: **9%**
-- Trọng số của Chất lượng: **5%**
+- Động lượng: **42%**
+- Bối cảnh: **28%**
+- Cấu trúc: **16%**
+- Hành vi: **9%**
+- Chất lượng: **5%**
 
 ↓
 
@@ -24,6 +24,26 @@
 
 ```text
 SIG-8A24
+```
+
+↓
+
+## Vai trò
+
+```text
+SIG-8A24
+
+↓
+
+08 · Không gian kịch bản
+
+↓
+
+Tri thức tích luỹ
+
+↓
+
+Tra cứu các Trường hợp tương tự
 ```
 
 ---
@@ -38,11 +58,11 @@ SIG-8A24
 
 ## Trọng số tín hiệu
 
-- Trọng số của Bối cảnh: **31%**
-- Trọng số của Cấu trúc: **24%**
-- Trọng số của Động lượng: **22%**
-- Trọng số của Hành vi: **14%**
-- Trọng số của Chất lượng: **9%**
+- Bối cảnh: **31%**
+- Cấu trúc: **24%**
+- Động lượng: **22%**
+- Hành vi: **14%**
+- Chất lượng: **9%**
 
 ↓
 
@@ -52,20 +72,42 @@ SIG-8A24
 SIG-3F91
 ```
 
+↓
+
+## Vai trò
+
+```text
+SIG-3F91
+
+↓
+
+08 · Không gian kịch bản
+
+↓
+
+Tri thức tích luỹ
+
+↓
+
+Tra cứu các Trường hợp tương tự
+```
+
 ---
 
 # Nguyên tắc
 
-Trọng số tín hiệu phản ánh mức độ đóng góp của từng tầng.
+Trọng số tín hiệu phản ánh mức độ đóng góp của từng tầng suy luận.
 
-Tổng các Trọng số tín hiệu phản ánh cách Trạng thái quyết định được hình thành.
+Tổng các Trọng số tín hiệu giải thích cách Trạng thái quyết định được hình thành.
 
 Chữ ký tín hiệu chuẩn hóa toàn bộ kết quả suy luận thành một dấu vết duy nhất.
+
+Tri thức tích luỹ sử dụng Chữ ký tín hiệu để tra cứu các Trường hợp có trạng thái suy luận tương đồng.
 
 ---
 
 # Triết lý
 
-Trọng số tín hiệu giải thích cách Trạng thái quyết định được hình thành.
+Trọng số tín hiệu giải thích quá trình hình thành Trạng thái quyết định.
 
-Chữ ký tín hiệu chuẩn hóa toàn bộ quá trình suy luận để phục vụ Tri thức tích luỹ.
+Chữ ký tín hiệu chuẩn hóa quá trình suy luận để kết nối với kinh nghiệm đã được tích luỹ.
