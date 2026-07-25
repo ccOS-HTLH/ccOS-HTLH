@@ -16,7 +16,7 @@ Tầng này đánh giá sự phù hợp giữa:
 - Kế hoạch thực thi.
 - Thực tế.
 
-Phản hồi thực tế tạo ra dữ liệu để Tri thức tích luỹ cập nhật kinh nghiệm của Hệ thống suy luận.
+Tầng này tạo ra dữ liệu đã được kiểm chứng để Tri thức tích luỹ cập nhật Bộ nhớ của Hệ thống suy luận.
 
 ---
 
@@ -46,7 +46,7 @@ Phản hồi thực tế tạo ra dữ liệu để Tri thức tích luỹ cập
 - Phản hồi thực tế.
 - Bằng chứng mới (nếu có).
 
-Phản hồi thực tế trở thành đầu vào của Tri thức tích luỹ.
+Đây là đầu vào của Tri thức tích luỹ để cập nhật Bộ nhớ.
 
 ---
 
@@ -66,6 +66,10 @@ Phản hồi thực tế trở thành đầu vào của Tri thức tích luỹ.
 ↓
 
 # Tri thức tích luỹ
+
+↓
+
+# Bộ nhớ
 ```
 
 ---
@@ -85,7 +89,7 @@ Phản hồi thực tế trở thành đầu vào của Tri thức tích luỹ.
 
 ↓
 
-# 04 · Cập nhật
+# 04 · Kết luận
 
 ↓
 
@@ -98,7 +102,11 @@ Phản hồi thực tế trở thành đầu vào của Tri thức tích luỹ.
 
 Thực tế là tiêu chuẩn cuối cùng của mọi suy luận.
 
-Mỗi phản hồi thực tế đều có thể trở thành kinh nghiệm cho những lần suy luận sau.
+Mỗi phản hồi thực tế đều có thể trở thành kinh nghiệm.
+
+Tri thức tích luỹ biến kinh nghiệm thành tri thức.
+
+Bộ nhớ lưu giữ tri thức cho những lần suy luận sau.
 
 ---
 

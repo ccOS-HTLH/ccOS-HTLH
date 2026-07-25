@@ -12,7 +12,7 @@ Tầng này giải thích cách Trạng thái quyết định hiện tại đư�
 
 Tầng này lượng hóa mức độ ảnh hưởng của từng tầng suy luận đối với Trạng thái quyết định.
 
-Đồng thời, tầng này chuẩn hóa toàn bộ kết quả suy luận thành một Chữ ký tín hiệu để phục vụ tầng Không gian kịch bản.
+Đồng thời, tầng này chuẩn hóa toàn bộ kết quả suy luận thành một Chữ ký tín hiệu để phục vụ tầng Không gian kịch bản và Tri thức tích luỹ.
 
 ---
 
@@ -37,7 +37,7 @@ Tầng này lượng hóa mức độ ảnh hưởng của từng tầng suy lu�
 
 - Chữ ký tín hiệu.
 
-Chữ ký tín hiệu trở thành đầu vào của tầng Không gian kịch bản.
+Chữ ký tín hiệu trở thành đầu vào của tầng Không gian kịch bản, đồng thời là khóa tra cứu của Tri thức tích luỹ.
 
 ---
 
@@ -52,7 +52,10 @@ Trọng số tín hiệu
 
 ↓
 
-Không gian kịch bản
+Chữ ký tín hiệu
+
+├────────► 08 · Không gian kịch bản
+└────────► Tri thức tích luỹ
 ```
 
 ---
@@ -83,7 +86,7 @@ Mọi Trạng thái quyết định đều có thể được giải thích.
 
 Trọng số tín hiệu phản ánh mức độ đóng góp của từng tầng vào Trạng thái quyết định.
 
-Chữ ký tín hiệu chuẩn hóa toàn bộ kết quả suy luận thành một dấu vết duy nhất.
+Chữ ký tín hiệu chuẩn hóa toàn bộ kết quả suy luận thành một dấu vết duy nhất, giúp Hệ thống suy luận tham khảo kinh nghiệm đã được tích luỹ.
 
 ---
 
