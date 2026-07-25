@@ -12,7 +12,7 @@ Tầng này xây dựng các phương án thực thi cho từng kịch bản.
 
 Không gian kịch bản cung cấp các kịch bản hiện tại.
 
-Chữ ký tín hiệu được sử dụng để tham khảo Tri thức tích luỹ nhằm lựa chọn những phương án đã được kiểm chứng (nếu có).
+Chữ ký tín hiệu được sử dụng để tra cứu Tri thức tích luỹ nhằm tham khảo các phương án đã được kiểm chứng (nếu có).
 
 Mỗi phương án xác định:
 
@@ -58,12 +58,15 @@ Các phương án thực thi trở thành đầu vào của tầng Phản hồi 
 ```text
 # Không gian kịch bản
         │
-        ├────────► Tham khảo # Tri thức tích luỹ
         ▼
 # Kế hoạch thực thi
-
-↓
-
+        ▲
+        │
+        │ Tham khảo
+        │
+# Tri thức tích luỹ
+        │
+        ▼
 # Phản hồi thực tế
 ```
 
@@ -97,4 +100,6 @@ Các phương án thực thi trở thành đầu vào của tầng Phản hồi 
 
 Không gian kịch bản xác định khả năng.
 
-Kinh nghiệm giúp lựa chọn phương án thực thi phù hợp nhất.
+Tri thức tích luỹ cung cấp kinh nghiệm để tham khảo.
+
+Mỗi phương án chỉ được kiểm chứng bằng Thực tế.
