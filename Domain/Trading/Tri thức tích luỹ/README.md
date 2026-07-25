@@ -66,6 +66,15 @@ Nếu đã từng gặp:
         ▼
 # Tri thức tích luỹ
         │
+        ├────────► Tra cứu Bộ nhớ
+        │
+        │              │
+        │              ▼
+        │      Trường hợp
+        │              │
+        │              ▼
+        │      Mẫu · Bài học · Thống kê
+        │
         ├────────► 08 · Không gian kịch bản
         │
         └────────► 09 · Kế hoạch thực thi
@@ -77,11 +86,12 @@ Nếu đã từng gặp:
                   # Tri thức tích luỹ
                            │
                            ▼
-                       # Bộ nhớ
+                    Cập nhật Bộ nhớ
 ```
 
 Trong Hệ thống suy luận:
 
+- Tầng 07 tạo Chữ ký tín hiệu để Tri thức tích luỹ tra cứu các Trường hợp tương tự.
 - Tầng 08 tham khảo Tri thức tích luỹ để hiệu chỉnh mức độ tin cậy của các kịch bản.
 - Tầng 09 tham khảo Tri thức tích luỹ để lựa chọn phương án thực thi phù hợp.
 - Tầng 10 cung cấp Phản hồi thực tế và Bằng chứng mới để Tri thức tích luỹ cập nhật Bộ nhớ.
@@ -117,6 +127,28 @@ Lưu trữ dữ liệu đã được kiểm chứng:
 Bộ nhớ là kho dữ liệu của Tri thức tích luỹ.
 
 Mọi thao tác đọc, ghi và cập nhật đều được thực hiện thông qua Tri thức tích luỹ.
+
+Quá trình tra cứu diễn ra theo thứ tự:
+
+```text
+Chữ ký tín hiệu
+
+↓
+
+Trường hợp
+
+↓
+
+Mẫu
+
+↓
+
+Bài học tích luỹ
+
+↓
+
+Thống kê
+```
 
 Bộ nhớ được sử dụng để:
 
