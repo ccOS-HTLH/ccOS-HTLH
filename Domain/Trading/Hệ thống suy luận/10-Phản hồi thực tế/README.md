@@ -53,23 +53,19 @@ Tầng này tạo ra dữ liệu đã được kiểm chứng để Tri thức t
 # Vai trò trong Hệ thống suy luận
 
 ```text
-# Kế hoạch thực thi
-
-↓
-
-# Thực tế
-
-↓
-
-# Phản hồi thực tế
-
-↓
-
+09 · Kế hoạch thực thi
+        │
+        ▼
+      Thực tế
+        │
+        ▼
+10 · Phản hồi thực tế
+        │
+        ▼
 # Tri thức tích luỹ
-
-↓
-
-# Bộ nhớ
+        │
+        ▼
+     Cập nhật Bộ nhớ
 ```
 
 ---
@@ -77,23 +73,23 @@ Tầng này tạo ra dữ liệu đã được kiểm chứng để Tri thức t
 # Cấu trúc
 
 ```text
-# 01 · Định nghĩa
+01 · Định nghĩa
 
 ↓
 
-# 02 · Quan sát
+02 · Quan sát
 
 ↓
 
-# 03 · Phản hồi
+03 · Phản hồi
 
 ↓
 
-# 04 · Kết luận
+04 · Kết luận
 
 ↓
 
-# 05 · Ví dụ
+05 · Ví dụ
 ```
 
 ---
@@ -102,8 +98,8 @@ Tầng này tạo ra dữ liệu đã được kiểm chứng để Tri thức t
 
 Thực tế là tiêu chuẩn cuối cùng của mọi suy luận.
 
-Mỗi phản hồi thực tế đều có thể trở thành kinh nghiệm.
+Mỗi phản hồi thực tế đều có thể tạo ra kinh nghiệm mới.
 
-Tri thức tích luỹ biến kinh nghiệm thành tri thức.
+Tri thức tích luỹ chuyển kinh nghiệm đã được kiểm chứng thành tri thức.
 
 Bộ nhớ lưu giữ tri thức cho những lần suy luận sau.
