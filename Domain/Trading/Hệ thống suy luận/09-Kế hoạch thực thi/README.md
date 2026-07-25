@@ -12,7 +12,7 @@ Tầng này xây dựng các phương án thực thi cho từng kịch bản.
 
 Không gian kịch bản cung cấp các kịch bản hiện tại.
 
-Chữ ký tín hiệu được sử dụng để tra cứu Tri thức tích luỹ nhằm tham khảo các phương án đã được kiểm chứng (nếu có).
+Chữ ký tín hiệu được sử dụng để tra cứu Tri thức tích luỹ nhằm tham khảo các Trường hợp, Mẫu, Bài học tích luỹ và Thống kê liên quan, từ đó lựa chọn hoặc hiệu chỉnh phương án thực thi phù hợp (nếu có).
 
 Mỗi phương án xác định:
 
@@ -49,6 +49,14 @@ Mỗi phương án xác định:
 
 Các phương án thực thi.
 
+Mỗi phương án bao gồm:
+
+- Điều kiện thực thi.
+- Điều kiện xác nhận.
+- Điều kiện hủy bỏ.
+- Quản trị rủi ro.
+- Quản trị vị thế.
+
 Các phương án thực thi trở thành đầu vào của tầng Phản hồi thực tế.
 
 ---
@@ -56,18 +64,26 @@ Các phương án thực thi trở thành đầu vào của tầng Phản hồi 
 # Vai trò trong Hệ thống suy luận
 
 ```text
-# Không gian kịch bản
+08 · Không gian kịch bản
         │
         ▼
-# Kế hoạch thực thi
-        ▲
+07 · Chữ ký tín hiệu
         │
-        │ Tham khảo
-        │
+        ▼
 # Tri thức tích luỹ
         │
         ▼
-# Phản hồi thực tế
+Tra cứu:
+- Trường hợp
+- Mẫu
+- Bài học tích luỹ
+- Thống kê
+        │
+        ▼
+09 · Kế hoạch thực thi
+        │
+        ▼
+10 · Phản hồi thực tế
 ```
 
 ---
@@ -75,23 +91,23 @@ Các phương án thực thi trở thành đầu vào của tầng Phản hồi 
 # Cấu trúc
 
 ```text
-# 01 · Định nghĩa
+01 · Định nghĩa
 
 ↓
 
-# 02 · Quan sát
+02 · Quan sát
 
 ↓
 
-# 03 · Phương án
+03 · Phương án
 
 ↓
 
-# 04 · Hiệu chỉnh
+04 · Hiệu chỉnh
 
 ↓
 
-# 05 · Ví dụ
+05 · Ví dụ
 ```
 
 ---
@@ -100,6 +116,6 @@ Các phương án thực thi trở thành đầu vào của tầng Phản hồi 
 
 Không gian kịch bản xác định khả năng.
 
-Tri thức tích luỹ cung cấp kinh nghiệm để tham khảo.
+Tri thức tích luỹ cung cấp kinh nghiệm để lựa chọn và hiệu chỉnh phương án thực thi.
 
 Mỗi phương án chỉ được kiểm chứng bằng Thực tế.
