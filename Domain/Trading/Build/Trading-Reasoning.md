@@ -1,27 +1,26 @@
+---
 title: Hệ thống suy luận
 id: trading-reasoning-system
-version: 1.4.0
+version: 1.5.0
 status: Stable
 author: HTLH
 language: vi
 created: 2026-07-19
-last_updated: 2026-07-23
+last_updated: 2026-07-25
 review_cycle: Monthly
 confidence: 100%
 tags:
+  - trading
+  - reasoning
+---
 
-• trading
-• reasoning
+# Hệ thống suy luận
 
-────────
+> Hệ thống suy luận là khuôn khổ chuyển dữ liệu quan sát thành quyết định, kiểm chứng bằng Thực tế và học hỏi thông qua Tri thức tích luỹ.
 
-Hệ thống suy luận
+---
 
-> Hệ thống suy luận là khuôn khổ chuyển dữ liệu quan sát thành quyết định có thể kiểm chứng bằng Thực tế.
-
-────────
-
-Mục đích
+# Mục đích
 
 Hệ thống suy luận trả lời:
 
@@ -33,11 +32,11 @@ Mỗi tầng chỉ giải quyết một vấn đề.
 
 Mỗi tầng kế thừa kết quả từ tầng trước.
 
-Toàn bộ hệ thống hướng tới một quyết định có thể kiểm chứng bằng Thực tế.
+Toàn bộ hệ thống hướng tới một quyết định có thể kiểm chứng bằng Thực tế và ngày càng hoàn thiện thông qua Tri thức tích luỹ.
 
-────────
+---
 
-Triết lý
+# Triết lý
 
 Quan sát luôn đi trước suy luận.
 
@@ -47,9 +46,21 @@ Mỗi kết luận đều dựa trên bằng chứng.
 
 Thực tế là tiêu chuẩn cuối cùng của mọi suy luận.
 
-────────
+Tri thức tích luỹ giúp Hệ thống suy luận học hỏi từ Thực tế.
 
-Kiến trúc
+---
+
+# Nguyên tắc
+
+- Mỗi tầng chỉ giải quyết một vấn đề.
+- Mỗi tầng chỉ phụ thuộc vào đầu ra của các tầng trước.
+- Tri thức tích luỹ không tham gia trực tiếp vào quá trình suy luận.
+- Tầng 08 và tầng 09 tham khảo Tri thức tích luỹ.
+- Tầng 10 cung cấp dữ liệu để Tri thức tích luỹ cập nhật Bộ nhớ.
+
+---
+
+# Kiến trúc
 
 ```text
 Hệ thống suy luận
@@ -67,32 +78,36 @@ Hệ thống suy luận
 └── 10-Phản hồi thực tế
 ```
 
-────────
+---
 
-Đầu vào
+# Đầu vào
 
 Hệ thống suy luận tiếp nhận dữ liệu từ tầng Nguồn dữ liệu.
 
 Nguồn dữ liệu có thể đến từ:
 
-• ATS.
-• Dữ liệu rời rạc.
-• Các nguồn dữ liệu khác.
+- ATS.
+- Dữ liệu rời rạc.
+- Các nguồn dữ liệu khác.
 
 Mọi nguồn dữ liệu đều được xử lý theo cùng một Hệ thống suy luận.
 
-────────
+---
 
-Đầu ra cuối cùng của toàn bộ Hệ thống suy luận:
+# Đầu ra
 
-• Quyết định.
-• Không gian kịch bản.
-• Kế hoạch thực thi.
-• Phản hồi thực tế.
+Đầu ra của Hệ thống suy luận gồm:
 
-────────
+- Quyết định.
+- Không gian kịch bản.
+- Kế hoạch thực thi.
+- Phản hồi thực tế.
 
-Vị trí trong Trading
+Phản hồi thực tế trở thành đầu vào của Tri thức tích luỹ.
+
+---
+
+# Vị trí trong Trading
 
 ```text
 Trading
@@ -102,8 +117,9 @@ Trading
 │      ├── Dữ liệu rời rạc
 │      └── ...
 │
-└── Hệ thống suy luận
-       Suy luận
+├── Hệ thống suy luận
+│
+└── Tri thức tích luỹ
 ```
 
 ATS chỉ là một nguồn dữ liệu.
@@ -112,9 +128,11 @@ Dữ liệu rời rạc cũng là một nguồn dữ liệu.
 
 Hệ thống suy luận không phụ thuộc vào bất kỳ nguồn dữ liệu cụ thể nào.
 
-────────
+Tri thức tích luỹ hoạt động song song với Hệ thống suy luận để học hỏi từ Thực tế.
 
-Luồng hoạt động
+---
+
+# Luồng hoạt động
 
 ```text
 Nguồn dữ liệu
@@ -150,19 +168,64 @@ Nguồn dữ liệu
 ↓
 
 08 · Không gian kịch bản
-
-↓
-
+        ▲
+        │
+        │ Tham khảo
+        │
+Tri thức tích luỹ
+        │
+        │ Tham khảo
+        ▼
 09 · Kế hoạch thực thi
 
 ↓
 
 10 · Phản hồi thực tế
+
+↓
+
+Tri thức tích luỹ
+
+↓
+
+Bộ nhớ
 ```
 
-────────
+---
 
-Tóm tắt
+# Chu trình học hỏi
+
+```text
+Quan sát
+
+↓
+
+Suy luận
+
+↓
+
+Quyết định
+
+↓
+
+Thực tế
+
+↓
+
+Tri thức tích luỹ
+
+↓
+
+Bộ nhớ
+
+↓
+
+Suy luận
+```
+
+---
+
+# Tóm tắt
 
 ```text
 Nguồn dữ liệu
@@ -173,19 +236,24 @@ Hệ thống suy luận
 
 ↓
 
-Quyết định
+Thực tế
 
 ↓
 
-Thực tế
+Tri thức tích luỹ
+
+↓
+
+Hệ thống suy luận
 ```
 
 Hệ thống suy luận định nghĩa:
 
-• Kiến trúc suy luận.
-• Mối quan hệ giữa các tầng.
-• Cách chuyển dữ liệu quan sát thành quyết định.
-• Cách kiểm chứng quyết định bằng Thực tế.
+- Kiến trúc suy luận.
+- Mối quan hệ giữa các tầng.
+- Cách chuyển dữ liệu quan sát thành quyết định.
+- Cách kiểm chứng quyết định bằng Thực tế.
+- Cách học hỏi từ Thực tế thông qua Tri thức tích luỹ.
 
 ────────
 
@@ -3103,13 +3171,13 @@ Ra quyết định phản ánh kết luận hiện tại của Hệ thống suy 
 
 ────────
 
-07 · Trọng số tín hiệu
+# 07 · Trọng số tín hiệu
 
 > Giải thích mức độ ảnh hưởng của từng bằng chứng đến Trạng thái quyết định.
 
-────────
+---
 
-Mục đích
+# Mục đích
 
 Trọng số tín hiệu là tầng thứ bảy của Hệ thống suy luận.
 
@@ -3117,36 +3185,36 @@ Tầng này giải thích cách Trạng thái quyết định hiện tại đư�
 
 Tầng này lượng hóa mức độ ảnh hưởng của từng tầng suy luận đối với Trạng thái quyết định.
 
-Đồng thời, tầng này chuẩn hóa toàn bộ kết quả suy luận thành một Chữ ký tín hiệu để phục vụ tầng Không gian kịch bản.
+Đồng thời, tầng này chuẩn hóa toàn bộ kết quả suy luận thành một Chữ ký tín hiệu để phục vụ tầng Không gian kịch bản và Tri thức tích luỹ.
 
-────────
+---
 
-Câu hỏi
+# Câu hỏi
 
 Điều gì ảnh hưởng nhiều nhất đến Trạng thái quyết định hiện tại?
 
-────────
+---
 
-Đầu vào
+# Đầu vào
 
-• Trạng thái hành vi.
-• Trạng thái bối cảnh.
-• Trạng thái động lượng.
-• Trạng thái cấu trúc.
-• Trạng thái chất lượng.
-• Trạng thái quyết định.
+- Trạng thái hành vi.
+- Trạng thái bối cảnh.
+- Trạng thái động lượng.
+- Trạng thái cấu trúc.
+- Trạng thái chất lượng.
+- Trạng thái quyết định.
 
-────────
+---
 
-Đầu ra
+# Đầu ra
 
-• Chữ ký tín hiệu.
+- Chữ ký tín hiệu.
 
-Chữ ký tín hiệu trở thành đầu vào của tầng Không gian kịch bản.
+Chữ ký tín hiệu trở thành đầu vào của tầng Không gian kịch bản, đồng thời là khóa tra cứu của Tri thức tích luỹ.
 
-────────
+---
 
-Vai trò trong Hệ thống suy luận
+# Vai trò trong Hệ thống suy luận
 
 ```text
 Ra quyết định
@@ -3157,12 +3225,15 @@ Trọng số tín hiệu
 
 ↓
 
-Không gian kịch bản
+Chữ ký tín hiệu
+
+├────────► 08 · Không gian kịch bản
+└────────► Tri thức tích luỹ
 ```
 
-────────
+---
 
-Cấu trúc
+# Cấu trúc
 
 ```text
 01 · Định nghĩa
@@ -3180,106 +3251,106 @@ Cấu trúc
 04 · Ví dụ
 ```
 
-────────
+---
 
-Triết lý
+# Triết lý
 
 Mọi Trạng thái quyết định đều có thể được giải thích.
 
 Trọng số tín hiệu phản ánh mức độ đóng góp của từng tầng vào Trạng thái quyết định.
 
-Chữ ký tín hiệu chuẩn hóa toàn bộ kết quả suy luận thành một dấu vết duy nhất.
+Chữ ký tín hiệu chuẩn hóa toàn bộ kết quả suy luận thành một dấu vết duy nhất, giúp Hệ thống suy luận tham khảo kinh nghiệm đã được tích luỹ.
 
-────────
+---
 
-Định nghĩa
+# Định nghĩa
 
 > Bản chất của Hành vi.
 
-────────
+---
 
-Bản chất
+# Bản chất
 
 Hành vi là sự biểu hiện của quá trình đấu giá giữa người mua và người bán.
 
 Hành vi được phản ánh thông qua dữ liệu thị trường tại thời điểm quan sát.
 
-────────
+---
 
-Thành phần
+# Thành phần
 
 Hành vi được phản ánh thông qua:
 
-• Giá
-• Khối lượng
-• Thời gian
-• Lệnh chủ động
-• Thanh khoản
+- Giá
+- Khối lượng
+- Thời gian
+- Lệnh chủ động
+- Thanh khoản
 
 Những thành phần này cùng phản ánh hành vi hiện tại của thị trường.
 
-────────
+---
 
-Đầu ra
+# Đầu ra
 
 Tầng Hành vi tạo ra Trạng thái hành vi.
 
 Trạng thái hành vi trở thành đầu vào của tầng Bối cảnh.
 
-────────
+---
 
 > Hành vi phản ánh điều đang thực sự diễn ra giữa người mua và người bán.
 
-────────
+---
 
-Quan sát
+# Quan sát
 
 > Quan sát sự thay đổi của lực thị trường.
 
-────────
+---
 
-Mục đích
+# Mục đích
 
 Quan sát sự thay đổi của lực thị trường.
 
 Động lượng phản ánh sự thay đổi của lực thị trường.
 
-────────
+---
 
-Quan sát
+# Quan sát
 
-Lực giao dịch
+## Lực giao dịch
 
 Quan sát phía đang chủ động tạo ra động lượng.
 
-• Delta
-• CVD
-• Aggressive Orders
-• Auction Flow
+- Delta
+- CVD
+- Aggressive Orders
+- Auction Flow
 
-────────
+---
 
-Cường độ giao dịch
+## Cường độ giao dịch
 
 Quan sát mức độ mạnh hay yếu của lực thị trường.
 
-• Volume
-• VPIN
+- Volume
+- VPIN
 
-────────
+---
 
-Động lượng giá
+## Động lượng giá
 
 Quan sát tốc độ thay đổi của giá.
 
-• RSI
-• Độ dốc EMA
-• Price Velocity
-• Momentum Divergence
+- RSI
+- Độ dốc EMA
+- Price Velocity
+- Momentum Divergence
 
-────────
+---
 
-Nguyên tắc
+# Nguyên tắc
 
 Động lượng luôn được đánh giá theo sự thay đổi.
 
@@ -3287,149 +3358,149 @@ Sự thay đổi quan trọng hơn giá trị tuyệt đối.
 
 Động lượng luôn được hiểu trong Bối cảnh hiện tại.
 
-────────
+---
 
-Triết lý
+# Triết lý
 
 Động lượng phản ánh sự thay đổi của lực.
 
-────────
+---
 
-Trạng thái
+# Trạng thái
 
 > Mô tả trạng thái hiện tại của Bối cảnh.
 
-────────
+---
 
-Mục đích
+# Mục đích
 
 Trạng thái mô tả môi trường mà Hành vi đang diễn ra.
 
 Mỗi trạng thái phản ánh điều kiện hiện tại của thị trường.
 
-────────
+---
 
-Các trạng thái
+# Các trạng thái
 
-Cấu trúc thị trường
+## Cấu trúc thị trường
 
-Xu hướng tăng
+### Xu hướng tăng
 
 Bối cảnh ưu tiên xu hướng tăng.
 
-────────
+---
 
-Xu hướng giảm
+### Xu hướng giảm
 
 Bối cảnh ưu tiên xu hướng giảm.
 
-────────
+---
 
-Đi ngang
+### Đi ngang
 
 Thị trường đang ở trạng thái cân bằng.
 
-────────
+---
 
-Trạng thái thị trường
+## Trạng thái thị trường
 
-Mở rộng
+### Mở rộng
 
 Thị trường đang mở rộng khỏi vùng giá trị trước đó.
 
-────────
+---
 
-Tích lũy
+### Tích lũy
 
 Thị trường đang vận động trong một vùng giá hẹp.
 
-────────
+---
 
-Vùng rủi ro
+## Vùng rủi ro
 
-Rủi ro cao
+### Rủi ro cao
 
 Thị trường đang ở vùng có khả năng Chuyển đổi cao.
 
-────────
+---
 
-Rủi ro thấp
+### Rủi ro thấp
 
 Thị trường đang ở vùng thuận lợi cho xu hướng hiện tại tiếp diễn.
 
-────────
+---
 
-Nguyên tắc
+# Nguyên tắc
 
 Trạng thái phản ánh bối cảnh hiện tại.
 
 Trạng thái chỉ thay đổi khi bối cảnh thay đổi.
 
-────────
+---
 
-Triết lý
+# Triết lý
 
 Trạng thái phản ánh môi trường hiện tại của Hành vi.
 
-────────
+---
 
-Ví dụ
+# Ví dụ
 
-────────
+---
 
-Ví dụ 01
+# Ví dụ 01
 
-Trạng thái quyết định
+## Trạng thái quyết định
 
-• Định hướng tăng.
-
-↓
-
-Trọng số tín hiệu
-
-• Trọng số của Động lượng: 42%
-• Trọng số của Bối cảnh: 28%
-• Trọng số của Cấu trúc: 16%
-• Trọng số của Hành vi: 9%
-• Trọng số của Chất lượng: 5%
+- Định hướng tăng.
 
 ↓
 
-Chữ ký tín hiệu
+## Trọng số tín hiệu
+
+- Trọng số của Động lượng: **42%**
+- Trọng số của Bối cảnh: **28%**
+- Trọng số của Cấu trúc: **16%**
+- Trọng số của Hành vi: **9%**
+- Trọng số của Chất lượng: **5%**
+
+↓
+
+## Chữ ký tín hiệu
 
 ```text
 SIG-8A24
 ```
 
-────────
+---
 
-Ví dụ 02
+# Ví dụ 02
 
-Trạng thái quyết định
+## Trạng thái quyết định
 
-• Trung lập.
-
-↓
-
-Trọng số tín hiệu
-
-• Trọng số của Bối cảnh: 31%
-• Trọng số của Cấu trúc: 24%
-• Trọng số của Động lượng: 22%
-• Trọng số của Hành vi: 14%
-• Trọng số của Chất lượng: 9%
+- Trung lập.
 
 ↓
 
-Chữ ký tín hiệu
+## Trọng số tín hiệu
+
+- Trọng số của Bối cảnh: **31%**
+- Trọng số của Cấu trúc: **24%**
+- Trọng số của Động lượng: **22%**
+- Trọng số của Hành vi: **14%**
+- Trọng số của Chất lượng: **9%**
+
+↓
+
+## Chữ ký tín hiệu
 
 ```text
 SIG-3F91
 ```
 
-────────
+---
 
-Nguyên tắc
+# Nguyên tắc
 
 Trọng số tín hiệu phản ánh mức độ đóng góp của từng tầng.
 
@@ -3437,9 +3508,9 @@ Tổng các Trọng số tín hiệu phản ánh cách Trạng thái quyết đ�
 
 Chữ ký tín hiệu chuẩn hóa toàn bộ kết quả suy luận thành một dấu vết duy nhất.
 
-────────
+---
 
-Triết lý
+# Triết lý
 
 Trọng số tín hiệu giải thích cách Trạng thái quyết định được hình thành.
 
@@ -3447,13 +3518,13 @@ Chữ ký tín hiệu chuẩn hóa toàn bộ quá trình suy luận để phụ
 
 ────────
 
-08 · Không gian kịch bản
+# 08 · Không gian kịch bản
 
 > Biểu diễn sự bất định bằng các kịch bản.
 
-────────
+---
 
-Mục đích
+# Mục đích
 
 Không gian kịch bản là tầng thứ tám của Hệ thống suy luận.
 
@@ -3461,74 +3532,79 @@ Tầng này tổ chức các kịch bản hợp lý từ Trạng thái quyết �
 
 Trọng số tín hiệu được sử dụng để hình thành các kịch bản và xác suất suy luận.
 
-Sau khi các kịch bản được hình thành, Chữ ký tín hiệu được sử dụng để tham khảo Tri thức tích luỹ nhằm đánh giá và hiệu chỉnh mức độ tin cậy của từng kịch bản.
+Sau khi các kịch bản được hình thành, Chữ ký tín hiệu được sử dụng để tra cứu Tri thức tích luỹ nhằm tham khảo các Trường hợp, Mẫu, Bài học tích luỹ và Thống kê liên quan, từ đó đánh giá và hiệu chỉnh mức độ tin cậy của từng kịch bản.
 
 Mỗi kịch bản được mô tả thông qua:
 
-• Suy luận.
-• Điều kiện.
-• Xác suất suy luận.
-• Xác suất hiệu chỉnh.
-• Điều kiện vô hiệu.
+- Suy luận.
+- Điều kiện.
+- Xác suất suy luận.
+- Xác suất hiệu chỉnh (nếu có).
+- Điều kiện vô hiệu.
 
-────────
+---
 
-Câu hỏi
+# Câu hỏi
 
-Theo kết quả suy luận hiện tại, những kịch bản nào có nhiều khả năng xảy ra?
+## Theo kết quả suy luận hiện tại, những kịch bản nào có nhiều khả năng xảy ra?
 
 → Trọng số tín hiệu.
 
-────────
+---
 
-Theo kinh nghiệm đã được tích luỹ, mức độ tin cậy của các kịch bản đó có thay đổi không?
+## Theo kinh nghiệm đã được tích luỹ, mức độ tin cậy của các kịch bản đó có thay đổi không?
 
 → Chữ ký tín hiệu + Tri thức tích luỹ.
 
-────────
+---
 
-Đầu vào
+# Đầu vào
 
-• Trạng thái hành vi.
-• Trạng thái bối cảnh.
-• Trạng thái động lượng.
-• Trạng thái cấu trúc.
-• Trạng thái chất lượng.
-• Trạng thái quyết định.
-• Trọng số tín hiệu.
-• Chữ ký tín hiệu.
+- Trạng thái hành vi.
+- Trạng thái bối cảnh.
+- Trạng thái động lượng.
+- Trạng thái cấu trúc.
+- Trạng thái chất lượng.
+- Trạng thái quyết định.
+- Trọng số tín hiệu.
+- Chữ ký tín hiệu.
 
-────────
+---
 
-Đầu ra
+# Đầu ra
 
 Không gian kịch bản.
 
 Mỗi kịch bản bao gồm:
 
-• Xác suất suy luận.
-• Xác suất hiệu chỉnh (nếu có).
+- Xác suất suy luận.
+- Xác suất hiệu chỉnh (nếu có).
+- Điều kiện vô hiệu.
 
 Không gian kịch bản trở thành đầu vào của tầng Kế hoạch thực thi.
 
-────────
+---
 
-Vai trò trong Hệ thống suy luận
+# Vai trò trong Hệ thống suy luận
 
 ```text
 # Trọng số tín hiệu
         │
         ▼
 # Không gian kịch bản
+        ▲
         │
-        ├────────► Tham khảo # Tri thức tích luỹ
+        │ Tham khảo
+        │
+# Tri thức tích luỹ
+        │
         ▼
 # Kế hoạch thực thi
 ```
 
-────────
+---
 
-Cấu trúc
+# Cấu trúc
 
 ```text
 # 01 · Định nghĩa
@@ -3550,13 +3626,15 @@ Cấu trúc
 # 05 · Ví dụ
 ```
 
-────────
+---
 
-Triết lý
+# Triết lý
 
-Kết quả suy luận hiện tại hình thành các kịch bản.
+Kết quả suy luận hình thành các kịch bản.
 
-Tri thức tích luỹ cung cấp kinh nghiệm để Không gian kịch bản tham khảo và hiệu chỉnh mức độ tin cậy của các kịch bản.
+Tri thức tích luỹ cung cấp kinh nghiệm để tham khảo.
+
+Mọi kịch bản đều phải được kiểm chứng bằng Thực tế.
 
 ────────
 
@@ -3912,13 +3990,13 @@ Kinh nghiệm giúp đánh giá và hiệu chỉnh mức độ tin cậy của c
 
 ────────
 
-09 · Kế hoạch thực thi
+# 09 · Kế hoạch thực thi
 
 > Thiết kế các phương án thực thi cho từng kịch bản.
 
-────────
+---
 
-Mục đích
+# Mục đích
 
 Kế hoạch thực thi là tầng thứ chín của Hệ thống suy luận.
 
@@ -3926,64 +4004,67 @@ Tầng này xây dựng các phương án thực thi cho từng kịch bản.
 
 Không gian kịch bản cung cấp các kịch bản hiện tại.
 
-Chữ ký tín hiệu được sử dụng để tham khảo Tri thức tích luỹ nhằm lựa chọn những phương án đã được kiểm chứng (nếu có).
+Chữ ký tín hiệu được sử dụng để tra cứu Tri thức tích luỹ nhằm tham khảo các phương án đã được kiểm chứng (nếu có).
 
 Mỗi phương án xác định:
 
-• Điều kiện thực thi.
-• Điều kiện xác nhận.
-• Điều kiện hủy bỏ.
-• Quản trị rủi ro.
-• Quản trị vị thế.
+- Điều kiện thực thi.
+- Điều kiện xác nhận.
+- Điều kiện hủy bỏ.
+- Quản trị rủi ro.
+- Quản trị vị thế.
 
-────────
+---
 
-Câu hỏi
+# Câu hỏi
 
-Nếu kịch bản này xảy ra, mình nên hành động như thế nào?
+## Nếu kịch bản này xảy ra, mình nên hành động như thế nào?
 
 → Không gian kịch bản.
 
-────────
+---
 
-Theo kinh nghiệm đã được tích luỹ, phương án nào đáng tin cậy hơn?
+## Theo kinh nghiệm đã được tích luỹ, phương án nào đáng tin cậy hơn?
 
 → Chữ ký tín hiệu + Tri thức tích luỹ.
 
-────────
+---
 
-Đầu vào
+# Đầu vào
 
-• Không gian kịch bản.
-• Chữ ký tín hiệu.
+- Không gian kịch bản.
+- Chữ ký tín hiệu.
 
-────────
+---
 
-Đầu ra
+# Đầu ra
 
 Các phương án thực thi.
 
 Các phương án thực thi trở thành đầu vào của tầng Phản hồi thực tế.
 
-────────
+---
 
-Vai trò trong Hệ thống suy luận
+# Vai trò trong Hệ thống suy luận
 
 ```text
 # Không gian kịch bản
         │
-        ├────────► Tham khảo # Tri thức tích luỹ
         ▼
 # Kế hoạch thực thi
-
-↓
-
+        ▲
+        │
+        │ Tham khảo
+        │
+# Tri thức tích luỹ
+        │
+        ▼
 # Phản hồi thực tế
 ```
 
-────────
+---
 
-Cấu trúc
+# Cấu trúc
 
 ```text
 # 01 · Định nghĩa
@@ -4005,13 +4086,15 @@ Cấu trúc
 # 05 · Ví dụ
 ```
 
-────────
+---
 
-Triết lý
+# Triết lý
 
 Không gian kịch bản xác định khả năng.
 
-Kinh nghiệm giúp lựa chọn phương án thực thi phù hợp nhất.
+Tri thức tích luỹ cung cấp kinh nghiệm để tham khảo.
+
+Mỗi phương án chỉ được kiểm chứng bằng Thực tế.
 
 ────────
 
@@ -4334,13 +4417,13 @@ Kinh nghiệm giúp lựa chọn và hiệu chỉnh phương án phù hợp hơn
 
 ────────
 
-10 · Phản hồi thực tế
+# 10 · Phản hồi thực tế
 
 > Đánh giá kết quả thực tế sau khi Kế hoạch thực thi được thực hiện.
 
-────────
+---
 
-Mục đích
+# Mục đích
 
 Phản hồi thực tế là tầng thứ mười của Hệ thống suy luận.
 
@@ -4348,45 +4431,45 @@ Tầng này quan sát kết quả thực tế sau khi Kế hoạch thực thi đ
 
 Tầng này đánh giá sự phù hợp giữa:
 
-• Không gian kịch bản.
-• Kế hoạch thực thi.
-• Thực tế.
+- Không gian kịch bản.
+- Kế hoạch thực thi.
+- Thực tế.
 
-Phản hồi thực tế tạo ra dữ liệu để Tri thức tích luỹ cập nhật kinh nghiệm của Hệ thống suy luận.
+Tầng này tạo ra dữ liệu đã được kiểm chứng để Tri thức tích luỹ cập nhật Bộ nhớ của Hệ thống suy luận.
 
-────────
+---
 
-Câu hỏi
+# Câu hỏi
 
-Thực tế đã diễn ra như thế nào?
+## Thực tế đã diễn ra như thế nào?
 
 → Phản hồi thực tế.
 
-────────
+---
 
-Có xuất hiện bằng chứng mới cần được tích luỹ không?
+## Có xuất hiện bằng chứng mới cần được tích luỹ không?
 
 → Tri thức tích luỹ.
 
-────────
+---
 
-Đầu vào
+# Đầu vào
 
-• Kế hoạch thực thi.
-• Thực tế.
+- Kế hoạch thực thi.
+- Thực tế.
 
-────────
+---
 
-Đầu ra
+# Đầu ra
 
-• Phản hồi thực tế.
-• Bằng chứng mới (nếu có).
+- Phản hồi thực tế.
+- Bằng chứng mới (nếu có).
 
-Phản hồi thực tế trở thành đầu vào của Tri thức tích luỹ.
+Đây là đầu vào của Tri thức tích luỹ để cập nhật Bộ nhớ.
 
-────────
+---
 
-Vai trò trong Hệ thống suy luận
+# Vai trò trong Hệ thống suy luận
 
 ```text
 # Kế hoạch thực thi
@@ -4402,11 +4485,15 @@ Vai trò trong Hệ thống suy luận
 ↓
 
 # Tri thức tích luỹ
+
+↓
+
+# Bộ nhớ
 ```
 
-────────
+---
 
-Cấu trúc
+# Cấu trúc
 
 ```text
 # 01 · Định nghĩa
@@ -4421,20 +4508,24 @@ Cấu trúc
 
 ↓
 
-# 04 · Cập nhật
+# 04 · Kết luận
 
 ↓
 
 # 05 · Ví dụ
 ```
 
-────────
+---
 
-Triết lý
+# Triết lý
 
 Thực tế là tiêu chuẩn cuối cùng của mọi suy luận.
 
-Mỗi phản hồi thực tế đều có thể trở thành kinh nghiệm cho những lần suy luận sau.
+Mỗi phản hồi thực tế đều có thể trở thành kinh nghiệm.
+
+Tri thức tích luỹ biến kinh nghiệm thành tri thức.
+
+Bộ nhớ lưu giữ tri thức cho những lần suy luận sau.
 
 ────────
 
