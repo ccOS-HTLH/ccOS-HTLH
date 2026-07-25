@@ -1,322 +1,101 @@
----
-title: Build
-id: trading-build
-version: 1.4.0
-status: Stable
-author: HTLH
-language: vi
----
-
 # Build
 
-> Quy định cách biên dịch Trading Domain thành các Bundle dùng cho AI.
+> Đóng gói Trading Domain thành các tài liệu sử dụng.
 
 ---
 
 # Mục đích
 
-Build chuẩn hóa việc đóng gói Trading Domain.
+Build chịu trách nhiệm tổng hợp và đóng gói các tài liệu của Trading Domain.
 
-Build không thay đổi nội dung Domain.
+Các gói Build được tạo từ các tài liệu nguồn và không phải là nơi chỉnh sửa nội dung.
 
-Build chỉ tạo các Bundle phục vụ AI.
-
----
-
-# Thư mục
-
-Trading/
-
-↓
-
-Build/
+Mọi thay đổi phải được thực hiện trên tài liệu nguồn trước khi Build.
 
 ---
 
-# Build Targets
+# Câu hỏi
 
-## Build Core
+Cần sử dụng phần nào của Trading Domain?
 
-Sinh:
-
-Trading-Core.md
-
-Bao gồm:
-
-Boot
-
-↓
-
-System Instruction
-
-↓
-
-Domain Manifest
-
-↓
-
-AI Guide
-
-↓
-
-Trading Knowledge Pack
-
-↓
-
-Trading README
-
-↓
-
-VERSION
-
-↓
-
-CHANGELOG
-
-↓
-
-GLOSSARY
-
-↓
-
-READY
+Cần một gói chuyên biệt hay toàn bộ Domain?
 
 ---
 
-## Build Data
+# Thành phần
 
-Sinh:
+## Trading Core
 
-Trading-Data.md
+Đóng gói các tài liệu nền tảng của Trading Domain.
 
-Bao gồm:
+## Trading Data
 
-README - Nguồn dữ liệu
+Đóng gói toàn bộ tài liệu thuộc Nguồn dữ liệu.
 
-↓
+## Trading Reasoning
 
-ATS
+Đóng gói toàn bộ Hệ thống suy luận.
 
-↓
+## Trading Memory
 
-Dữ liệu rời rạc
+Đóng gói toàn bộ Tri thức tích luỹ.
 
----
+## Trading Domain Full
 
-## Build Reasoning
+Đóng gói toàn bộ Trading Domain.
 
-Sinh:
+## Reasoning
 
-Trading-Reasoning.md
+Đóng gói riêng từng tầng của Hệ thống suy luận.
 
-Bao gồm:
+Mỗi tệp tương ứng với một tầng:
 
-README - Hệ thống suy luận
-
-↓
-
-01-Hành vi
-
-↓
-
-02-Bối cảnh
-
-↓
-
-03-Động lượng
-
-↓
-
-04-Cấu trúc
-
-↓
-
-05-Chất lượng
-
-↓
-
-06-Quyết định
-
-↓
-
-07-Trọng số tín hiệu
-
-↓
-
-08-Không gian kịch bản
-
-↓
-
-09-Kế hoạch thực thi
-
-↓
-
-10-Phản hồi thực tế
+- 01 · Hành vi
+- 02 · Bối cảnh
+- ...
+- 10 · Phản hồi thực tế
 
 ---
 
-## Build Knowledge
+# Vai trò trong Trading
 
-Sinh:
-
-Trading-Knowledge.md
-
-Bao gồm:
-
-README - Tri thức nền
+```text
+Tài liệu nguồn
 
 ↓
 
-Tri thức nền
+Build
+
+↓
+
+Trading Core
+
+Trading Data
+
+Trading Reasoning
+
+Trading Memory
+
+Trading Domain Full
+```
 
 ---
 
-## Build Memory
-
-Sinh:
-
-Trading-Memory.md
-
-Bao gồm:
-
-README - Tri thức tích luỹ
-
-↓
-
-01-Định nghĩa
-
-↓
-
-02-Quan sát
-
-↓
-
-03-Thống kê
-
-↓
-
-04-Tham khảo
-
-↓
-
-05-Ví dụ
-
----
-
-## Build Bundle
-
-Sinh:
-
-Trading-Domain-Full.md
-
-Bao gồm:
-
-Trading-Core
-
-↓
-
-Trading-Data
-
-↓
-
-Trading-Reasoning
-
-↓
-
-Trading-Knowledge
-
-↓
-
-Trading-Memory
-
-↓
-
-Trading-Domain-Full.md
-
-↓
-
-AI Bundle
-
----
-
-## Build Release
-
-Sinh:
-
-Trading-Domain-vX.X.X.zip
-
-├── Trading-Core.md
-
-├── Trading-Data.md
-
-├── Trading-Reasoning.md
-
-├── Trading-Knowledge.md
-
-├── Trading-Memory.md
-
-└── Trading-Domain-Full.md
-
----
-
-# Build Flow
-
-Core
-
-↓
-
-Data
-
-↓
-
-Reasoning
-
-↓
-
-Knowledge
-
-↓
-
-Memory
-
-↓
-
-Bundle
-
-↓
-
-Release
-
-↓
-
-Deploy
-
----
-
-# Quy tắc
-
-Build không:
-
-- thay đổi Domain
-- thay đổi Logic
-- thay đổi Module
-
-Build chỉ tạo Bundle.
+# Nguyên tắc
+
+- Không chỉnh sửa nội dung trong Build.
+- Mọi Build đều được tạo từ tài liệu nguồn.
+- Một tài liệu nguồn có thể xuất hiện trong nhiều gói Build.
+- Các gói Build phải phản ánh đúng phiên bản hiện tại của Trading Domain.
 
 ---
 
 # Triết lý
 
-Một Domain.
+Tài liệu nguồn là nơi phát triển tri thức.
 
-↓
+Build là nơi đóng gói tri thức.
 
-Nhiều Bundle.
+Một nguồn có thể tạo ra nhiều gói Build.
 
-↓
-
-Một điểm khởi động.
-
-↓
-
-Một cách vận hành.
+Mọi gói Build đều có thể truy xuất ngược về tài liệu nguồn.
