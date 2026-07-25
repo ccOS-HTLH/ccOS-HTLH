@@ -12,7 +12,7 @@ Tầng này tổ chức các kịch bản hợp lý từ Trạng thái quyết �
 
 Trọng số tín hiệu được sử dụng để hình thành các kịch bản và xác suất suy luận.
 
-Sau khi các kịch bản được hình thành, Chữ ký tín hiệu được sử dụng để tra cứu Tri thức tích luỹ nhằm tham khảo các Trường hợp, Mẫu, Bài học tích luỹ và Thống kê liên quan, từ đó đánh giá và hiệu chỉnh mức độ tin cậy của từng kịch bản.
+Sau khi các kịch bản được hình thành, Chữ ký tín hiệu được sử dụng để tra cứu Tri thức tích luỹ nhằm tham khảo các Trường hợp, Mẫu, Bài học tích luỹ và Thống kê liên quan, từ đó hiệu chỉnh mức độ tin cậy của từng kịch bản.
 
 Mỗi kịch bản được mô tả thông qua:
 
@@ -57,6 +57,8 @@ Không gian kịch bản.
 
 Mỗi kịch bản bao gồm:
 
+- Suy luận.
+- Điều kiện.
 - Xác suất suy luận.
 - Xác suất hiệu chỉnh (nếu có).
 - Điều kiện vô hiệu.
@@ -68,18 +70,23 @@ Không gian kịch bản trở thành đầu vào của tầng Kế hoạch th�
 # Vai trò trong Hệ thống suy luận
 
 ```text
-# Trọng số tín hiệu
+07 · Chữ ký tín hiệu
         │
         ▼
-# Không gian kịch bản
-        ▲
-        │
-        │ Tham khảo
-        │
 # Tri thức tích luỹ
         │
         ▼
-# Kế hoạch thực thi
+Tra cứu:
+- Trường hợp
+- Mẫu
+- Bài học tích luỹ
+- Thống kê
+        │
+        ▼
+08 · Không gian kịch bản
+        │
+        ▼
+09 · Kế hoạch thực thi
 ```
 
 ---
@@ -87,23 +94,23 @@ Không gian kịch bản trở thành đầu vào của tầng Kế hoạch th�
 # Cấu trúc
 
 ```text
-# 01 · Định nghĩa
+01 · Định nghĩa
 
 ↓
 
-# 02 · Quan sát
+02 · Quan sát
 
 ↓
 
-# 03 · Kịch bản
+03 · Kịch bản
 
 ↓
 
-# 04 · Hiệu chỉnh
+04 · Hiệu chỉnh
 
 ↓
 
-# 05 · Ví dụ
+05 · Ví dụ
 ```
 
 ---
@@ -112,6 +119,6 @@ Không gian kịch bản trở thành đầu vào của tầng Kế hoạch th�
 
 Kết quả suy luận hình thành các kịch bản.
 
-Tri thức tích luỹ cung cấp kinh nghiệm để tham khảo.
+Tri thức tích luỹ cung cấp kinh nghiệm để hiệu chỉnh mức độ tin cậy của các kịch bản.
 
 Mọi kịch bản đều phải được kiểm chứng bằng Thực tế.
