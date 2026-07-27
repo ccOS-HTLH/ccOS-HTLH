@@ -6,31 +6,29 @@
 
 # Mục đích
 
-Tri thức tích luỹ giúp Hệ thống suy luận học hỏi từ Thực tế và tái sử dụng kinh nghiệm trong các lần suy luận sau.
+Tri thức tích luỹ quản lý toàn bộ kinh nghiệm đã được Thực tế kiểm chứng.
 
 Chịu trách nhiệm:
 
 - Tra cứu kinh nghiệm.
 - Đối chiếu dữ liệu.
 - Tổng hợp kết quả.
-- Cập nhật tri thức từ Thực tế.
+- Cập nhật tri thức.
 
-Cung cấp dữ liệu tham khảo cho Hệ thống suy luận.
-
-Không tham gia trực tiếp vào quá trình suy luận và không tạo ra quyết định.
+Tri thức tích luỹ cung cấp dữ liệu tham khảo cho Hệ thống suy luận trong các chu kỳ tiếp theo.
 
 ---
 
 # Câu hỏi
 
-Hệ thống đã từng gặp trường hợp tương tự chưa?
+Hệ thống đã từng gặp tình huống tương tự chưa?
 
 Nếu đã từng gặp:
 
 - Điều gì thường xảy ra?
-- Mẫu nào đã xuất hiện?
-- Kế hoạch nào thường hiệu quả hơn?
-- Có bài học nào cần áp dụng không?
+- Mẫu nào thường xuất hiện?
+- Phương án nào thường hiệu quả?
+- Có bài học nào cần tham khảo?
 
 ---
 
@@ -49,71 +47,78 @@ Nếu đã từng gặp:
 
 # Đầu ra
 
-- Thống kê lịch sử.
-- Xác suất lịch sử.
-- Kế hoạch đã được kiểm chứng.
+- Trường hợp liên quan.
+- Mẫu liên quan.
 - Bài học tích luỹ.
-
-Đây là nguồn dữ liệu tham khảo cho các tầng Không gian kịch bản và Kế hoạch thực thi.
+- Thống kê.
+- Kinh nghiệm tham khảo.
 
 ---
 
-# Vai trò trong Hệ thống suy luận
+# Vai trò trong Trading
 
 ```text
-07 · Chữ ký tín hiệu
-        │
-        ▼
+07 · Trọng số tín hiệu
+          │
+          ▼
+     Chữ ký tín hiệu
+          │
+          ▼
 # Tri thức tích luỹ
-        │
-        ├────────► Tra cứu Bộ nhớ
-        │
-        │              │
-        │              ▼
-        │      Trường hợp
-        │              │
-        │              ▼
-        │      Mẫu · Bài học · Thống kê
-        │
-        ├────────► 08 · Không gian kịch bản
-        │
-        └────────► 09 · Kế hoạch thực thi
-                           │
-                           ▼
-                  10 · Phản hồi thực tế
-                           │
-                           ▼
-                  # Tri thức tích luỹ
-                           │
-                           ▼
-                    Cập nhật Bộ nhớ
+          │
+          ├────► Tra cứu Bộ nhớ
+          │
+          ├────► 08 · Không gian kịch bản
+          │
+          └────► 09 · Kế hoạch thực thi
+                     │
+                     ▼
+            10 · Phản hồi thực tế
+                     │
+                     ▼
+             Cập nhật Bộ nhớ
 ```
 
 Trong Hệ thống suy luận:
 
-- Tầng 07 tạo Chữ ký tín hiệu để Tri thức tích luỹ tra cứu các Trường hợp tương tự.
-- Tầng 08 tham khảo Tri thức tích luỹ để hiệu chỉnh mức độ tin cậy của các kịch bản.
-- Tầng 09 tham khảo Tri thức tích luỹ để lựa chọn phương án thực thi phù hợp.
-- Tầng 10 cung cấp Phản hồi thực tế và Bằng chứng mới để Tri thức tích luỹ cập nhật Bộ nhớ.
+- Tầng 07 tạo Chữ ký tín hiệu để tra cứu kinh nghiệm.
+- Tầng 08 tham khảo kinh nghiệm khi xây dựng kịch bản.
+- Tầng 09 tham khảo kinh nghiệm khi lập kế hoạch thực thi.
+- Tầng 10 cập nhật Tri thức tích luỹ từ Thực tế.
 
 ---
 
 # Cấu trúc
 
-Tri thức tích luỹ gồm hai thành phần:
+```text
+Tri thức tích luỹ
 
-## 01 · Cơ chế
+├── README.md
+│
+├── 01-Bộ nhớ
+│   ├── README.md
+│   ├── Quy ước Trường hợp.md
+│   ├── Quy ước Mẫu.md
+│   ├── Quy ước Bài học.md
+│   └── Quy ước Thống kê.md
+│
+└── 02-Cơ chế
+    ├── README.md
+    ├── Tra cứu.md
+    ├── Đối chiếu.md
+    ├── Tổng hợp.md
+    └── Cập nhật.md
+```
 
-Chịu trách nhiệm:
+---
 
-- Tra cứu.
-- Đối chiếu.
-- Tổng hợp.
-- Cập nhật.
+# Thành phần
 
-## 02 · Bộ nhớ
+## 01 · Bộ nhớ
 
-Lưu trữ dữ liệu đã được kiểm chứng:
+Lưu trữ kinh nghiệm đã được kiểm chứng.
+
+Bao gồm:
 
 - Trường hợp.
 - Mẫu.
@@ -122,16 +127,27 @@ Lưu trữ dữ liệu đã được kiểm chứng:
 
 ---
 
-# Liên kết với Bộ nhớ
+## 02 · Cơ chế
 
-Bộ nhớ là kho dữ liệu của Tri thức tích luỹ.
+Quản lý toàn bộ vòng đời của Tri thức tích luỹ.
 
-Mọi thao tác đọc, ghi và cập nhật đều được thực hiện thông qua Tri thức tích luỹ.
+Bao gồm:
 
-Quá trình tra cứu diễn ra theo thứ tự:
+- Tra cứu.
+- Đối chiếu.
+- Tổng hợp.
+- Cập nhật.
+
+---
+
+# Luồng tham khảo
 
 ```text
 Chữ ký tín hiệu
+
+↓
+
+Tra cứu
 
 ↓
 
@@ -143,27 +159,35 @@ Mẫu
 
 ↓
 
-Bài học tích luỹ
+Bài học
 
 ↓
 
 Thống kê
+
+↓
+
+Tham khảo
 ```
 
-Bộ nhớ được sử dụng để:
+---
 
-- Tra cứu kinh nghiệm.
-- Đối chiếu với tình huống hiện tại.
-- Lưu giữ dữ liệu đã được kiểm chứng.
+# Vai trò
+
+Tri thức tích luỹ giúp:
+
+- Lưu giữ kinh nghiệm.
+- Tra cứu dữ liệu lịch sử.
+- Đối chiếu tình huống hiện tại.
+- Tổng hợp tri thức.
+- Cập nhật kinh nghiệm sau mỗi chu kỳ suy luận.
 
 ---
 
 # Triết lý
 
-Tri thức tích luỹ học hỏi.
-
-Bộ nhớ ghi nhớ.
-
 Thực tế tạo nên kinh nghiệm.
+
+Tri thức tích luỹ quản lý kinh nghiệm.
 
 Kinh nghiệm giúp Hệ thống suy luận ngày càng hoàn thiện.
