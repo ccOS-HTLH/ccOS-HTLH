@@ -1,52 +1,46 @@
 # Bài học tích luỹ
 
-> Kinh nghiệm đã được kiểm chứng từ Thực tế.
+> Kinh nghiệm được tổng hợp từ nhiều Trường hợp và Mẫu.
 
-Bài học tích luỹ tổng hợp những kinh nghiệm có thể tái sử dụng trong các lần suy luận sau.
+---
 
-Một Bài học không mô tả một Trường hợp cụ thể.
+# Mục đích
 
-Một Bài học cũng không mô tả một Mẫu.
+Bài học tích luỹ tổng hợp những kinh nghiệm đã được Thực tế kiểm chứng.
 
-Bài học là kết luận được rút ra từ nhiều Trường hợp và Mẫu đã được kiểm chứng.
+Mỗi Bài học phản ánh một kinh nghiệm có thể tham khảo trong các chu kỳ suy luận tiếp theo, tạo nền tảng cho việc hiệu chỉnh kịch bản và kế hoạch thực thi.
 
 ---
 
 # Vai trò
 
-Bài học tích luỹ là tri thức có thể tái sử dụng của Bộ nhớ.
+Bài học tích luỹ là lớp kinh nghiệm có thể tái sử dụng của Bộ nhớ.
 
-Từ các Bài học tích luỹ, Tri thức tích luỹ có thể:
+Tri thức tích luỹ sử dụng Bài học để:
 
 - Tham khảo kinh nghiệm.
-- Hiệu chỉnh mức độ tin cậy của các kịch bản.
-- Lựa chọn phương án thực thi phù hợp.
-- Hỗ trợ cập nhật các Bài học mới.
-
-Bài học giúp Hệ thống suy luận học hỏi từ Thực tế.
+- Hiệu chỉnh mức độ tin cậy.
+- Hỗ trợ lựa chọn phương án thực thi.
+- Tích luỹ kinh nghiệm cho các chu kỳ suy luận tiếp theo.
 
 ---
 
-# Khi nào tạo?
+# Khi tạo
 
-Một Bài học tích luỹ được tạo khi:
+Một Bài học được hình thành sau khi nhiều Trường hợp và Mẫu đã được đối chiếu, tổng hợp và xác nhận.
 
-- Đã có đủ Trường hợp được kiểm chứng.
-- Đã xác nhận được một hoặc nhiều Mẫu.
-- Có thể rút ra một kinh nghiệm có khả năng tái sử dụng.
-
-Không tạo Bài học chỉ từ một Trường hợp.
+Quá trình hình thành bắt đầu từ việc tổng hợp những kinh nghiệm có giá trị tham khảo.
 
 ---
 
 # Vòng đời
 
 ```text
-Nhiều Trường hợp
+Trường hợp
 
 ↓
 
-Nhận diện Mẫu
+Mẫu
 
 ↓
 
@@ -54,39 +48,31 @@ Nhận diện Mẫu
 
 ↓
 
-Rút ra Bài học tích luỹ
+Tổng hợp kinh nghiệm
 
 ↓
 
-Tham khảo trong các lần suy luận sau
+Bài học tích luỹ
+
+↓
+
+Chu kỳ suy luận tiếp theo
 ```
 
 ---
 
 # Liên kết dữ liệu
 
-Một Bài học tích luỹ có thể liên kết với:
+Một Bài học có thể liên kết với:
 
 - Một hoặc nhiều Trường hợp.
 - Một hoặc nhiều Mẫu.
 
-Bài học không trực tiếp tạo Thống kê.
-
-Mọi Bài học đều phải truy xuất được về các Trường hợp và Mẫu đã tạo nên nó.
+Các liên kết này giúp truy vết toàn bộ nguồn gốc của kinh nghiệm.
 
 ---
 
-# Quy tắc
-
-- Mỗi Bài học có một mã định danh duy nhất.
-- Một tệp chỉ lưu một Bài học.
-- Mọi Bài học đều phải có bằng chứng từ Thực tế.
-- Bài học có thể được cập nhật khi xuất hiện thêm bằng chứng mới.
-- Không tạo Bài học nếu chưa đủ bằng chứng.
-
----
-
-# Quy ước định danh
+# Định danh
 
 ```text
 BH-0001
@@ -97,12 +83,22 @@ BH-0003
 
 ---
 
+# Quy ước
+
+Cấu trúc, nội dung và cách ghi nhận Bài học tích luỹ được định nghĩa trong:
+
+```text
+Quy ước Bài học tích luỹ.md
+```
+
+---
+
 # Triết lý
 
-Thực tế tạo nên Trường hợp.
+Trường hợp ghi nhận diễn biến.
 
-Nhiều Trường hợp hình thành Mẫu.
+Mẫu nhận diện sự lặp lại.
 
-Nhiều Mẫu giúp hình thành Bài học.
+Bài học tích luỹ tổng hợp kinh nghiệm.
 
-Mọi Bài học đều phải truy xuất được về Thực tế.
+Kinh nghiệm hỗ trợ các chu kỳ suy luận tiếp theo.
