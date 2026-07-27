@@ -1,98 +1,141 @@
 # Bộ nhớ
 
-> Kho dữ liệu của Tri thức tích luỹ.
+> Kho lưu trữ kinh nghiệm của Tri thức tích luỹ.
 
-Bộ nhớ lưu giữ dữ liệu đã được kiểm chứng từ Thực tế.
+---
 
-Mọi thao tác đọc, ghi và cập nhật đều được thực hiện thông qua Tri thức tích luỹ.
+# Mục đích
 
-Bộ nhớ không tham gia trực tiếp vào quá trình suy luận.
+Bộ nhớ lưu giữ toàn bộ dữ liệu đã được Thực tế kiểm chứng.
+
+Các dữ liệu này được Tri thức tích luỹ sử dụng để:
+
+- Tra cứu.
+- Đối chiếu.
+- Tổng hợp.
+- Cập nhật kinh nghiệm.
 
 ---
 
 # Vai trò
 
-Bộ nhớ lưu trữ và liên kết các dữ liệu đã được kiểm chứng để Tri thức tích luỹ:
+Bộ nhớ là nơi lưu trữ và liên kết các thực thể của Tri thức tích luỹ.
 
-- Tra cứu kinh nghiệm.
-- Đối chiếu dữ liệu.
-- Tổng hợp kết quả.
-- Cập nhật tri thức.
+Giúp:
+
+- Quản lý dữ liệu lịch sử.
+- Liên kết kinh nghiệm.
+- Hỗ trợ tra cứu.
+- Hỗ trợ cập nhật tri thức.
 
 ---
 
 # Cấu trúc
 
-Bộ nhớ gồm bốn kho dữ liệu:
+```text
+Bộ nhớ
+
+├── Trường hợp
+├── Mẫu
+├── Bài học tích luỹ
+└── Thống kê
+```
+
+---
+
+# Thành phần
 
 ## 01 · Trường hợp
 
-Lưu trữ các Trường hợp đã xảy ra.
+Lưu trữ các Trường hợp đã được ghi nhận.
+
+Mỗi Trường hợp phản ánh một chu kỳ suy luận đã được Thực tế kiểm chứng.
+
+---
 
 ## 02 · Mẫu
 
-Lưu trữ các Mẫu đã được xác nhận.
+Lưu trữ các Mẫu được hình thành từ nhiều Trường hợp.
+
+Mỗi Mẫu phản ánh những đặc điểm lặp lại.
+
+---
 
 ## 03 · Bài học tích luỹ
 
-Lưu trữ các Bài học tích luỹ đã được kiểm chứng.
+Lưu trữ các kinh nghiệm được tổng hợp từ nhiều Mẫu và nhiều Trường hợp.
+
+Mỗi Bài học giúp bổ sung kinh nghiệm tham khảo cho các chu kỳ suy luận tiếp theo.
+
+---
 
 ## 04 · Thống kê
 
-Lưu trữ các Thống kê lịch sử.
+Lưu trữ các kết quả thống kê được tổng hợp từ dữ liệu lịch sử.
+
+Mỗi Thống kê giúp lượng hóa mức độ xuất hiện và hiệu quả của các trạng thái hoặc kinh nghiệm.
 
 ---
 
 # Liên kết dữ liệu
 
-Các thực thể được liên kết với nhau bằng tham chiếu.
+Các thực thể được liên kết thông qua tham chiếu.
 
-## Trường hợp
+```text
+Trường hợp
+      │
+      ▼
+Mẫu
+      │
+      ▼
+Bài học tích luỹ
+      │
+      ▼
+Thống kê
+```
 
-- Chữ ký tín hiệu.
-- Mẫu liên quan.
-- Bài học tích luỹ liên quan.
-
-## Mẫu
-
-- Trường hợp liên quan.
-- Bài học tích luỹ liên quan.
-- Thống kê liên quan.
-
-## Bài học tích luỹ
-
-- Trường hợp liên quan.
-- Mẫu liên quan.
-
-## Thống kê
-
-- Đối tượng liên quan.
-
----
-
-# Quy tắc
-
-- Chỉ lưu dữ liệu đã được kiểm chứng.
-- Mỗi thực thể có một mã định danh duy nhất và bất biến.
-- Các thực thể được liên kết bằng tham chiếu.
-- Không chỉnh sửa dữ liệu lịch sử, ngoại trừ việc sửa lỗi ghi chép.
+Nhờ các liên kết này, Tri thức tích luỹ có thể truy vết toàn bộ quá trình hình thành kinh nghiệm.
 
 ---
 
 # Quy ước định danh
 
-Mỗi loại thực thể sử dụng một tiền tố riêng.
+Mỗi thực thể sử dụng một mã định danh duy nhất.
 
-Cấu trúc chung:
+| Thực thể | Tiền tố |
+|----------|---------|
+| Trường hợp | TH-xxxx |
+| Mẫu | M-xxxx |
+| Bài học tích luỹ | BH-xxxx |
+| Thống kê | TK-xxxx |
 
-<Loại>-<Số thứ tự>
+---
 
-Ví dụ:
+# Vai trò trong Tri thức tích luỹ
 
-- TH-0001 · Trường hợp
-- M-0001 · Mẫu
-- BH-0001 · Bài học tích luỹ
-- TK-0001 · Thống kê
+```text
+Tra cứu
+    │
+    ▼
+Bộ nhớ
+    │
+    ├── Trường hợp
+    ├── Mẫu
+    ├── Bài học
+    └── Thống kê
+    │
+    ▼
+Kinh nghiệm tham khảo
+```
+
+---
+
+# Nguyên tắc
+
+- Mỗi thực thể có một mã định danh duy nhất.
+- Các thực thể được liên kết bằng tham chiếu.
+- Dữ liệu được bổ sung theo thời gian để mở rộng kho kinh nghiệm.
+- Bộ nhớ phát triển cùng với quá trình học hỏi của Trading Domain.
 
 ---
 
@@ -102,6 +145,4 @@ Thực tế tạo nên kinh nghiệm.
 
 Bộ nhớ lưu giữ kinh nghiệm.
 
-Tri thức tích luỹ học hỏi từ Bộ nhớ.
-
-Hệ thống suy luận phát triển từ kinh nghiệm.
+Tri thức tích luỹ khai thác kinh nghiệm để hỗ trợ các chu kỳ suy luận tiếp theo.
