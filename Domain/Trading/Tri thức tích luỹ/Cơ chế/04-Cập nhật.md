@@ -8,45 +8,32 @@
 
 Cập nhật là bước cuối cùng của Cơ chế.
 
-Bước này chịu trách nhiệm đánh giá các bằng chứng mới từ Thực tế và cập nhật Bộ nhớ khi cần thiết.
-
-Cập nhật không tham gia vào quá trình suy luận.
-
-Cập nhật chỉ diễn ra sau khi quá trình Đánh giá hoàn tất.
+Bước này tiếp nhận Phản hồi thực tế và Bằng chứng mới để bổ sung hoặc cập nhật dữ liệu trong Bộ nhớ, hoàn thiện Tri thức tích luỹ cho các chu kỳ suy luận tiếp theo.
 
 ---
 
-# Câu hỏi
+# Vai trò
 
-Sau quá trình Đánh giá:
+Cập nhật giúp Tri thức tích luỹ:
 
-- Có bằng chứng mới không?
-- Có cần tạo Trường hợp mới không?
-- Có Mẫu nào cần bổ sung hoặc điều chỉnh không?
-- Có Bài học nào cần cập nhật không?
-- Có Thống kê nào cần làm mới không?
+- Ghi nhận Trường hợp mới.
+- Bổ sung hoặc liên kết Mẫu.
+- Hình thành hoặc cập nhật Bài học tích luỹ.
+- Cập nhật Thống kê.
 
----
-
-# Đầu vào
-
-- Phản hồi thực tế.
-- Bằng chứng mới (nếu có).
+Quá trình này giúp Bộ nhớ phản ánh đầy đủ những kinh nghiệm đã được Thực tế kiểm chứng.
 
 ---
 
-# Đầu ra
+# Khi hoạt động
 
-Bộ nhớ được cập nhật, có thể bao gồm:
+Cập nhật được thực hiện sau khi Phản hồi thực tế hoàn tất.
 
-- Trường hợp mới.
-- Mẫu mới hoặc được cập nhật.
-- Bài học tích luỹ mới hoặc được cập nhật.
-- Thống kê được cập nhật.
+Quá trình này khép lại một chu kỳ suy luận và chuẩn bị dữ liệu cho chu kỳ tiếp theo.
 
 ---
 
-# Vai trò trong Cơ chế
+# Quy trình
 
 ```text
 Phản hồi thực tế
@@ -62,30 +49,43 @@ Cập nhật
 ↓
 
 Bộ nhớ
+
+↓
+
+Chu kỳ suy luận tiếp theo
 ```
 
 ---
 
-# Nguyên tắc
+# Kết quả
 
-- Chỉ cập nhật sau khi Đánh giá hoàn tất.
-- Chỉ cập nhật khi có bằng chứng mới.
-- Mọi dữ liệu mới đều phải truy xuất được về Thực tế.
-- Không chỉnh sửa dữ liệu lịch sử, ngoại trừ việc sửa lỗi ghi chép.
-- Mọi thay đổi đều phải giữ được khả năng truy xuất nguồn gốc.
+Cập nhật có thể tạo hoặc bổ sung:
+
+- Trường hợp.
+- Mẫu.
+- Bài học tích luỹ.
+- Thống kê.
+
+Các dữ liệu mới trở thành một phần của Bộ nhớ và sẵn sàng cho các lần Tra cứu tiếp theo.
 
 ---
 
-# Nội dung cập nhật
+# Thành phần
 
 Việc cập nhật có thể bao gồm:
 
 - Tạo Trường hợp mới.
 - Liên kết hoặc bổ sung Mẫu.
-- Tạo hoặc điều chỉnh Bài học tích luỹ.
+- Hình thành hoặc cập nhật Bài học tích luỹ.
 - Cập nhật Thống kê.
 
-Nếu không có bằng chứng mới, Bộ nhớ không thay đổi.
+Mọi dữ liệu đều truy xuất được về Thực tế.
+
+---
+
+# Quy ước
+
+Việc cập nhật sử dụng Phản hồi thực tế và Bằng chứng mới để duy trì tính nhất quán của Bộ nhớ.
 
 ---
 
@@ -95,6 +95,6 @@ Thực tế tạo ra bằng chứng.
 
 Bằng chứng tạo nên kinh nghiệm.
 
-Bộ nhớ chỉ thay đổi khi có đủ bằng chứng.
+Cập nhật lưu giữ kinh nghiệm.
 
-Tri thức tích luỹ phát triển cùng Thực tế.
+Bộ nhớ phát triển cùng các chu kỳ suy luận.
