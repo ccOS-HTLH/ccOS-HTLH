@@ -1,48 +1,42 @@
 # Thống kê
 
-> Dữ liệu định lượng của Bộ nhớ.
+> Dữ liệu định lượng được tổng hợp từ nhiều Trường hợp.
 
-Thống kê tổng hợp dữ liệu lịch sử từ các Trường hợp đã được kiểm chứng.
+---
 
-Thống kê mô tả tần suất, xác suất và xu hướng của các đối tượng trong Bộ nhớ.
+# Mục đích
 
-Thống kê không tạo ra quy luật.
+Thống kê tổng hợp và lượng hóa dữ liệu lịch sử đã được Thực tế kiểm chứng.
 
-Thống kê chỉ phản ánh dữ liệu lịch sử.
+Mỗi Thống kê phản ánh mức độ xuất hiện, hiệu quả hoặc xu hướng của các đối tượng trong Bộ nhớ, tạo cơ sở tham khảo cho các chu kỳ suy luận tiếp theo.
 
 ---
 
 # Vai trò
 
-Thống kê cung cấp góc nhìn định lượng cho Tri thức tích luỹ.
+Thống kê là lớp dữ liệu định lượng của Bộ nhớ.
 
-Từ Thống kê, Tri thức tích luỹ có thể:
+Tri thức tích luỹ sử dụng Thống kê để:
 
-- Đánh giá tần suất xuất hiện.
-- Ước lượng xác suất lịch sử.
+- Đánh giá mức độ xuất hiện.
+- Tham khảo xác suất lịch sử.
 - So sánh hiệu quả giữa các phương án.
 - Theo dõi sự thay đổi theo thời gian.
 
-Thống kê hỗ trợ Hệ thống suy luận tham khảo dữ liệu lịch sử.
-
 ---
 
-# Khi nào tạo?
+# Khi tạo
 
-Một Thống kê được tạo khi:
+Một Thống kê được hình thành sau khi nhiều Trường hợp đã được tổng hợp và lượng hóa.
 
-- Đã có đủ Trường hợp được kiểm chứng.
-- Có dữ liệu cần tổng hợp hoặc định lượng.
-- Có đối tượng cần theo dõi theo thời gian.
-
-Thống kê được cập nhật khi xuất hiện thêm dữ liệu mới.
+Quá trình hình thành bắt đầu từ việc tổng hợp dữ liệu lịch sử và tính toán các chỉ số phù hợp.
 
 ---
 
 # Vòng đời
 
 ```text
-Nhiều Trường hợp
+Trường hợp
 
 ↓
 
@@ -50,15 +44,15 @@ Tổng hợp dữ liệu
 
 ↓
 
-Tính toán
+Lượng hóa
 
 ↓
 
-Cập nhật Thống kê
+Thống kê
 
 ↓
 
-Tham khảo trong các lần suy luận sau
+Chu kỳ suy luận tiếp theo
 ```
 
 ---
@@ -69,24 +63,13 @@ Một Thống kê có thể liên kết với:
 
 - Một hoặc nhiều Trường hợp.
 - Một hoặc nhiều Mẫu.
+- Một hoặc nhiều Bài học tích luỹ.
 
-Thống kê không trực tiếp tạo Bài học tích luỹ.
-
-Mọi Thống kê đều phải truy xuất được về các Trường hợp đã sử dụng để tính toán.
-
----
-
-# Quy tắc
-
-- Mỗi Thống kê có một mã định danh duy nhất.
-- Một tệp chỉ lưu một Thống kê.
-- Mọi Thống kê đều phải có dữ liệu nguồn.
-- Thống kê có thể được cập nhật khi xuất hiện thêm dữ liệu mới.
-- Không sử dụng Thống kê để thay thế Thực tế.
+Các liên kết này giúp truy vết toàn bộ nguồn dữ liệu của Thống kê.
 
 ---
 
-# Quy ước định danh
+# Định danh
 
 ```text
 TK-0001
@@ -97,12 +80,22 @@ TK-0003
 
 ---
 
+# Quy ước
+
+Cấu trúc, nội dung và cách ghi nhận Thống kê được định nghĩa trong:
+
+```text
+Quy ước Thống kê.md
+```
+
+---
+
 # Triết lý
 
-Thống kê phản ánh lịch sử.
+Trường hợp ghi nhận diễn biến.
 
-Lịch sử không đảm bảo tương lai.
+Mẫu nhận diện sự lặp lại.
 
-Thống kê hỗ trợ đánh giá xác suất.
+Bài học tích luỹ tổng hợp kinh nghiệm.
 
-Mọi Thống kê đều phải truy xuất được về Thực tế.
+Thống kê lượng hóa kinh nghiệm.
