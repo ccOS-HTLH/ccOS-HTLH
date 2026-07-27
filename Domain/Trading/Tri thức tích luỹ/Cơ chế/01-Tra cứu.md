@@ -8,49 +8,32 @@
 
 Tra cứu là bước đầu tiên của Cơ chế.
 
-Bước này chịu trách nhiệm tìm kiếm các dữ liệu đã được lưu trong Bộ nhớ dựa trên tình huống hiện tại.
-
-Tra cứu không đánh giá.
-
-Tra cứu không kết luận.
-
-Tra cứu chỉ trả về những dữ liệu có khả năng liên quan.
+Bước này tìm kiếm các dữ liệu liên quan trong Bộ nhớ dựa trên Chữ ký tín hiệu, tạo đầu vào cho bước Đối chiếu.
 
 ---
 
-# Câu hỏi
+# Vai trò
 
-Tình huống hiện tại đã từng xuất hiện chưa?
+Tra cứu giúp Tri thức tích luỹ:
 
-Nếu đã từng xuất hiện:
+- Tìm Trường hợp liên quan.
+- Tìm Mẫu liên quan.
+- Tìm Bài học tích luỹ liên quan.
+- Tìm Thống kê liên quan.
 
-- Có Trường hợp nào liên quan?
-- Có Mẫu nào liên quan?
-- Có Bài học tích luỹ nào liên quan?
-- Có Thống kê nào liên quan?
-
----
-
-# Đầu vào
-
-- Chữ ký tín hiệu.
+Kết quả tra cứu cung cấp dữ liệu tham khảo cho các bước xử lý tiếp theo.
 
 ---
 
-# Đầu ra
+# Khi hoạt động
 
-Danh sách dữ liệu liên quan, có thể bao gồm:
+Tra cứu được kích hoạt khi Hệ thống suy luận tạo Chữ ký tín hiệu.
 
-- Trường hợp.
-- Mẫu.
-- Bài học tích luỹ.
-- Thống kê.
-
-Các kết quả này trở thành đầu vào của bước Đối chiếu.
+Quá trình tra cứu diễn ra trước bước Đối chiếu.
 
 ---
 
-# Vai trò trong Cơ chế
+# Quy trình
 
 ```text
 Chữ ký tín hiệu
@@ -62,8 +45,17 @@ Tra cứu
 ↓
 
 Trường hợp
+
+↓
+
 Mẫu
+
+↓
+
 Bài học tích luỹ
+
+↓
+
 Thống kê
 
 ↓
@@ -73,42 +65,46 @@ Thống kê
 
 ---
 
-# Nguyên tắc
+# Kết quả
 
-- Chỉ tra cứu dữ liệu trong Bộ nhớ.
-- Không đánh giá mức độ tương đồng.
-- Không loại bỏ dữ liệu.
-- Không tạo dữ liệu mới.
-- Không cập nhật Bộ nhớ.
+Tra cứu trả về danh sách dữ liệu liên quan, có thể bao gồm:
+
+- Trường hợp.
+- Mẫu.
+- Bài học tích luỹ.
+- Thống kê.
+
+Các dữ liệu này trở thành đầu vào của bước Đối chiếu.
 
 ---
 
-# Cách tra cứu
+# Phương thức
 
-Tra cứu được thực hiện theo hai bước:
+Tra cứu được thực hiện theo hai mức:
 
 ## 01 · Tra cứu trực tiếp
 
-Sử dụng Chữ ký tín hiệu để tìm các dữ liệu liên quan trong Bộ nhớ.
-
-Đây là phương thức tra cứu ưu tiên.
+Tìm dữ liệu bằng Chữ ký tín hiệu.
 
 ## 02 · Tra cứu mở rộng
 
-Nếu kết quả chưa đủ để tham khảo, tiếp tục mở rộng phạm vi tra cứu dựa trên:
+Mở rộng phạm vi tra cứu thông qua các liên kết giữa:
 
-- Liên kết giữa các thực thể.
-- Điều kiện đã được lưu.
-- Các dữ liệu liên quan khác trong Bộ nhớ.
+- Trường hợp.
+- Mẫu.
+- Bài học tích luỹ.
+- Thống kê.
 
-Việc đánh giá mức độ liên quan được thực hiện ở bước Đối chiếu.
+---
+
+# Quy ước
+
+Quá trình tra cứu sử dụng dữ liệu trong Bộ nhớ và giữ nguyên các liên kết giữa các thực thể.
 
 ---
 
 # Triết lý
 
-Tra cứu chỉ tìm dữ liệu.
+Tra cứu kết nối hiện tại với kinh nghiệm đã được lưu giữ.
 
-Đối chiếu mới đánh giá dữ liệu.
-
-Mọi kết quả tra cứu đều là dữ liệu tham khảo.
+Dữ liệu được tìm thấy tạo nền tảng cho bước Đối chiếu.

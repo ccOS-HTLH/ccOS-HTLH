@@ -1,102 +1,85 @@
 # Cơ chế
 
-> Cách Tri thức tích luỹ làm việc với Bộ nhớ.
+> Thành phần xử lý của Tri thức tích luỹ.
 
 ---
 
 # Mục đích
 
-Cơ chế là thành phần xử lý của Tri thức tích luỹ.
+Cơ chế chịu trách nhiệm xử lý dữ liệu của Tri thức tích luỹ.
 
-Cơ chế chịu trách nhiệm:
+Thông qua Bộ nhớ, Cơ chế thực hiện:
 
-- Tra cứu dữ liệu.
-- Đối chiếu dữ liệu.
-- Tổng hợp kết quả.
-- Cập nhật Bộ nhớ.
+- Tra cứu.
+- Đối chiếu.
+- Tổng hợp.
+- Cập nhật.
 
-Cơ chế không lưu trữ dữ liệu.
-
-Mọi dữ liệu đều được lưu trong Bộ nhớ.
+Cơ chế giúp chuyển dữ liệu lịch sử thành thông tin tham khảo cho các chu kỳ suy luận tiếp theo.
 
 ---
 
-# Câu hỏi
+# Vai trò
 
-Khi gặp một tình huống mới:
+Cơ chế là lớp xử lý của Tri thức tích luỹ.
 
-- Đã từng gặp chưa?
-- Có điểm gì giống với dữ liệu đã lưu?
-- Có kinh nghiệm nào nên tham khảo?
-- Có cần cập nhật Bộ nhớ không?
+Tri thức tích luỹ sử dụng Cơ chế để:
 
----
-
-# Đầu vào
-
-## Tra cứu
-
-- Chữ ký tín hiệu.
-
-## Cập nhật
-
-- Phản hồi thực tế.
-- Bằng chứng mới (nếu có).
+- Tra cứu dữ liệu liên quan.
+- Đối chiếu với tình huống hiện tại.
+- Tổng hợp kinh nghiệm.
+- Cập nhật Bộ nhớ sau khi có Phản hồi thực tế.
 
 ---
 
-# Đầu ra
+# Khi hoạt động
 
-## Tra cứu
+Cơ chế được kích hoạt khi:
 
-- Trường hợp liên quan.
-- Mẫu liên quan.
-- Bài học tích luỹ liên quan.
-- Thống kê liên quan.
+- Có Chữ ký tín hiệu cần tra cứu.
+- Có Phản hồi thực tế cần cập nhật.
 
-## Cập nhật
-
-- Bộ nhớ đã được cập nhật (nếu có).
+Quá trình xử lý diễn ra xuyên suốt các chu kỳ suy luận.
 
 ---
 
-# Vai trò trong Tri thức tích luỹ
+# Quy trình
 
 ```text
-07 · Chữ ký tín hiệu
-        │
-        ▼
-01 · Tra cứu
+Chữ ký tín hiệu
 
 ↓
 
-02 · Đối chiếu
+Tra cứu
 
 ↓
 
-03 · Tổng hợp
+Đối chiếu
 
 ↓
 
-08 · Không gian kịch bản
-09 · Kế hoạch thực thi
+Tổng hợp
 
 ↓
 
-10 · Phản hồi thực tế
+Không gian kịch bản
 
 ↓
 
-04 · Cập nhật
+Kế hoạch thực thi
 
 ↓
 
-02 · Bộ nhớ
+Phản hồi thực tế
+
+↓
+
+Cập nhật Bộ nhớ
 ```
 
 ---
 
-# Cấu trúc
+# Thành phần
 
 ```text
 01 · Tra cứu
@@ -116,29 +99,41 @@ Khi gặp một tình huống mới:
 
 ---
 
-# Liên kết với Bộ nhớ
+# Liên kết dữ liệu
 
-Cơ chế không trực tiếp lưu dữ liệu.
-
-Cơ chế sử dụng Bộ nhớ để:
+Cơ chế làm việc với Bộ nhớ để:
 
 - Đọc dữ liệu.
-- So sánh dữ liệu.
+- Đối chiếu dữ liệu.
 - Tổng hợp kết quả.
-- Ghi dữ liệu mới.
+- Ghi nhận dữ liệu mới.
 
-Bộ nhớ là nơi lưu trữ.
+Bộ nhớ lưu trữ dữ liệu.
 
-Cơ chế là nơi xử lý.
+Cơ chế xử lý dữ liệu.
+
+---
+
+# Quy ước
+
+Chức năng và cách hoạt động của từng thành phần được định nghĩa trong:
+
+```text
+01 · Tra cứu
+
+02 · Đối chiếu
+
+03 · Tổng hợp
+
+04 · Cập nhật
+```
 
 ---
 
 # Triết lý
 
-Cơ chế quyết định cách sử dụng kinh nghiệm.
-
 Bộ nhớ lưu giữ kinh nghiệm.
 
-Thực tế tạo ra kinh nghiệm mới.
+Cơ chế sử dụng kinh nghiệm.
 
-Tri thức tích luỹ giúp Hệ thống suy luận học hỏi liên tục.
+Tri thức tích luỹ kết nối kinh nghiệm với các chu kỳ suy luận tiếp theo.

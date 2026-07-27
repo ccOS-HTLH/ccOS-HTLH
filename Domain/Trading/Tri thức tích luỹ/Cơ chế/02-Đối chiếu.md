@@ -8,48 +8,32 @@
 
 Đối chiếu là bước thứ hai của Cơ chế.
 
-Bước này chịu trách nhiệm so sánh tình huống hiện tại với các dữ liệu đã được Tra cứu.
-
-Đối chiếu đánh giá mức độ liên quan.
-
-Đối chiếu không tạo dữ liệu mới.
-
-Đối chiếu không cập nhật Bộ nhớ.
+Bước này so sánh tình huống hiện tại với các dữ liệu đã được Tra cứu để xác định những dữ liệu có giá trị tham khảo phù hợp.
 
 ---
 
-# Câu hỏi
+# Vai trò
 
-Trong các dữ liệu đã Tra cứu:
+Đối chiếu giúp Tri thức tích luỹ:
 
-- Trường hợp nào tương đồng nhất?
-- Mẫu nào phù hợp nhất?
-- Bài học nào có thể áp dụng?
-- Thống kê nào có giá trị tham khảo?
+- So sánh tình huống hiện tại với dữ liệu lịch sử.
+- Đánh giá mức độ phù hợp giữa các Trường hợp.
+- Nhận diện Mẫu phù hợp.
+- Xác định Bài học tích luỹ và Thống kê có giá trị tham khảo.
 
----
-
-# Đầu vào
-
-- Tình huống hiện tại.
-- Kết quả Tra cứu.
+Kết quả đối chiếu cung cấp đầu vào cho bước Tổng hợp.
 
 ---
 
-# Đầu ra
+# Khi hoạt động
 
-Danh sách dữ liệu đã được đối chiếu, có thể bao gồm:
+Đối chiếu được thực hiện sau khi quá trình Tra cứu hoàn tất.
 
-- Trường hợp liên quan.
-- Mẫu phù hợp.
-- Bài học tích luỹ phù hợp.
-- Thống kê liên quan.
-
-Các kết quả này trở thành đầu vào của bước Tổng hợp.
+Quá trình này diễn ra trước bước Tổng hợp.
 
 ---
 
-# Vai trò trong Cơ chế
+# Quy trình
 
 ```text
 Tra cứu
@@ -62,11 +46,17 @@ Tra cứu
 
 Trường hợp phù hợp
 
+↓
+
 Mẫu phù hợp
 
-Bài học tích luỹ phù hợp
+↓
 
-Thống kê liên quan
+Bài học tích luỹ
+
+↓
+
+Thống kê
 
 ↓
 
@@ -75,19 +65,22 @@ Tổng hợp
 
 ---
 
-# Nguyên tắc
+# Kết quả
 
-- Chỉ đánh giá các dữ liệu đã được Tra cứu.
-- Không tạo dữ liệu mới.
-- Không cập nhật Bộ nhớ.
-- Không đưa ra quyết định.
-- Không loại bỏ dữ liệu lịch sử.
+Đối chiếu trả về danh sách dữ liệu đã được đánh giá, có thể bao gồm:
+
+- Trường hợp phù hợp.
+- Mẫu phù hợp.
+- Bài học tích luỹ liên quan.
+- Thống kê liên quan.
+
+Các dữ liệu này trở thành đầu vào của bước Tổng hợp.
 
 ---
 
-# Tiêu chí đối chiếu
+# Tiêu chí
 
-Việc đối chiếu có thể dựa trên:
+Việc đối chiếu có thể tham khảo:
 
 - Chữ ký tín hiệu.
 - Điều kiện thị trường.
@@ -99,10 +92,16 @@ Mỗi dữ liệu có thể có mức độ phù hợp khác nhau.
 
 ---
 
+# Quy ước
+
+Đối chiếu sử dụng dữ liệu đã được Tra cứu và giữ nguyên các liên kết trong Bộ nhớ.
+
+---
+
 # Triết lý
 
 Tra cứu tìm dữ liệu.
 
-Đối chiếu đánh giá dữ liệu.
+Đối chiếu đánh giá mức độ phù hợp.
 
-Tổng hợp mới hình thành kết quả tham khảo.
+Tổng hợp hình thành kết quả tham khảo.

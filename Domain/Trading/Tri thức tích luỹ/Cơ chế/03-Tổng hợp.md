@@ -1,6 +1,6 @@
 # 03 · Tổng hợp
 
-> Tổng hợp dữ liệu tham khảo từ Bộ nhớ.
+> Hình thành thông tin tham khảo từ dữ liệu trong Bộ nhớ.
 
 ---
 
@@ -8,50 +8,30 @@
 
 Tổng hợp là bước thứ ba của Cơ chế.
 
-Bước này chịu trách nhiệm tổng hợp các dữ liệu đã được Đối chiếu thành thông tin tham khảo cho Hệ thống suy luận.
-
-Tổng hợp không tạo dữ liệu mới.
-
-Tổng hợp không cập nhật Bộ nhớ.
-
-Tổng hợp không đưa ra quyết định.
+Bước này tổ chức và tổng hợp các dữ liệu đã được Đối chiếu thành thông tin tham khảo cho các chu kỳ suy luận tiếp theo.
 
 ---
 
-# Câu hỏi
+# Vai trò
 
-Từ các dữ liệu đã Đối chiếu:
+Tổng hợp giúp Tri thức tích luỹ:
 
-- Điều gì đáng tham khảo?
-- Kinh nghiệm nào có thể áp dụng?
-- Có Mẫu nào thường xuất hiện?
-- Thống kê lịch sử cho thấy điều gì?
-
----
-
-# Đầu vào
-
-- Kết quả Đối chiếu.
+- Tổ chức các dữ liệu liên quan.
+- Kết nối Trường hợp, Mẫu, Bài học tích luỹ và Thống kê.
+- Hình thành thông tin tham khảo.
+- Cung cấp dữ liệu cho Không gian kịch bản và Kế hoạch thực thi.
 
 ---
 
-# Đầu ra
+# Khi hoạt động
 
-Thông tin tham khảo, có thể bao gồm:
+Tổng hợp được thực hiện sau khi quá trình Đối chiếu hoàn tất.
 
-- Trường hợp liên quan.
-- Mẫu phù hợp.
-- Bài học tích luỹ liên quan.
-- Thống kê lịch sử.
-
-Thông tin này được cung cấp cho:
-
-- Không gian kịch bản.
-- Kế hoạch thực thi.
+Quá trình này diễn ra trước bước Cập nhật.
 
 ---
 
-# Vai trò trong Cơ chế
+# Quy trình
 
 ```text
 Đối chiếu
@@ -65,40 +45,53 @@ Tổng hợp
 Thông tin tham khảo
 
 ├────────► Không gian kịch bản
+
 └────────► Kế hoạch thực thi
 ```
 
 ---
 
-# Nguyên tắc
+# Kết quả
 
-- Chỉ tổng hợp dữ liệu đã được Đối chiếu.
-- Không tạo dữ liệu mới.
-- Không cập nhật Bộ nhớ.
-- Không đưa ra quyết định.
-- Mọi thông tin đều có thể truy xuất về Bộ nhớ.
+Tổng hợp tạo ra thông tin tham khảo, có thể bao gồm:
+
+- Trường hợp liên quan.
+- Mẫu phù hợp.
+- Bài học tích luỹ liên quan.
+- Thống kê lịch sử.
+
+Thông tin này được sử dụng trong các tầng:
+
+- 08 · Không gian kịch bản.
+- 09 · Kế hoạch thực thi.
 
 ---
 
-# Nội dung tổng hợp
+# Thành phần
 
-Thông tin tổng hợp có thể bao gồm:
+Thông tin tham khảo có thể kết hợp từ:
 
-- Các Trường hợp liên quan.
-- Các Mẫu phù hợp.
-- Các Bài học tích luỹ.
-- Các Thống kê lịch sử.
+- Trường hợp.
+- Mẫu.
+- Bài học tích luỹ.
+- Thống kê.
 
-Việc lựa chọn sử dụng thông tin tham khảo thuộc Hệ thống suy luận.
+Mọi thông tin đều truy xuất được về Bộ nhớ.
+
+---
+
+# Quy ước
+
+Tổng hợp sử dụng các dữ liệu đã được Đối chiếu để hình thành thông tin tham khảo phục vụ Hệ thống suy luận.
 
 ---
 
 # Triết lý
 
-Tra cứu tìm dữ liệu.
+Tra cứu kết nối dữ liệu.
 
-Đối chiếu đánh giá dữ liệu.
+Đối chiếu đánh giá mức độ phù hợp.
 
-Tổng hợp tổ chức dữ liệu thành thông tin tham khảo.
+Tổng hợp hình thành thông tin tham khảo.
 
-Quyết định luôn thuộc Hệ thống suy luận.
+Thông tin tham khảo hỗ trợ các chu kỳ suy luận tiếp theo.
