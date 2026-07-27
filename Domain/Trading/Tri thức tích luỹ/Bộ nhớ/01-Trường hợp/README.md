@@ -2,13 +2,13 @@
 
 > Dữ liệu gốc của Bộ nhớ.
 
-Trường hợp ghi lại một lần quan sát hoàn chỉnh của thị trường.
+---
 
-Mỗi Trường hợp phản ánh một diễn biến thực tế tại một thời điểm cụ thể.
+# Mục đích
 
-Trường hợp không đại diện cho một quy luật.
+Trường hợp ghi nhận một chu kỳ suy luận đã được Thực tế kiểm chứng.
 
-Trường hợp chỉ lưu giữ dữ liệu đã được kiểm chứng từ Thực tế.
+Mỗi Trường hợp lưu giữ đầy đủ bối cảnh, quá trình và kết quả của một lần vận hành, tạo nền tảng cho việc hình thành Mẫu, Bài học tích luỹ và Thống kê.
 
 ---
 
@@ -16,26 +16,38 @@ Trường hợp chỉ lưu giữ dữ liệu đã được kiểm chứng từ T
 
 Trường hợp là đơn vị dữ liệu cơ bản của Bộ nhớ.
 
-Từ một hoặc nhiều Trường hợp, Tri thức tích luỹ có thể:
+Tri thức tích luỹ sử dụng Trường hợp để:
 
+- Tra cứu kinh nghiệm.
 - Nhận diện Mẫu.
-- Rút ra Bài học tích luỹ.
+- Tổng hợp Bài học tích luỹ.
 - Cập nhật Thống kê.
 
-Mọi dữ liệu trong Bộ nhớ đều bắt nguồn từ Trường hợp.
+Mọi dữ liệu trong Bộ nhớ đều bắt đầu từ Trường hợp.
 
 ---
 
-# Khi nào tạo?
+# Khi tạo
 
-Một Trường hợp được tạo khi:
+Một Trường hợp được ghi nhận sau khi:
 
-- Quá trình phân tích hoàn tất.
-- Kế hoạch thực thi kết thúc.
-- Kết quả thực tế đã rõ ràng.
-- Tầng Phản hồi thực tế hoàn tất.
+```text
+Phân tích
 
-Không tạo Trường hợp khi diễn biến vẫn đang xảy ra.
+↓
+
+Thực thi
+
+↓
+
+Phản hồi thực tế
+
+↓
+
+Kết thúc chu kỳ
+```
+
+Mỗi Trường hợp phản ánh một diễn biến đã được Thực tế xác nhận.
 
 ---
 
@@ -50,11 +62,11 @@ Quan sát
 
 ↓
 
-Phân tích
+Hệ thống suy luận
 
 ↓
 
-Thực thi
+Kế hoạch thực thi
 
 ↓
 
@@ -62,19 +74,19 @@ Phản hồi thực tế
 
 ↓
 
-Tạo Trường hợp
+Trường hợp
 
 ↓
 
-Nhận diện Mẫu
+Mẫu
 
 ↓
 
-Rút ra Bài học tích luỹ
+Bài học
 
 ↓
 
-Cập nhật Thống kê
+Thống kê
 ```
 
 ---
@@ -84,26 +96,42 @@ Cập nhật Thống kê
 Một Trường hợp có thể liên kết với:
 
 - Chữ ký tín hiệu.
+- Không gian kịch bản.
+- Kế hoạch thực thi.
 - Một hoặc nhiều Mẫu.
 - Một hoặc nhiều Bài học tích luỹ.
 
-Trường hợp không trực tiếp tạo Thống kê.
-
-Thống kê được Tri thức tích luỹ cập nhật từ nhiều Trường hợp.
+Các Thống kê được tổng hợp từ nhiều Trường hợp.
 
 ---
 
-# Quy tắc
+# Tra cứu
 
-- Mỗi Trường hợp có một mã định danh duy nhất.
-- Một tệp chỉ lưu một Trường hợp.
-- Trường hợp là dữ liệu lịch sử.
-- Không chỉnh sửa nội dung sau khi hoàn tất, ngoại trừ việc sửa lỗi ghi chép.
-- Không bổ sung nhận định hoặc suy luận mới sau khi Trường hợp đã được lưu.
+Quá trình tra cứu bắt đầu từ Chữ ký tín hiệu.
+
+```text
+Chữ ký tín hiệu
+
+↓
+
+Trường hợp
+
+↓
+
+Mẫu
+
+↓
+
+Bài học
+
+↓
+
+Thống kê
+```
 
 ---
 
-# Quy ước định danh
+# Định danh
 
 ```text
 TH-0001
@@ -114,12 +142,22 @@ TH-0003
 
 ---
 
+# Quy ước
+
+Cấu trúc, nội dung và cách ghi nhận Trường hợp được định nghĩa trong:
+
+```text
+Quy ước Trường hợp.md
+```
+
+---
+
 # Triết lý
 
-Một Trường hợp không chứng minh điều gì.
+Trường hợp lưu giữ kinh nghiệm của từng chu kỳ suy luận.
 
-Nhiều Trường hợp mới có thể hình thành một Mẫu.
+Nhiều Trường hợp hình thành Mẫu.
 
-Mọi Mẫu đều bắt đầu từ Trường hợp.
+Nhiều Mẫu hình thành Bài học.
 
-Mọi kinh nghiệm đều bắt đầu từ Thực tế.
+Nhiều Bài học góp phần phát triển Tri thức tích luỹ.
