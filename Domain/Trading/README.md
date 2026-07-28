@@ -1,5 +1,3 @@
-[(ccOS)](../../README.md) → [Domain](../README.md) → **Trading** → README
-
 ---
 title: Trading
 id: trading-domain
@@ -16,6 +14,8 @@ tags:
   - reasoning
   - knowledge
 ---
+
+[(ccOS)](../../README.md) → [Domain](../README.md) → **Trading** → README
 
 # Trading
 
