@@ -6,7 +6,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-19
-last_updated: 2026-07-27
+last_updated: 2026-07-29
 review_cycle: Monthly
 confidence: 100%
 tags:
@@ -35,6 +35,24 @@ Trading cung cấp một kiến trúc thống nhất để:
 - Tích luỹ và tái sử dụng kinh nghiệm.
 
 Mọi thành phần trong Trading đều được tổ chức theo cùng một kiến trúc và cùng một ngôn ngữ.
+
+Reality
+
+↓
+
+Reasoning
+
+↓
+
+Execution
+
+↓
+
+Reality
+
+↓
+
+Knowledge
 
 ---
 
