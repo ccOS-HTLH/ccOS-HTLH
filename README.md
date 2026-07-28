@@ -15,4 +15,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 --
 
-[(ccOS)](../../README.md) → [Domain](../README.md) → **Trading** → README
+- 📈 [Trading Domain](Domain/Trading/README.md)
