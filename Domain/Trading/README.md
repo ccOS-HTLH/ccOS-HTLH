@@ -38,6 +38,7 @@ Trading cung cấp một kiến trúc thống nhất để:
 
 Mọi thành phần trong Trading đều được tổ chức theo cùng một kiến trúc và cùng một ngôn ngữ.
 
+```text
 Reality
 
 ↓
@@ -55,6 +56,7 @@ Reality
 ↓
 
 Knowledge
+```
 
 ---
 
