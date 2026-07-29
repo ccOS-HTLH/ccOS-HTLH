@@ -1,3 +1,3 @@
-[ccOS](../README.md) → [Domain](README.md) → README
+[ccOS](../README.md) → [Domain]
 
 - 📈 [Trading Domain](Trading/README.md)
