@@ -15,7 +15,7 @@ tags:
   - knowledge
 ---
 
-[ccOS](../../README.md) → [Domain](../README.md) → **Trading** → README
+[ccOS](../../README.md) → [Domain](../README.md) → **Trading**
 
 # Trading
 
