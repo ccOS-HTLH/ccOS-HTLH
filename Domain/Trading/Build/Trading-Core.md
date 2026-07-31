@@ -6,7 +6,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-19
-last_updated: 2026-07-29
+last_updated: 2026-07-31
 review_cycle: Monthly
 confidence: 100%
 tags:
