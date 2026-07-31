@@ -36,6 +36,10 @@ Cần một gói chuyên biệt hay toàn bộ Domain?
 
 Đóng gói toàn bộ Hệ thống suy luận.
 
+## Trading Knowledge
+
+Đóng gói toàn bộ Tri thức nền.
+
 ## Trading Memory
 
 Đóng gói toàn bộ Tri thức tích luỹ.
@@ -73,6 +77,8 @@ Trading Core
 Trading Data
 
 Trading Reasoning
+
+Trading Knowledge
 
 Trading Memory
 
