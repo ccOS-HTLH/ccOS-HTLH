@@ -89,6 +89,7 @@ Bao gồm:
 - System Instruction
 - Domain Manifest
 - AI Guide
+- Trading Knowledge Pack
 - VERSION
 - CHANGELOG
 - ROADMAP
@@ -264,6 +265,7 @@ AI mới được phép sử dụng Trading Domain.
 | System Instruction | Định nghĩa nguyên tắc làm việc của AI |
 | Domain Manifest | Định nghĩa kiến trúc Trading Domain |
 | AI Guide | Hướng dẫn AI sử dụng Trading Domain |
+| Trading Knowledge Pack | Tri thức nền phục vụ Trading Domain |
 | README | Tổng quan Trading Domain |
 | VERSION | Phiên bản hiện tại |
 | CHANGELOG | Lịch sử thay đổi |
