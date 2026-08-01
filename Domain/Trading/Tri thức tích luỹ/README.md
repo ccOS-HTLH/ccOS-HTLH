@@ -10,12 +10,12 @@ Tri thức tích luỹ quản lý toàn bộ kinh nghiệm đã được Thực 
 
 Chịu trách nhiệm:
 
-- Tra cứu kinh nghiệm.
-- Đối chiếu dữ liệu.
-- Tổng hợp kết quả.
-- Cập nhật tri thức.
+- Tra cứu.
+- Đối chiếu.
+- Tổng hợp.
+- Cập nhật.
 
-Tri thức tích luỹ cung cấp dữ liệu tham khảo cho Hệ thống suy luận trong các chu kỳ tiếp theo.
+Tri thức tích luỹ cung cấp dữ liệu tham khảo cho các lần suy luận tiếp theo.
 
 ---
 
@@ -23,7 +23,7 @@ Tri thức tích luỹ cung cấp dữ liệu tham khảo cho Hệ thống suy l
 
 Hệ thống đã từng gặp tình huống tương tự chưa?
 
-Nếu đã từng gặp:
+Nếu có:
 
 - Điều gì thường xảy ra?
 - Mẫu nào thường xuất hiện?
@@ -47,8 +47,8 @@ Nếu đã từng gặp:
 
 # Đầu ra
 
-- Trường hợp liên quan.
-- Mẫu liên quan.
+- Trường hợp.
+- Mẫu.
 - Bài học tích luỹ.
 - Thống kê.
 - Kinh nghiệm tham khảo.
@@ -58,33 +58,22 @@ Nếu đã từng gặp:
 # Vai trò trong Trading
 
 ```text
-07 · Trọng số tín hiệu
-          │
-          ▼
-     Chữ ký tín hiệu
-          │
-          ▼
-# Tri thức tích luỹ
-          │
-          ├────► Tra cứu Bộ nhớ
-          │
-          ├────► 08 · Không gian kịch bản
-          │
-          └────► 09 · Kế hoạch thực thi
-                     │
-                     ▼
-            10 · Phản hồi thực tế
-                     │
-                     ▼
-             Cập nhật Bộ nhớ
+07-Trọng số tín hiệu
+        │
+        ▼
+   Chữ ký tín hiệu
+        │
+        ▼
+Tri thức tích luỹ
+        │
+        ├── Tra cứu Bộ nhớ
+        │
+        ├── Tham khảo cho 08-Không gian kịch bản
+        │
+        ├── Tham khảo cho 09-Kế hoạch thực thi
+        │
+        └── Cập nhật từ 10-Phản hồi thực tế
 ```
-
-Trong Hệ thống suy luận:
-
-- Tầng 07 tạo Chữ ký tín hiệu để tra cứu kinh nghiệm.
-- Tầng 08 tham khảo kinh nghiệm khi xây dựng kịch bản.
-- Tầng 09 tham khảo kinh nghiệm khi lập kế hoạch thực thi.
-- Tầng 10 cập nhật Tri thức tích luỹ từ Thực tế.
 
 ---
 
@@ -97,10 +86,10 @@ Tri thức tích luỹ
 │
 ├── 01-Bộ nhớ
 │   ├── README.md
-│   ├── Quy ước Trường hợp.md
-│   ├── Quy ước Mẫu.md
-│   ├── Quy ước Bài học.md
-│   └── Quy ước Thống kê.md
+│   ├── Trường hợp.md
+│   ├── Mẫu.md
+│   ├── Bài học.md
+│   └── Thống kê.md
 │
 └── 02-Cơ chế
     ├── README.md
@@ -114,61 +103,25 @@ Tri thức tích luỹ
 
 # Thành phần
 
-## 01 · Bộ nhớ
+## 01-Bộ nhớ
 
-Lưu trữ kinh nghiệm đã được kiểm chứng.
+Lưu giữ kinh nghiệm đã được kiểm chứng.
 
-Bao gồm:
-
-- Trường hợp.
-- Mẫu.
-- Bài học tích luỹ.
-- Thống kê.
+- Trường hợp
+- Mẫu
+- Bài học tích luỹ
+- Thống kê
 
 ---
 
-## 02 · Cơ chế
+## 02-Cơ chế
 
-Quản lý toàn bộ vòng đời của Tri thức tích luỹ.
+Quản lý vòng đời của Tri thức tích luỹ.
 
-Bao gồm:
-
-- Tra cứu.
-- Đối chiếu.
-- Tổng hợp.
-- Cập nhật.
-
----
-
-# Luồng tham khảo
-
-```text
-Chữ ký tín hiệu
-
-↓
-
-Tra cứu
-
-↓
-
-Trường hợp
-
-↓
-
-Mẫu
-
-↓
-
-Bài học
-
-↓
-
-Thống kê
-
-↓
-
-Tham khảo
-```
+- Tra cứu
+- Đối chiếu
+- Tổng hợp
+- Cập nhật
 
 ---
 
@@ -177,10 +130,9 @@ Tham khảo
 Tri thức tích luỹ giúp:
 
 - Lưu giữ kinh nghiệm.
-- Tra cứu dữ liệu lịch sử.
-- Đối chiếu tình huống hiện tại.
-- Tổng hợp tri thức.
-- Cập nhật kinh nghiệm sau mỗi chu kỳ suy luận.
+- Tham khảo dữ liệu lịch sử.
+- Hỗ trợ Hệ thống suy luận.
+- Cập nhật kinh nghiệm sau khi được Thực tế kiểm chứng.
 
 ---
 
