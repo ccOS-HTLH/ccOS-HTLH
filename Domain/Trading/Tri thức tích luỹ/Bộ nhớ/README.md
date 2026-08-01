@@ -8,12 +8,12 @@
 
 Bộ nhớ lưu giữ toàn bộ dữ liệu đã được Thực tế kiểm chứng.
 
-Các dữ liệu này được Tri thức tích luỹ sử dụng để:
+Các dữ liệu này là cơ sở để Tri thức tích luỹ:
 
 - Tra cứu.
 - Đối chiếu.
 - Tổng hợp.
-- Cập nhật kinh nghiệm.
+- Cập nhật.
 
 ---
 
@@ -45,15 +45,15 @@ Bộ nhớ
 
 # Thành phần
 
-## 01 · Trường hợp
+## 01-Trường hợp
 
 Lưu trữ các Trường hợp đã được ghi nhận.
 
-Mỗi Trường hợp phản ánh một chu kỳ suy luận đã được Thực tế kiểm chứng.
+Mỗi Trường hợp ghi nhận một tình huống đã được Thực tế kiểm chứng.
 
 ---
 
-## 02 · Mẫu
+## 02-Mẫu
 
 Lưu trữ các Mẫu được hình thành từ nhiều Trường hợp.
 
@@ -61,15 +61,15 @@ Mỗi Mẫu phản ánh những đặc điểm lặp lại.
 
 ---
 
-## 03 · Bài học tích luỹ
+## 03-Bài học tích luỹ
 
 Lưu trữ các kinh nghiệm được tổng hợp từ nhiều Mẫu và nhiều Trường hợp.
 
-Mỗi Bài học giúp bổ sung kinh nghiệm tham khảo cho các chu kỳ suy luận tiếp theo.
+Mỗi Bài học bổ sung kinh nghiệm tham khảo cho Hệ thống suy luận tiếp theo.
 
 ---
 
-## 04 · Thống kê
+## 04-Thống kê
 
 Lưu trữ các kết quả thống kê được tổng hợp từ dữ liệu lịch sử.
 
@@ -115,17 +115,19 @@ Mỗi thực thể sử dụng một mã định danh duy nhất.
 
 ```text
 Tra cứu
-    │
-    ▼
+
+↓
+
 Bộ nhớ
-    │
-    ├── Trường hợp
-    ├── Mẫu
-    ├── Bài học
-    └── Thống kê
-    │
-    ▼
-Kinh nghiệm tham khảo
+
+├── Trường hợp
+├── Mẫu
+├── Bài học tích luỹ
+└── Thống kê
+
+↓
+
+Thông tin tham khảo
 ```
 
 ---
@@ -135,7 +137,7 @@ Kinh nghiệm tham khảo
 - Mỗi thực thể có một mã định danh duy nhất.
 - Các thực thể được liên kết bằng tham chiếu.
 - Dữ liệu được bổ sung theo thời gian để mở rộng kho kinh nghiệm.
-- Bộ nhớ phát triển cùng với quá trình học hỏi của Trading Domain.
+- Bộ nhớ được mở rộng từ những kinh nghiệm đã được Thực tế kiểm chứng.
 
 ---
 
@@ -145,4 +147,4 @@ Thực tế tạo nên kinh nghiệm.
 
 Bộ nhớ lưu giữ kinh nghiệm.
 
-Tri thức tích luỹ khai thác kinh nghiệm để hỗ trợ các chu kỳ suy luận tiếp theo.
+Tri thức tích luỹ khai thác kinh nghiệm để hỗ trợ Hệ thống suy luận tiếp theo.
