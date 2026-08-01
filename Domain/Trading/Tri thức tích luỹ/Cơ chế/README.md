@@ -6,7 +6,7 @@
 
 # Mục đích
 
-Cơ chế chịu trách nhiệm xử lý dữ liệu của Tri thức tích luỹ.
+Cơ chế chịu trách nhiệm khai thác và cập nhật Tri thức tích luỹ.
 
 Thông qua Bộ nhớ, Cơ chế thực hiện:
 
@@ -15,7 +15,7 @@ Thông qua Bộ nhớ, Cơ chế thực hiện:
 - Tổng hợp.
 - Cập nhật.
 
-Cơ chế giúp chuyển dữ liệu lịch sử thành thông tin tham khảo cho các chu kỳ suy luận tiếp theo.
+Cơ chế giúp chuyển kinh nghiệm đã được kiểm chứng thành dữ liệu tham khảo cho các lần suy luận tiếp theo.
 
 ---
 
@@ -23,7 +23,7 @@ Cơ chế giúp chuyển dữ liệu lịch sử thành thông tin tham khảo c
 
 Cơ chế là lớp xử lý của Tri thức tích luỹ.
 
-Tri thức tích luỹ sử dụng Cơ chế để:
+Chịu trách nhiệm:
 
 - Tra cứu dữ liệu liên quan.
 - Đối chiếu với tình huống hiện tại.
@@ -39,8 +39,6 @@ Cơ chế được kích hoạt khi:
 - Có Chữ ký tín hiệu cần tra cứu.
 - Có Phản hồi thực tế cần cập nhật.
 
-Quá trình xử lý diễn ra xuyên suốt các chu kỳ suy luận.
-
 ---
 
 # Quy trình
@@ -50,31 +48,35 @@ Chữ ký tín hiệu
 
 ↓
 
-Tra cứu
+01-Tra cứu
 
 ↓
 
-Đối chiếu
+02-Đối chiếu
 
 ↓
 
-Tổng hợp
+03-Tổng hợp
 
 ↓
 
-Không gian kịch bản
+08-Không gian kịch bản
 
 ↓
 
-Kế hoạch thực thi
+09-Kế hoạch thực thi
 
 ↓
 
-Phản hồi thực tế
+10-Phản hồi thực tế
 
 ↓
 
-Cập nhật Bộ nhớ
+04-Cập nhật
+
+↓
+
+Bộ nhớ
 ```
 
 ---
@@ -82,51 +84,40 @@ Cập nhật Bộ nhớ
 # Thành phần
 
 ```text
-01 · Tra cứu
+01-Tra cứu
 
 ↓
 
-02 · Đối chiếu
+02-Đối chiếu
 
 ↓
 
-03 · Tổng hợp
+03-Tổng hợp
 
 ↓
 
-04 · Cập nhật
+04-Cập nhật
 ```
 
 ---
 
 # Liên kết dữ liệu
 
-Cơ chế làm việc với Bộ nhớ để:
-
-- Đọc dữ liệu.
-- Đối chiếu dữ liệu.
-- Tổng hợp kết quả.
-- Ghi nhận dữ liệu mới.
-
-Bộ nhớ lưu trữ dữ liệu.
-
-Cơ chế xử lý dữ liệu.
-
----
-
-# Quy ước
-
-Chức năng và cách hoạt động của từng thành phần được định nghĩa trong:
-
 ```text
-01 · Tra cứu
+Bộ nhớ
 
-02 · Đối chiếu
+↓
 
-03 · Tổng hợp
+Cơ chế
 
-04 · Cập nhật
+↓
+
+Hệ thống suy luận
 ```
+
+Bộ nhớ lưu giữ kinh nghiệm.
+
+Cơ chế khai thác và cập nhật kinh nghiệm.
 
 ---
 
@@ -134,6 +125,6 @@ Chức năng và cách hoạt động của từng thành phần được địn
 
 Bộ nhớ lưu giữ kinh nghiệm.
 
-Cơ chế sử dụng kinh nghiệm.
+Cơ chế khai thác kinh nghiệm.
 
-Tri thức tích luỹ kết nối kinh nghiệm với các chu kỳ suy luận tiếp theo.
+Tri thức tích luỹ kết nối kinh nghiệm với các lần suy luận tiếp theo.
