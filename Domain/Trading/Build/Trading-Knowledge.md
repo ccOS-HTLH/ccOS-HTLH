@@ -1,12 +1,12 @@
 ---
 title: Tri thức nền
 id: trading-knowledge
-version: 1.0
+version: 2.0.0
 status: Stable
 author: HTLH
 language: vi
 created: 2026-07-27
-last_updated: 2026-07-27
+last_updated: 2026-07-31
 review_cycle: Monthly
 confidence: 100%
 tags:
@@ -16,7 +16,7 @@ tags:
 
 # Tri thức nền
 
-> Tri thức nền là thành phần chuẩn hóa toàn bộ ngôn ngữ, khái niệm và quy ước của Trading Domain.
+> Tri thức nền là thành phần chuẩn hóa toàn bộ cách hiểu, cách biểu diễn và cách vận hành của Trading Domain.
 
 ---
 
@@ -24,24 +24,29 @@ tags:
 
 Tri thức nền trả lời:
 
-> Trading Domain hiểu dữ liệu theo cách nào?
+> Trading Domain hiểu, biểu diễn và vận hành dữ liệu theo cách nào?
 
 Tri thức nền chuẩn hóa:
 
-- Thuật ngữ.
 - Khái niệm.
 - Quy ước.
-- Luồng suy luận.
+- Luồng.
 
-Nhờ đó mọi thành phần trong Trading Domain sử dụng cùng một ngôn ngữ và cùng một quy ước.
+Nhờ đó mọi thành phần trong Trading Domain sử dụng cùng một cách hiểu, cùng một cách biểu diễn và cùng một cách vận hành.
 
 ---
 
 # Triết lý
 
-Một ngôn ngữ thống nhất tạo nên một hệ thống thống nhất.
+Một hệ thống thống nhất bắt đầu từ một nền tri thức thống nhất.
 
-Tri thức nền chuẩn hóa cách hiểu, cách biểu diễn và cách vận hành của Trading Domain.
+Tri thức nền chuẩn hóa:
+
+- Cách hiểu.
+- Cách biểu diễn.
+- Cách vận hành.
+
+trước khi dữ liệu tham gia Hệ thống suy luận.
 
 ---
 
@@ -51,18 +56,62 @@ Tri thức nền chuẩn hóa cách hiểu, cách biểu diễn và cách vận 
 Tri thức nền
 
 ├── README.md
-│
-├── Quy ước Chữ ký tín hiệu
-│
-├── Quy ước Trường hợp
-├── Quy ước Mẫu
-├── Quy ước Bài học tích luỹ
-├── Quy ước Thống kê
-│
-├── Quy ước chỉ báo đa khung thời gian
-│
-└── Luồng suy luận
+
+├── Khái niệm
+│   ├── README.md
+│   └── ...
+
+├── Quy ước
+│   ├── README.md
+│   ├── Biểu diễn dữ liệu.md
+│   ├── Chữ ký tín hiệu
+│   ├── Trường hợp.md
+│   ├── Mẫu.md
+│   ├── Bài học tích luỹ.md
+│   └── Thống kê.md
+
+└── Luồng
+    ├── README.md
+    └── Luồng suy luận.md
 ```
+
+---
+
+# Thành phần
+
+## Khái niệm
+
+Chuẩn hóa ý nghĩa và cơ chế hoạt động của các dữ liệu và đối tượng trong Trading Domain.
+
+Trả lời:
+
+- Là gì?
+- Hoạt động như thế nào?
+- Có ý nghĩa gì?
+
+---
+
+## Quy ước
+
+Chuẩn hóa cách biểu diễn dữ liệu và tri thức.
+
+Trả lời:
+
+- Biểu diễn như thế nào?
+- Viết như thế nào?
+- Chuẩn hóa ra sao?
+
+---
+
+## Luồng
+
+Chuẩn hóa trình tự vận hành của Trading Domain.
+
+Trả lời:
+
+- Vận hành như thế nào?
+- Thành phần nào trước?
+- Thành phần nào sau?
 
 ---
 
@@ -87,76 +136,41 @@ Tri thức tích luỹ
 Trong đó:
 
 - Nguồn dữ liệu tham khảo Tri thức nền để chuẩn hóa dữ liệu.
-- Hệ thống suy luận tham khảo Tri thức nền để chuẩn hóa quá trình suy luận.
-- Tri thức tích luỹ tham khảo Tri thức nền để chuẩn hóa Bộ nhớ.
-
----
-
-# Thành phần
-
-## Quy ước Chữ ký tín hiệu
-
-Chuẩn hóa cấu trúc Chữ ký tín hiệu.
-
----
-
-## Quy ước Trường hợp
-
-Chuẩn hóa cấu trúc Trường hợp.
-
----
-
-## Quy ước Mẫu
-
-Chuẩn hóa cấu trúc Mẫu.
-
----
-
-## Quy ước Bài học tích luỹ
-
-Chuẩn hóa cấu trúc Bài học tích luỹ.
-
----
-
-## Quy ước Thống kê
-
-Chuẩn hóa cấu trúc Thống kê.
-
----
-
-## Quy ước chỉ báo đa khung thời gian
-
-Chuẩn hóa cách biểu diễn chỉ báo và khung thời gian.
-
----
-
-## Luồng suy luận
-
-Chuẩn hóa trình tự vận hành của Hệ thống suy luận.
+- Hệ thống suy luận tham khảo Tri thức nền để thống nhất cách hiểu, biểu diễn và vận hành.
+- Tri thức tích luỹ tham khảo Tri thức nền để chuẩn hóa kinh nghiệm và Bộ nhớ.
 
 ---
 
 # Nguyên tắc
 
-Mọi thành phần của Trading Domain tham khảo cùng một Tri thức nền.
+Mọi thành phần trong Trading Domain tham khảo cùng một Tri thức nền.
 
-Mọi khái niệm, quy ước và luồng vận hành đều được chuẩn hóa trước khi được sử dụng.
+Mọi dữ liệu đều được:
+
+- Hiểu theo Khái niệm.
+- Biểu diễn theo Quy ước.
+- Vận hành theo Luồng.
+
+trước khi tham gia Hệ thống suy luận.
 
 ---
 
 # Vai trò trong Trading
 
 ```text
-                Tri thức nền
-                  │
-      ┌───────────┼───────────┐
-      ▼           ▼           ▼
+               Tri thức nền
+        ┌──────────┼──────────┐
+        ▼          ▼          ▼
 
-Nguồn dữ liệu  Hệ thống   Tri thức
-                suy luận   tích luỹ
+   Khái niệm   Quy ước    Luồng
+        │          │          │
+        └──────────┼──────────┘
+                   ▼
+
+            Trading Domain
 ```
 
-Tri thức nền là nền tảng chuẩn hóa của toàn bộ Trading Domain.
+Tri thức nền là nền tảng thống nhất của toàn bộ Trading Domain.
 
 ---
 
@@ -167,6 +181,388 @@ Tri thức nền
 
 ↓
 
+Khái niệm
+
+↓
+
+Quy ước
+
+↓
+
+Luồng
+
+↓
+
+Trading Domain
+```
+
+Tri thức nền chuẩn hóa:
+
+- Cách hiểu.
+- Cách biểu diễn.
+- Cách vận hành.
+
+để toàn bộ Trading Domain sử dụng chung một nền tri thức thống nhất.
+
+---
+
+---
+title: Khái niệm
+id: trading-concepts
+version: 1.0.0
+status: Stable
+author: HTLH
+language: vi
+created: 2026-07-31
+last_updated: 2026-07-31
+review_cycle: Monthly
+confidence: 100%
+tags:
+  - trading
+  - concepts
+---
+
+# Khái niệm
+
+> Chuẩn hóa các khái niệm được sử dụng trong Trading Domain.
+
+---
+
+# Mục đích
+
+Khái niệm định nghĩa ý nghĩa, cơ chế hoạt động và vai trò của các đối tượng được sử dụng trong Trading Domain.
+
+Khác với:
+
+- Quy ước → chuẩn hóa cách biểu diễn dữ liệu.
+- Luồng → chuẩn hóa trình tự vận hành.
+
+Khái niệm trả lời:
+
+> Dữ liệu này là gì?
+
+> Hoạt động như thế nào?
+
+> Có ý nghĩa gì trong Trading Domain?
+
+---
+
+# Triết lý
+
+Mọi dữ liệu đều cần được hiểu trước khi được sử dụng.
+
+Khái niệm giúp Trading Domain thống nhất cách hiểu về mọi đối tượng trước khi dữ liệu tham gia Hệ thống suy luận.
+
+---
+
+# Kiến trúc
+
+```text
+Khái niệm
+
+├── README.md
+
+├── EMA.md
+├── RSI.md
+├── Volume.md
+├── Volume Profile.md
+├── Auction Flow.md
+├── Funding.md
+├── OI.md
+├── Relative OI.md
+├── CVD.md
+├── Delta.md
+├── Agg Liq.md
+├── Long-Short Ratio.md
+├── Fear & Greed.md
+├── News.md
+└── Macro.md
+```
+
+> Danh sách tài liệu có thể được mở rộng khi Trading Domain phát triển.
+
+---
+
+# Thành phần
+
+Mỗi tài liệu Khái niệm mô tả một đối tượng cụ thể.
+
+Bao gồm:
+
+- Định nghĩa.
+- Cơ chế hoạt động.
+- Ý nghĩa.
+- Mối quan hệ với các dữ liệu khác.
+- Vai trò trong Trading Domain.
+
+---
+
+# Mối quan hệ với Trading
+
+```text
+Tri thức nền
+
+├── Khái niệm
+├── Quy ước
+└── Luồng
+
+        │
+
+        ▼
+
+Nguồn dữ liệu
+
+↓
+
+Hệ thống suy luận
+
+↓
+
+Tri thức tích luỹ
+```
+
+Trong đó:
+
+- Khái niệm định nghĩa dữ liệu và tri thức.
+- Quy ước chuẩn hóa cách biểu diễn.
+- Luồng chuẩn hóa trình tự vận hành.
+
+Ba nhóm này tạo thành nền tảng tri thức của Trading Domain.
+
+---
+
+# Nguyên tắc
+
+Mỗi tài liệu chỉ mô tả một khái niệm.
+
+Khái niệm không quy định cách biểu diễn dữ liệu.
+
+Khái niệm không mô tả trình tự vận hành.
+
+Khái niệm là nền tảng để hiểu dữ liệu trước khi dữ liệu được chuẩn hóa và sử dụng.
+
+---
+
+# Vai trò
+
+Khái niệm giúp:
+
+- Chuẩn hóa cách hiểu về dữ liệu.
+- Chuẩn hóa thuật ngữ.
+- Giảm sai lệch trong quá trình suy luận.
+- Làm nền tảng cho Quy ước và Luồng.
+
+---
+
+# Tóm tắt
+
+```text
+Khái niệm
+
+↓
+
+Chuẩn hóa
+
+↓
+
+Cách hiểu dữ liệu
+
+↓
+
+Trading Domain
+```
+
+Khái niệm định nghĩa ý nghĩa và cơ chế hoạt động của các đối tượng trong Trading Domain.
+
+Mọi dữ liệu đều được hiểu thống nhất trước khi được biểu diễn, suy luận và tích luỹ.
+
+---
+
+---
+title: Quy ước
+id: trading-conventions
+version: 1.0.0
+status: Stable
+author: HTLH
+language: vi
+created: 2026-07-31
+last_updated: 2026-07-31
+review_cycle: Monthly
+confidence: 100%
+tags:
+  - trading
+  - convention
+---
+
+# Quy ước
+
+> Chuẩn hóa cách biểu diễn, tổ chức và sử dụng dữ liệu trong Trading Domain.
+
+---
+
+# Mục đích
+
+Quy ước định nghĩa các nguyên tắc chung được sử dụng thống nhất trong toàn bộ Trading Domain.
+
+Việc chuẩn hóa giúp:
+
+- Thống nhất ngôn ngữ.
+- Thống nhất cấu trúc dữ liệu.
+- Thống nhất cách biểu diễn.
+- Giảm sai lệch trong quá trình suy luận.
+- Hỗ trợ Tri thức tích luỹ và Build.
+
+---
+
+# Triết lý
+
+Mọi dữ liệu cần được biểu diễn theo cùng một quy ước trước khi tham gia Hệ thống suy luận.
+
+Một quy ước thống nhất tạo nên một hệ thống thống nhất.
+
+---
+
+# Kiến trúc
+
+```text
+Quy ước
+
+├── README.md
+│
+├── Biểu diễn dữ liệu.md
+│
+├── Chữ ký tín hiệu
+│   ├── README.md
+│   ├── 01 · Định nghĩa.md
+│   ├── 02 · Cấu trúc.md
+│   ├── 03 · Tạo chữ ký.md
+│   ├── 04 · Sử dụng.md
+│   └── 05 · Ví dụ.md
+│
+├── Trường hợp.md
+├── Mẫu.md
+├── Bài học tích luỹ.md
+└── Thống kê.md
+```
+
+---
+
+# Thành phần
+
+## Biểu diễn dữ liệu
+
+Chuẩn hóa cách biểu diễn dữ liệu trong Trading Domain.
+
+Bao gồm:
+
+- Dữ liệu theo khung thời gian.
+- Dữ liệu tức thời.
+- Quy tắc biểu diễn dữ liệu.
+
+---
+
+## Chữ ký tín hiệu
+
+Chuẩn hóa cấu trúc Chữ ký tín hiệu.
+
+Bao gồm:
+
+- Định nghĩa.
+- Cấu trúc.
+- Quy trình tạo.
+- Cách sử dụng.
+- Ví dụ.
+
+---
+
+## Trường hợp
+
+Chuẩn hóa cấu trúc của một Trường hợp.
+
+---
+
+## Mẫu
+
+Chuẩn hóa cấu trúc của một Mẫu.
+
+---
+
+## Bài học tích luỹ
+
+Chuẩn hóa cấu trúc của một Bài học tích luỹ.
+
+---
+
+## Thống kê
+
+Chuẩn hóa cấu trúc của dữ liệu Thống kê.
+
+---
+
+# Mối quan hệ với Trading
+
+```text
+Quy ước
+
+↓
+
+Nguồn dữ liệu
+
+↓
+
+Hệ thống suy luận
+
+↓
+
+Tri thức tích luỹ
+
+↓
+
+Build
+```
+
+Trong đó:
+
+- Nguồn dữ liệu sử dụng Quy ước để chuẩn hóa dữ liệu đầu vào.
+- Hệ thống suy luận sử dụng Quy ước để diễn giải dữ liệu một cách thống nhất.
+- Tri thức tích luỹ sử dụng Quy ước để lưu trữ kinh nghiệm.
+- Build sử dụng Quy ước để duy trì tính nhất quán của tài liệu.
+
+---
+
+# Nguyên tắc
+
+Mỗi quy ước chỉ chuẩn hóa một chủ đề.
+
+Các quy ước không định nghĩa kiến thức chuyên môn.
+
+Định nghĩa và ý nghĩa của dữ liệu được trình bày trong nhóm **Khái niệm**.
+
+Mọi thành phần của Trading Domain đều tham khảo cùng một bộ Quy ước.
+
+---
+
+# Vai trò
+
+Quy ước giúp:
+
+- Chuẩn hóa dữ liệu.
+- Chuẩn hóa cấu trúc.
+- Chuẩn hóa cách biểu diễn.
+- Chuẩn hóa ngôn ngữ.
+- Duy trì tính nhất quán trong toàn bộ Trading Domain.
+
+Đây là nền tảng chuẩn hóa của Trading Domain.
+
+---
+
+# Tóm tắt
+
+```text
+Quy ước
+
+↓
+
 Chuẩn hóa
 
 ↓
@@ -174,319 +570,63 @@ Chuẩn hóa
 Trading Domain
 ```
 
-Tri thức nền là nền tảng thống nhất cho:
-
-- Thuật ngữ.
-- Khái niệm.
-- Quy ước.
-- Luồng suy luận.
-
----
-
----
-title: Luồng suy luận
-id: trading-reasoning-flow
-version: 1.1
-status: Stable
-author: HTLH
-language: vi
-created: 2026-07-27
-last_updated: 2026-07-27
-review_cycle: Monthly
-confidence: 100%
-tags:
-  - trading
-  - reasoning
-  - workflow
----
-
-# Luồng suy luận
-
-> Luồng suy luận mô tả toàn bộ quá trình Hệ thống suy luận vận hành từ khi tiếp nhận dữ liệu đến khi tích luỹ kinh nghiệm mới.
-
----
-
-# Mục đích
-
-Luồng suy luận mô tả cách Hệ thống suy luận vận hành từ khi quan sát Thực tế đến khi hoàn thành một chu kỳ suy luận.
-
-Mỗi tầng có một vai trò riêng.
-
-Đầu ra của tầng trước trở thành đầu vào của tầng sau.
-
-Sau khi hoàn thành một vòng suy luận, Thực tế tạo ra dữ liệu mới để Tri thức tích luỹ cập nhật Bộ nhớ.
-
----
-
-# Triết lý
-
-Quan sát tạo ra dữ liệu.
-
-Suy luận tạo ra khả năng.
-
-Thực thi tạo ra hành động.
-
-Thực tế kiểm chứng kết quả.
-
-Tri thức tích luỹ chuẩn hóa kinh nghiệm thành tri thức.
-
-Bộ nhớ lưu giữ tri thức cho những lần suy luận sau.
-
----
-
-# Luồng suy luận
-
-```text
-01 · Hành vi
-        │
-        ▼
-02 · Bối cảnh
-        │
-        ▼
-03 · Động lượng
-        │
-        ▼
-04 · Cấu trúc
-        │
-        ▼
-05 · Chất lượng
-        │
-        ▼
-06 · Quyết định
-        │
-        ▼
-07 · Trọng số tín hiệu
-        │
-        ▼
-Chữ ký tín hiệu
-        │
-        ▼
-08 · Không gian kịch bản
-        │
-        ▼
-09 · Kế hoạch thực thi
-        │
-        ▼
-10 · Phản hồi thực tế
-        │
-        ▼
-Tri thức tích luỹ
-        │
-        ├── Trường hợp
-        ├── Mẫu
-        ├── Bài học tích luỹ
-        └── Thống kê
-```
-
----
-
-# Chu trình
-
-```text
-Thực tế
-
-↓
-
-Nguồn dữ liệu
-
-↓
-
-Hệ thống suy luận
-
-↓
-
-Không gian kịch bản
-
-↓
-
-Kế hoạch thực thi
-
-↓
-
-Phản hồi thực tế
-
-↓
-
-Tri thức tích luỹ
-
-↓
-
-Chu kỳ suy luận tiếp theo
-```
-
-Đây là một vòng lặp liên tục.
-
-Mỗi chu kỳ đều có thể tạo ra kinh nghiệm mới.
-
----
-
-# Nguyên tắc
-
-Đầu ra của mỗi tầng là đầu vào của tầng kế tiếp.
-
-Không được bỏ qua bất kỳ tầng nào trong quá trình suy luận.
-
-Không được suy luận ngược từ kết quả về dữ liệu đầu vào.
-
-Chữ ký tín hiệu được hình thành sau tầng Trọng số tín hiệu.
-
-Không gian kịch bản chỉ được hình thành sau khi Chữ ký tín hiệu đã hoàn tất.
-
-Tri thức tích luỹ chỉ được tham khảo sau khi Không gian kịch bản đã được xây dựng.
-
-Thực tế là tiêu chuẩn kiểm chứng duy nhất của toàn bộ Hệ thống suy luận.
-
----
-
-# Vai trò
-
-Hệ thống suy luận chịu trách nhiệm:
-
-- Quan sát dữ liệu.
-- Phân tích dữ liệu.
-- Đánh giá chất lượng tín hiệu.
-- Xây dựng Không gian kịch bản.
-- Lập Kế hoạch thực thi.
-- Đánh giá kết quả từ Thực tế.
-
----
-
-Tri thức tích luỹ chịu trách nhiệm:
-
-- Tra cứu Trường hợp.
-- Nhận diện Mẫu.
-- Rút ra Bài học tích luỹ.
-- Cập nhật Thống kê.
-- Chuẩn hóa và lưu giữ kinh nghiệm.
-
----
-
-Hai hệ thống phối hợp để giúp Trading Domain học hỏi liên tục từ Thực tế.
-
----
-
-# Mối quan hệ với Trading
-
-```text
-             Tri thức nền
-                    │
-                    ▼
-
-             Nguồn dữ liệu
-
-                    │
-                    ▼
-
-          Hệ thống suy luận
-
-                    │
-                    ▼
-
-          Tri thức tích luỹ
-
-                    │
-                    ▼
-
-            Chu kỳ suy luận tiếp theo
-```
-
-Trong đó:
-
-- Tri thức nền chuẩn hóa toàn bộ quá trình vận hành.
-- Nguồn dữ liệu chuẩn hóa dữ liệu từ Thực tế.
-- Hệ thống suy luận chuyển dữ liệu thành phương án hành động.
-- Tri thức tích luỹ học hỏi từ Thực tế và tái sử dụng kinh nghiệm trong các chu kỳ tiếp theo.
-
----
-
-# Tóm tắt
-
-```text
-Thực tế
-
-↓
-
-Nguồn dữ liệu
-
-↓
-
-Hệ thống suy luận
-
-↓
-
-Không gian kịch bản
-
-↓
-
-Kế hoạch thực thi
-
-↓
-
-Phản hồi thực tế
-
-↓
-
-Tri thức tích luỹ
-
-↓
-
-Chu kỳ suy luận tiếp theo
-```
-
-Luồng suy luận chuẩn hóa:
-
-- Thứ tự xử lý dữ liệu.
-- Mối quan hệ giữa các tầng.
-- Quá trình hình thành quyết định.
-- Quá trình học hỏi từ Thực tế.
-
-Luồng suy luận là xương sống của toàn bộ Trading Domain.
+Quy ước định nghĩa các nguyên tắc chung về:
+
+- Biểu diễn dữ liệu.
+- Chữ ký tín hiệu.
+- Trường hợp.
+- Mẫu.
+- Bài học tích luỹ.
+- Thống kê.
+
+Mọi thành phần của Trading Domain đều sử dụng thống nhất các quy ước này trước khi tham gia Hệ thống suy luận hoặc được lưu trữ trong Tri thức tích luỹ.
 
 ---
 
 ---
-title: Quy ước chỉ báo đa khung thời gian
-id: convention-multi-timeframe-indicators
-version: 1.1.0
+title: Biểu diễn dữ liệu
+id: convention-data-representation
+version: 2.1.0
 status: Stable
 author: HTLH
 language: vi
 created: 2026-07-25
-last_updated: 2026-07-27
+last_updated: 2026-07-31
 review_cycle: Monthly
 confidence: 100%
 tags:
   - convention
-  - indicator
-  - timeframe
+  - data
+  - representation
 ---
 
-# Quy ước chỉ báo đa khung thời gian
+# Biểu diễn dữ liệu
 
-> Chuẩn hóa cách biểu diễn các chỉ báo và dữ liệu phụ thuộc khung thời gian trong Trading Domain.
+> Chuẩn hóa cách biểu diễn dữ liệu trong Trading Domain.
 
 ---
 
 # Mục đích
 
-Quy ước này chuẩn hóa cách biểu diễn các chỉ báo và dữ liệu phụ thuộc khung thời gian trong Trading Domain.
+Tài liệu này chuẩn hóa cách biểu diễn mọi dữ liệu được sử dụng trong Trading Domain.
 
 Việc chuẩn hóa giúp:
 
-- Xác định rõ ngữ cảnh.
-- Thống nhất cách biểu diễn dữ liệu.
-- Hỗ trợ Hệ thống suy luận.
-- Hỗ trợ Tri thức tích luỹ.
+- Xác định đúng ngữ cảnh của dữ liệu.
+- Thống nhất cách biểu diễn trong toàn bộ Domain.
+- Chuẩn hóa dữ liệu đầu vào của Hệ thống suy luận.
+- Chuẩn hóa Tri thức tích luỹ.
+- Giảm sai lệch khi trao đổi giữa AI và con người.
 
 ---
 
 # Triết lý
 
-Chỉ báo luôn gắn với ngữ cảnh.
+Dữ liệu luôn gắn với ngữ cảnh.
 
-Khung thời gian là một phần của dữ liệu.
+Khung thời gian là một phần của dữ liệu khi dữ liệu phụ thuộc thời gian.
 
-Dữ liệu được chuẩn hóa trước khi tham gia Hệ thống suy luận.
+Mọi dữ liệu phải được chuẩn hóa trước khi tham gia Hệ thống suy luận.
 
 ---
 
@@ -498,29 +638,123 @@ Quy ước này được sử dụng thống nhất trong:
 - Hệ thống suy luận.
 - Tri thức nền.
 - Tri thức tích luỹ.
-- Bộ nhớ.
+- Build.
 
 ---
 
-# Cấu trúc biểu diễn
+# Phân loại dữ liệu
 
-Các chỉ báo được biểu diễn theo cấu trúc:
+Trading Domain sử dụng hai cách biểu diễn dữ liệu.
 
 ```text
-<Tên chỉ báo> <Khung thời gian>
+Biểu diễn dữ liệu
+
+├── Dữ liệu phụ thuộc khung thời gian
+
+└── Dữ liệu tức thời
+```
+
+---
+
+# Dữ liệu theo khung thời gian
+
+Các dữ liệu này luôn gắn với một khung thời gian cụ thể.
+
+Cấu trúc biểu diễn:
+
+```text
+<Tên dữ liệu> <Khung thời gian>
 ```
 
 Ví dụ:
 
 ```text
-EMA34 15m
+EMA34 5m
 
-RSI 1H
+EMA200 4H
 
-Volume 5m
+RSI 15m
+
+Volume 1H
+
+OI 5m
+
+Relative OI 5m
 
 CVD 5m
+
+Delta 5m
+
+Agg Liq 5m
+
+Long/Short Ratio 1H
 ```
+
+Khung thời gian luôn được xem là một phần của dữ liệu.
+
+---
+
+# Dữ liệu tức thời
+
+Các dữ liệu này phản ánh trạng thái tại thời điểm quan sát.
+
+Ví dụ:
+
+```text
+Funding
+
+Fear & Greed
+
+News
+
+Macro
+```
+
+Các dữ liệu tức thời không bổ sung khung thời gian khi được sử dụng dưới dạng giá trị hiện hành.
+
+---
+
+# Trường hợp đặc biệt
+
+## Funding
+
+Funding có hai cách biểu diễn khác nhau tùy theo ngữ cảnh.
+
+### Funding tức thời
+
+Khi sử dụng giá trị hiện hành:
+
+```text
+Funding
+```
+
+Ví dụ:
+
+```text
+Funding đang dương.
+```
+
+---
+
+### Funding theo khung thời gian
+
+Khi phân tích chuỗi lịch sử Funding:
+
+```text
+Funding 8H
+
+Funding D
+
+Funding W
+```
+
+Ví dụ:
+
+```text
+Funding W đang giảm.
+```
+
+Funding là dữ liệu duy nhất trong Trading Domain có thể xuất hiện dưới cả hai dạng biểu diễn.
 
 ---
 
@@ -566,6 +800,8 @@ Trong đó:
 - VAH30 = Value Area High khung 30 phút.
 - VAL30 = Value Area Low khung 30 phút.
 
+Volume Profile luôn gắn với khung thời gian tương ứng.
+
 ---
 
 ## Auction Flow
@@ -589,6 +825,8 @@ Trong đó:
 - POC5 = Point of Control khung 5 phút.
 - VP1 = Value Pivot của Auction Flow.
 
+POC5 và VP1 luôn được hiểu trong ngữ cảnh của Auction Flow.
+
 ---
 
 ## Dữ liệu dòng tiền
@@ -596,9 +834,13 @@ Trong đó:
 Ví dụ:
 
 ```text
-OI
+OI 5m
+
+Relative OI 5m
 
 Funding
+
+Funding 8H
 
 CVD 5m
 
@@ -609,11 +851,14 @@ Agg Liq 5m
 
 Trong đó:
 
-- OI = Open Interest hiện tại.
-- Funding = Funding Rate hiện tại.
-- CVD 5m = Cumulative Volume Delta khung 5 phút.
-- Delta 5m = Delta khung 5 phút.
-- Agg Liq 5m = Aggressive Liquidation khung 5 phút.
+- OI luôn đi kèm khung thời gian tương ứng.
+- Relative OI luôn đi kèm khung thời gian tương ứng.
+- CVD luôn đi kèm khung thời gian tương ứng.
+- Delta luôn đi kèm khung thời gian tương ứng.
+- Agg Liq luôn đi kèm khung thời gian tương ứng.
+- Funding được biểu diễn theo ngữ cảnh tương ứng.
+
+Định nghĩa và ý nghĩa của từng dữ liệu được trình bày trong các tài liệu **Khái niệm** tương ứng.
 
 ---
 
@@ -625,36 +870,16 @@ Ví dụ:
 Long/Short Ratio 1H
 
 Fear & Greed
-```
-
-Trong đó:
-
-- Long/Short Ratio luôn đi kèm khung thời gian tương ứng.
-- Fear & Greed sử dụng giá trị hiện tại.
-
----
-
-# Ngoại lệ
-
-Một số dữ liệu không phụ thuộc khung thời gian.
-
-Ví dụ:
-
-```text
-OI
-
-Funding
-
-Fear & Greed
 
 News
 
 Macro
 ```
 
-Các dữ liệu này được biểu diễn theo quy ước riêng của từng dữ liệu.
+Trong đó:
 
-Không bổ sung khung thời gian nếu dữ liệu không phụ thuộc khung thời gian.
+- Long/Short Ratio luôn đi kèm khung thời gian tương ứng.
+- Fear & Greed, News và Macro được biểu diễn dưới dạng dữ liệu tức thời.
 
 ---
 
@@ -668,8 +893,6 @@ Biểu diễn chuẩn:
 EMA200 4H đang là kháng cự.
 ```
 
-Khung thời gian được biểu diễn cùng tên chỉ báo.
-
 ---
 
 ## RSI
@@ -679,8 +902,6 @@ Biểu diễn chuẩn:
 ```text
 RSI 15m đang tiến vào vùng quá mua.
 ```
-
-Khung thời gian phản ánh đúng ngữ cảnh của chỉ báo.
 
 ---
 
@@ -692,7 +913,25 @@ Biểu diễn chuẩn:
 Giá giữ trên EMA34 15m.
 ```
 
-Mỗi EMA luôn đi kèm khung thời gian tương ứng.
+---
+
+## OI
+
+Biểu diễn chuẩn:
+
+```text
+OI 5m đang tăng.
+```
+
+---
+
+## Relative OI
+
+Biểu diễn chuẩn:
+
+```text
+Relative OI 5m đang tăng.
+```
 
 ---
 
@@ -704,7 +943,25 @@ Biểu diễn chuẩn:
 CVD 5m đang tăng.
 ```
 
-Khung thời gian giúp xác định đúng dữ liệu được quan sát.
+---
+
+## Delta
+
+Biểu diễn chuẩn:
+
+```text
+Delta 5m đang dương.
+```
+
+---
+
+## Agg Liq
+
+Biểu diễn chuẩn:
+
+```text
+Agg Liq 5m nghiêng về Long.
+```
 
 ---
 
@@ -716,8 +973,6 @@ Biểu diễn chuẩn:
 Long/Short Ratio 1H nghiêng về phe Long.
 ```
 
-Khung thời gian là một phần của dữ liệu.
-
 ---
 
 ## Funding
@@ -728,35 +983,70 @@ Biểu diễn chuẩn:
 Funding đang dương.
 ```
 
-Funding sử dụng giá trị hiện tại.
+hoặc
+
+```text
+Funding W đang giảm.
+```
+
+Tùy theo ngữ cảnh sử dụng.
 
 ---
 
-## OI
+## Fear & Greed
 
 Biểu diễn chuẩn:
 
 ```text
-OI đang tăng.
+Fear & Greed = 23.
 ```
 
-OI sử dụng giá trị hiện tại.
+---
+
+## Volume Profile
+
+Biểu diễn chuẩn:
+
+```text
+POC30 đang được giữ.
+
+VAH30 là vùng kháng cự.
+
+VAL30 là vùng hỗ trợ.
+```
+
+---
+
+## Auction Flow
+
+Biểu diễn chuẩn:
+
+```text
+Giá reclaim POC5.
+
+Giá phản ứng tại VP1.
+
+Auction Line quay lại EMA20.
+```
+
+POC5 và VP1 luôn được hiểu theo ngữ cảnh của Auction Flow.
 
 ---
 
 # Nguyên tắc
 
-Khung thời gian là một phần của dữ liệu.
+Dữ liệu được biểu diễn theo một trong hai quy ước:
 
-Mọi chỉ báo được biểu diễn cùng khung thời gian tương ứng.
+- Dữ liệu theo khung thời gian.
+- Dữ liệu tức thời.
 
-Mọi dữ liệu phụ thuộc khung thời gian sử dụng cùng một quy ước biểu diễn.
+Khung thời gian luôn là một phần của dữ liệu khi dữ liệu phụ thuộc thời gian.
 
-Các dữ liệu không phụ thuộc khung thời gian không bổ sung khung thời gian.
-
-Mọi tài liệu trong Trading Domain sử dụng thống nhất quy ước này.
+Mọi tài liệu trong Trading Domain sử dụng thống nhất các quy ước này.
 
 Mọi dữ liệu được chuẩn hóa trước khi tham gia Hệ thống suy luận.
+
+Định nghĩa và ý nghĩa của dữ liệu được trình bày trong các tài liệu **Khái niệm** tương ứng.
 
 ---
 
@@ -766,29 +1056,54 @@ Quy ước này giúp:
 
 - Chuẩn hóa dữ liệu.
 - Chuẩn hóa tài liệu.
+- Chuẩn hóa Nguồn dữ liệu.
 - Chuẩn hóa Hệ thống suy luận.
+- Chuẩn hóa Tri thức nền.
 - Chuẩn hóa Tri thức tích luỹ.
-- Chuẩn hóa Bộ nhớ.
+- Duy trì tính nhất quán trong toàn bộ Trading Domain.
 
-Đây là quy ước chung của toàn bộ Trading Domain.
+Đây là quy ước chung về cách biểu diễn dữ liệu của Trading Domain.
 
 ---
 
 # Tóm tắt
 
-Khung thời gian là một phần của dữ liệu.
+Dữ liệu luôn được biểu diễn theo đúng ngữ cảnh.
 
-Chỉ báo luôn đi cùng khung thời gian tương ứng.
-
-Các dữ liệu không phụ thuộc khung thời gian sử dụng quy ước biểu diễn riêng.
+- Dữ liệu theo khung thời gian luôn đi cùng khung thời gian tương ứng.
+- Dữ liệu tức thời được biểu diễn trực tiếp theo trạng thái hiện hành.
 
 Mọi thành phần trong Trading Domain sử dụng thống nhất quy ước này trước khi dữ liệu tham gia Hệ thống suy luận.
+
+```text
+Thực tế
+
+↓
+
+Chuẩn hóa dữ liệu
+
+↓
+
+Biểu diễn theo quy ước
+
+↓
+
+Hệ thống suy luận
+
+↓
+
+Tri thức tích luỹ
+```
+
+Tài liệu này chuẩn hóa cách biểu diễn dữ liệu.
+
+Các tài liệu trong nhóm **Khái niệm** cung cấp định nghĩa, cơ chế hoạt động và ý nghĩa của từng dữ liệu.
 
 ---
 
 # Quy ước Chữ ký tín hiệu
 
-> Quy ước chuẩn hóa quá trình suy luận thành một Chữ ký tín hiệu thống nhất.
+> Quy ước chuẩn hóa cách tạo và sử dụng Chữ ký tín hiệu trong Trading Domain.
 
 ---
 
@@ -796,7 +1111,7 @@ Mọi thành phần trong Trading Domain sử dụng thống nhất quy ước n
 
 Quy ước Chữ ký tín hiệu định nghĩa cách Hệ thống suy luận tạo và sử dụng Chữ ký tín hiệu.
 
-Chữ ký tín hiệu là định danh chuẩn của một trạng thái suy luận.
+Chữ ký tín hiệu là biểu diễn chuẩn của toàn bộ trạng thái suy luận tại thời điểm Hệ thống suy luận hoàn thành tầng 07-Trọng số tín hiệu. Từ thời điểm đó, Chữ ký tín hiệu được sử dụng xuyên suốt các tầng 08-Không gian kịch bản, 09-Kế hoạch thực thi và 10-Phản hồi thực tế để tham khảo và cập nhật Tri thức tích luỹ.
 
 Mọi Chữ ký tín hiệu đều được tạo theo cùng một quy ước.
 
@@ -815,31 +1130,35 @@ Một quy ước thống nhất giúp Hệ thống suy luận và Tri thức tí
 # Mối quan hệ với Trading
 
 ```text
-Tri thức nền
+07-Trọng số tín hiệu
+        │
+        ├── tạo
+        ▼
+  Chữ ký tín hiệu
 
-↓
+08-Không gian kịch bản
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Tham khảo Tri thức tích luỹ
 
-Hệ thống suy luận
+09-Kế hoạch thực thi
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Tham khảo Tri thức tích luỹ
 
-↓
-
-Chữ ký tín hiệu
-
-↓
-
-Tri thức tích luỹ
-
-↓
-
-Bộ nhớ
+10-Phản hồi thực tế
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Cập nhật Tri thức tích luỹ
 ```
 
 Trong đó:
 
-- Tri thức nền chuẩn hóa quy ước tạo Chữ ký tín hiệu.
-- Hệ thống suy luận tạo Chữ ký tín hiệu sau khi hoàn thành quá trình suy luận.
-- Tri thức tích luỹ sử dụng Chữ ký tín hiệu để tra cứu Bộ nhớ.
-- Bộ nhớ cung cấp các kinh nghiệm đã được Thực tế kiểm chứng để hỗ trợ những chu kỳ suy luận tiếp theo.
+- Chữ ký tín hiệu được tạo sau tầng 07-Trọng số tín hiệu.
+- Từ tầng 08 đến tầng 10, Chữ ký tín hiệu được sử dụng thống nhất để tham khảo và cập nhật Tri thức tích luỹ.
 
 ---
 
@@ -849,9 +1168,9 @@ Quy ước này giúp:
 
 - Chuẩn hóa trạng thái suy luận.
 - Chuẩn hóa quá trình tra cứu.
-- Liên kết Trường hợp.
+- Nhận diện Trường hợp.
 - Nhận diện Mẫu.
-- Tra cứu Bài học tích luỹ.
+- Tham khảo Bài học tích luỹ.
 - Tham khảo Thống kê.
 - Đảm bảo tính nhất quán trong toàn bộ Trading Domain.
 
@@ -863,30 +1182,33 @@ Quy ước này được sử dụng thống nhất trong:
 
 - Hệ thống suy luận.
 - Tri thức tích luỹ.
-- Bộ nhớ.
 
 ---
 
 # Cấu trúc
 
 ```text
-01 · Định nghĩa
+README
 
 ↓
 
-02 · Cấu trúc
+01-Định nghĩa
 
 ↓
 
-03 · Tạo Chữ ký
+02-Cấu trúc
 
 ↓
 
-04 · Sử dụng
+03-Tạo Chữ ký
 
 ↓
 
-05 · Ví dụ
+04-Sử dụng
+
+↓
+
+05-Ví dụ
 ```
 
 ---
@@ -895,55 +1217,23 @@ Quy ước này được sử dụng thống nhất trong:
 
 Mỗi quá trình suy luận tạo ra một Chữ ký tín hiệu.
 
-Một Chữ ký tín hiệu phản ánh trạng thái của Hệ thống suy luận tại một thời điểm cụ thể.
+Một Chữ ký tín hiệu phản ánh trạng thái của Hệ thống suy luận tại thời điểm hoàn thành tầng 07-Trọng số tín hiệu.
 
-Chữ ký tín hiệu chuẩn hóa trạng thái suy luận trước khi Tri thức tích luỹ thực hiện quá trình tra cứu.
+Mỗi Chữ ký tín hiệu được tạo theo cùng một quy ước và được sử dụng thống nhất trong các tầng 08-Không gian kịch bản, 09-Kế hoạch thực thi và 10-Phản hồi thực tế.
 
-Mọi Chữ ký tín hiệu đều được tạo theo cùng một quy ước.
+Cùng một trạng thái suy luận tạo ra cùng một Chữ ký tín hiệu.
 
 ---
 
 # Tóm tắt
 
-```text
-Hệ thống suy luận
+Chữ ký tín hiệu được tạo sau tầng 07-Trọng số tín hiệu.
 
-↓
-
-Chữ ký tín hiệu
-
-↓
-
-Tri thức tích luỹ
-
-↓
-
-Bộ nhớ
-```
-
-Chữ ký tín hiệu chuẩn hóa:
-
-- Trạng thái suy luận.
-- Quá trình tra cứu.
-- Mối liên kết giữa Hệ thống suy luận và Tri thức tích luỹ.
-
-Chữ ký tín hiệu là cầu nối giữa Hệ thống suy luận và Bộ nhớ.
+Từ thời điểm đó, Chữ ký tín hiệu được sử dụng xuyên suốt các tầng 08-Không gian kịch bản, 09-Kế hoạch thực thi và 10-Phản hồi thực tế để tham khảo và cập nhật Tri thức tích luỹ.
 
 ---
 
-# Triết lý
-
-Chữ ký tín hiệu chuẩn hóa trạng thái suy luận.
-
-Tri thức tích luỹ chuẩn hóa kinh nghiệm.
-
-Bộ nhớ lưu giữ những kinh nghiệm đã được Thực tế kiểm chứng.
-
-Sự phối hợp giữa ba thành phần này giúp Trading Domain học hỏi và hoàn thiện qua từng chu kỳ suy luận.
-
----
-
-# 01 · Định nghĩa
+# 01-Định nghĩa
 
 > Bản chất của Chữ ký tín hiệu.
 
@@ -951,13 +1241,11 @@ Sự phối hợp giữa ba thành phần này giúp Trading Domain học hỏi 
 
 # Bản chất
 
-Chữ ký tín hiệu là định danh chuẩn của một trạng thái suy luận.
+Chữ ký tín hiệu là biểu diễn chuẩn của một trạng thái suy luận.
 
-Chữ ký tín hiệu chuẩn hóa trạng thái suy luận của Hệ thống suy luận thành một định danh thống nhất.
+Chữ ký tín hiệu chuẩn hóa toàn bộ trạng thái suy luận của Hệ thống suy luận thành một biểu diễn thống nhất.
 
-Mỗi Chữ ký tín hiệu đại diện cho một trạng thái suy luận tại một thời điểm.
-
-Chữ ký tín hiệu phản ánh trạng thái suy luận của Hệ thống tại thời điểm được tạo.
+Mỗi Chữ ký tín hiệu đại diện cho toàn bộ trạng thái suy luận tại thời điểm Hệ thống suy luận hoàn thành tầng 07-Trọng số tín hiệu.
 
 ---
 
@@ -966,9 +1254,9 @@ Chữ ký tín hiệu phản ánh trạng thái suy luận của Hệ thống t�
 Chữ ký tín hiệu giúp:
 
 - Chuẩn hóa trạng thái suy luận.
-- Nhận diện các quá trình suy luận tương đồng.
+- Nhận diện các trạng thái suy luận tương đồng.
 - Tra cứu Bộ nhớ thông qua Tri thức tích luỹ.
-- Liên kết giữa Hệ thống suy luận và Bộ nhớ.
+- Liên kết giữa Hệ thống suy luận và Tri thức tích luỹ.
 - Đảm bảo tính nhất quán trong toàn bộ Trading Domain.
 
 ---
@@ -976,58 +1264,57 @@ Chữ ký tín hiệu giúp:
 # Mối quan hệ với Trading
 
 ```text
-Tri thức nền
+07-Trọng số tín hiệu
+        │
+        ├── tạo
+        ▼
+  Chữ ký tín hiệu
 
-↓
+08-Không gian kịch bản
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Tham khảo Tri thức tích luỹ
 
-Hệ thống suy luận
+09-Kế hoạch thực thi
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Tham khảo Tri thức tích luỹ
 
-↓
-
-Chữ ký tín hiệu
-
-↓
-
-Tri thức tích luỹ
-
-↓
-
-Bộ nhớ
+10-Phản hồi thực tế
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Cập nhật Tri thức tích luỹ
 ```
 
 Trong đó:
 
-- Tri thức nền chuẩn hóa quy ước tạo Chữ ký tín hiệu.
-- Hệ thống suy luận tạo Chữ ký tín hiệu sau khi hoàn thành quá trình suy luận.
-- Tri thức tích luỹ sử dụng Chữ ký tín hiệu để tra cứu Bộ nhớ.
+- Chữ ký tín hiệu được tạo sau tầng 07-Trọng số tín hiệu.
+- Từ tầng 08 đến tầng 10, Chữ ký tín hiệu được sử dụng thống nhất để tham khảo và cập nhật Tri thức tích luỹ.
 
 ---
 
 # Đặc điểm
 
-Chữ ký tín hiệu đóng vai trò định danh chuẩn của trạng thái suy luận.
+Chữ ký tín hiệu là biểu diễn chuẩn của trạng thái suy luận.
 
-Trường hợp lưu dữ liệu đã được Thực tế kiểm chứng.
+Một Chữ ký tín hiệu có thể được liên kết với nhiều Trường hợp có cùng trạng thái suy luận.
 
-Mẫu tổng hợp nhiều Trường hợp có trạng thái suy luận tương đồng.
+Thông qua các Trường hợp, Tri thức tích luỹ hình thành Mẫu, Bài học tích luỹ và Thống kê.
 
-Bài học tích luỹ chuẩn hóa kinh nghiệm được rút ra từ nhiều Trường hợp.
-
-Thống kê phản ánh kết quả quan sát từ nhiều Trường hợp.
-
-Chữ ký tín hiệu lưu trạng thái suy luận của Hệ thống suy luận.
-
-Tri thức được tích luỹ và quản lý trong Bộ nhớ thông qua Tri thức tích luỹ.
+Tri thức được Tri thức tích luỹ quản lý trong Bộ nhớ.
 
 ---
 
 # Mối quan hệ
 
-Một Chữ ký tín hiệu có thể được liên kết với:
+Một Chữ ký tín hiệu có thể:
 
-- Chưa có Trường hợp nào.
-- Một Trường hợp.
-- Nhiều Trường hợp.
+- Chưa được liên kết với Trường hợp nào.
+- Liên kết với một Trường hợp.
+- Liên kết với nhiều Trường hợp.
 
 Một Trường hợp luôn liên kết với đúng một Chữ ký tín hiệu.
 
@@ -1042,8 +1329,8 @@ Chữ ký tín hiệu được tạo ra để:
 - Chuẩn hóa trạng thái suy luận.
 - Nhận diện các trạng thái suy luận tương đồng.
 - Hỗ trợ Tri thức tích luỹ tra cứu Bộ nhớ.
-- Liên kết giữa Hệ thống suy luận và Tri thức tích luỹ.
-- Tái sử dụng kinh nghiệm trong các chu kỳ suy luận tiếp theo.
+- Chuẩn hóa điểm tham chiếu giữa Hệ thống suy luận và Tri thức tích luỹ.
+- Hỗ trợ tái sử dụng kinh nghiệm trong các Hệ thống suy luận tiếp theo.
 
 ---
 
@@ -1057,52 +1344,17 @@ Một Trường hợp luôn liên kết với đúng một Chữ ký tín hiệu
 
 Mỗi Chữ ký tín hiệu được cố định sau khi được tạo.
 
-Chữ ký tín hiệu được xác định từ trạng thái suy luận tại thời điểm được tạo.
+Tri thức tích luỹ sử dụng Chữ ký tín hiệu để nhận diện, tra cứu và cập nhật dữ liệu trong Bộ nhớ.
 
-Tri thức tích luỹ sử dụng Chữ ký tín hiệu để nhận diện và liên kết dữ liệu trong Bộ nhớ.
+Chữ ký tín hiệu là cầu nối thống nhất giữa Hệ thống suy luận và Tri thức tích luỹ.
 
 ---
 
 # Tóm tắt
 
-```text
-Hệ thống suy luận
+Chữ ký tín hiệu được tạo sau tầng 07-Trọng số tín hiệu.
 
-↓
-
-Chữ ký tín hiệu
-
-↓
-
-Tri thức tích luỹ
-
-↓
-
-Bộ nhớ
-```
-
-Chữ ký tín hiệu chuẩn hóa:
-
-- Trạng thái suy luận.
-- Quá trình nhận diện.
-- Quá trình tra cứu.
-- Mối liên kết giữa Hệ thống suy luận và Tri thức tích luỹ.
-
-Chữ ký tín hiệu là cầu nối giữa Hệ thống suy luận và Tri thức tích luỹ.
-
----
-
-# Triết lý
-
-Mỗi quá trình suy luận đều để lại một dấu vết.
-
-Chữ ký tín hiệu là dấu vết chuẩn của quá trình suy luận.
-
-Những dấu vết tương đồng giúp Tri thức tích luỹ nhận diện các trạng thái suy luận gần giống nhau.
-
-Kinh nghiệm được tích luỹ từ nhiều lần suy luận đã được Thực tế kiểm chứng.
-
-Tri thức được hình thành khi nhiều Trường hợp cùng chia sẻ một Chữ ký tín hiệu và được Thực tế kiểm chứng.
+Từ thời điểm đó, Chữ ký tín hiệu được sử dụng xuyên suốt các tầng 08-Không gian kịch bản, 09-Kế hoạch thực thi và 10-Phản hồi thực tế để tham khảo và cập nhật Tri thức tích luỹ.
 
 ---
 
@@ -1151,72 +1403,87 @@ Toàn bộ các thành phần cùng tạo nên trạng thái suy luận được
 # Mối quan hệ với Trading
 
 ```text
-Hệ thống suy luận
+07-Trọng số tín hiệu
+        │
+        ├── tạo
+        ▼
+  Chữ ký tín hiệu
 
-↓
+08-Không gian kịch bản
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Tham khảo Tri thức tích luỹ
 
-Chữ ký tín hiệu
+09-Kế hoạch thực thi
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Tham khảo Tri thức tích luỹ
 
-↓
-
-Tri thức tích luỹ
+10-Phản hồi thực tế
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Cập nhật Tri thức tích luỹ
 ```
 
 Trong đó:
 
-- Hệ thống suy luận tạo Chữ ký tín hiệu sau khi hoàn thành quá trình suy luận.
-- Chữ ký tín hiệu là đầu vào của Tri thức tích luỹ.
-- Tri thức tích luỹ sử dụng Chữ ký tín hiệu để tra cứu Bộ nhớ.
+- Chữ ký tín hiệu được tạo sau tầng 07-Trọng số tín hiệu.
+- Từ tầng 08 đến tầng 10, Chữ ký tín hiệu được sử dụng thống nhất để tham khảo và cập nhật Tri thức tích luỹ.
 
 ---
 
 # Mô hình
 
 ```text
-01 · Hành vi
-        │
-        ▼
-02 · Bối cảnh
-        │
-        ▼
-03 · Động lượng
-        │
-        ▼
-04 · Cấu trúc
-        │
-        ▼
-05 · Chất lượng
-        │
-        ▼
-06 · Quyết định
-        │
-        ▼
-07 · Trọng số tín hiệu
-        │
-        ▼
+01-Hành vi
+      │
+02-Bối cảnh
+      │
+03-Động lượng
+      │
+04-Cấu trúc
+      │
+05-Chất lượng
+      │
+06-Quyết định
+      │
+07-Trọng số tín hiệu
+      │
+      ├── tạo
+      ▼
 Chữ ký tín hiệu
-        │
-        ▼
-Tri thức tích luỹ
-        │
-        ▼
-08 · Không gian kịch bản
-        │
-        ▼
-09 · Kế hoạch thực thi
+
+08-Không gian kịch bản
+      │
+      └── sử dụng Chữ ký tín hiệu
+            │
+            └── Tham khảo Tri thức tích luỹ
+
+09-Kế hoạch thực thi
+      │
+      └── sử dụng Chữ ký tín hiệu
+            │
+            └── Tham khảo Tri thức tích luỹ
+
+10-Phản hồi thực tế
+      │
+      └── sử dụng Chữ ký tín hiệu
+            │
+            └── Cập nhật Tri thức tích luỹ
 ```
 
 ---
 
 # Đặc điểm
 
-Mỗi thành phần phản ánh một phần của quá trình suy luận.
+Mỗi thành phần phản ánh một khía cạnh của trạng thái suy luận.
 
-Mỗi thành phần đóng góp vào việc hình thành Chữ ký tín hiệu.
+Sự kết hợp của các thành phần tạo nên một Chữ ký tín hiệu thống nhất.
 
-Toàn bộ trạng thái suy luận được phản ánh thông qua sự kết hợp của tất cả các thành phần.
-
-Chữ ký tín hiệu phản ánh trạng thái của Hệ thống suy luận tại thời điểm được tạo.
+Chữ ký tín hiệu phản ánh toàn bộ trạng thái suy luận tại thời điểm được tạo.
 
 ---
 
@@ -1232,48 +1499,17 @@ Mỗi Chữ ký tín hiệu phản ánh trạng thái suy luận tại thời đ
 
 Chữ ký tín hiệu chuẩn hóa trạng thái suy luận của Hệ thống suy luận.
 
-Dữ liệu của Thực tế và kết quả kiểm chứng được quản lý thông qua Tri thức tích luỹ và Bộ nhớ.
+Chữ ký tín hiệu được sử dụng xuyên suốt các tầng Không gian kịch bản, Kế hoạch thực thi và Phản hồi thực tế để liên kết với Tri thức tích luỹ.
 
 ---
 
 # Tóm tắt
 
-```text
-01 · Hành vi
-        │
-02 · Bối cảnh
-        │
-03 · Động lượng
-        │
-04 · Cấu trúc
-        │
-05 · Chất lượng
-        │
-06 · Quyết định
-        │
-07 · Trọng số tín hiệu
-        │
-        ▼
-Chữ ký tín hiệu
-```
-
-Chữ ký tín hiệu được hình thành từ toàn bộ trạng thái của Hệ thống suy luận.
-
-Mỗi thành phần đóng góp một phần vào cấu trúc thống nhất của Chữ ký tín hiệu.
+Chữ ký tín hiệu được hình thành từ toàn bộ trạng thái suy luận sau tầng 07-Trọng số tín hiệu.
 
 Cấu trúc thống nhất giúp Tri thức tích luỹ nhận diện, tra cứu và đối chiếu các trạng thái suy luận tương đồng.
 
----
-
-# Triết lý
-
-Toàn bộ trạng thái thị trường được quan sát thông qua nhiều tín hiệu.
-
-Toàn bộ quá trình suy luận được hình thành từ nhiều tầng suy luận liên kết với nhau.
-
-Chữ ký tín hiệu phản ánh trạng thái tổng thể của Hệ thống suy luận.
-
-Chính trạng thái tổng thể đó giúp Tri thức tích luỹ nhận diện những lần suy luận tương đồng và tái sử dụng kinh nghiệm đã được Thực tế kiểm chứng.
+Từ thời điểm được tạo, Chữ ký tín hiệu được sử dụng xuyên suốt các tầng 08-Không gian kịch bản, 09-Kế hoạch thực thi và 10-Phản hồi thực tế để tham khảo và cập nhật Tri thức tích luỹ.
 
 ---
 
@@ -1287,9 +1523,7 @@ Chính trạng thái tổng thể đó giúp Tri thức tích luỹ nhận diệ
 
 Quy định thời điểm và nguyên tắc tạo Chữ ký tín hiệu.
 
-Mỗi quá trình suy luận tạo ra một Chữ ký tín hiệu.
-
-Việc tạo Chữ ký tín hiệu đánh dấu thời điểm Hệ thống suy luận hoàn thành một trạng thái suy luận thống nhất.
+Việc tạo Chữ ký tín hiệu đánh dấu sự hoàn thành tầng 07-Trọng số tín hiệu của Hệ thống suy luận.
 
 ---
 
@@ -1307,11 +1541,10 @@ Tri thức tích luỹ là cầu nối giữa suy luận và kinh nghiệm.
 
 Chữ ký tín hiệu được tạo sau khi:
 
-- Hệ thống suy luận hoàn tất.
 - Trạng thái quyết định đã được xác định.
 - Trọng số tín hiệu đã được lượng hóa.
 
-Đây là đầu ra cuối cùng của Hệ thống suy luận trước khi hình thành Không gian kịch bản.
+Đây là đầu ra cuối cùng của tầng 07-Trọng số tín hiệu.
 
 ---
 
@@ -1320,44 +1553,43 @@ Chữ ký tín hiệu được tạo sau khi:
 Việc tạo Chữ ký tín hiệu giúp:
 
 - Chuẩn hóa trạng thái suy luận.
-- Chuẩn hóa quá trình nhận diện.
 - Liên kết Hệ thống suy luận với Tri thức tích luỹ.
-- Đảm bảo mọi chu kỳ suy luận sử dụng cùng một cơ chế nhận diện.
-- Tạo điểm bắt đầu cho quá trình tra cứu Bộ nhớ.
+- Làm đầu vào cho quá trình tham khảo Tri thức tích luỹ.
 
 ---
 
 # Mối quan hệ với Trading
 
 ```text
-Hệ thống suy luận
+07-Trọng số tín hiệu
+        │
+        ├── tạo
+        ▼
+  Chữ ký tín hiệu
 
-↓
+08-Không gian kịch bản
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Tham khảo Tri thức tích luỹ
 
-Trọng số tín hiệu
+09-Kế hoạch thực thi
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Tham khảo Tri thức tích luỹ
 
-↓
-
-Chữ ký tín hiệu
-
-↓
-
-Tri thức tích luỹ
-
-↓
-
-08 · Không gian kịch bản
-
-↓
-
-09 · Kế hoạch thực thi
+10-Phản hồi thực tế
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Cập nhật Tri thức tích luỹ
 ```
 
 Trong đó:
 
-- Hệ thống suy luận tạo Chữ ký tín hiệu sau khi hoàn thành quá trình suy luận.
-- Tri thức tích luỹ sử dụng Chữ ký tín hiệu để tham khảo Bộ nhớ.
-- Không gian kịch bản và Kế hoạch thực thi được xây dựng dựa trên kết quả tham khảo từ Tri thức tích luỹ.
+- Chữ ký tín hiệu được tạo sau tầng 07-Trọng số tín hiệu.
+- Từ tầng 08 đến tầng 10, Chữ ký tín hiệu được sử dụng thống nhất để tham khảo và cập nhật Tri thức tích luỹ.
 
 ---
 
@@ -1367,48 +1599,24 @@ Mỗi quá trình suy luận tạo ra một Chữ ký tín hiệu.
 
 Cùng một trạng thái suy luận tạo ra cùng một Chữ ký tín hiệu.
 
-Thay đổi ở bất kỳ thành phần nào của trạng thái suy luận đều có thể hình thành một Chữ ký tín hiệu mới.
+Thay đổi trạng thái suy luận có thể hình thành một Chữ ký tín hiệu mới.
 
-Chữ ký tín hiệu được tạo theo một quy ước thống nhất từ trạng thái suy luận.
-
-Chữ ký tín hiệu được xác định từ trạng thái suy luận tại thời điểm được tạo.
+Mỗi Chữ ký tín hiệu được cố định sau khi được tạo.
 
 ---
 
 # Mối quan hệ với Tri thức tích luỹ
 
-Sau khi được tạo:
+Sau khi được tạo, Chữ ký tín hiệu giúp Tri thức tích luỹ:
 
-```text
-Hệ thống suy luận
-
-↓
-
-Chữ ký tín hiệu
-
-↓
-
-Tri thức tích luỹ
-
-↓
-
-Bộ nhớ
-```
-
-Tri thức tích luỹ sử dụng Chữ ký tín hiệu để:
-
-- Tra cứu Trường hợp.
+- Nhận diện và tra cứu Trường hợp.
 - Nhận diện Mẫu.
 - Tổng hợp Bài học tích luỹ.
 - Tham khảo Thống kê.
-- Hỗ trợ xây dựng Không gian kịch bản.
-- Hỗ trợ xây dựng Kế hoạch thực thi.
 
 ---
 
-# Sau khi được Thực tế kiểm chứng
-
-Sau khi phương án được Thực tế kiểm chứng và Tầng Phản hồi thực tế hoàn tất:
+# Sau khi tầng Phản hồi thực tế hoàn tất
 
 ```text
 Chữ ký tín hiệu
@@ -1430,58 +1638,25 @@ Bài học tích luỹ
 Thống kê
 ```
 
-Trong đó:
+Sau khi Thực tế kiểm chứng hoàn tất, Tri thức tích luỹ cập nhật:
 
-- Trường hợp lưu dữ liệu đã được kiểm chứng.
-- Mẫu tổng hợp nhiều Trường hợp có trạng thái suy luận tương đồng.
-- Bài học tích luỹ chuẩn hóa kinh nghiệm.
-- Thống kê phản ánh kết quả quan sát từ nhiều Trường hợp.
+- Trường hợp.
+- Mẫu.
+- Bài học tích luỹ.
+- Thống kê.
 
 ---
 
 # Tóm tắt
 
-```text
-Hệ thống suy luận
+Chữ ký tín hiệu được tạo sau tầng 07-Trọng số tín hiệu.
 
-↓
+Từ thời điểm đó, Chữ ký tín hiệu được sử dụng để:
 
-Trọng số tín hiệu
+- Tham khảo Tri thức tích luỹ.
+- Cập nhật Tri thức tích luỹ sau khi Thực tế kiểm chứng.
 
-↓
-
-Chữ ký tín hiệu
-
-↓
-
-Tri thức tích luỹ
-
-↓
-
-08 · Không gian kịch bản
-
-↓
-
-09 · Kế hoạch thực thi
-```
-
-Chữ ký tín hiệu được tạo sau khi toàn bộ Hệ thống suy luận hoàn tất.
-
-Việc tạo Chữ ký tín hiệu đánh dấu sự kết thúc của quá trình suy luận và là điểm khởi đầu cho quá trình tham khảo Tri thức tích luỹ.
-
----
-
-# Triết lý
-
-Chữ ký tín hiệu được tạo từ quá trình suy luận.
-
-Kinh nghiệm được hình thành từ Thực tế.
-
-Tri thức tích luỹ là cầu nối giữa suy luận và kinh nghiệm.
-
-Tri thức được tích luỹ từ nhiều Trường hợp cùng chia sẻ một Chữ ký tín hiệu và được Thực tế kiểm chứng.
-
-Chính quá trình tích luỹ đó giúp Trading Domain ngày càng nhận diện chính xác hơn các trạng thái suy luận tương đồng.
+Chữ ký tín hiệu là cầu nối giữa Hệ thống suy luận và Tri thức tích luỹ.
 
 ---
 
@@ -1493,9 +1668,9 @@ Chính quá trình tích luỹ đó giúp Trading Domain ngày càng nhận di�
 
 # Mục đích
 
-Quy định cách Chữ ký tín hiệu được sử dụng trong Hệ thống suy luận và Tri thức tích luỹ.
+Quy định cách Chữ ký tín hiệu được sử dụng trong Trading Domain.
 
-Chữ ký tín hiệu là cầu nối giữa quá trình suy luận và Bộ nhớ.
+Chữ ký tín hiệu là cầu nối giữa Hệ thống suy luận và Tri thức tích luỹ.
 
 ---
 
@@ -1512,48 +1687,35 @@ Bộ nhớ lưu giữ những kinh nghiệm đã được Thực tế kiểm ch�
 # Luồng sử dụng
 
 ```text
-Hệ thống suy luận
+07-Trọng số tín hiệu
+        │
+        ├── tạo
+        ▼
+  Chữ ký tín hiệu
 
-↓
+08-Không gian kịch bản
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Tham khảo Tri thức tích luỹ
 
-Chữ ký tín hiệu
+09-Kế hoạch thực thi
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Tham khảo Tri thức tích luỹ
 
-↓
-
-Tri thức tích luỹ
-
-↓
-
-Bộ nhớ
-
-↓
-
-Tra cứu
-
-↓
-
-Đối chiếu
-
-↓
-
-Tổng hợp
-
-↓
-
-08 · Không gian kịch bản
-
-↓
-
-09 · Kế hoạch thực thi
-
-↓
-
-10 · Phản hồi thực tế
-
-↓
-
-Cập nhật Bộ nhớ
+10-Phản hồi thực tế
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Cập nhật Tri thức tích luỹ
 ```
+
+Trong đó:
+
+- Chữ ký tín hiệu được tạo sau tầng 07-Trọng số tín hiệu.
+- Từ tầng 08 đến tầng 10, Chữ ký tín hiệu được sử dụng thống nhất để tham khảo và cập nhật Tri thức tích luỹ.
 
 ---
 
@@ -1562,95 +1724,33 @@ Cập nhật Bộ nhớ
 Trong Trading Domain:
 
 - Tầng 07 tạo Chữ ký tín hiệu.
-- Tri thức tích luỹ sử dụng Chữ ký tín hiệu để tra cứu Bộ nhớ.
-- Không gian kịch bản được xây dựng dựa trên kết quả tham khảo từ Tri thức tích luỹ.
-- Kế hoạch thực thi được xây dựng dựa trên kết quả tham khảo từ Tri thức tích luỹ.
-- Phản hồi thực tế cung cấp dữ liệu để Tri thức tích luỹ cập nhật Bộ nhớ.
+- Các tầng 08-Không gian kịch bản và 09-Kế hoạch thực thi sử dụng Chữ ký tín hiệu để tham khảo Tri thức tích luỹ.
+- Tầng 10-Phản hồi thực tế sử dụng Chữ ký tín hiệu để cập nhật Tri thức tích luỹ.
 
 ---
 
 # Nguyên tắc
 
-Chữ ký tín hiệu là định danh chuẩn của trạng thái suy luận.
+Chữ ký tín hiệu là biểu diễn chuẩn của trạng thái suy luận.
 
-Tri thức tích luỹ sử dụng Chữ ký tín hiệu để nhận diện và liên kết dữ liệu trong Bộ nhớ.
+Tri thức tích luỹ sử dụng Chữ ký tín hiệu để nhận diện, tra cứu và cập nhật dữ liệu trong Bộ nhớ.
 
 Quá trình hình thành Trường hợp được thực hiện sau khi Thực tế kiểm chứng hoàn tất.
 
-Chữ ký tín hiệu được sử dụng sau khi Hệ thống suy luận hoàn tất.
-
----
-
-# Mối quan hệ
-
-```text
-Chữ ký tín hiệu
-        │
-        ▼
-Tri thức tích luỹ
-        │
-        ▼
-Bộ nhớ
-        │
-        ▼
-08 · Không gian kịch bản
-        │
-        ▼
-09 · Kế hoạch thực thi
-```
-
-Trong đó:
-
-- Chữ ký tín hiệu chuẩn hóa trạng thái suy luận.
-- Tri thức tích luỹ sử dụng Chữ ký tín hiệu để tra cứu Bộ nhớ.
-- Bộ nhớ cung cấp các Trường hợp, Mẫu, Bài học tích luỹ và Thống kê liên quan.
-- Không gian kịch bản và Kế hoạch thực thi được xây dựng từ kết quả tổng hợp của Tri thức tích luỹ.
+Chữ ký tín hiệu được sử dụng sau khi hoàn thành tầng 07-Trọng số tín hiệu.
 
 ---
 
 # Tóm tắt
 
-```text
-Hệ thống suy luận
+Chữ ký tín hiệu được sử dụng xuyên suốt các tầng 08-Không gian kịch bản, 09-Kế hoạch thực thi và 10-Phản hồi thực tế.
 
-↓
+Thông qua Chữ ký tín hiệu:
 
-Chữ ký tín hiệu
+- Tri thức tích luỹ được tham khảo trong quá trình xây dựng Không gian kịch bản và Kế hoạch thực thi.
+- Tri thức tích luỹ được cập nhật sau khi Phản hồi thực tế hoàn tất.
 
-↓
-
-Tri thức tích luỹ
-
-↓
-
-Bộ nhớ
-
-↓
-
-Không gian kịch bản
-
-↓
-
-Kế hoạch thực thi
-```
-
-Chữ ký tín hiệu chuẩn hóa điểm kết nối giữa Hệ thống suy luận và Tri thức tích luỹ.
-
-Tri thức tích luỹ sử dụng Chữ ký tín hiệu để tra cứu, đối chiếu và tổng hợp kinh nghiệm trong Bộ nhớ.
-
-Kết quả tổng hợp hỗ trợ xây dựng Không gian kịch bản và Kế hoạch thực thi.
-
----
-
-# Triết lý
-
-Chữ ký tín hiệu kết nối suy luận với kinh nghiệm.
-
-Tri thức tích luỹ kết nối kinh nghiệm với quyết định.
-
-Bộ nhớ lưu giữ những kinh nghiệm đã được Thực tế kiểm chứng.
-
-Những kinh nghiệm đó tiếp tục hỗ trợ các chu kỳ suy luận sau thông qua Tri thức tích luỹ.
+Chữ ký tín hiệu là cầu nối giữa Hệ thống suy luận và Tri thức tích luỹ.
 
 ---
 
@@ -1662,11 +1762,9 @@ Những kinh nghiệm đó tiếp tục hỗ trợ các chu kỳ suy luận sau 
 
 # Mục đích
 
-Minh họa cách Chữ ký tín hiệu được tạo và sử dụng trong Trading Domain.
+Minh họa cách Chữ ký tín hiệu được tạo và được sử dụng trong Trading Domain.
 
-Các ví dụ minh họa quy trình tạo, sử dụng và tra cứu Chữ ký tín hiệu.
-
-Các ví dụ sử dụng dữ liệu minh họa để làm rõ quy trình vận hành của Trading Domain.
+Các ví dụ giúp làm rõ quy trình vận hành của Chữ ký tín hiệu từ khi được tạo đến khi được Tri thức tích luỹ sử dụng.
 
 ---
 
@@ -1674,7 +1772,7 @@ Các ví dụ sử dụng dữ liệu minh họa để làm rõ quy trình vận
 
 Ví dụ giúp chuyển quy ước thành cách sử dụng cụ thể.
 
-Nhiều ví dụ giúp làm rõ cách Hệ thống suy luận và Tri thức tích luỹ phối hợp trong thực tế.
+Thông qua ví dụ, có thể quan sát toàn bộ quá trình phối hợp giữa Hệ thống suy luận và Tri thức tích luỹ.
 
 ---
 
@@ -1682,34 +1780,42 @@ Nhiều ví dụ giúp làm rõ cách Hệ thống suy luận và Tri thức tí
 
 ```text
 Quá trình suy luận
-
 ↓
-
-Trạng thái hành vi
-
-Trạng thái bối cảnh
-
-Trạng thái động lượng
-
-Trạng thái cấu trúc
-
-Trạng thái chất lượng
-
-Trạng thái quyết định
-
-Trọng số tín hiệu
-
-↓
-
+01-Hành vi
+      │
+02-Bối cảnh
+      │
+03-Động lượng
+      │
+04-Cấu trúc
+      │
+05-Chất lượng
+      │
+06-Quyết định
+      │
+07-Trọng số tín hiệu
+      │
+      ├── tạo
+      ▼
 Chữ ký tín hiệu
 
-↓
+08-Không gian kịch bản
+      │
+      └── sử dụng Chữ ký tín hiệu
+            │
+            └── Tham khảo Tri thức tích luỹ
 
-Tri thức tích luỹ
+09-Kế hoạch thực thi
+      │
+      └── sử dụng Chữ ký tín hiệu
+            │
+            └── Tham khảo Tri thức tích luỹ
 
-↓
-
-Bộ nhớ
+10-Phản hồi thực tế
+      │
+      └── sử dụng Chữ ký tín hiệu
+            │
+            └── Cập nhật Tri thức tích luỹ
 ```
 
 ---
@@ -1801,133 +1907,23 @@ Sau khi xuất hiện các Trường hợp đã được Thực tế kiểm ch�
 
 Mỗi ví dụ minh họa một quá trình suy luận hoàn chỉnh.
 
-Chữ ký tín hiệu được hình thành sau khi Hệ thống suy luận hoàn tất.
+Chữ ký tín hiệu được tạo sau tầng 07-Trọng số tín hiệu.
 
-Tri thức tích luỹ sử dụng Chữ ký tín hiệu để tra cứu và liên kết dữ liệu trong Bộ nhớ.
+Từ thời điểm đó, Chữ ký tín hiệu được sử dụng xuyên suốt các tầng 08-Không gian kịch bản, 09-Kế hoạch thực thi và 10-Phản hồi thực tế.
 
-Không gian kịch bản và Kế hoạch thực thi được xây dựng dựa trên kết quả tham khảo từ Tri thức tích luỹ.
-
-Bộ nhớ được cập nhật sau khi Thực tế kiểm chứng hoàn tất.
-
----
-
-# Mối quan hệ
-
-```text
-Quá trình suy luận
-        │
-        ▼
-Chữ ký tín hiệu
-        │
-        ▼
-Tri thức tích luỹ
-        │
-        ▼
-Bộ nhớ
-   │
-   ├── Trường hợp
-   ├── Mẫu
-   ├── Bài học tích luỹ
-   └── Thống kê
-        │
-        ▼
-08 · Không gian kịch bản
-        │
-        ▼
-09 · Kế hoạch thực thi
-```
-
-Các ví dụ minh họa toàn bộ chu trình sử dụng Chữ ký tín hiệu trong Trading Domain.
+Tri thức tích luỹ cập nhật Bộ nhớ sau khi Thực tế kiểm chứng hoàn tất.
 
 ---
 
 # Tóm tắt
 
-```text
-Quá trình suy luận
+Các ví dụ minh họa toàn bộ vòng đời của Chữ ký tín hiệu trong Trading Domain:
 
-↓
+- Được tạo sau tầng 07-Trọng số tín hiệu.
+- Được sử dụng trong các tầng 08-Không gian kịch bản và 09-Kế hoạch thực thi để tham khảo Tri thức tích luỹ.
+- Được sử dụng tại tầng 10-Phản hồi thực tế để cập nhật Tri thức tích luỹ.
 
-Chữ ký tín hiệu
-
-↓
-
-Tri thức tích luỹ
-
-↓
-
-Bộ nhớ
-
-↓
-
-08 · Không gian kịch bản
-
-↓
-
-09 · Kế hoạch thực thi
-```
-
-Ví dụ minh họa cách Chữ ký tín hiệu vận hành trong Trading Domain.
-
-Mỗi ví dụ phản ánh sự phối hợp giữa Hệ thống suy luận, Tri thức tích luỹ và Bộ nhớ trong một chu kỳ suy luận hoàn chỉnh.
-
----
-
-# Triết lý
-
-Mỗi quá trình suy luận đều tạo ra một Chữ ký tín hiệu.
-
-Mỗi Chữ ký tín hiệu đều có thể trở thành cầu nối đến những kinh nghiệm đã được Thực tế kiểm chứng.
-
-Tri thức được tích luỹ từ nhiều Trường hợp cùng chia sẻ một Chữ ký tín hiệu và được Thực tế kiểm chứng.
-
-Những kinh nghiệm đã được tích luỹ tiếp tục hỗ trợ các chu kỳ suy luận sau thông qua Tri thức tích luỹ.
-
----
-
-# Chu trình
-
-```text
-Quá trình suy luận
-
-↓
-
-Chữ ký tín hiệu
-
-↓
-
-Tri thức tích luỹ
-
-↓
-
-Bộ nhớ
-
-↓
-
-08 · Không gian kịch bản
-
-↓
-
-09 · Kế hoạch thực thi
-
-↓
-
-10 · Phản hồi thực tế
-
-↓
-
-Cập nhật Bộ nhớ
-
-↓
-
-Chu kỳ suy luận tiếp theo
-```
-
-Chữ ký tín hiệu kết nối Hệ thống suy luận với Tri thức tích luỹ.
-
-Tri thức tích luỹ kết nối kinh nghiệm với quyết định.
-
-Mỗi chu kỳ suy luận đều góp phần mở rộng và hoàn thiện Bộ nhớ của Trading Domain.
+Nhờ đó, cùng một quy ước Chữ ký tín hiệu có thể được áp dụng thống nhất trong toàn bộ Trading Domain.
 
 ---
 
@@ -1941,15 +1937,15 @@ Mỗi chu kỳ suy luận đều góp phần mở rộng và hoàn thiện Bộ 
 
 Quy ước này chuẩn hóa cách ghi nhận Trường hợp.
 
-Mọi Trường hợp sử dụng cùng một cấu trúc để Tri thức tích luỹ có thể tra cứu, đối chiếu và tổng hợp thống nhất.
+Mọi Trường hợp sử dụng cùng một cấu trúc để Tri thức tích luỹ có thể nhận diện, tra cứu, đối chiếu và tổng hợp thống nhất.
 
 ---
 
 # Triết lý
 
-Một Trường hợp lưu giữ một lần vận hành hoàn chỉnh của Hệ thống suy luận đã được Thực tế kiểm chứng.
+Mỗi Trường hợp lưu giữ một lần vận hành của Hệ thống suy luận đã được Thực tế kiểm chứng.
 
-Cấu trúc thống nhất giúp kinh nghiệm được tích luỹ và tái sử dụng qua nhiều chu kỳ suy luận.
+Cấu trúc thống nhất giúp kinh nghiệm được tích luỹ và tái sử dụng trong các Hệ thống suy luận tiếp theo.
 
 ---
 
@@ -2020,7 +2016,7 @@ Mô tả trạng thái thị trường tại thời điểm Trường hợp đư
 
 ## Quan sát
 
-Ghi nhận dữ liệu đã được quan sát từ Thực tế.
+Ghi nhận dữ liệu quan sát từ Thực tế.
 
 Bao gồm:
 
@@ -2032,7 +2028,7 @@ Bao gồm:
 
 ## Suy luận
 
-Tóm tắt kết quả của Hệ thống suy luận tại thời điểm xây dựng phương án hoặc kịch bản.
+Tóm tắt kết quả của Hệ thống suy luận tại thời điểm xây dựng phương án.
 
 ---
 
@@ -2052,7 +2048,7 @@ Có thể bao gồm:
 
 ## Kết quả
 
-Ghi nhận kết quả sau khi Thực tế kiểm chứng.
+Ghi nhận kết quả sau khi được Thực tế kiểm chứng.
 
 Ví dụ:
 
@@ -2065,7 +2061,7 @@ Ví dụ:
 
 ## Nhận xét
 
-Tổng hợp những kinh nghiệm rút ra từ Trường hợp sau khi hoàn tất.
+Tổng hợp những kinh nghiệm rút ra từ Trường hợp.
 
 ---
 
@@ -2087,9 +2083,7 @@ Ví dụ:
 
 Mỗi Trường hợp được lưu trong một tệp riêng.
 
-Mọi Trường hợp sử dụng cùng một cấu trúc.
-
-Các mục được sắp xếp theo cùng một thứ tự.
+Mọi Trường hợp sử dụng cùng một cấu trúc và thứ tự trình bày.
 
 Nội dung phản ánh dữ liệu và kết quả đã được Thực tế kiểm chứng.
 
@@ -2099,8 +2093,7 @@ Nội dung phản ánh dữ liệu và kết quả đã được Thực tế ki�
 
 Quy ước này giúp Tri thức tích luỹ:
 
-- Tra cứu Trường hợp.
-- Đối chiếu Trường hợp.
+- Tra cứu và đối chiếu Trường hợp.
 - Nhận diện Mẫu.
 - Tổng hợp Bài học tích luỹ.
 - Cập nhật Thống kê.
@@ -2121,9 +2114,9 @@ Trường hợp
 Tri thức tích luỹ
 ```
 
-Trường hợp chuẩn hóa việc ghi nhận một lần vận hành hoàn chỉnh của Hệ thống suy luận.
+Trường hợp là đơn vị tri thức cơ sở của Tri thức tích luỹ.
 
-Đây là đơn vị tri thức cơ sở để hình thành Mẫu, Bài học tích luỹ và Thống kê.
+Từ các Trường hợp đã được Thực tế kiểm chứng, Tri thức tích luỹ hình thành Mẫu, Bài học tích luỹ và Thống kê.
 
 ---
 
@@ -2139,7 +2132,7 @@ Quy ước này chuẩn hóa cách ghi nhận Mẫu trong Trading Domain.
 
 Mỗi Mẫu được hình thành từ nhiều Trường hợp đã được Thực tế kiểm chứng.
 
-Nhờ cấu trúc thống nhất, Tri thức tích luỹ có thể nhận diện các trạng thái và hành vi lặp lại để hỗ trợ những chu kỳ suy luận tiếp theo.
+Cấu trúc thống nhất giúp Tri thức tích luỹ nhận diện, đối chiếu và tái sử dụng các trạng thái suy luận lặp lại.
 
 ---
 
@@ -2210,8 +2203,6 @@ Ví dụ:
 - TH-0004
 - TH-0012
 
-Nguồn hình thành giúp truy ngược về dữ liệu gốc và theo dõi quá trình phát triển của Mẫu.
-
 ---
 
 ## Điều kiện xuất hiện
@@ -2232,15 +2223,13 @@ Ví dụ:
 
 ## Đặc điểm chung
 
-Tóm tắt các đặc điểm xuất hiện phổ biến trong những Trường hợp thuộc Mẫu.
+Tóm tắt những đặc điểm lặp lại giữa các Trường hợp thuộc Mẫu.
 
 Ví dụ:
 
 - Giá thường Pullback trước khi tiếp diễn.
 - POC thường dịch lên.
 - Delta thường đồng thuận với CVD.
-
-Đây là phần mô tả bản chất của Mẫu.
 
 ---
 
@@ -2259,7 +2248,7 @@ Ví dụ:
 
 ## Mức độ xuất hiện
 
-Phản ánh mức độ lặp lại của Mẫu qua các Trường hợp.
+Mức độ xuất hiện phản ánh độ trưởng thành của Mẫu.
 
 Ví dụ:
 
@@ -2267,15 +2256,11 @@ Ví dụ:
 - Xuất hiện thường xuyên.
 - Xuất hiện ổn định.
 
-Mức độ xuất hiện giúp đánh giá độ trưởng thành của Mẫu.
-
 ---
 
 ## Nhận xét
 
 Tổng hợp những điểm đáng chú ý sau khi đối chiếu các Trường hợp.
-
-Phần này làm rõ những đặc điểm nổi bật của Mẫu và hỗ trợ quá trình tích luỹ tri thức.
 
 ---
 
@@ -2307,15 +2292,13 @@ Ví dụ:
 
 # Vai trò
 
-Quy ước này giúp mọi Mẫu có cùng cấu trúc và cách biểu diễn.
-
-Tri thức tích luỹ dựa trên Mẫu để:
+Tri thức tích luỹ sử dụng Mẫu để:
 
 - Nhận diện sự lặp lại.
 - So sánh các Mẫu.
 - Hình thành Bài học tích luỹ.
-- Hỗ trợ cập nhật Thống kê.
-- Hiệu chỉnh Không gian kịch bản và Kế hoạch thực thi.
+- Cập nhật Thống kê.
+- Hỗ trợ Không gian kịch bản và Kế hoạch thực thi.
 
 ---
 
@@ -2341,17 +2324,17 @@ Bài học tích luỹ
 Thống kê
 ```
 
-Mẫu là tầng tổng hợp đầu tiên trong Tri thức tích luỹ, giúp chuyển nhiều Trường hợp riêng lẻ thành một tri thức có thể tái sử dụng.
+Mẫu là tầng tổng hợp đầu tiên của Tri thức tích luỹ.
+
+Từ nhiều Trường hợp đã được Thực tế kiểm chứng, Mẫu chuẩn hóa những đặc điểm lặp lại để có thể tái sử dụng.
 
 ---
 
 # Triết lý
 
-Một Mẫu phản ánh những đặc điểm lặp lại đã được quan sát qua nhiều Trường hợp.
+Nhiều Trường hợp tạo nên một Mẫu.
 
-Sự lặp lại tạo nên Mẫu.
-
-Mẫu tạo nền tảng cho quá trình tích luỹ tri thức.
+Mẫu là bước đầu tiên chuyển kinh nghiệm thành tri thức.
 
 ---
 
@@ -2367,7 +2350,7 @@ Quy ước này chuẩn hóa cách ghi nhận Bài học tích luỹ.
 
 Mỗi Bài học tích luỹ được hình thành từ nhiều Mẫu và nhiều Trường hợp đã được Thực tế kiểm chứng.
 
-Bài học tích luỹ giúp Tri thức tích luỹ tổng hợp kinh nghiệm để tham khảo trong quá trình suy luận và thực thi.
+Cấu trúc thống nhất giúp Tri thức tích luỹ tổng hợp và tái sử dụng kinh nghiệm.
 
 ---
 
@@ -2445,8 +2428,6 @@ Trường hợp:
 - TH-0008
 - TH-0016
 
-Nguồn hình thành giúp truy ngược toàn bộ quá trình hình thành Bài học.
-
 ---
 
 ## Bài học
@@ -2458,8 +2439,6 @@ Ví dụ:
 - Pullback tại POC thường hiệu quả hơn khi OI, CVD và Delta cùng đồng thuận.
 - EMA đa khung thời gian giúp xác nhận vùng hỗ trợ động.
 - Auction Flow đồng thuận giúp tăng xác suất tiếp diễn.
-
-Bài học phản ánh kinh nghiệm đã được Thực tế kiểm chứng và phạm vi áp dụng của kinh nghiệm đó.
 
 ---
 
@@ -2479,7 +2458,7 @@ Ví dụ:
 
 ## Điều kiện chuyển ngữ cảnh
 
-Mô tả những điều kiện cho thấy nên tham khảo Bài học khác phù hợp hơn với trạng thái thị trường.
+Điều kiện cho thấy nên tham khảo Bài học khác phù hợp hơn.
 
 Ví dụ:
 
@@ -2492,7 +2471,7 @@ Ví dụ:
 
 ## Mức độ tin cậy
 
-Đánh giá mức độ tin cậy của Bài học.
+Mức độ tin cậy phản ánh mức độ kiểm chứng của Bài học.
 
 Ví dụ:
 
@@ -2500,15 +2479,11 @@ Ví dụ:
 - Trung bình.
 - Cao.
 
-Mức độ tin cậy phản ánh mức độ kiểm chứng của Bài học qua các Trường hợp và Mẫu liên quan.
-
 ---
 
 ## Nhận xét
 
-Tổng hợp những điểm đáng chú ý sau khi tổng hợp các Mẫu và Trường hợp.
-
-Nhận xét giúp làm rõ phạm vi sử dụng và giá trị tham khảo của Bài học.
+Tổng hợp những điểm đáng chú ý sau khi đối chiếu các Mẫu và Trường hợp.
 
 ---
 
@@ -2539,14 +2514,12 @@ Ví dụ:
 
 # Vai trò
 
-Quy ước này giúp mọi Bài học tích luỹ có cấu trúc thống nhất.
-
-Nhờ đó Tri thức tích luỹ có thể:
+Tri thức tích luỹ sử dụng Bài học tích luỹ để:
 
 - Tham khảo kinh nghiệm.
-- Hiệu chỉnh Không gian kịch bản.
-- Hiệu chỉnh Kế hoạch thực thi.
-- Hỗ trợ cập nhật Thống kê.
+- Hỗ trợ Không gian kịch bản.
+- Hỗ trợ Kế hoạch thực thi.
+- Cập nhật Thống kê.
 
 ---
 
@@ -2566,31 +2539,17 @@ Bài học tích luỹ
 ↓
 
 Tri thức tích luỹ
-
-↓
-
-Không gian kịch bản
-
-↓
-
-Kế hoạch thực thi
 ```
 
-Bài học tích luỹ chuẩn hóa:
-
-- Kinh nghiệm đã được kiểm chứng.
-- Điều kiện áp dụng.
-- Điều kiện chuyển ngữ cảnh.
-- Mức độ tin cậy.
-- Giá trị tham khảo cho các chu kỳ suy luận tiếp theo.
+Bài học tích luỹ tổng hợp kinh nghiệm đã được Thực tế kiểm chứng thành tri thức có thể tham khảo và tái sử dụng.
 
 ---
 
 # Triết lý
 
-Mỗi Bài học phản ánh một kinh nghiệm đã được tích luỹ từ nhiều lần quan sát.
+Nhiều Mẫu tạo nên một Bài học tích luỹ.
 
-Những kinh nghiệm được kiểm chứng nhiều lần sẽ trở thành nền tảng tham khảo cho các chu kỳ suy luận tiếp theo.
+Bài học tích luỹ giúp chuyển kinh nghiệm thành tri thức có thể tái sử dụng.
 
 ---
 
@@ -2604,9 +2563,7 @@ Những kinh nghiệm được kiểm chứng nhiều lần sẽ trở thành n�
 
 Quy ước này chuẩn hóa cách ghi nhận Thống kê.
 
-Mọi Thống kê đều được tổng hợp từ nhiều Trường hợp đã được Thực tế kiểm chứng.
-
-Thống kê giúp Tri thức tích luỹ định lượng mức độ xuất hiện và hiệu quả của các trạng thái, Mẫu hoặc Bài học.
+Thống kê được tổng hợp từ nhiều Trường hợp đã được Thực tế kiểm chứng nhằm định lượng mức độ xuất hiện và hiệu quả của các trạng thái, Mẫu hoặc Bài học.
 
 ---
 
@@ -2671,9 +2628,13 @@ Ví dụ:
 
 ## Nguồn dữ liệu
 
-Liệt kê nguồn dữ liệu sử dụng để tạo Thống kê.
+Liệt kê nguồn dữ liệu dùng để tạo Thống kê.
 
 Có thể bao gồm:
+
+- Trường hợp
+- Mẫu
+- Bài học
 
 ### Trường hợp
 
@@ -2689,8 +2650,6 @@ Có thể bao gồm:
 ### Bài học
 
 - BH-0001
-
-Nguồn dữ liệu giúp truy ngược toàn bộ quá trình hình thành Thống kê.
 
 ---
 
@@ -2715,16 +2674,12 @@ Liệt kê các chỉ số được thống kê.
 
 Ví dụ:
 
-- Số Trường hợp.
-- Tỷ lệ thành công.
-- Tỷ lệ thất bại.
-- Reward / Risk trung bình.
-- Holding Time trung bình.
-- Drawdown trung bình.
-- Win Rate.
-- Expectancy.
-
-Các chỉ số phản ánh kết quả định lượng của nguồn dữ liệu.
+- Số Trường hợp
+- Win Rate
+- Reward / Risk trung bình
+- Holding Time trung bình
+- Drawdown trung bình
+- Expectancy
 
 ---
 
@@ -2738,8 +2693,6 @@ Ví dụ:
 - Win Rate: 71%.
 - RR trung bình: 2.6.
 - Holding Time trung bình: 7 giờ.
-
-Kết quả phản ánh dữ liệu lịch sử đã được tổng hợp và kiểm chứng.
 
 ---
 
@@ -2759,15 +2712,13 @@ Ví dụ:
 
 ## Nhận xét
 
-Tóm tắt những điểm đáng chú ý.
+Tóm tắt những điểm đáng chú ý từ kết quả thống kê.
 
 Ví dụ:
 
 - Win Rate tăng khi Auction Flow đồng thuận.
 - Reward / Risk giảm trong thị trường Sideway.
 - Delta đồng thuận giúp giảm False Break.
-
-Nhận xét làm rõ ý nghĩa của kết quả thống kê trong phạm vi đã quan sát.
 
 ---
 
@@ -2799,43 +2750,19 @@ Ví dụ:
 
 # Vai trò
 
-Quy ước này giúp mọi Thống kê có cấu trúc thống nhất.
-
-Nhờ đó Tri thức tích luỹ có thể:
+Thống kê giúp Tri thức tích luỹ:
 
 - Định lượng mức độ tin cậy.
-- So sánh hiệu quả giữa các phương án.
-- Hiệu chỉnh Không gian kịch bản.
-- Hiệu chỉnh Kế hoạch thực thi.
+- So sánh hiệu quả.
+- Hỗ trợ tham khảo trong quá trình suy luận.
 
 ---
 
 # Tóm tắt
 
-```text
-Trường hợp
+Thống kê tổng hợp dữ liệu đã được Thực tế kiểm chứng thành các chỉ số định lượng.
 
-↓
-
-Mẫu
-
-↓
-
-Bài học
-
-↓
-
-Thống kê
-```
-
-Thống kê chuẩn hóa:
-
-- Nguồn dữ liệu.
-- Phạm vi quan sát.
-- Các chỉ số định lượng.
-- Kết quả tổng hợp.
-
-Thống kê cung cấp cơ sở định lượng để Tri thức tích luỹ hỗ trợ quá trình suy luận.
+Nhờ đó Tri thức tích luỹ có cơ sở đánh giá mức độ xuất hiện và hiệu quả của các trạng thái, Mẫu và Bài học.
 
 ---
 
@@ -2844,3 +2771,403 @@ Thống kê cung cấp cơ sở định lượng để Tri thức tích luỹ h�
 Thống kê lượng hóa những gì Thực tế đã ghi nhận.
 
 Dữ liệu được tổng hợp theo cùng một quy ước giúp Tri thức tích luỹ đánh giá kinh nghiệm một cách nhất quán.
+
+---
+
+---
+title: Luồng
+id: trading-workflows
+version: 1.0.0
+status: Stable
+author: HTLH
+language: vi
+created: 2026-07-31
+last_updated: 2026-07-31
+review_cycle: Monthly
+confidence: 100%
+tags:
+  - trading
+  - workflow
+---
+
+# Luồng
+
+> Chuẩn hóa các luồng vận hành của Trading Domain.
+
+---
+
+# Mục đích
+
+Luồng định nghĩa cách các thành phần trong Trading Domain phối hợp với nhau để hoàn thành một chu trình làm việc.
+
+Khác với:
+
+- Khái niệm → định nghĩa dữ liệu và tri thức.
+- Quy ước → chuẩn hóa cách biểu diễn.
+- Luồng → chuẩn hóa trình tự vận hành.
+
+---
+
+# Triết lý
+
+Mọi thành phần đều có vai trò riêng.
+
+Mọi luồng đều có điểm bắt đầu, trình tự xử lý và điểm kết thúc rõ ràng.
+
+Một luồng thống nhất giúp Trading Domain vận hành nhất quán.
+
+---
+
+# Kiến trúc
+
+```text
+Luồng
+
+├── README.md
+
+└── Luồng suy luận.md
+```
+
+---
+
+# Thành phần
+
+## Luồng suy luận
+
+Chuẩn hóa toàn bộ quá trình Hệ thống suy luận vận hành từ khi tiếp nhận dữ liệu đến khi hoàn thành một chu kỳ học hỏi.
+
+Bao gồm:
+
+- Trình tự các tầng suy luận.
+- Mối quan hệ giữa các tầng.
+- Chu trình từ Thực tế đến Tri thức tích luỹ.
+- Nguyên tắc vận hành của Hệ thống suy luận.
+
+---
+
+# Mối quan hệ với Trading
+
+```text
+Tri thức nền
+
+├── Khái niệm
+
+├── Quy ước
+
+└── Luồng
+
+        │
+
+        ▼
+
+Nguồn dữ liệu
+
+↓
+
+Hệ thống suy luận
+
+↓
+
+Tri thức tích luỹ
+```
+
+Trong đó:
+
+- Khái niệm định nghĩa dữ liệu và tri thức.
+- Quy ước chuẩn hóa cách biểu diễn.
+- Luồng chuẩn hóa trình tự vận hành.
+
+Ba nhóm này tạo thành nền tảng tri thức của Trading Domain.
+
+---
+
+# Nguyên tắc
+
+Mỗi tài liệu chỉ mô tả một luồng.
+
+Luồng chỉ mô tả quá trình vận hành.
+
+Định nghĩa dữ liệu thuộc nhóm Khái niệm.
+
+Quy tắc biểu diễn dữ liệu thuộc nhóm Quy ước.
+
+---
+
+# Vai trò
+
+Luồng giúp:
+
+- Chuẩn hóa quy trình vận hành.
+- Chuẩn hóa trình tự xử lý.
+- Duy trì tính nhất quán giữa các thành phần.
+- Hỗ trợ Hệ thống suy luận và Tri thức tích luỹ phối hợp với nhau.
+
+---
+
+# Tóm tắt
+
+```text
+Luồng
+
+↓
+
+Chuẩn hóa
+
+↓
+
+Quy trình vận hành
+
+↓
+
+Trading Domain
+```
+
+Luồng định nghĩa trình tự vận hành của Trading Domain.
+
+Mỗi luồng mô tả cách các thành phần phối hợp với nhau để hoàn thành một chu trình làm việc thống nhất.
+
+---
+
+---
+title: Luồng suy luận
+id: trading-reasoning-flow
+version: 1.1
+status: Stable
+author: HTLH
+language: vi
+created: 2026-07-27
+last_updated: 2026-07-27
+review_cycle: Monthly
+confidence: 100%
+tags:
+  - trading
+  - reasoning
+  - workflow
+---
+
+# Luồng suy luận
+
+> Luồng suy luận mô tả toàn bộ quá trình Hệ thống suy luận vận hành từ khi tiếp nhận dữ liệu đến khi tích luỹ kinh nghiệm mới.
+
+---
+
+# Mục đích
+
+Luồng suy luận mô tả cách Hệ thống suy luận vận hành từ khi quan sát Thực tế đến khi hoàn thành một chu kỳ suy luận.
+
+Mỗi tầng có một vai trò riêng.
+
+Đầu ra của tầng trước trở thành đầu vào của tầng sau.
+
+Sau khi chu kỳ suy luận hoàn tất, Phản hồi thực tế cung cấp dữ liệu để Tri thức tích luỹ cập nhật tri thức cho các chu kỳ tiếp theo.
+
+---
+
+# Triết lý
+
+Quan sát tạo ra dữ liệu.
+
+Suy luận tạo ra khả năng.
+
+Thực thi tạo ra hành động.
+
+Thực tế kiểm chứng kết quả.
+
+Tri thức tích luỹ chuẩn hóa kinh nghiệm thành tri thức.
+
+Bộ nhớ lưu giữ tri thức cho những lần suy luận sau.
+
+---
+
+# Luồng suy luận
+
+```text
+01 · Hành vi
+        │
+        ▼
+02 · Bối cảnh
+        │
+        ▼
+03 · Động lượng
+        │
+        ▼
+04 · Cấu trúc
+        │
+        ▼
+05 · Chất lượng
+        │
+        ▼
+06 · Quyết định
+        │
+        ▼
+07 · Trọng số tín hiệu
+        │
+        ▼
+Chữ ký tín hiệu
+        │
+        ▼
+08 · Không gian kịch bản
+        │
+        ▼
+09 · Kế hoạch thực thi
+        │
+        ▼
+10 · Phản hồi thực tế
+        │
+        ▼
+Tri thức tích luỹ
+        │
+        ▼
+Bộ nhớ
+        │
+        ├── Trường hợp
+        ├── Mẫu
+        ├── Bài học tích luỹ
+        └── Thống kê
+```
+
+---
+
+# Chu trình
+
+```text
+Thực tế
+
+↓
+
+Nguồn dữ liệu
+
+↓
+
+Hệ thống suy luận
+
+↓
+
+Tri thức tích luỹ
+
+↓
+
+Hệ thống suy luận tiếp theo
+```
+
+Đây là một chu trình vận hành liên tục.
+
+Mỗi chu kỳ đều góp phần mở rộng Tri thức tích luỹ và hỗ trợ các chu kỳ suy luận tiếp theo.
+
+---
+
+# Nguyên tắc
+
+Đầu ra của mỗi tầng là đầu vào của tầng kế tiếp.
+
+Quá trình suy luận được thực hiện đầy đủ theo toàn bộ các tầng của Hệ thống suy luận.
+
+Quá trình suy luận được thực hiện theo chiều từ dữ liệu đầu vào đến kết quả suy luận.
+
+Chữ ký tín hiệu được hình thành sau tầng Trọng số tín hiệu.
+
+Không gian kịch bản được hình thành sau khi Chữ ký tín hiệu đã hoàn tất.
+
+Tri thức tích luỹ được tham khảo trong quá trình xây dựng Không gian kịch bản và Kế hoạch thực thi.
+
+Thực tế là tiêu chuẩn kiểm chứng duy nhất của toàn bộ Hệ thống suy luận.
+
+---
+
+# Vai trò
+
+Luồng suy luận chịu trách nhiệm điều phối toàn bộ chu trình vận hành của Hệ thống suy luận.
+
+Trong Luồng suy luận:
+
+Hệ thống suy luận chịu trách nhiệm:
+
+- Quan sát dữ liệu.
+- Phân tích dữ liệu.
+- Đánh giá chất lượng tín hiệu.
+- Xây dựng Không gian kịch bản.
+- Lập Kế hoạch thực thi.
+- Tiếp nhận Phản hồi thực tế.
+
+Tri thức tích luỹ chịu trách nhiệm:
+
+- Tra cứu Trường hợp.
+- Nhận diện Mẫu.
+- Rút ra Bài học tích luỹ.
+- Cập nhật Thống kê.
+- Chuẩn hóa và lưu giữ kinh nghiệm.
+
+---
+
+Luồng suy luận điều phối sự phối hợp giữa Hệ thống suy luận và Tri thức tích luỹ.
+
+Hai thành phần này tạo thành một chu trình học hỏi liên tục từ Thực tế.
+
+---
+
+# Mối quan hệ với Trading
+
+```text
+                       Tri thức nền
+               │
+               │ tham chiếu
+               ▼
+
+Thực tế
+
+↓
+
+Nguồn dữ liệu
+
+↓
+
+Hệ thống suy luận
+
+↓
+
+Tri thức tích luỹ
+
+↓
+
+Hệ thống suy luận tiếp theo
+```
+
+Trong đó:
+
+- Tri thức nền cung cấp các khái niệm và quy ước làm nền tảng cho Luồng suy luận.
+- Nguồn dữ liệu chuẩn hóa dữ liệu từ Thực tế.
+- Hệ thống suy luận chuyển dữ liệu thành phương án thực thi.
+- Tri thức tích luỹ học hỏi từ Thực tế và tái sử dụng kinh nghiệm trong các chu kỳ tiếp theo.
+
+---
+
+# Tóm tắt
+
+```text
+Thực tế
+
+↓
+
+Nguồn dữ liệu
+
+↓
+
+Hệ thống suy luận
+
+↓
+
+Tri thức tích luỹ
+
+↓
+
+Hệ thống suy luận tiếp theo
+```
+
+Luồng suy luận chuẩn hóa:
+
+- Thứ tự xử lý dữ liệu.
+- Mối quan hệ giữa các tầng.
+- Quá trình hình thành quyết định.
+- Quá trình học hỏi từ Thực tế.
+
+Luồng suy luận là khung vận hành của toàn bộ Trading Domain.

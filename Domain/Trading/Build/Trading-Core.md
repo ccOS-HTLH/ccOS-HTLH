@@ -1,349 +1,4 @@
 ---
-title: Trading
-id: trading-domain
-version: 1.6.0
-status: Stable
-author: HTLH
-language: vi
-created: 2026-07-19
-last_updated: 2026-07-31
-review_cycle: Monthly
-confidence: 100%
-tags:
-  - trading
-  - reasoning
-  - knowledge
----
-
-[ccOS](../../README.md) → [Domain](../README.md) → **Trading**
-
-# Trading
-
-> Trading là Domain của ccOS chuyên chuẩn hóa toàn bộ quá trình tiếp nhận Thực tế, suy luận, thực thi, kiểm chứng và tích luỹ tri thức trong giao dịch.
-
----
-
-# Mục đích
-
-Trading chuẩn hóa toàn bộ chu trình từ Thực tế đến Thực tế.
-
-Trading cung cấp một kiến trúc thống nhất để:
-
-- Tiếp nhận dữ liệu.
-- Chuẩn hóa tri thức.
-- Thực hiện suy luận.
-- Thực thi phương án.
-- Kiểm chứng bằng Thực tế.
-- Tích luỹ và tái sử dụng kinh nghiệm.
-
-Mọi thành phần trong Trading đều được tổ chức theo cùng một kiến trúc và cùng một ngôn ngữ.
-
-```text
-Reality
-
-↓
-
-Reasoning
-
-↓
-
-Execution
-
-↓
-
-Reality
-
-↓
-
-Knowledge
-```
-
----
-
-# Kiến trúc
-
-```text
-Trading
-
-├── README.md
-│
-├── Nền tảng
-├── Build
-├── Nguồn dữ liệu
-├── Hệ thống suy luận
-├── Tri thức nền
-└── Tri thức tích luỹ
-```
-
----
-
-# Thành phần
-
-## Nền tảng
-
-Định nghĩa, chuẩn hóa và quản lý toàn bộ Trading Domain.
-
-Bao gồm:
-
-- Boot
-- System Instruction
-- Domain Manifest
-- AI Guide
-- Trading Knowledge Pack
-- VERSION
-- CHANGELOG
-- ROADMAP
-- GLOSSARY
-- ACKNOWLEDGEMENTS
-- READY
-
----
-
-## Build
-
-Đóng gói Trading Domain thành các tài liệu sử dụng.
-
-Bao gồm:
-
-- Trading Core
-- Trading Data
-- Trading Reasoning
-- Trading Knowledge
-- Trading Memory
-- Trading Domain Full
-
-Đồng thời cung cấp các gói Build theo từng mô-đun của Trading Domain.
-
----
-
-## Nguồn dữ liệu
-
-Tiếp nhận và chuẩn hóa dữ liệu từ Thực tế.
-
-Bao gồm:
-
-- ATS.
-- Dữ liệu rời rạc.
-- Các nguồn dữ liệu khác.
-
----
-
-## Hệ thống suy luận
-
-Chuyển dữ liệu thành phương án hành động.
-
-Bao gồm 10 tầng:
-
-```text
-01 · Hành vi
-
-↓
-
-02 · Bối cảnh
-
-↓
-
-03 · Động lượng
-
-↓
-
-04 · Cấu trúc
-
-↓
-
-05 · Chất lượng
-
-↓
-
-06 · Quyết định
-
-↓
-
-07 · Trọng số tín hiệu
-
-↓
-
-08 · Không gian kịch bản
-
-↓
-
-09 · Kế hoạch thực thi
-
-↓
-
-10 · Phản hồi thực tế
-```
-
----
-
-## Tri thức nền
-
-Chuẩn hóa toàn bộ tri thức nền của Trading Domain.
-
-Bao gồm:
-
-- Thuật ngữ.
-- Khái niệm.
-- Quy ước.
-- Chỉ báo.
-- Mô hình.
-- Kiến thức nền tảng.
-- Quy trình chuẩn.
-- Quy ước dữ liệu.
-
-Đây là nguồn tri thức tĩnh của Trading Domain.
-
----
-
-## Tri thức tích luỹ
-
-Học hỏi từ Thực tế và tái sử dụng kinh nghiệm.
-
-Tri thức tích luỹ:
-
-- Tra cứu Trường hợp.
-- Nhận diện Mẫu.
-- Rút ra Bài học tích luỹ.
-- Cập nhật Thống kê.
-- Cung cấp dữ liệu tham khảo cho các chu kỳ suy luận tiếp theo.
-
-Đây là nguồn tri thức động của Trading Domain.
-
----
-
-# Điều hướng
-
-Trading Domain được nạp theo thứ tự:
-
-```text
-Boot
-
-↓
-
-System Instruction
-
-↓
-
-Domain Manifest
-
-↓
-
-AI Guide
-
-↓
-
-Trading README
-
-↓
-
-README của các thành phần
-
-↓
-
-Các thành phần
-
-↓
-
-READY
-```
-
-Chỉ sau khi:
-
-```text
-Trading Domain READY
-```
-
-AI mới được phép sử dụng Trading Domain.
-
----
-
-# Tài liệu nền tảng
-
-| Tài liệu | Vai trò |
-|----------|----------|
-| Boot | Khởi tạo Trading Domain |
-| System Instruction | Định nghĩa nguyên tắc làm việc của AI |
-| Domain Manifest | Định nghĩa kiến trúc Trading Domain |
-| AI Guide | Hướng dẫn AI sử dụng Trading Domain |
-| Trading Knowledge Pack | Tri thức nền phục vụ Trading Domain |
-| README | Tổng quan Trading Domain |
-| VERSION | Phiên bản hiện tại |
-| CHANGELOG | Lịch sử thay đổi |
-| ROADMAP | Định hướng phát triển |
-| GLOSSARY | Thuật ngữ |
-| ACKNOWLEDGEMENTS | Ghi nhận nguồn tham khảo và đóng góp |
-| READY | Xác nhận Trading Domain đã được nạp hoàn chỉnh |
-
----
-
-# Vai trò của Build
-
-Build chịu trách nhiệm đóng gói Trading Domain thành các tài liệu sử dụng.
-
-Mọi gói Build đều được tạo từ tài liệu nguồn.
-
-Build không phải là nơi chỉnh sửa nội dung.
-
-Mọi thay đổi đều phải được thực hiện trên tài liệu nguồn trước khi Build.
-
----
-
-# Triết lý
-
-Trading Domain phát triển thông qua các chu kỳ học hỏi liên tục.
-
-Tri thức nền chuẩn hóa toàn bộ Domain.
-
-Hệ thống suy luận chuyển dữ liệu thành phương án hành động.
-
-Thực tế kiểm chứng mọi kết quả.
-
-Tri thức tích luỹ học hỏi từ Thực tế và tái sử dụng kinh nghiệm trong các chu kỳ suy luận tiếp theo.
-
-Mọi kinh nghiệm đều bắt nguồn từ Thực tế.
-
----
-
-# Tóm tắt
-
-```text
-Trading
-
-├── Nền tảng
-│      Định nghĩa Domain
-│
-├── Build
-│      Đóng gói Domain
-│
-├── Nguồn dữ liệu
-│      Tiếp nhận dữ liệu
-│
-├── Hệ thống suy luận
-│      Chuyển dữ liệu thành
-│      phương án hành động
-│
-├── Tri thức nền
-│      Chuẩn hóa tri thức
-│
-└── Tri thức tích luỹ
-       Học hỏi từ Thực tế
-```
-
-Trading là Domain của ccOS dành cho giao dịch.
-
-Trading chuẩn hóa:
-
-- Tiếp nhận Thực tế.
-- Chuẩn hóa dữ liệu.
-- Chuẩn hóa tri thức.
-- Chuẩn hóa suy luận.
-- Xây dựng phương án hành động.
-- Kiểm chứng bằng Thực tế.
-- Học hỏi từ Thực tế.
-- Tái sử dụng kinh nghiệm qua từng chu kỳ.
-- Đóng gói Domain thành các tài liệu sử dụng.
-
----
 title: Nền tảng
 id: trading-foundation
 version: 1.0
@@ -351,7 +6,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-27
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Monthly
 confidence: 100%
 tags:
@@ -367,11 +22,9 @@ tags:
 
 # Mục đích
 
-Nền tảng là điểm bắt đầu của Trading Domain.
+Nền tảng là Module khởi tạo và quản lý Trading Domain.
 
-Thư mục này tập hợp các tài liệu định nghĩa cấu trúc, nguyên tắc vận hành và vòng đời của toàn bộ hệ thống.
-
-Thông qua Nền tảng, mọi thành phần trong Trading Domain cùng sử dụng một cách tổ chức thống nhất.
+Thư mục này tập hợp các tài liệu định nghĩa kiến trúc, nguyên tắc vận hành, điều hướng và vòng đời của toàn bộ hệ thống.
 
 ---
 
@@ -384,7 +37,7 @@ Nền tảng
 ├── System Instruction
 ├── Domain Manifest
 ├── AI Guide
-├── Trading Knowledge Pack
+├── Trading Navigation Pack
 ├── VERSION
 ├── CHANGELOG
 ├── ROADMAP
@@ -397,14 +50,12 @@ Nền tảng
 
 # Vai trò
 
-Các tài liệu trong Nền tảng chịu trách nhiệm:
+Nền tảng chịu trách nhiệm:
 
 - Khởi tạo Trading Domain.
-- Định nghĩa nguyên tắc vận hành.
-- Quản lý phiên bản.
-- Quản lý tài liệu.
-- Chuẩn hóa cấu trúc hệ thống.
-- Cung cấp tài liệu tham chiếu chung.
+- Định nghĩa kiến trúc và nguyên tắc vận hành.
+- Quản lý phiên bản và tài liệu.
+- Chuẩn hóa tổ chức của toàn bộ Trading Domain.
 
 ---
 
@@ -424,18 +75,6 @@ Trading Domain
 ↓
 
 READY
-
-↓
-
-Nguồn dữ liệu
-
-↓
-
-Hệ thống suy luận
-
-↓
-
-Tri thức tích luỹ
 ```
 
 Sau khi Trading Domain được nạp hoàn chỉnh và xác nhận READY, các thành phần nghiệp vụ bắt đầu hoạt động theo quy trình chuẩn.
@@ -468,9 +107,9 @@ Hướng dẫn AI sử dụng Trading Domain.
 
 ---
 
-## Trading Knowledge Pack
+## Trading Navigation Pack
 
-Tập hợp toàn bộ tri thức nền phục vụ Trading Domain.
+Bản đồ điều hướng của Trading Domain.
 
 ---
 
@@ -512,10 +151,9 @@ Xác nhận Trading Domain đã được nạp hoàn chỉnh và sẵn sàng v�
 
 # Nguyên tắc
 
-- Mỗi tài liệu đảm nhận một vai trò rõ ràng.
-- Các thành phần sử dụng cùng một quy ước.
-- Mọi thay đổi đều được quản lý theo phiên bản.
-- Trading Domain vận hành trên một nền tảng thống nhất.
+- Mỗi tài liệu đảm nhận một vai trò riêng.
+- Các thành phần tuân theo cùng một kiến trúc và quy ước.
+- Mọi thay đổi được quản lý theo phiên bản.
 
 ---
 
@@ -531,18 +169,6 @@ Trading Domain
 ↓
 
 READY
-
-↓
-
-Nguồn dữ liệu
-
-↓
-
-Hệ thống suy luận
-
-↓
-
-Tri thức tích luỹ
 ```
 
 Nền tảng cung cấp điểm khởi đầu và cơ sở tổ chức cho toàn bộ Trading Domain.
@@ -557,7 +183,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 tags:
@@ -575,9 +201,7 @@ tags:
 
 Boot định nghĩa quy trình khởi tạo Trading Domain.
 
-Đây là điểm bắt đầu để AI nạp toàn bộ Domain theo một trình tự thống nhất trước khi sử dụng.
-
-Boot tập trung vào quy trình khởi tạo và trạng thái của Trading Domain.
+Đây là điểm bắt đầu để AI nạp toàn bộ Trading Domain theo một trình tự thống nhất trước khi sử dụng.
 
 ---
 
@@ -602,7 +226,7 @@ AI Guide
 
 ↓
 
-Trading Knowledge Pack
+Trading Navigation Pack
 
 ↓
 
@@ -641,7 +265,7 @@ Nạp Trading Domain theo đúng trình tự.
 
 ## 03
 
-Hoàn thành toàn bộ quá trình khởi tạo trước khi sử dụng Domain.
+Chỉ sử dụng Trading Domain sau khi hoàn tất quá trình khởi tạo.
 
 ---
 
@@ -653,17 +277,11 @@ Trading Domain chuyển sang trạng thái **READY** sau khi toàn bộ tài li�
 
 ## 05
 
-Quá trình suy luận được thực hiện trên dữ liệu đã được nạp đầy đủ.
-
----
-
-## 06
-
 Mọi hoạt động đều tuân thủ kiến trúc và quy ước của Trading Domain.
 
 ---
 
-## 07
+## 06
 
 Boot hỗ trợ các Boot Commands:
 
@@ -699,7 +317,7 @@ status
 Sau khi READY:
 
 ```text
-Trading Domain
+Trading Domain READY
 
 ↓
 
@@ -712,6 +330,10 @@ Hệ thống suy luận
 ↓
 
 Tri thức tích luỹ
+
+↓
+
+Hệ thống suy luận tiếp theo
 ```
 
 Trading Domain được duy trì cho đến khi thực hiện:
@@ -728,7 +350,7 @@ Trading Domain được duy trì cho đến khi thực hiện:
 - Boot là điểm bắt đầu của Trading Domain.
 - Trading Domain được khởi tạo theo một trình tự thống nhất.
 - READY đánh dấu trạng thái sẵn sàng vận hành.
-- Mọi thành phần cùng sử dụng một kiến trúc và quy ước chung.
+- Mọi thành phần của Trading Domain tuân theo cùng một kiến trúc và quy ước.
 
 ---
 
@@ -744,21 +366,9 @@ Trading Domain
 ↓
 
 READY
-
-↓
-
-Nguồn dữ liệu
-
-↓
-
-Hệ thống suy luận
-
-↓
-
-Tri thức tích luỹ
 ```
 
-Boot chuẩn hóa quá trình khởi tạo Trading Domain và tạo nền tảng cho toàn bộ chu trình làm việc.
+Boot chuẩn hóa quá trình khởi tạo Trading Domain và đưa Domain vào trạng thái READY trước khi vận hành.
 
 ---
 
@@ -770,7 +380,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 ---
@@ -790,7 +400,7 @@ Tài liệu này chuẩn hóa:
 - Quy tắc vận hành.
 - Thứ tự ưu tiên.
 - Phạm vi áp dụng.
-- Các lệnh điều khiển Domain.
+- Boot Commands.
 
 Đây là tài liệu có mức ưu tiên cao nhất trong Trading Domain.
 
@@ -813,7 +423,7 @@ AI Guide
 
 ↓
 
-Trading Knowledge Pack
+Trading Navigation Pack
 
 ↓
 
@@ -861,52 +471,34 @@ Hệ thống suy luận
 
 ↓
 
-Quyết định
-
-↓
-
-Thực tế
-
-↓
-
 Tri thức tích luỹ
 
 ↓
 
-Chu kỳ suy luận tiếp theo
+Hệ thống suy luận tiếp theo
 ```
 
 ---
 
 ## 03 · Hoàn thành Hệ thống suy luận
 
-Mỗi chu kỳ suy luận được thực hiện đầy đủ theo đúng trình tự của Hệ thống suy luận.
+AI luôn thực hiện đầy đủ Hệ thống suy luận theo đúng trình tự đã được định nghĩa.
 
 ---
 
 ## 04 · Tri thức nền
 
-Tri thức nền chuẩn hóa:
-
-- Thuật ngữ.
-- Khái niệm.
-- Quy ước.
-
-Các quy ước này được sử dụng thống nhất trong toàn bộ Trading Domain.
+Tri thức nền chuẩn hóa toàn bộ thuật ngữ, khái niệm và quy ước được sử dụng trong Trading Domain.
 
 ---
 
 ## 05 · Tri thức tích luỹ
 
-Tri thức tích luỹ được sử dụng sau khi Hệ thống suy luận hoàn tất.
+Tri thức tích luỹ được tham khảo sau khi Hệ thống suy luận hoàn tất nhằm hỗ trợ:
 
-Mục đích:
-
-- Tham khảo.
 - Đánh giá.
 - Hiệu chỉnh.
-
-Kết quả tra cứu hỗ trợ quá trình xây dựng Không gian kịch bản và Kế hoạch thực thi.
+- Tái sử dụng kinh nghiệm.
 
 ---
 
@@ -919,7 +511,7 @@ Quá trình suy luận được thực hiện trên tập dữ liệu đầy đ�
 ## 07 · Cập nhật kinh nghiệm
 
 ```text
-Quyết định được Thực tế kiểm chứng
+Thực tế
 
 ↓
 
@@ -1071,7 +663,7 @@ Domain Manifest.md               ⏳
 
 AI Guide.md                      ⏳
 
-Trading Knowledge Pack.md        ⏳
+Trading Navigation Pack.md        ⏳
 
 Trading README.md                ⏳
 
@@ -1140,15 +732,11 @@ Hệ thống suy luận
 
 ↓
 
-Quyết định
-
-↓
-
-Thực tế
-
-↓
-
 Tri thức tích luỹ
+
+↓
+
+Hệ thống suy luận tiếp theo
 ```
 
 Mọi chu kỳ vận hành đều tuân theo cùng một kiến trúc.
@@ -1157,15 +745,16 @@ Mọi chu kỳ vận hành đều tuân theo cùng một kiến trúc.
 
 # Tóm tắt
 
-System Instruction chuẩn hóa:
+System Instruction là tài liệu điều phối toàn bộ Trading Domain.
+
+Tài liệu này định nghĩa:
 
 - Quy tắc vận hành.
 - Thứ tự ưu tiên.
 - Phạm vi áp dụng.
 - Boot Commands.
-- Trạng thái của Trading Domain.
 
-Đây là tài liệu điều phối toàn bộ quá trình vận hành của Trading Domain.
+Mọi thành phần của Trading Domain đều tuân theo các nguyên tắc được định nghĩa trong tài liệu này.
 
 ---
 
@@ -1177,7 +766,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 ---
@@ -1210,12 +799,12 @@ Stable
 
 Trading Domain Manifest mô tả:
 
-- Kiến trúc Trading Domain.
-- Các thành phần của Domain.
-- Quan hệ giữa các thành phần.
-- Luồng vận hành tổng thể.
+- Kiến trúc của Trading Domain.
+- Các Module và vai trò của từng Module.
+- Mối quan hệ giữa các Module.
+- Luồng vận hành tổng thể của Domain.
 
-Manifest giúp toàn bộ Trading Domain được tổ chức theo một kiến trúc thống nhất.
+Manifest là tài liệu mô tả kiến trúc trung tâm của Trading Domain.
 
 ---
 
@@ -1227,11 +816,11 @@ Trading
 ├── README.md
 │
 ├── Nền tảng
-├── Build
+├── Tri thức nền
 ├── Nguồn dữ liệu
 ├── Hệ thống suy luận
-├── Tri thức nền
-└── Tri thức tích luỹ
+├── Tri thức tích luỹ
+└── Build
 ```
 
 ---
@@ -1248,74 +837,7 @@ Trading
 
 Chuẩn hóa và quản lý Trading Domain.
 
-Bao gồm:
-
-- Boot
-- System Instruction
-- Domain Manifest
-- AI Guide
-- Trading Knowledge Pack
-- VERSION
-- CHANGELOG
-- ROADMAP
-- GLOSSARY
-- ACKNOWLEDGEMENTS
-- READY
-
----
-
-## Build
-
-Quản lý quá trình xây dựng và phát triển Trading Domain.
-
-Bao gồm:
-
-- Kiến trúc.
-- Thiết kế.
-- Kế hoạch mở rộng.
-- Tài liệu phát triển.
-
----
-
-## Nguồn dữ liệu
-
-Chuẩn hóa dữ liệu đầu vào từ Thực tế.
-
-Ví dụ:
-
-- ATS
-- Dữ liệu rời rạc
-- Các nguồn dữ liệu bổ sung
-
----
-
-## Hệ thống suy luận
-
-Chuyển dữ liệu thành quyết định.
-
-Bao gồm:
-
-```text
-01 · Hành vi
-
-02 · Bối cảnh
-
-03 · Động lượng
-
-04 · Cấu trúc
-
-05 · Chất lượng
-
-06 · Quyết định
-
-07 · Trọng số tín hiệu
-
-08 · Không gian kịch bản
-
-09 · Kế hoạch thực thi
-
-10 · Phản hồi thực tế
-```
+Bao gồm các tài liệu điều phối và quản lý toàn bộ Trading Domain.
 
 ---
 
@@ -1326,8 +848,43 @@ Chuẩn hóa:
 - Thuật ngữ.
 - Khái niệm.
 - Quy ước.
-- Luồng chuẩn.
 - Kiến thức nền tảng.
+
+---
+
+## Nguồn dữ liệu
+
+Chuẩn hóa dữ liệu đầu vào từ Thực tế.
+
+---
+
+## Hệ thống suy luận
+
+Chuyển dữ liệu thành quyết định.
+
+Bao gồm:
+
+```text
+01-Hành vi
+
+02-Bối cảnh
+
+03-Động lượng
+
+04-Cấu trúc
+
+05-Chất lượng
+
+06-Quyết định
+
+07-Trọng số tín hiệu
+
+08-Không gian kịch bản
+
+09-Kế hoạch thực thi
+
+10-Phản hồi thực tế
+```
 
 ---
 
@@ -1353,10 +910,16 @@ README.md
     └── Cập nhật
 ```
 
-Tri thức tích luỹ được tổ chức thành hai nhóm:
+Tri thức tích luỹ gồm:
 
-- **Bộ nhớ** chuẩn hóa cấu trúc và lưu giữ tri thức đã được kiểm chứng.
-- **Cơ chế** chuẩn hóa quy trình khai thác, đối chiếu, tổng hợp và cập nhật Bộ nhớ.
+- Bộ nhớ: chuẩn hóa và lưu giữ tri thức đã được kiểm chứng.
+- Cơ chế: chuẩn hóa cách tra cứu, đối chiếu, tổng hợp và cập nhật Bộ nhớ.
+
+---
+
+## Build
+
+Quản lý quá trình thiết kế, xây dựng và phát triển Trading Domain.
 
 ---
 
@@ -1368,7 +931,7 @@ Tri thức tích luỹ được tổ chức thành hai nhóm:
 | System Instruction | Chuẩn hóa quy tắc vận hành |
 | Domain Manifest | Chuẩn hóa kiến trúc Domain |
 | AI Guide | Hướng dẫn AI sử dụng Domain |
-| Trading Knowledge Pack | Chỉ mục tri thức |
+| Trading Navigation Pack | Bản đồ điều hướng |
 | README | Tổng quan Trading Domain |
 | README của Module | Tổng quan từng Module |
 | Module | Nội dung chuyên môn |
@@ -1380,26 +943,33 @@ Tri thức tích luỹ được tổ chức thành hai nhóm:
 | Module | Vai trò |
 |---------|----------|
 | Nền tảng | Chuẩn hóa Trading Domain |
-| Build | Quản lý quá trình xây dựng Domain |
+| Tri thức nền | Chuẩn hóa ngôn ngữ và quy ước |
 | Nguồn dữ liệu | Chuẩn hóa dữ liệu đầu vào |
 | Hệ thống suy luận | Chuẩn hóa quá trình suy luận |
-| Tri thức nền | Chuẩn hóa ngôn ngữ và quy ước |
 | Tri thức tích luỹ | Chuẩn hóa kinh nghiệm và cơ chế khai thác |
+| Build | Quản lý quá trình xây dựng Domain |
 
 ---
 
 # Tóm tắt
 
+Kiến trúc:
+
 ```text
 Trading
 
-↓
+├── Nền tảng
+├── Tri thức nền
+├── Nguồn dữ liệu
+├── Hệ thống suy luận
+├── Tri thức tích luỹ
+└── Build
+```
 
-Nền tảng
+Luồng vận hành:
 
-↓
-
-Build
+```text
+Tri thức nền
 
 ↓
 
@@ -1411,15 +981,11 @@ Hệ thống suy luận
 
 ↓
 
-Tri thức nền
-
-↓
-
 Tri thức tích luỹ
 
 ↓
 
-Chu kỳ suy luận tiếp theo
+Hệ thống suy luận tiếp theo
 ```
 
 Trading Domain được tổ chức thành các Module chuyên trách.
@@ -1430,17 +996,17 @@ Mỗi Module đảm nhiệm một vai trò riêng và cùng tham gia vào một 
 
 # Triết lý
 
-Nền tảng định nghĩa Trading Domain.
+Nền tảng định nghĩa Domain.
 
-Build quản lý quá trình phát triển Domain.
+Tri thức nền chuẩn hóa cách hiểu.
 
-Nguồn dữ liệu chuẩn hóa dữ liệu đầu vào.
+Nguồn dữ liệu chuẩn hóa đầu vào.
 
 Hệ thống suy luận chuyển dữ liệu thành quyết định.
 
-Tri thức nền chuẩn hóa cách hiểu và cách vận hành.
+Tri thức tích luỹ kế thừa kinh nghiệm đã được kiểm chứng.
 
-Tri thức tích luỹ kế thừa kinh nghiệm đã được kiểm chứng để hỗ trợ các chu kỳ suy luận tiếp theo.
+Build quản lý quá trình phát triển Domain.
 
 ---
 
@@ -1452,7 +1018,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 ---
@@ -1482,7 +1048,7 @@ Trading Domain READY
 
 ↓
 
-Tiếp nhận Nguồn dữ liệu
+Nguồn dữ liệu
 
 ↓
 
@@ -1498,24 +1064,12 @@ Tri thức tích luỹ
 
 ↓
 
-Không gian kịch bản
-
-↓
-
-Kế hoạch thực thi
-
-↓
-
-Phản hồi thực tế
-
-↓
-
-Chu kỳ suy luận tiếp theo
+Hệ thống suy luận tiếp theo
 ```
 
 ---
 
-# 01 · Tiếp nhận Nguồn dữ liệu
+# 01 · Nguồn dữ liệu
 
 Sau khi Trading Domain ở trạng thái READY, AI tiếp nhận dữ liệu đầu vào.
 
@@ -1543,120 +1097,91 @@ Mọi thành phần sử dụng cùng hệ thuật ngữ và quy ước thống 
 AI thực hiện đầy đủ chu trình suy luận:
 
 ```text
-01 · Hành vi
+01-Hành vi
 
 ↓
 
-02 · Bối cảnh
+02-Bối cảnh
 
 ↓
 
-03 · Động lượng
+03-Động lượng
 
 ↓
 
-04 · Cấu trúc
+04-Cấu trúc
 
 ↓
 
-05 · Chất lượng
+05-Chất lượng
 
 ↓
 
-06 · Quyết định
+06-Quyết định
 
 ↓
 
-07 · Trọng số tín hiệu
+07-Trọng số tín hiệu
 
 ↓
 
-08 · Không gian kịch bản
+08-Không gian kịch bản
 
 ↓
 
-09 · Kế hoạch thực thi
+09-Kế hoạch thực thi
 
 ↓
 
-10 · Phản hồi thực tế
+10-Phản hồi thực tế
 ```
 
 ---
 
 # 04 · Tri thức tích luỹ
 
-Sau khi hoàn thành Hệ thống suy luận, AI sử dụng Chữ ký tín hiệu để tham khảo:
+```text
+07-Trọng số tín hiệu
+        │
+        ├── tạo
+        ▼
+  Chữ ký tín hiệu
 
-- Trường hợp
-- Mẫu
-- Bài học tích luỹ
-- Thống kê
+08-Không gian kịch bản
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Tham khảo Tri thức tích luỹ
 
-Kết quả được sử dụng để:
+09-Kế hoạch thực thi
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Tham khảo Tri thức tích luỹ
 
-- Đối chiếu
-- Tổng hợp
-- Hiệu chỉnh Không gian kịch bản
-- Hiệu chỉnh Kế hoạch thực thi
+10-Phản hồi thực tế
+        │
+        └── sử dụng Chữ ký tín hiệu
+              │
+              └── Cập nhật Tri thức tích luỹ
+```
+
+AI sử dụng Chữ ký tín hiệu để tham khảo và cập nhật Tri thức tích luỹ theo đúng quy ước của Trading Domain.
 
 ---
 
-# 05 · Phản hồi thực tế
+# 05 · Hệ thống suy luận tiếp theo
 
-Sau khi phương án được Thực tế kiểm chứng:
-
-```text
-Phản hồi thực tế
-
-↓
-
-Tri thức tích luỹ
-
-↓
-
-Bộ nhớ
-
-↓
-
-Chu kỳ suy luận tiếp theo
-```
-
-Kinh nghiệm mới được bổ sung vào Bộ nhớ để hỗ trợ các chu kỳ suy luận tiếp theo.
+Sau khi tầng 10-Phản hồi thực tế hoàn tất, Tri thức tích luỹ cập nhật Bộ nhớ để hỗ trợ các Hệ thống suy luận tiếp theo.
 
 ---
 
 # Vai trò của AI
 
-AI vận hành Trading Domain theo trình tự:
-
-```text
-Tiếp nhận
-
-↓
-
-Chuẩn hóa
-
-↓
-
-Suy luận
-
-↓
-
-Tham khảo
-
-↓
-
-Hiệu chỉnh
-
-↓
-
-Phản hồi
-
-↓
-
-Tích luỹ
-```
+- Tiếp nhận và chuẩn hóa Nguồn dữ liệu.
+- Thực hiện đầy đủ Luồng suy luận.
+- Tham khảo Tri thức tích luỹ qua Chữ ký tín hiệu.
+- Cập nhật Tri thức tích luỹ sau khi Thực tế kiểm chứng.
 
 ---
 
@@ -1687,6 +1212,10 @@ Nguồn dữ liệu
 
 ↓
 
+Chuẩn hóa dữ liệu
+
+↓
+
 Hệ thống suy luận
 
 ↓
@@ -1695,15 +1224,7 @@ Tri thức tích luỹ
 
 ↓
 
-Không gian kịch bản
-
-↓
-
-Kế hoạch thực thi
-
-↓
-
-Phản hồi thực tế
+Hệ thống suy luận tiếp theo
 ```
 
 AI Guide mô tả cách AI phối hợp các Module của Trading Domain trong một chu kỳ vận hành hoàn chỉnh.
@@ -1721,39 +1242,39 @@ Tri thức tích luỹ đồng hành cùng từng chu kỳ suy luận để nân
 ---
 
 ---
-title: Trading Knowledge Pack
-id: trading-knowledge-pack
-version: 1.4.0
+title: Trading Navigation Pack
+id: trading-navigation-pack
+version: 2.0.0
 status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 tags:
   - trading
-  - knowledge-pack
+  - navigation
+  - domain
 ---
 
-# Trading Knowledge Pack
+# Trading Navigation Pack
 
-> Chỉ mục tri thức của Trading Domain.
+> Bản đồ điều hướng của Trading Domain.
 
 ---
 
 # Mục đích
 
-Trading Knowledge Pack là bản đồ tri thức của Trading Domain.
+Trading Navigation Pack là bản đồ điều hướng của Trading Domain.
 
 Tài liệu này giúp AI:
 
 - Định vị cấu trúc Domain.
-- Xác định vai trò của từng thành phần.
-- Hiểu mối quan hệ giữa các Module.
+- Xác định vai trò của từng Module.
 - Điều hướng đến đúng tài liệu chuyên môn.
 
-Knowledge Pack đóng vai trò chỉ mục, giúp toàn bộ Trading Domain được sử dụng nhất quán.
+Navigation Pack không chứa tri thức chuyên môn.
 
 ---
 
@@ -1764,15 +1285,15 @@ Trading
 
 ├── 01 · Nền tảng
 │
-├── 02 · Build
+├── 02 · Tri thức nền
 │
 ├── 03 · Nguồn dữ liệu
 │
 ├── 04 · Hệ thống suy luận
 │
-├── 05 · Tri thức nền
+├── 05 · Tri thức tích luỹ
 │
-└── 06 · Tri thức tích luỹ
+└── 06 · Build
 ```
 
 ---
@@ -1781,143 +1302,44 @@ Trading
 
 ## 01 · Nền tảng
 
-Vai trò:
-
-Chuẩn hóa và quản lý Trading Domain.
-
-Bao gồm:
-
-- Boot
-- System Instruction
-- Domain Manifest
-- AI Guide
-- Trading Knowledge Pack
-- VERSION
-- CHANGELOG
-- ROADMAP
-- GLOSSARY
-- ACKNOWLEDGEMENTS
-- READY
+Khởi tạo và quản lý Trading Domain.
 
 ---
 
-## 02 · Build
+## 02 · Tri thức nền
 
-Vai trò:
-
-Đóng gói kiến trúc Trading Domain thành các tài liệu tổng hợp phục vụ triển khai, tham chiếu và bảo trì.
-
-Bao gồm:
-
-- Trading Core
-- Trading Data
-- Trading Reasoning
-- Trading Knowledge
-- Trading Memory
-- Trading Domain Full
-- Reasoning (01 → 10)
+Chuẩn hóa thuật ngữ, khái niệm và quy ước.
 
 ---
 
 ## 03 · Nguồn dữ liệu
 
-Vai trò:
-
-Chuẩn hóa dữ liệu đầu vào từ Thực tế.
-
-Bao gồm:
-
-- ATS
-- Dữ liệu rời rạc
+Tiếp nhận và chuẩn hóa dữ liệu đầu vào.
 
 ---
 
 ## 04 · Hệ thống suy luận
 
-Vai trò:
-
-Chuyển dữ liệu thành Quyết định.
-
-Bao gồm:
-
-```text
-01 · Hành vi
-
-02 · Bối cảnh
-
-03 · Động lượng
-
-04 · Cấu trúc
-
-05 · Chất lượng
-
-06 · Quyết định
-
-07 · Trọng số tín hiệu
-
-08 · Không gian kịch bản
-
-09 · Kế hoạch thực thi
-
-10 · Phản hồi thực tế
-```
+Chuyển dữ liệu thành quyết định.
 
 ---
 
-## 05 · Tri thức nền
+## 05 · Tri thức tích luỹ
 
-Vai trò:
-
-Chuẩn hóa ngôn ngữ, quy ước và kiến trúc của Trading Domain.
-
-Bao gồm:
-
-- Quy ước Chữ ký tín hiệu
-- Quy ước Trường hợp
-- Quy ước Mẫu
-- Quy ước Bài học tích luỹ
-- Quy ước Thống kê
-- Quy ước chỉ báo đa khung thời gian
-- Luồng suy luận
+Quản lý kinh nghiệm đã được Thực tế kiểm chứng.
 
 ---
 
-## 06 · Tri thức tích luỹ
+## 06 · Build
 
-Vai trò:
-
-Quản lý kinh nghiệm đã được Thực tế kiểm chứng và hỗ trợ các chu kỳ suy luận tiếp theo.
-
-```text
-Tri thức tích luỹ
-
-├── README
-│
-├── Bộ nhớ
-│   ├── README
-│   ├── Trường hợp
-│   ├── Mẫu
-│   ├── Bài học tích luỹ
-│   └── Thống kê
-│
-└── Cơ chế
-    ├── README
-    ├── Tra cứu
-    ├── Đối chiếu
-    ├── Tổng hợp
-    └── Cập nhật
-```
+Đóng gói và quản lý tài liệu xây dựng Domain.
 
 ---
 
-# Luồng tri thức
+# Luồng kiến trúc
 
 ```text
-              Tri thức nền
-                    │
-                    ▼
-
-Thực tế
+Tri thức nền
 
 ↓
 
@@ -1929,70 +1351,39 @@ Hệ thống suy luận
 
 ↓
 
-Quyết định
-
-↓
-
-Thực tế
-
-↓
-
 Tri thức tích luỹ
 
 ↓
 
-Chu kỳ suy luận tiếp theo
+Hệ thống suy luận tiếp theo
 ```
 
 ---
 
 # Điều hướng
 
-Trading Knowledge Pack giúp AI định vị nhanh toàn bộ Trading Domain.
+Trading Navigation Pack giúp AI xác định nhanh vị trí của từng Module trong Trading Domain.
 
-```text
-01 · Nền tảng
-
-↓
-
-02 · Build
-
-↓
-
-03 · Nguồn dữ liệu
-
-↓
-
-04 · Hệ thống suy luận
-
-↓
-
-05 · Tri thức nền
-
-↓
-
-06 · Tri thức tích luỹ
-```
-
-Chi tiết của từng nhóm được định nghĩa trong README và các Module tương ứng.
+Chi tiết của mỗi Module được định nghĩa trong README và các tài liệu tương ứng.
 
 ---
 
 # Vai trò
 
-Trading Knowledge Pack giúp:
+Trading Navigation Pack giúp:
 
-- Định vị tri thức.
-- Điều hướng Module.
-- Kết nối các thành phần của Trading Domain.
-- Duy trì kiến trúc thống nhất trong toàn bộ Domain.
+- Định vị Module.
+- Điều hướng tài liệu.
+- Kết nối kiến trúc của Trading Domain.
+
+Navigation Pack không thay thế Tri thức nền và không chứa tri thức chuyên môn.
 
 ---
 
 # Tóm tắt
 
 ```text
-Trading Knowledge Pack
+Trading Navigation Pack
 
 ↓
 
@@ -2003,7 +1394,7 @@ Trading Knowledge Pack
 Trading Domain
 ```
 
-Trading Knowledge Pack là bản đồ tri thức của Trading Domain, giúp AI xác định đúng vị trí, vai trò và mối quan hệ của từng thành phần trước khi làm việc với các Module chuyên môn.
+Trading Navigation Pack là bản đồ điều hướng giúp AI xác định đúng Module và tài liệu trong Trading Domain.
 
 ---
 
@@ -2015,7 +1406,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 tags:
@@ -2031,32 +1422,31 @@ tags:
 
 # Mục đích
 
-VERSION xác định trạng thái phát hành hiện tại của Trading Domain.
+VERSION xác định phiên bản và trạng thái phát hành hiện tại của Trading Domain.
 
-Tài liệu này giúp AI và người dùng:
+Tài liệu này giúp:
 
 - Xác định phiên bản hiện hành.
 - Kiểm tra trạng thái phát hành.
-- Đánh giá khả năng tương thích.
 - Đồng bộ toàn bộ Trading Domain.
 
 ---
 
 # Trading Domain
 
-## Version
+## Phiên bản
 
 ```text
 1.4.0
 ```
 
-## Status
+## Trạng thái
 
 ```text
 Stable
 ```
 
-## Release Date
+## Ngày phát hành
 
 ```text
 2026-07-27
@@ -2066,35 +1456,24 @@ Stable
 
 # Phạm vi đồng bộ
 
-## Core Documents
+## Tài liệu nền tảng
 
 ```text
 Boot
-
 System Instruction
-
 Domain Manifest
-
 AI Guide
-
-Trading Knowledge Pack
-
+Trading Navigation Pack
 Trading README
-
 VERSION
-
 CHANGELOG
-
 ROADMAP
-
 GLOSSARY
-
 ACKNOWLEDGEMENTS
-
 READY
 ```
 
-## Modules
+## Module
 
 ```text
 README của các Module
@@ -2106,22 +1485,6 @@ Các Module
 
 ---
 
-# Compatibility
-
-Trading Domain hiện tại:
-
-```text
-Version : 1.4.0
-
-Status  : Stable
-```
-
-Core Documents luôn đồng bộ với phiên bản Trading Domain.
-
-Các Module có thể phát triển độc lập khi vẫn tương thích với phiên bản hiện hành.
-
----
-
 # Semantic Versioning
 
 Trading Domain sử dụng chuẩn:
@@ -2130,11 +1493,9 @@ Trading Domain sử dụng chuẩn:
 MAJOR.MINOR.PATCH
 ```
 
-## MAJOR
+## Thay đổi lớn (MAJOR)
 
 Thay đổi kiến trúc Trading Domain.
-
-Ví dụ:
 
 ```text
 1.x.x
@@ -2146,11 +1507,9 @@ Ví dụ:
 
 ---
 
-## MINOR
+## Mở rộng (MINOR)
 
 Mở rộng Trading Domain.
-
-Ví dụ:
 
 ```text
 1.3.0
@@ -2162,11 +1521,9 @@ Ví dụ:
 
 ---
 
-## PATCH
+## Cập nhật nhỏ (PATCH)
 
-Cập nhật nội dung và tối ưu tài liệu.
-
-Ví dụ:
+Cập nhật nội dung hoặc tối ưu tài liệu.
 
 ```text
 1.4.0
@@ -2179,8 +1536,6 @@ Ví dụ:
 ---
 
 # Quy trình cập nhật
-
-Khi phát hành phiên bản mới:
 
 ```text
 VERSION
@@ -2195,14 +1550,14 @@ ROADMAP (nếu cần)
 
 ↓
 
-Core Documents
+Tài liệu nền tảng
 
 ↓
 
 Modules
 ```
 
-Việc đồng bộ hoàn tất khi toàn bộ Core Documents phản ánh cùng một phiên bản của Trading Domain.
+Toàn bộ Trading Domain được xem là đồng bộ khi các tài liệu nền tảng và Module tương thích với phiên bản hiện hành.
 
 ---
 
@@ -2213,7 +1568,6 @@ VERSION giúp:
 - Quản lý phiên bản.
 - Đồng bộ Trading Domain.
 - Theo dõi trạng thái phát hành.
-- Xác định khả năng tương thích giữa các tài liệu.
 
 ---
 
@@ -2224,14 +1578,10 @@ VERSION
 
 ↓
 
-Đồng bộ
-
-↓
-
 Trading Domain
 ```
 
-VERSION phản ánh trạng thái hiện tại của Trading Domain và là mốc tham chiếu chung cho toàn bộ tài liệu.
+VERSION là mốc tham chiếu chung về phiên bản và trạng thái phát hành của toàn bộ Trading Domain.
 
 ---
 
@@ -2243,7 +1593,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 tags:
@@ -2259,16 +1609,15 @@ tags:
 
 # Mục đích
 
-CHANGELOG lưu lại các thay đổi giữa các phiên bản nhằm:
+CHANGELOG ghi nhận các thay đổi giữa các phiên bản nhằm:
 
 - Theo dõi quá trình phát triển.
 - Xác định phạm vi thay đổi.
-- Đánh giá mức độ ảnh hưởng.
 - Đồng bộ Trading Domain.
 
 ---
 
-# Semantic Versioning
+# Quy ước phiên bản
 
 Trading Domain sử dụng chuẩn:
 
@@ -2276,61 +1625,48 @@ Trading Domain sử dụng chuẩn:
 MAJOR.MINOR.PATCH
 ```
 
+| Thành phần | Ý nghĩa |
+|------------|----------|
+| **Thay đổi lớn (MAJOR)** | Thay đổi kiến trúc Trading Domain |
+| **Mở rộng (MINOR)** | Mở rộng Module hoặc chức năng |
+| **Cập nhật nhỏ (PATCH)** | Cập nhật nội dung hoặc tối ưu tài liệu |
+
+---
+
+# Quy ước thay đổi
+
 | Loại | Ý nghĩa |
 |------|----------|
-| **MAJOR** | Thay đổi kiến trúc Domain |
-| **MINOR** | Mở rộng Module hoặc chức năng |
-| **PATCH** | Cập nhật nội dung, tối ưu tài liệu |
+| **Added** | Thêm mới |
+| **Changed** | Điều chỉnh |
+| **Fixed** | Sửa lỗi |
+| **Docs** | Cập nhật tài liệu |
 
 ---
 
-# Change Types
+# Lịch sử phiên bản
 
-| Type | Ý nghĩa |
-|------|----------|
-| Added | Thêm mới |
-| Changed | Điều chỉnh |
-| Fixed | Sửa lỗi |
-| Docs | Cập nhật tài liệu |
-
----
-
-# History
-
----
-
-## v1.4.0 • 2026-07-27
+## v1.4.0 • 2026-08-01
 
 ### Added
 
-- Hoàn thiện kiến trúc **Nền tảng**, **Build**, **Nguồn dữ liệu**, **Tri thức nền** và **Tri thức tích luỹ**.
+- Hoàn thiện kiến trúc **Nền tảng**, **Tri thức nền**, **Nguồn dữ liệu**, **Hệ thống suy luận**, **Tri thức tích luỹ** và **Build**.
 - Bổ sung cấu trúc **Bộ nhớ** và **Cơ chế** trong Tri thức tích luỹ.
 - Chuẩn hóa README cho toàn bộ Module.
 
 ### Changed
 
 - Đồng bộ Trading Domain lên phiên bản **1.4.0**.
-- Chuẩn hóa kiến trúc Domain và sơ đồ Module.
+- Chuẩn hóa kiến trúc Domain.
 - Chuẩn hóa luồng giữa Hệ thống suy luận và Tri thức tích luỹ.
 - Tinh gọn toàn bộ Core Documents.
-- Đồng bộ thuật ngữ và quy ước trên toàn Domain.
+- Đồng bộ thuật ngữ và quy ước.
 
 ### Docs
 
-- Cập nhật Boot.
-- Cập nhật System Instruction.
-- Cập nhật Domain Manifest.
-- Cập nhật AI Guide.
-- Cập nhật Trading Knowledge Pack.
-- Cập nhật VERSION.
-- Cập nhật README và README các Module.
+- Cập nhật toàn bộ tài liệu nền tảng.
+- Chuẩn hóa README các Module.
 - Chuẩn hóa toàn bộ tài liệu Quy ước.
-
-### Impact
-
-- Kiến trúc Trading Domain hoàn thiện và nhất quán.
-- Không thay đổi Logic của Hệ thống suy luận.
-- Tăng khả năng mở rộng và bảo trì.
 
 ---
 
@@ -2343,18 +1679,14 @@ MAJOR.MINOR.PATCH
 - Compatibility.
 - Boot Commands.
 - Session Scope.
-- Domain Isolation.
+- Domain Scope.
 
 ### Changed
 
-- Chuẩn hóa toàn bộ Core Documents.
-- Chuẩn hóa Boot và quy trình nạp Domain.
-- Chuẩn hóa Trading Knowledge Pack.
-- Chuẩn hóa chu kỳ suy luận và học hỏi.
-
-### Impact
-
-- Tăng tính nhất quán của Trading Domain.
+- Chuẩn hóa Core Documents.
+- Chuẩn hóa quy trình Boot.
+- Chuẩn hóa Trading Navigation Pack.
+- Chuẩn hóa chu kỳ suy luận.
 
 ---
 
@@ -2366,7 +1698,7 @@ MAJOR.MINOR.PATCH
 - READY.
 - Domain Manifest.
 - AI Guide.
-- Trading Knowledge Pack.
+- Trading Navigation Pack.
 - VERSION.
 - CHANGELOG.
 - GLOSSARY.
@@ -2376,10 +1708,6 @@ MAJOR.MINOR.PATCH
 
 - Chuẩn hóa Trading README.
 - Hoàn thiện ranh giới giữa Hệ thống suy luận và Tri thức tích luỹ.
-
-### Impact
-
-- Hoàn thiện kiến trúc Trading Domain.
 
 ---
 
@@ -2391,38 +1719,13 @@ MAJOR.MINOR.PATCH
 - Kế hoạch thực thi.
 - Phản hồi thực tế.
 
-### Impact
-
-- Hoàn thiện chu kỳ suy luận.
-
 ---
 
 ## v1.0.0 • 2026-07-19
 
 ### Added
 
-Khởi tạo Trading Domain với:
-
-- Nguồn dữ liệu.
-- Hệ thống suy luận.
-- Tri thức nền.
-- Tri thức tích luỹ.
-
-### Impact
-
-- Phiên bản đầu tiên của Trading Domain.
-
----
-
-# Version History
-
-| Version | Status |
-|---------|--------|
-| 1.4.0 | Stable |
-| 1.3.0 | Stable |
-| 1.2.0 | Stable |
-| 1.1.0 | Stable |
-| 1.0.0 | Stable |
+Khởi tạo Trading Domain.
 
 ---
 
@@ -2438,13 +1741,9 @@ CHANGELOG
 ↓
 
 VERSION
-
-↓
-
-READY
 ```
 
-CHANGELOG ghi nhận quá trình phát triển và là cơ sở đối chiếu giữa các phiên bản của Trading Domain.
+CHANGELOG ghi nhận lịch sử thay đổi của Trading Domain và là cơ sở đối chiếu giữa các phiên bản.
 
 ---
 
@@ -2456,7 +1755,7 @@ status: Planning
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 tags:
@@ -2481,37 +1780,11 @@ Bao gồm:
 - Kế hoạch.
 - Các giai đoạn phát triển.
 
-ROADMAP phản ánh tương lai của Domain, trong khi CHANGELOG ghi nhận những gì đã hoàn thành.
+ROADMAP phản ánh định hướng tương lai, trong khi CHANGELOG ghi nhận những thay đổi đã hoàn thành.
 
 ---
 
 # Chu kỳ phát triển
-
-```text
-Kế hoạch
-
-↓
-
-Thực hiện
-
-↓
-
-Hoàn thành
-
-↓
-
-CHANGELOG
-
-↓
-
-VERSION
-```
-
----
-
-# Quy tắc
-
-Mỗi hạng mục phát triển trải qua bốn trạng thái:
 
 ```text
 📋 Kế hoạch
@@ -2526,26 +1799,14 @@ Mỗi hạng mục phát triển trải qua bốn trạng thái:
 
 ↓
 
-📝 Ghi nhận trong CHANGELOG
-```
-
-Sau khi hoàn thành:
-
-```text
 CHANGELOG
 
 ↓
 
 VERSION
-
-↓
-
-Tài liệu liên quan
-
-↓
-
-ROADMAP
 ```
+
+Sau khi hoàn thành, các tài liệu liên quan được cập nhật và đồng bộ theo phiên bản mới.
 
 ---
 
@@ -2559,23 +1820,15 @@ ROADMAP
 ✅ Hoàn thành
 ```
 
-Bao gồm:
+### Mục tiêu
 
-- Boot
-- System Instruction
-- Domain Manifest
-- AI Guide
-- Trading Knowledge Pack
-- VERSION
-- CHANGELOG
-- ROADMAP
-- READY
-- GLOSSARY
-- ACKNOWLEDGEMENTS
+- Hoàn thiện hệ thống tài liệu nền tảng.
+- Chuẩn hóa quy trình khởi tạo Trading Domain.
+- Chuẩn hóa nguyên tắc vận hành.
 
 ---
 
-## Giai đoạn 2 · Build
+## Giai đoạn 2 · Tri thức nền
 
 **Trạng thái**
 
@@ -2583,15 +1836,11 @@ Bao gồm:
 🚧 Đang thực hiện
 ```
 
-Mục tiêu:
+### Mục tiêu
 
-- Hoàn thiện 10 tầng Reasoning.
-- Trading Core.
-- Trading Data.
-- Trading Reasoning.
-- Trading Knowledge.
-- Trading Memory.
-- Trading Domain Full.
+- Hoàn thiện Quy ước.
+- Hoàn thiện Luồng suy luận.
+- Chuẩn hóa Trading Domain.
 
 ---
 
@@ -2603,7 +1852,7 @@ Mục tiêu:
 🚧 Đang thực hiện
 ```
 
-Mục tiêu:
+### Mục tiêu
 
 - Chuẩn hóa ATS.
 - Chuẩn hóa Dữ liệu rời rạc.
@@ -2619,7 +1868,7 @@ Mục tiêu:
 📋 Kế hoạch
 ```
 
-Mục tiêu:
+### Mục tiêu
 
 - Hoàn thiện Pipeline suy luận.
 - Chuẩn hóa Không gian kịch bản.
@@ -2628,7 +1877,7 @@ Mục tiêu:
 
 ---
 
-## Giai đoạn 5 · Tri thức nền
+## Giai đoạn 5 · Tri thức tích luỹ
 
 **Trạng thái**
 
@@ -2636,28 +1885,28 @@ Mục tiêu:
 🚧 Đang thực hiện
 ```
 
-Mục tiêu:
-
-- Hoàn thiện Quy ước.
-- Hoàn thiện Luồng suy luận.
-- Chuẩn hóa Trading Domain.
-
----
-
-## Giai đoạn 6 · Tri thức tích luỹ
-
-**Trạng thái**
-
-```text
-🚧 Đang thực hiện
-```
-
-Mục tiêu:
+### Mục tiêu
 
 - Hoàn thiện Bộ nhớ.
 - Hoàn thiện Cơ chế.
 - Chuẩn hóa vòng đời tri thức.
-- Chuẩn hóa quá trình học hỏi.
+- Hoàn thiện cơ chế học hỏi.
+
+---
+
+## Giai đoạn 6 · Build
+
+**Trạng thái**
+
+```text
+🚧 Đang thực hiện
+```
+
+### Mục tiêu
+
+- Hoàn thiện Build.
+- Hoàn thiện các tài liệu tổng hợp.
+- Chuẩn hóa tài liệu phục vụ triển khai và bảo trì.
 
 ---
 
@@ -2669,10 +1918,9 @@ Mục tiêu:
 📋 Kế hoạch
 ```
 
-Mục tiêu:
+### Mục tiêu
 
 - Tích hợp AI.
-- Chuẩn hóa Boot Commands.
 - Chuẩn hóa đa Domain.
 - Tích hợp Trading Domain vào ccOS.
 
@@ -2686,7 +1934,7 @@ Mục tiêu:
 🔮 Tầm nhìn
 ```
 
-Mục tiêu:
+### Mục tiêu
 
 - Tri thức thích ứng.
 - Bộ nhớ tiến hóa.
@@ -2699,26 +1947,33 @@ Mục tiêu:
 
 ```text
 01 · Nền tảng
-        │
-        ▼
-02 · Build
-        │
-        ▼
+
+↓
+
+02 · Tri thức nền
+
+↓
+
 03 · Nguồn dữ liệu
-        │
-        ▼
+
+↓
+
 04 · Hệ thống suy luận
-        │
-        ▼
-05 · Tri thức nền
-        │
-        ▼
-06 · Tri thức tích luỹ
-        │
-        ▼
+
+↓
+
+05 · Tri thức tích luỹ
+
+↓
+
+06 · Build
+
+↓
+
 07 · AI & ccOS
-        │
-        ▼
+
+↓
+
 08 · Trading Domain tự chủ
 ```
 
@@ -2728,10 +1983,10 @@ Mục tiêu:
 
 ROADMAP giúp:
 
-- Xác định hướng phát triển.
+- Xác định định hướng phát triển.
 - Theo dõi tiến độ.
 - Điều phối các giai đoạn.
-- Đồng bộ kế hoạch của Trading Domain.
+- Đồng bộ kế hoạch phát triển của Trading Domain.
 
 ---
 
@@ -2742,11 +1997,7 @@ ROADMAP
 
 ↓
 
-Định hướng
-
-↓
-
-Thực hiện
+Kế hoạch
 
 ↓
 
@@ -2757,7 +2008,7 @@ CHANGELOG
 VERSION
 ```
 
-ROADMAP là bản đồ phát triển của Trading Domain, giúp toàn bộ hệ thống tiến hóa theo một lộ trình thống nhất.
+ROADMAP là bản đồ phát triển của Trading Domain và định hướng các giai đoạn phát triển trong tương lai.
 
 ---
 
@@ -2769,7 +2020,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 tags:
@@ -2787,7 +2038,7 @@ tags:
 
 GLOSSARY là từ điển thuật ngữ thống nhất của Trading Domain.
 
-Mỗi thuật ngữ có một định nghĩa duy nhất và được sử dụng nhất quán trong toàn Domain.
+Mỗi thuật ngữ chỉ có một định nghĩa và được sử dụng nhất quán trong toàn Domain.
 
 ---
 
@@ -2795,40 +2046,31 @@ Mỗi thuật ngữ có một định nghĩa duy nhất và được sử dụng
 
 ## Trading Domain
 
-Hệ thống tri thức và quy trình dành cho lĩnh vực Trading.
-
-Bao gồm:
-
-- Nền tảng
-- Build
-- Nguồn dữ liệu
-- Hệ thống suy luận
-- Tri thức nền
-- Tri thức tích luỹ
+Hệ thống tri thức và quy trình dành cho Trading.
 
 ---
 
 ## Domain
 
-Một hệ thống gồm kiến trúc, quy tắc và tri thức cho một lĩnh vực.
+Hệ thống gồm kiến trúc, quy tắc và tri thức cho một lĩnh vực.
 
 ---
 
 ## Nền tảng
 
-Nhóm tài liệu quản lý và định nghĩa Trading Domain.
+Khởi tạo và quản lý Trading Domain.
 
 ---
 
-## Build
+## Tri thức nền
 
-Nhóm tài liệu xây dựng và mô tả kiến trúc vận hành của Trading Domain.
+Chuẩn hóa thuật ngữ, khái niệm và quy ước.
 
 ---
 
 ## Nguồn dữ liệu
 
-Thành phần tiếp nhận và chuẩn hóa dữ liệu từ Thực tế.
+Tiếp nhận và chuẩn hóa dữ liệu từ Thực tế.
 
 ---
 
@@ -2840,25 +2082,7 @@ Mẫu chuẩn ghi nhận dữ liệu quan sát.
 
 ## Dữ liệu rời rạc
 
-Các dữ liệu bổ sung ngoài ATS được chuẩn hóa để phục vụ suy luận.
-
----
-
-## Thực tế
-
-Những gì xảy ra trên thị trường.
-
----
-
-## Dữ liệu
-
-Thông tin được ghi nhận từ Thực tế.
-
----
-
-## Quan sát
-
-Quá trình ghi nhận dữ liệu.
+Dữ liệu bổ sung ngoài ATS.
 
 ---
 
@@ -2866,61 +2090,17 @@ Quá trình ghi nhận dữ liệu.
 
 Chuỗi xử lý chuyển dữ liệu thành Quyết định.
 
-Gồm 10 tầng từ Hành vi đến Phản hồi thực tế.
-
----
-
-## Quyết định
-
-Kết quả của Hệ thống suy luận.
-
----
-
-## Chu kỳ suy luận
-
-Một vòng xử lý hoàn chỉnh:
-
-```text
-Thực tế
-    │
-    ▼
-Nguồn dữ liệu
-    │
-    ▼
-Hệ thống suy luận
-    │
-    ▼
-Quyết định
-    │
-    ▼
-Thực tế
-    │
-    ▼
-Tri thức tích luỹ
-```
-
----
-
-## Tri thức nền
-
-Tập hợp thuật ngữ, khái niệm và quy ước chuẩn hóa Trading Domain.
-
 ---
 
 ## Tri thức tích luỹ
 
-Kinh nghiệm được hình thành sau khi Quyết định được Thực tế kiểm chứng.
-
-Bao gồm:
-
-- Bộ nhớ
-- Cơ chế
+Quản lý kinh nghiệm đã được Thực tế kiểm chứng.
 
 ---
 
 ## Bộ nhớ
 
-Kho lưu giữ:
+Lưu giữ:
 
 - Trường hợp
 - Mẫu
@@ -2931,18 +2111,13 @@ Kho lưu giữ:
 
 ## Cơ chế
 
-Các quy trình làm việc với Bộ nhớ:
-
-- Tra cứu
-- Đối chiếu
-- Tổng hợp
-- Cập nhật
+Khai thác và cập nhật Bộ nhớ.
 
 ---
 
 ## Chữ ký tín hiệu
 
-Định danh chuẩn của một trạng thái suy luận.
+Biểu diễn chuẩn của trạng thái suy luận.
 
 ---
 
@@ -2960,13 +2135,13 @@ Tập hợp nhiều Trường hợp có đặc điểm tương đồng.
 
 ## Bài học tích luỹ
 
-Kinh nghiệm được tổng hợp từ nhiều Mẫu và Trường hợp.
+Kinh nghiệm tổng hợp từ nhiều Mẫu và Trường hợp.
 
 ---
 
 ## Thống kê
 
-Kết quả định lượng được tổng hợp từ nhiều Trường hợp.
+Kết quả định lượng được tổng hợp từ dữ liệu đã kiểm chứng.
 
 ---
 
@@ -2984,7 +2159,7 @@ Kết quả định lượng được tổng hợp từ nhiều Trường hợp.
 
 ## READY
 
-Trạng thái xác nhận Trading Domain đã sẵn sàng sử dụng.
+Trạng thái Trading Domain sẵn sàng vận hành.
 
 ---
 
@@ -3001,15 +2176,15 @@ Các lệnh điều khiển Domain:
 
 ---
 
-## Trading Knowledge Pack
+## Trading Navigation Pack
 
-Chỉ mục tri thức của Trading Domain.
+Bản đồ điều hướng của Trading Domain.
 
 ---
 
 ## Domain Manifest
 
-Tài liệu mô tả kiến trúc Trading Domain.
+Định nghĩa kiến trúc Trading Domain.
 
 ---
 
@@ -3021,19 +2196,19 @@ Hướng dẫn AI sử dụng Trading Domain.
 
 ## System Instruction
 
-Tài liệu quy định cách AI vận hành Trading Domain.
+Quy định cách AI vận hành Trading Domain.
 
 ---
 
-## Core Documents
+## Tài liệu nền tảng
 
-Các tài liệu nền tảng của Trading Domain:
+Nhóm tài liệu quản lý Trading Domain:
 
 - Boot
 - System Instruction
 - Domain Manifest
 - AI Guide
-- Trading Knowledge Pack
+- Trading Navigation Pack
 - README
 - VERSION
 - CHANGELOG
@@ -3044,9 +2219,9 @@ Các tài liệu nền tảng của Trading Domain:
 
 ---
 
-# Quy tắc
+# Nguyên tắc
 
-- Một thuật ngữ chỉ có một định nghĩa.
+- Mỗi thuật ngữ chỉ có một định nghĩa.
 - Thuật ngữ mới được bổ sung vào GLOSSARY trước khi sử dụng.
 - Toàn bộ Trading Domain sử dụng thống nhất các thuật ngữ tại đây.
 
@@ -3063,10 +2238,6 @@ Thuật ngữ
 
 ↓
 
-Khái niệm
-
-↓
-
 Ngôn ngữ thống nhất
 
 ↓
@@ -3074,19 +2245,19 @@ Ngôn ngữ thống nhất
 Trading Domain
 ```
 
-GLOSSARY là nền tảng ngôn ngữ chung của toàn bộ Trading Domain.
+GLOSSARY chuẩn hóa thuật ngữ và tạo nền tảng ngôn ngữ chung cho toàn bộ Trading Domain.
 
 ---
 
 ---
 title: ACKNOWLEDGEMENTS
 id: trading-acknowledgements
-version: 1.4.0
+version: 1.5.0
 status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 tags:
@@ -3104,7 +2275,7 @@ tags:
 
 ACKNOWLEDGEMENTS ghi nhận:
 
-- Người xây dựng Domain.
+- Người xây dựng.
 - Đóng góp trong quá trình phát triển.
 - Nguyên tắc thiết kế.
 - Định hướng phát triển.
@@ -3118,17 +2289,11 @@ ACKNOWLEDGEMENTS ghi nhận:
 Thiết kế và phát triển:
 
 - Trading Domain.
-- Kiến trúc Trading của ccOS.
+- Kiến trúc Trading.
+- Tri thức nền.
 - Nguồn dữ liệu.
 - Hệ thống suy luận.
-- Tri thức nền.
 - Tri thức tích luỹ.
-
-Chuẩn hóa:
-
-- Chu kỳ suy luận.
-- Chu kỳ học hỏi.
-- Kiến trúc Trading Domain.
 
 ---
 
@@ -3147,10 +2312,10 @@ Hỗ trợ:
 
 # Nguyên tắc thiết kế
 
-Trading Domain được xây dựng theo chu trình:
+Trading Domain được xây dựng theo kiến trúc:
 
 ```text
-Thực tế
+Tri thức nền
 
 ↓
 
@@ -3162,18 +2327,10 @@ Hệ thống suy luận
 
 ↓
 
-Quyết định
-
-↓
-
-Thực tế
-
-↓
-
 Tri thức tích luỹ
 ```
 
-Tri thức được hình thành sau khi Quyết định được Thực tế kiểm chứng.
+Tri thức được hình thành từ dữ liệu đã được Thực tế kiểm chứng và được tích luỹ để hỗ trợ các chu kỳ suy luận tiếp theo.
 
 ---
 
@@ -3186,8 +2343,6 @@ Trading Domain hướng tới:
 - Kiểm chứng được.
 - Mở rộng được.
 - Phát triển bền vững.
-
-Mọi thành phần mới đều tuân thủ kiến trúc chung của Trading Domain.
 
 ---
 
@@ -3204,6 +2359,32 @@ Những kinh nghiệm đã được kiểm chứng trở thành nền tảng đ�
 
 ---
 
+# Tóm tắt
+
+```text
+Quan sát
+
+↓
+
+Thực hành
+
+↓
+
+Kiểm chứng
+
+↓
+
+Chuẩn hóa
+
+↓
+
+Trading Domain
+```
+
+ACKNOWLEDGEMENTS ghi nhận quá trình hình thành và những đóng góp giúp Trading Domain phát triển theo một kiến trúc thống nhất.
+
+---
+
 ---
 title: READY
 id: trading-ready
@@ -3212,7 +2393,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 tags:
@@ -3222,55 +2403,61 @@ tags:
 
 # READY
 
-> Xác nhận Trading Domain đã sẵn sàng sử dụng.
+> Xác nhận Trading Domain đã sẵn sàng vận hành.
 
 ---
 
 # Mục đích
 
-READY đánh dấu việc Trading Domain đã được nạp hoàn chỉnh và trở thành ngữ cảnh làm việc hiện tại.
+READY đánh dấu Trading Domain đã được nạp hoàn chỉnh và trở thành ngữ cảnh làm việc hiện tại.
 
-Sau khi READY, AI có thể sử dụng toàn bộ Trading Domain để xử lý các tác vụ thuộc lĩnh vực Trading.
+Sau khi READY, AI có thể sử dụng toàn bộ Trading Domain cho các tác vụ thuộc lĩnh vực Trading.
 
 ---
 
 # Điều kiện
 
-Trading Domain đạt trạng thái READY sau khi hoàn thành quá trình nạp:
+Trading Domain đạt trạng thái READY sau khi hoàn tất:
 
 ```text
 Boot
-    │
-    ▼
+
+↓
+
 System Instruction
-    │
-    ▼
+
+↓
+
 Domain Manifest
-    │
-    ▼
+
+↓
+
 AI Guide
-    │
-    ▼
-Trading Knowledge Pack
-    │
-    ▼
+
+↓
+
+Trading Navigation Pack
+
+↓
+
 Trading README
-    │
-    ▼
+
+↓
+
 README các Module
-    │
-    ▼
-Modules
-    │
-    ▼
+
+↓
+
+Các Module
+
+↓
+
 READY
 ```
 
 ---
 
 # Trạng thái
-
-Kết quả có thể là:
 
 ```text
 Trading Domain READY
@@ -3286,26 +2473,18 @@ Trading Domain NOT READY
 
 # Sau khi READY
 
-Trading Domain trở thành Domain làm việc hiện tại.
+Trading Domain được duy trì cho đến khi:
 
-Domain được duy trì cho đến khi:
-
-- `unload`
-- `reload`
-- `update` (nếu yêu cầu nạp lại)
+- unload
+- reload
+- update (khi cần nạp lại)
 - Chuyển sang Domain khác
 
----
-
-# Kiểm tra trạng thái
-
-Có thể sử dụng:
+Có thể kiểm tra bằng:
 
 ```text
 status
 ```
-
-để kiểm tra trạng thái hiện tại của Trading Domain.
 
 ---
 
@@ -3328,19 +2507,11 @@ Boot
 
 ↓
 
-Core Documents
-
-↓
-
-Modules
-
-↓
-
 Trading Domain READY
 
 ↓
 
-Sẵn sàng làm việc
+Sẵn sàng vận hành
 ```
 
-READY là điểm kết thúc của quá trình khởi động và là điểm bắt đầu của quá trình sử dụng Trading Domain.
+READY là điểm kết thúc của quá trình khởi tạo và là điểm bắt đầu sử dụng Trading Domain.
