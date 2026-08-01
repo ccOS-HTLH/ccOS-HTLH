@@ -1,7 +1,7 @@
 ---
 title: Nền tảng
 id: trading-foundation
-version: 1.0
+version: 1.0.0
 status: Stable
 author: HTLH
 language: vi
