@@ -6,7 +6,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 ---
@@ -26,7 +26,7 @@ Tài liệu này chuẩn hóa:
 - Quy tắc vận hành.
 - Thứ tự ưu tiên.
 - Phạm vi áp dụng.
-- Các lệnh điều khiển Domain.
+- Boot Commands.
 
 Đây là tài liệu có mức ưu tiên cao nhất trong Trading Domain.
 
@@ -49,7 +49,7 @@ AI Guide
 
 ↓
 
-Trading Knowledge Pack
+Trading Navigation Pack
 
 ↓
 
@@ -97,52 +97,34 @@ Hệ thống suy luận
 
 ↓
 
-Quyết định
-
-↓
-
-Thực tế
-
-↓
-
 Tri thức tích luỹ
 
 ↓
 
-Chu kỳ suy luận tiếp theo
+Hệ thống suy luận tiếp theo
 ```
 
 ---
 
 ## 03 · Hoàn thành Hệ thống suy luận
 
-Mỗi chu kỳ suy luận được thực hiện đầy đủ theo đúng trình tự của Hệ thống suy luận.
+AI luôn thực hiện đầy đủ Hệ thống suy luận theo đúng trình tự đã được định nghĩa.
 
 ---
 
 ## 04 · Tri thức nền
 
-Tri thức nền chuẩn hóa:
-
-- Thuật ngữ.
-- Khái niệm.
-- Quy ước.
-
-Các quy ước này được sử dụng thống nhất trong toàn bộ Trading Domain.
+Tri thức nền chuẩn hóa toàn bộ thuật ngữ, khái niệm và quy ước được sử dụng trong Trading Domain.
 
 ---
 
 ## 05 · Tri thức tích luỹ
 
-Tri thức tích luỹ được sử dụng sau khi Hệ thống suy luận hoàn tất.
+Tri thức tích luỹ được tham khảo sau khi Hệ thống suy luận hoàn tất nhằm hỗ trợ:
 
-Mục đích:
-
-- Tham khảo.
 - Đánh giá.
 - Hiệu chỉnh.
-
-Kết quả tra cứu hỗ trợ quá trình xây dựng Không gian kịch bản và Kế hoạch thực thi.
+- Tái sử dụng kinh nghiệm.
 
 ---
 
@@ -155,7 +137,7 @@ Quá trình suy luận được thực hiện trên tập dữ liệu đầy đ�
 ## 07 · Cập nhật kinh nghiệm
 
 ```text
-Quyết định được Thực tế kiểm chứng
+Thực tế
 
 ↓
 
@@ -307,7 +289,7 @@ Domain Manifest.md               ⏳
 
 AI Guide.md                      ⏳
 
-Trading Knowledge Pack.md        ⏳
+Trading Navigation Pack.md        ⏳
 
 Trading README.md                ⏳
 
@@ -376,15 +358,11 @@ Hệ thống suy luận
 
 ↓
 
-Quyết định
-
-↓
-
-Thực tế
-
-↓
-
 Tri thức tích luỹ
+
+↓
+
+Hệ thống suy luận tiếp theo
 ```
 
 Mọi chu kỳ vận hành đều tuân theo cùng một kiến trúc.
@@ -393,12 +371,13 @@ Mọi chu kỳ vận hành đều tuân theo cùng một kiến trúc.
 
 # Tóm tắt
 
-System Instruction chuẩn hóa:
+System Instruction là tài liệu điều phối toàn bộ Trading Domain.
+
+Tài liệu này định nghĩa:
 
 - Quy tắc vận hành.
 - Thứ tự ưu tiên.
 - Phạm vi áp dụng.
 - Boot Commands.
-- Trạng thái của Trading Domain.
 
-Đây là tài liệu điều phối toàn bộ quá trình vận hành của Trading Domain.
+Mọi thành phần của Trading Domain đều tuân theo các nguyên tắc được định nghĩa trong tài liệu này.

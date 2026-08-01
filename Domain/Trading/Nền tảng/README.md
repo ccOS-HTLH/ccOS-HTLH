@@ -6,7 +6,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-27
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Monthly
 confidence: 100%
 tags:
@@ -22,11 +22,9 @@ tags:
 
 # Mục đích
 
-Nền tảng là điểm bắt đầu của Trading Domain.
+Nền tảng là Module khởi tạo và quản lý Trading Domain.
 
-Thư mục này tập hợp các tài liệu định nghĩa cấu trúc, nguyên tắc vận hành và vòng đời của toàn bộ hệ thống.
-
-Thông qua Nền tảng, mọi thành phần trong Trading Domain cùng sử dụng một cách tổ chức thống nhất.
+Thư mục này tập hợp các tài liệu định nghĩa kiến trúc, nguyên tắc vận hành, điều hướng và vòng đời của toàn bộ hệ thống.
 
 ---
 
@@ -39,7 +37,7 @@ Nền tảng
 ├── System Instruction
 ├── Domain Manifest
 ├── AI Guide
-├── Trading Knowledge Pack
+├── Trading Navigation Pack
 ├── VERSION
 ├── CHANGELOG
 ├── ROADMAP
@@ -52,14 +50,12 @@ Nền tảng
 
 # Vai trò
 
-Các tài liệu trong Nền tảng chịu trách nhiệm:
+Nền tảng chịu trách nhiệm:
 
 - Khởi tạo Trading Domain.
-- Định nghĩa nguyên tắc vận hành.
-- Quản lý phiên bản.
-- Quản lý tài liệu.
-- Chuẩn hóa cấu trúc hệ thống.
-- Cung cấp tài liệu tham chiếu chung.
+- Định nghĩa kiến trúc và nguyên tắc vận hành.
+- Quản lý phiên bản và tài liệu.
+- Chuẩn hóa tổ chức của toàn bộ Trading Domain.
 
 ---
 
@@ -79,18 +75,6 @@ Trading Domain
 ↓
 
 READY
-
-↓
-
-Nguồn dữ liệu
-
-↓
-
-Hệ thống suy luận
-
-↓
-
-Tri thức tích luỹ
 ```
 
 Sau khi Trading Domain được nạp hoàn chỉnh và xác nhận READY, các thành phần nghiệp vụ bắt đầu hoạt động theo quy trình chuẩn.
@@ -123,9 +107,9 @@ Hướng dẫn AI sử dụng Trading Domain.
 
 ---
 
-## Trading Knowledge Pack
+## Trading Navigation Pack
 
-Tập hợp toàn bộ tri thức nền phục vụ Trading Domain.
+Bản đồ điều hướng của Trading Domain.
 
 ---
 
@@ -167,10 +151,9 @@ Xác nhận Trading Domain đã được nạp hoàn chỉnh và sẵn sàng v�
 
 # Nguyên tắc
 
-- Mỗi tài liệu đảm nhận một vai trò rõ ràng.
-- Các thành phần sử dụng cùng một quy ước.
-- Mọi thay đổi đều được quản lý theo phiên bản.
-- Trading Domain vận hành trên một nền tảng thống nhất.
+- Mỗi tài liệu đảm nhận một vai trò riêng.
+- Các thành phần tuân theo cùng một kiến trúc và quy ước.
+- Mọi thay đổi được quản lý theo phiên bản.
 
 ---
 
@@ -186,18 +169,6 @@ Trading Domain
 ↓
 
 READY
-
-↓
-
-Nguồn dữ liệu
-
-↓
-
-Hệ thống suy luận
-
-↓
-
-Tri thức tích luỹ
 ```
 
-Nền tảng cung cấp điểm khởi đầu và cơ sở tổ chức cho toàn bộ Trading Domain.
+Nền tảng cung cấp cơ sở khởi tạo, tổ chức và quản lý toàn bộ Trading Domain trước khi hệ thống đi vào vận hành.

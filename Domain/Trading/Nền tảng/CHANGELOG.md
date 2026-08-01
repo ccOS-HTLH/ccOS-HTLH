@@ -6,7 +6,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 tags:
@@ -22,16 +22,15 @@ tags:
 
 # Mục đích
 
-CHANGELOG lưu lại các thay đổi giữa các phiên bản nhằm:
+CHANGELOG ghi nhận các thay đổi giữa các phiên bản nhằm:
 
 - Theo dõi quá trình phát triển.
 - Xác định phạm vi thay đổi.
-- Đánh giá mức độ ảnh hưởng.
 - Đồng bộ Trading Domain.
 
 ---
 
-# Semantic Versioning
+# Quy ước phiên bản
 
 Trading Domain sử dụng chuẩn:
 
@@ -39,61 +38,48 @@ Trading Domain sử dụng chuẩn:
 MAJOR.MINOR.PATCH
 ```
 
+| Thành phần | Ý nghĩa |
+|------------|----------|
+| **Thay đổi lớn (MAJOR)** | Thay đổi kiến trúc Trading Domain |
+| **Mở rộng (MINOR)** | Mở rộng Module hoặc chức năng |
+| **Cập nhật nhỏ (PATCH)** | Cập nhật nội dung hoặc tối ưu tài liệu |
+
+---
+
+# Quy ước thay đổi
+
 | Loại | Ý nghĩa |
 |------|----------|
-| **MAJOR** | Thay đổi kiến trúc Domain |
-| **MINOR** | Mở rộng Module hoặc chức năng |
-| **PATCH** | Cập nhật nội dung, tối ưu tài liệu |
+| **Added** | Thêm mới |
+| **Changed** | Điều chỉnh |
+| **Fixed** | Sửa lỗi |
+| **Docs** | Cập nhật tài liệu |
 
 ---
 
-# Change Types
+# Lịch sử phiên bản
 
-| Type | Ý nghĩa |
-|------|----------|
-| Added | Thêm mới |
-| Changed | Điều chỉnh |
-| Fixed | Sửa lỗi |
-| Docs | Cập nhật tài liệu |
-
----
-
-# History
-
----
-
-## v1.4.0 • 2026-07-27
+## v1.4.0 • 2026-08-01
 
 ### Added
 
-- Hoàn thiện kiến trúc **Nền tảng**, **Build**, **Nguồn dữ liệu**, **Tri thức nền** và **Tri thức tích luỹ**.
+- Hoàn thiện kiến trúc **Nền tảng**, **Tri thức nền**, **Nguồn dữ liệu**, **Hệ thống suy luận**, **Tri thức tích luỹ** và **Build**.
 - Bổ sung cấu trúc **Bộ nhớ** và **Cơ chế** trong Tri thức tích luỹ.
 - Chuẩn hóa README cho toàn bộ Module.
 
 ### Changed
 
 - Đồng bộ Trading Domain lên phiên bản **1.4.0**.
-- Chuẩn hóa kiến trúc Domain và sơ đồ Module.
+- Chuẩn hóa kiến trúc Domain.
 - Chuẩn hóa luồng giữa Hệ thống suy luận và Tri thức tích luỹ.
 - Tinh gọn toàn bộ Core Documents.
-- Đồng bộ thuật ngữ và quy ước trên toàn Domain.
+- Đồng bộ thuật ngữ và quy ước.
 
 ### Docs
 
-- Cập nhật Boot.
-- Cập nhật System Instruction.
-- Cập nhật Domain Manifest.
-- Cập nhật AI Guide.
-- Cập nhật Trading Knowledge Pack.
-- Cập nhật VERSION.
-- Cập nhật README và README các Module.
+- Cập nhật toàn bộ tài liệu nền tảng.
+- Chuẩn hóa README các Module.
 - Chuẩn hóa toàn bộ tài liệu Quy ước.
-
-### Impact
-
-- Kiến trúc Trading Domain hoàn thiện và nhất quán.
-- Không thay đổi Logic của Hệ thống suy luận.
-- Tăng khả năng mở rộng và bảo trì.
 
 ---
 
@@ -106,18 +92,14 @@ MAJOR.MINOR.PATCH
 - Compatibility.
 - Boot Commands.
 - Session Scope.
-- Domain Isolation.
+- Domain Scope.
 
 ### Changed
 
-- Chuẩn hóa toàn bộ Core Documents.
-- Chuẩn hóa Boot và quy trình nạp Domain.
-- Chuẩn hóa Trading Knowledge Pack.
-- Chuẩn hóa chu kỳ suy luận và học hỏi.
-
-### Impact
-
-- Tăng tính nhất quán của Trading Domain.
+- Chuẩn hóa Core Documents.
+- Chuẩn hóa quy trình Boot.
+- Chuẩn hóa Trading Navigation Pack.
+- Chuẩn hóa chu kỳ suy luận.
 
 ---
 
@@ -129,7 +111,7 @@ MAJOR.MINOR.PATCH
 - READY.
 - Domain Manifest.
 - AI Guide.
-- Trading Knowledge Pack.
+- Trading Navigation Pack.
 - VERSION.
 - CHANGELOG.
 - GLOSSARY.
@@ -139,10 +121,6 @@ MAJOR.MINOR.PATCH
 
 - Chuẩn hóa Trading README.
 - Hoàn thiện ranh giới giữa Hệ thống suy luận và Tri thức tích luỹ.
-
-### Impact
-
-- Hoàn thiện kiến trúc Trading Domain.
 
 ---
 
@@ -154,38 +132,13 @@ MAJOR.MINOR.PATCH
 - Kế hoạch thực thi.
 - Phản hồi thực tế.
 
-### Impact
-
-- Hoàn thiện chu kỳ suy luận.
-
 ---
 
 ## v1.0.0 • 2026-07-19
 
 ### Added
 
-Khởi tạo Trading Domain với:
-
-- Nguồn dữ liệu.
-- Hệ thống suy luận.
-- Tri thức nền.
-- Tri thức tích luỹ.
-
-### Impact
-
-- Phiên bản đầu tiên của Trading Domain.
-
----
-
-# Version History
-
-| Version | Status |
-|---------|--------|
-| 1.4.0 | Stable |
-| 1.3.0 | Stable |
-| 1.2.0 | Stable |
-| 1.1.0 | Stable |
-| 1.0.0 | Stable |
+Khởi tạo Trading Domain.
 
 ---
 
@@ -201,10 +154,6 @@ CHANGELOG
 ↓
 
 VERSION
-
-↓
-
-READY
 ```
 
-CHANGELOG ghi nhận quá trình phát triển và là cơ sở đối chiếu giữa các phiên bản của Trading Domain.
+CHANGELOG ghi nhận lịch sử thay đổi của Trading Domain và là cơ sở đối chiếu giữa các phiên bản.

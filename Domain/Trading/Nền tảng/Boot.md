@@ -6,7 +6,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 tags:
@@ -24,9 +24,7 @@ tags:
 
 Boot định nghĩa quy trình khởi tạo Trading Domain.
 
-Đây là điểm bắt đầu để AI nạp toàn bộ Domain theo một trình tự thống nhất trước khi sử dụng.
-
-Boot tập trung vào quy trình khởi tạo và trạng thái của Trading Domain.
+Đây là điểm bắt đầu để AI nạp toàn bộ Trading Domain theo một trình tự thống nhất trước khi sử dụng.
 
 ---
 
@@ -51,7 +49,7 @@ AI Guide
 
 ↓
 
-Trading Knowledge Pack
+Trading Navigation Pack
 
 ↓
 
@@ -90,7 +88,7 @@ Nạp Trading Domain theo đúng trình tự.
 
 ## 03
 
-Hoàn thành toàn bộ quá trình khởi tạo trước khi sử dụng Domain.
+Chỉ sử dụng Trading Domain sau khi hoàn tất quá trình khởi tạo.
 
 ---
 
@@ -102,17 +100,11 @@ Trading Domain chuyển sang trạng thái **READY** sau khi toàn bộ tài li�
 
 ## 05
 
-Quá trình suy luận được thực hiện trên dữ liệu đã được nạp đầy đủ.
-
----
-
-## 06
-
 Mọi hoạt động đều tuân thủ kiến trúc và quy ước của Trading Domain.
 
 ---
 
-## 07
+## 06
 
 Boot hỗ trợ các Boot Commands:
 
@@ -148,7 +140,7 @@ status
 Sau khi READY:
 
 ```text
-Trading Domain
+Trading Domain READY
 
 ↓
 
@@ -161,6 +153,10 @@ Hệ thống suy luận
 ↓
 
 Tri thức tích luỹ
+
+↓
+
+Hệ thống suy luận tiếp theo
 ```
 
 Trading Domain được duy trì cho đến khi thực hiện:
@@ -177,7 +173,7 @@ Trading Domain được duy trì cho đến khi thực hiện:
 - Boot là điểm bắt đầu của Trading Domain.
 - Trading Domain được khởi tạo theo một trình tự thống nhất.
 - READY đánh dấu trạng thái sẵn sàng vận hành.
-- Mọi thành phần cùng sử dụng một kiến trúc và quy ước chung.
+- Mọi thành phần của Trading Domain tuân theo cùng một kiến trúc và quy ước.
 
 ---
 
@@ -193,18 +189,6 @@ Trading Domain
 ↓
 
 READY
-
-↓
-
-Nguồn dữ liệu
-
-↓
-
-Hệ thống suy luận
-
-↓
-
-Tri thức tích luỹ
 ```
 
-Boot chuẩn hóa quá trình khởi tạo Trading Domain và tạo nền tảng cho toàn bộ chu trình làm việc.
+Boot chuẩn hóa quá trình khởi tạo Trading Domain và đưa Domain vào trạng thái READY trước khi vận hành.

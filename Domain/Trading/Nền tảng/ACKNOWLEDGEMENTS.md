@@ -1,12 +1,12 @@
 ---
 title: ACKNOWLEDGEMENTS
 id: trading-acknowledgements
-version: 1.4.0
+version: 1.5.0
 status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 tags:
@@ -24,7 +24,7 @@ tags:
 
 ACKNOWLEDGEMENTS ghi nhận:
 
-- Người xây dựng Domain.
+- Người xây dựng.
 - Đóng góp trong quá trình phát triển.
 - Nguyên tắc thiết kế.
 - Định hướng phát triển.
@@ -38,17 +38,11 @@ ACKNOWLEDGEMENTS ghi nhận:
 Thiết kế và phát triển:
 
 - Trading Domain.
-- Kiến trúc Trading của ccOS.
+- Kiến trúc Trading.
+- Tri thức nền.
 - Nguồn dữ liệu.
 - Hệ thống suy luận.
-- Tri thức nền.
 - Tri thức tích luỹ.
-
-Chuẩn hóa:
-
-- Chu kỳ suy luận.
-- Chu kỳ học hỏi.
-- Kiến trúc Trading Domain.
 
 ---
 
@@ -67,10 +61,10 @@ Hỗ trợ:
 
 # Nguyên tắc thiết kế
 
-Trading Domain được xây dựng theo chu trình:
+Trading Domain được xây dựng theo kiến trúc:
 
 ```text
-Thực tế
+Tri thức nền
 
 ↓
 
@@ -82,18 +76,10 @@ Hệ thống suy luận
 
 ↓
 
-Quyết định
-
-↓
-
-Thực tế
-
-↓
-
 Tri thức tích luỹ
 ```
 
-Tri thức được hình thành sau khi Quyết định được Thực tế kiểm chứng.
+Tri thức được hình thành từ dữ liệu đã được Thực tế kiểm chứng và được tích luỹ để hỗ trợ các chu kỳ suy luận tiếp theo.
 
 ---
 
@@ -107,8 +93,6 @@ Trading Domain hướng tới:
 - Mở rộng được.
 - Phát triển bền vững.
 
-Mọi thành phần mới đều tuân thủ kiến trúc chung của Trading Domain.
-
 ---
 
 # Ghi nhận
@@ -121,3 +105,29 @@ Trading Domain được hình thành từ quá trình:
 - Chuẩn hóa.
 
 Những kinh nghiệm đã được kiểm chứng trở thành nền tảng để Trading Domain tiếp tục phát triển.
+
+---
+
+# Tóm tắt
+
+```text
+Quan sát
+
+↓
+
+Thực hành
+
+↓
+
+Kiểm chứng
+
+↓
+
+Chuẩn hóa
+
+↓
+
+Trading Domain
+```
+
+ACKNOWLEDGEMENTS ghi nhận quá trình hình thành và những đóng góp giúp Trading Domain phát triển theo một kiến trúc thống nhất.

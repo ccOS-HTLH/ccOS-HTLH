@@ -6,7 +6,7 @@ status: Planning
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 tags:
@@ -31,37 +31,11 @@ Bao gồm:
 - Kế hoạch.
 - Các giai đoạn phát triển.
 
-ROADMAP phản ánh tương lai của Domain, trong khi CHANGELOG ghi nhận những gì đã hoàn thành.
+ROADMAP phản ánh định hướng tương lai, trong khi CHANGELOG ghi nhận những thay đổi đã hoàn thành.
 
 ---
 
 # Chu kỳ phát triển
-
-```text
-Kế hoạch
-
-↓
-
-Thực hiện
-
-↓
-
-Hoàn thành
-
-↓
-
-CHANGELOG
-
-↓
-
-VERSION
-```
-
----
-
-# Quy tắc
-
-Mỗi hạng mục phát triển trải qua bốn trạng thái:
 
 ```text
 📋 Kế hoạch
@@ -76,26 +50,14 @@ Mỗi hạng mục phát triển trải qua bốn trạng thái:
 
 ↓
 
-📝 Ghi nhận trong CHANGELOG
-```
-
-Sau khi hoàn thành:
-
-```text
 CHANGELOG
 
 ↓
 
 VERSION
-
-↓
-
-Tài liệu liên quan
-
-↓
-
-ROADMAP
 ```
+
+Sau khi hoàn thành, các tài liệu liên quan được cập nhật và đồng bộ theo phiên bản mới.
 
 ---
 
@@ -109,23 +71,15 @@ ROADMAP
 ✅ Hoàn thành
 ```
 
-Bao gồm:
+### Mục tiêu
 
-- Boot
-- System Instruction
-- Domain Manifest
-- AI Guide
-- Trading Knowledge Pack
-- VERSION
-- CHANGELOG
-- ROADMAP
-- READY
-- GLOSSARY
-- ACKNOWLEDGEMENTS
+- Hoàn thiện hệ thống tài liệu nền tảng.
+- Chuẩn hóa quy trình khởi tạo Trading Domain.
+- Chuẩn hóa nguyên tắc vận hành.
 
 ---
 
-## Giai đoạn 2 · Build
+## Giai đoạn 2 · Tri thức nền
 
 **Trạng thái**
 
@@ -133,15 +87,11 @@ Bao gồm:
 🚧 Đang thực hiện
 ```
 
-Mục tiêu:
+### Mục tiêu
 
-- Hoàn thiện 10 tầng Reasoning.
-- Trading Core.
-- Trading Data.
-- Trading Reasoning.
-- Trading Knowledge.
-- Trading Memory.
-- Trading Domain Full.
+- Hoàn thiện Quy ước.
+- Hoàn thiện Luồng suy luận.
+- Chuẩn hóa Trading Domain.
 
 ---
 
@@ -153,7 +103,7 @@ Mục tiêu:
 🚧 Đang thực hiện
 ```
 
-Mục tiêu:
+### Mục tiêu
 
 - Chuẩn hóa ATS.
 - Chuẩn hóa Dữ liệu rời rạc.
@@ -169,7 +119,7 @@ Mục tiêu:
 📋 Kế hoạch
 ```
 
-Mục tiêu:
+### Mục tiêu
 
 - Hoàn thiện Pipeline suy luận.
 - Chuẩn hóa Không gian kịch bản.
@@ -178,7 +128,7 @@ Mục tiêu:
 
 ---
 
-## Giai đoạn 5 · Tri thức nền
+## Giai đoạn 5 · Tri thức tích luỹ
 
 **Trạng thái**
 
@@ -186,28 +136,28 @@ Mục tiêu:
 🚧 Đang thực hiện
 ```
 
-Mục tiêu:
-
-- Hoàn thiện Quy ước.
-- Hoàn thiện Luồng suy luận.
-- Chuẩn hóa Trading Domain.
-
----
-
-## Giai đoạn 6 · Tri thức tích luỹ
-
-**Trạng thái**
-
-```text
-🚧 Đang thực hiện
-```
-
-Mục tiêu:
+### Mục tiêu
 
 - Hoàn thiện Bộ nhớ.
 - Hoàn thiện Cơ chế.
 - Chuẩn hóa vòng đời tri thức.
-- Chuẩn hóa quá trình học hỏi.
+- Hoàn thiện cơ chế học hỏi.
+
+---
+
+## Giai đoạn 6 · Build
+
+**Trạng thái**
+
+```text
+🚧 Đang thực hiện
+```
+
+### Mục tiêu
+
+- Hoàn thiện Build.
+- Hoàn thiện các tài liệu tổng hợp.
+- Chuẩn hóa tài liệu phục vụ triển khai và bảo trì.
 
 ---
 
@@ -219,10 +169,9 @@ Mục tiêu:
 📋 Kế hoạch
 ```
 
-Mục tiêu:
+### Mục tiêu
 
 - Tích hợp AI.
-- Chuẩn hóa Boot Commands.
 - Chuẩn hóa đa Domain.
 - Tích hợp Trading Domain vào ccOS.
 
@@ -236,7 +185,7 @@ Mục tiêu:
 🔮 Tầm nhìn
 ```
 
-Mục tiêu:
+### Mục tiêu
 
 - Tri thức thích ứng.
 - Bộ nhớ tiến hóa.
@@ -249,26 +198,33 @@ Mục tiêu:
 
 ```text
 01 · Nền tảng
-        │
-        ▼
-02 · Build
-        │
-        ▼
+
+↓
+
+02 · Tri thức nền
+
+↓
+
 03 · Nguồn dữ liệu
-        │
-        ▼
+
+↓
+
 04 · Hệ thống suy luận
-        │
-        ▼
-05 · Tri thức nền
-        │
-        ▼
-06 · Tri thức tích luỹ
-        │
-        ▼
+
+↓
+
+05 · Tri thức tích luỹ
+
+↓
+
+06 · Build
+
+↓
+
 07 · AI & ccOS
-        │
-        ▼
+
+↓
+
 08 · Trading Domain tự chủ
 ```
 
@@ -278,10 +234,10 @@ Mục tiêu:
 
 ROADMAP giúp:
 
-- Xác định hướng phát triển.
+- Xác định định hướng phát triển.
 - Theo dõi tiến độ.
 - Điều phối các giai đoạn.
-- Đồng bộ kế hoạch của Trading Domain.
+- Đồng bộ kế hoạch phát triển của Trading Domain.
 
 ---
 
@@ -292,11 +248,7 @@ ROADMAP
 
 ↓
 
-Định hướng
-
-↓
-
-Thực hiện
+Kế hoạch
 
 ↓
 
@@ -307,4 +259,4 @@ CHANGELOG
 VERSION
 ```
 
-ROADMAP là bản đồ phát triển của Trading Domain, giúp toàn bộ hệ thống tiến hóa theo một lộ trình thống nhất.
+ROADMAP là bản đồ phát triển của Trading Domain và định hướng các giai đoạn phát triển trong tương lai.

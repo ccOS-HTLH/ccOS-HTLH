@@ -6,7 +6,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 tags:
@@ -22,32 +22,31 @@ tags:
 
 # Mục đích
 
-VERSION xác định trạng thái phát hành hiện tại của Trading Domain.
+VERSION xác định phiên bản và trạng thái phát hành hiện tại của Trading Domain.
 
-Tài liệu này giúp AI và người dùng:
+Tài liệu này giúp:
 
 - Xác định phiên bản hiện hành.
 - Kiểm tra trạng thái phát hành.
-- Đánh giá khả năng tương thích.
 - Đồng bộ toàn bộ Trading Domain.
 
 ---
 
 # Trading Domain
 
-## Version
+## Phiên bản
 
 ```text
 1.4.0
 ```
 
-## Status
+## Trạng thái
 
 ```text
 Stable
 ```
 
-## Release Date
+## Ngày phát hành
 
 ```text
 2026-07-27
@@ -57,35 +56,24 @@ Stable
 
 # Phạm vi đồng bộ
 
-## Core Documents
+## Tài liệu nền tảng
 
 ```text
 Boot
-
 System Instruction
-
 Domain Manifest
-
 AI Guide
-
-Trading Knowledge Pack
-
+Trading Navigation Pack
 Trading README
-
 VERSION
-
 CHANGELOG
-
 ROADMAP
-
 GLOSSARY
-
 ACKNOWLEDGEMENTS
-
 READY
 ```
 
-## Modules
+## Module
 
 ```text
 README của các Module
@@ -97,22 +85,6 @@ Các Module
 
 ---
 
-# Compatibility
-
-Trading Domain hiện tại:
-
-```text
-Version : 1.4.0
-
-Status  : Stable
-```
-
-Core Documents luôn đồng bộ với phiên bản Trading Domain.
-
-Các Module có thể phát triển độc lập khi vẫn tương thích với phiên bản hiện hành.
-
----
-
 # Semantic Versioning
 
 Trading Domain sử dụng chuẩn:
@@ -121,11 +93,9 @@ Trading Domain sử dụng chuẩn:
 MAJOR.MINOR.PATCH
 ```
 
-## MAJOR
+## Thay đổi lớn (MAJOR)
 
 Thay đổi kiến trúc Trading Domain.
-
-Ví dụ:
 
 ```text
 1.x.x
@@ -137,11 +107,9 @@ Ví dụ:
 
 ---
 
-## MINOR
+## Mở rộng (MINOR)
 
 Mở rộng Trading Domain.
-
-Ví dụ:
 
 ```text
 1.3.0
@@ -153,11 +121,9 @@ Ví dụ:
 
 ---
 
-## PATCH
+## Cập nhật nhỏ (PATCH)
 
-Cập nhật nội dung và tối ưu tài liệu.
-
-Ví dụ:
+Cập nhật nội dung hoặc tối ưu tài liệu.
 
 ```text
 1.4.0
@@ -170,8 +136,6 @@ Ví dụ:
 ---
 
 # Quy trình cập nhật
-
-Khi phát hành phiên bản mới:
 
 ```text
 VERSION
@@ -186,14 +150,14 @@ ROADMAP (nếu cần)
 
 ↓
 
-Core Documents
+Tài liệu nền tảng
 
 ↓
 
 Modules
 ```
 
-Việc đồng bộ hoàn tất khi toàn bộ Core Documents phản ánh cùng một phiên bản của Trading Domain.
+Toàn bộ Trading Domain được xem là đồng bộ khi các tài liệu nền tảng và Module tương thích với phiên bản hiện hành.
 
 ---
 
@@ -204,7 +168,6 @@ VERSION giúp:
 - Quản lý phiên bản.
 - Đồng bộ Trading Domain.
 - Theo dõi trạng thái phát hành.
-- Xác định khả năng tương thích giữa các tài liệu.
 
 ---
 
@@ -215,11 +178,7 @@ VERSION
 
 ↓
 
-Đồng bộ
-
-↓
-
 Trading Domain
 ```
 
-VERSION phản ánh trạng thái hiện tại của Trading Domain và là mốc tham chiếu chung cho toàn bộ tài liệu.
+VERSION là mốc tham chiếu chung về phiên bản và trạng thái phát hành của toàn bộ Trading Domain.

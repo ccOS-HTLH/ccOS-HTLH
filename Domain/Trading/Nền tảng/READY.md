@@ -6,7 +6,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-22
-last_updated: 2026-07-27
+last_updated: 2026-08-01
 review_cycle: Manual
 confidence: 100%
 tags:
@@ -16,55 +16,61 @@ tags:
 
 # READY
 
-> Xác nhận Trading Domain đã sẵn sàng sử dụng.
+> Xác nhận Trading Domain đã sẵn sàng vận hành.
 
 ---
 
 # Mục đích
 
-READY đánh dấu việc Trading Domain đã được nạp hoàn chỉnh và trở thành ngữ cảnh làm việc hiện tại.
+READY đánh dấu Trading Domain đã được nạp hoàn chỉnh và trở thành ngữ cảnh làm việc hiện tại.
 
-Sau khi READY, AI có thể sử dụng toàn bộ Trading Domain để xử lý các tác vụ thuộc lĩnh vực Trading.
+Sau khi READY, AI có thể sử dụng toàn bộ Trading Domain cho các tác vụ thuộc lĩnh vực Trading.
 
 ---
 
 # Điều kiện
 
-Trading Domain đạt trạng thái READY sau khi hoàn thành quá trình nạp:
+Trading Domain đạt trạng thái READY sau khi hoàn tất:
 
 ```text
 Boot
-    │
-    ▼
+
+↓
+
 System Instruction
-    │
-    ▼
+
+↓
+
 Domain Manifest
-    │
-    ▼
+
+↓
+
 AI Guide
-    │
-    ▼
-Trading Knowledge Pack
-    │
-    ▼
+
+↓
+
+Trading Navigation Pack
+
+↓
+
 Trading README
-    │
-    ▼
+
+↓
+
 README các Module
-    │
-    ▼
-Modules
-    │
-    ▼
+
+↓
+
+Các Module
+
+↓
+
 READY
 ```
 
 ---
 
 # Trạng thái
-
-Kết quả có thể là:
 
 ```text
 Trading Domain READY
@@ -80,26 +86,18 @@ Trading Domain NOT READY
 
 # Sau khi READY
 
-Trading Domain trở thành Domain làm việc hiện tại.
+Trading Domain được duy trì cho đến khi:
 
-Domain được duy trì cho đến khi:
-
-- `unload`
-- `reload`
-- `update` (nếu yêu cầu nạp lại)
+- unload
+- reload
+- update (khi cần nạp lại)
 - Chuyển sang Domain khác
 
----
-
-# Kiểm tra trạng thái
-
-Có thể sử dụng:
+Có thể kiểm tra bằng:
 
 ```text
 status
 ```
-
-để kiểm tra trạng thái hiện tại của Trading Domain.
 
 ---
 
@@ -122,19 +120,11 @@ Boot
 
 ↓
 
-Core Documents
-
-↓
-
-Modules
-
-↓
-
 Trading Domain READY
 
 ↓
 
-Sẵn sàng làm việc
+Sẵn sàng vận hành
 ```
 
-READY là điểm kết thúc của quá trình khởi động và là điểm bắt đầu của quá trình sử dụng Trading Domain.
+READY là điểm kết thúc của quá trình khởi tạo và là điểm bắt đầu sử dụng Trading Domain.
