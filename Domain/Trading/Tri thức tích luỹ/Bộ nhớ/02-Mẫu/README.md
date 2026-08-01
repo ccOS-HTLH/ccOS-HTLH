@@ -6,7 +6,7 @@
 
 # Mục đích
 
-Mẫu tổng hợp những đặc điểm lặp lại từ nhiều Trường hợp đã được Thực tế kiểm chứng.
+Mẫu nhận diện và chuẩn hóa những đặc điểm lặp lại từ nhiều Trường hợp đã được Thực tế kiểm chứng.
 
 Mỗi Mẫu phản ánh một dạng diễn biến thường xuất hiện, tạo cơ sở để hình thành Bài học tích luỹ và Thống kê.
 
@@ -23,7 +23,7 @@ Tri thức tích luỹ sử dụng Mẫu để:
 - Tổng hợp Bài học tích luỹ.
 - Cập nhật Thống kê.
 
-Mẫu giúp Hệ thống suy luận tham khảo kinh nghiệm từ các diễn biến đã được kiểm chứng.
+Mẫu giúp Tri thức tích luỹ tổ chức kinh nghiệm thành các quy luật có thể tham khảo trong những Hệ thống suy luận sau.
 
 ---
 
@@ -31,14 +31,14 @@ Mẫu giúp Hệ thống suy luận tham khảo kinh nghiệm từ các diễn b
 
 Một Mẫu được hình thành sau khi nhiều Trường hợp có các đặc điểm tương đồng.
 
-Quá trình hình thành bắt đầu từ việc đối chiếu các Trường hợp và xác nhận những điểm lặp lại.
+Mẫu chỉ được tạo khi nhiều Trường hợp độc lập cùng phản ánh một đặc điểm lặp lại đã được Thực tế kiểm chứng.
 
 ---
 
 # Vòng đời
 
 ```text
-Trường hợp
+Nhiều Trường hợp
 
 ↓
 
@@ -50,11 +50,11 @@ Nhận diện đặc điểm lặp lại
 
 ↓
 
-Mẫu
+Hình thành Mẫu
 
 ↓
 
-Bài học
+Bài học tích luỹ
 
 ↓
 
@@ -71,7 +71,7 @@ Một Mẫu có thể liên kết với:
 - Một hoặc nhiều Bài học tích luỹ.
 - Một hoặc nhiều Thống kê.
 
-Các liên kết này giúp truy vết toàn bộ quá trình hình thành của Mẫu.
+Các liên kết này giúp truy vết nguồn gốc và quá trình hình thành của Mẫu.
 
 ---
 
@@ -91,7 +91,7 @@ M-0003
 Cấu trúc, nội dung và cách ghi nhận Mẫu được định nghĩa trong:
 
 ```text
-Quy ước Mẫu.md
+Example.md
 ```
 
 ---
@@ -100,6 +100,6 @@ Quy ước Mẫu.md
 
 Trường hợp ghi nhận từng diễn biến.
 
-Mẫu nhận diện sự lặp lại giữa các diễn biến.
+Mẫu nhận diện những quy luật lặp lại giữa các diễn biến.
 
-Sự lặp lại tạo nền tảng cho Tri thức tích luỹ.
+Quy luật lặp lại tạo nền tảng cho Bài học tích luỹ.
