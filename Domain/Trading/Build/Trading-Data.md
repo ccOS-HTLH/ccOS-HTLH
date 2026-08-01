@@ -26,7 +26,7 @@ Nguồn dữ liệu trả lời:
 
 > Thực tế được ghi nhận như thế nào?
 
-Nguồn dữ liệu tiếp nhận Thực tế và chuẩn hóa dữ liệu để cung cấp đầu vào cho Hệ thống suy luận.
+Nguồn dữ liệu ghi nhận và chuẩn hóa dữ liệu từ Thực tế để cung cấp đầu vào cho Hệ thống suy luận.
 
 ---
 
@@ -34,8 +34,7 @@ Nguồn dữ liệu tiếp nhận Thực tế và chuẩn hóa dữ liệu để
 
 Dữ liệu luôn đi trước suy luận.
 
-Không có dữ liệu,
-không có suy luận.
+Dữ liệu được chuẩn hóa trước khi tham gia Hệ thống suy luận.
 
 ---
 
@@ -45,8 +44,8 @@ không có suy luận.
 Nguồn dữ liệu
 
 ├── README.md
-├── 01-ATS
-└── 02-Dữ liệu rời rạc
+├── ATS.md
+└── Dữ liệu rời rạc.md
 ```
 
 ---
@@ -94,7 +93,7 @@ Trong đó:
 
 - Tri thức nền.
 
-Nguồn dữ liệu tham khảo Tri thức nền để chuẩn hóa dữ liệu trước khi chuyển sang Hệ thống suy luận.
+Nguồn dữ liệu sử dụng Tri thức nền để chuẩn hóa dữ liệu trước khi chuyển sang Hệ thống suy luận.
 
 ---
 
@@ -102,7 +101,7 @@ Nguồn dữ liệu tham khảo Tri thức nền để chuẩn hóa dữ liệu 
 
 ## 01 · ATS
 
-ATS là mẫu chuẩn để ghi nhận Thực tế theo cấu trúc thống nhất.
+ATS là mẫu chuẩn để ghi nhận và chuẩn hóa dữ liệu từ Thực tế theo một cấu trúc thống nhất.
 
 ATS giúp quan sát đồng thời nhiều khía cạnh của thị trường.
 
@@ -110,7 +109,7 @@ ATS giúp quan sát đồng thời nhiều khía cạnh của thị trường.
 
 ## 02 · Dữ liệu rời rạc
 
-Dữ liệu rời rạc ghi nhận một hoặc nhiều khía cạnh của Thực tế.
+Dữ liệu rời rạc ghi nhận các dữ liệu từ Thực tế theo từng đơn vị quan sát độc lập.
 
 Ví dụ:
 
@@ -124,7 +123,11 @@ Ví dụ:
 - Macro.
 - ...
 
-Dữ liệu rời rạc có thể được sử dụng độc lập hoặc kết hợp với ATS.
+Các dữ liệu này có thể:
+
+* được ghi nhận trực tiếp;
+* được tổ chức trong ATS;
+* hoặc được kết hợp với ATS tùy theo ngữ cảnh quan sát.
 
 ---
 
@@ -141,19 +144,19 @@ ATS và Dữ liệu rời rạc đều là các nguồn dữ liệu của Hệ t
 # Vai trò trong Trading
 
 ```text
-Trading
+Trading Domain
 
+├── Tri thức nền
+│      Chuẩn hóa ngôn ngữ và quy ước
+│
 ├── Nguồn dữ liệu
-│      Tiếp nhận và chuẩn hóa dữ liệu
+│      Ghi nhận và chuẩn hóa dữ liệu
 │
 ├── Hệ thống suy luận
-│      Suy luận
-│
-├── Tri thức nền
-│      Chuẩn hóa tri thức
+│      Phân tích và xây dựng phương án
 │
 └── Tri thức tích luỹ
-       Học hỏi từ Thực tế
+       Chuẩn hóa và lưu giữ kinh nghiệm
 ```
 
 Nguồn dữ liệu là đầu vào của Hệ thống suy luận.
@@ -171,12 +174,17 @@ Nguồn dữ liệu
 
 ↓
 
+Dữ liệu chuẩn hóa
+
+↓
+
 Hệ thống suy luận
 ```
 
-Nguồn dữ liệu định nghĩa:
+Nguồn dữ liệu chuẩn hóa:
 
 - Cách tiếp nhận Thực tế.
+- Cách ghi nhận dữ liệu.
 - Cách chuẩn hóa dữ liệu.
 - Cấu trúc dữ liệu đầu vào của Hệ thống suy luận.
 
@@ -206,21 +214,15 @@ tags:
 
 # Mục đích
 
-ATS chuẩn hóa việc ghi nhận dữ liệu từ Thực tế theo một cấu trúc thống nhất.
-
-ATS không tham gia vào quá trình suy luận.
-
-ATS chỉ tạo ra dữ liệu đầu vào cho Hệ thống suy luận.
+ATS chuẩn hóa việc ghi nhận dữ liệu từ Thực tế theo một cấu trúc thống nhất, tạo ra dữ liệu đầu vào chuẩn hóa cho Hệ thống suy luận.
 
 ---
 
 # Triết lý
 
-ATS chuẩn hóa cách ghi nhận dữ liệu.
+ATS chuẩn hóa cách ghi nhận và biểu diễn dữ liệu từ Thực tế.
 
-ATS không tạo ra suy luận.
-
-ATS chỉ cung cấp dữ liệu cho Hệ thống suy luận.
+Dữ liệu được chuẩn hóa trước khi đi vào Hệ thống suy luận.
 
 ---
 
@@ -495,13 +497,9 @@ Mọi dữ liệu đều phản ánh Thực tế tại thời điểm ghi nhận
 
 Mọi dữ liệu đều được chuẩn hóa theo các quy ước trong Tri thức nền trước khi được sử dụng.
 
-ATS chỉ ghi nhận dữ liệu.
+ATS chuẩn hóa dữ liệu trước khi dữ liệu tham gia Hệ thống suy luận.
 
-ATS không tạo ra nhận định.
-
-ATS không tạo ra suy luận.
-
-ATS là một trong các nguồn dữ liệu của Hệ thống suy luận.
+ATS là một trong các nguồn dữ liệu của Trading Domain.
 
 ---
 
@@ -523,15 +521,14 @@ Dữ liệu chuẩn hóa
 Hệ thống suy luận
 ```
 
-ATS là mẫu chuẩn để ghi nhận dữ liệu.
+ATS là mẫu chuẩn để ghi nhận và chuẩn hóa dữ liệu từ Thực tế.
 
-ATS giúp chuẩn hóa:
+ATS chuẩn hóa:
 
 - Cấu trúc dữ liệu.
 - Thứ tự quan sát.
 - Quy ước dữ liệu.
-
-ATS không tham gia vào quá trình suy luận.
+- Đầu vào cho Hệ thống suy luận.
 
 ---
 
@@ -559,8 +556,9 @@ ATS chuẩn hóa:
 - Thứ tự quan sát.
 - Cấu trúc dữ liệu.
 - Quy ước dữ liệu.
+- Dữ liệu đầu vào cho Hệ thống suy luận.
 
-ATS tạo ra dữ liệu đầu vào thống nhất cho Hệ thống suy luận.
+ATS là cầu nối giữa Thực tế và Hệ thống suy luận thông qua dữ liệu đã được chuẩn hóa.
 
 ---
 
@@ -572,7 +570,7 @@ status: Stable
 author: HTLH
 language: vi
 created: 2026-07-20
-last_updated: 2026-07-27
+last_updated: 2026-07-31
 review_cycle: Manual
 confidence: 100%
 tags:
@@ -588,11 +586,11 @@ tags:
 
 # Mục đích
 
-Dữ liệu rời rạc ghi nhận những dữ liệu không nhất thiết phải nằm trong ATS.
+Dữ liệu rời rạc ghi nhận các dữ liệu từ Thực tế theo từng đơn vị quan sát độc lập.
 
-Dữ liệu rời rạc chuẩn hóa các dữ liệu đầu vào cho Hệ thống suy luận.
+Dữ liệu rời rạc có thể được ghi nhận trong ATS hoặc độc lập tùy theo ngữ cảnh sử dụng.
 
-Dữ liệu rời rạc không tham gia vào quá trình suy luận.
+Dữ liệu rời rạc chuẩn hóa và bổ sung dữ liệu đầu vào cho Hệ thống suy luận.
 
 ---
 
@@ -600,9 +598,7 @@ Dữ liệu rời rạc không tham gia vào quá trình suy luận.
 
 Dữ liệu rời rạc mở rộng khả năng quan sát Thực tế.
 
-Dữ liệu rời rạc không tạo ra suy luận.
-
-Dữ liệu rời rạc chỉ cung cấp dữ liệu cho Hệ thống suy luận.
+Dữ liệu rời rạc bổ sung dữ liệu đầu vào cho Hệ thống suy luận.
 
 ---
 
@@ -640,9 +636,10 @@ Hệ thống suy luận
 Trong đó:
 
 - Thực tế là nguồn gốc của mọi dữ liệu.
-- Dữ liệu rời rạc ghi nhận các dữ liệu ngoài ATS.
+- Dữ liệu rời rạc ghi nhận một hoặc nhiều dữ liệu từ Thực tế.
+- Dữ liệu rời rạc có thể được tổ chức trong ATS hoặc được ghi nhận độc lập tùy theo ngữ cảnh.
 - Tri thức nền cung cấp các khái niệm và quy ước để chuẩn hóa dữ liệu.
-- Dữ liệu chuẩn hóa trở thành đầu vào của Hệ thống suy luận.
+- Dữ liệu sau khi được chuẩn hóa trở thành đầu vào của Hệ thống suy luận.
 
 ---
 
@@ -662,7 +659,7 @@ Trong đó:
 
 - Tri thức nền.
 
-Dữ liệu rời rạc tham khảo Tri thức nền để chuẩn hóa dữ liệu trước khi chuyển sang Hệ thống suy luận.
+Dữ liệu rời rạc sử dụng Tri thức nền để chuẩn hóa dữ liệu trước khi chuyển sang Hệ thống suy luận.
 
 ---
 
@@ -725,7 +722,11 @@ Dữ liệu rời rạc có thể là:
 - Một sự kiện.
 - Một tập dữ liệu.
 
-Dữ liệu rời rạc có thể được sử dụng độc lập hoặc kết hợp với ATS.
+Dữ liệu rời rạc có thể:
+
+- Được ghi nhận trong ATS.
+- Được ghi nhận độc lập.
+- Được kết hợp với ATS tùy theo ngữ cảnh quan sát.
 
 ---
 
@@ -743,25 +744,23 @@ ATS và Dữ liệu rời rạc đều là các nguồn dữ liệu của Hệ t
 
 ```text
 Thực tế
-
-↓
-
-Dữ liệu rời rạc
-
-↓
-
+        │
+        ▼
+   Dữ liệu rời rạc
+        │
+   ┌────┴────┐
+   ▼         ▼
+ ATS      Độc lập
+   └────┬────┘
+        ▼
 Dữ liệu chuẩn hóa
-
-↓
-
+        ▼
 Hệ thống suy luận
 ```
 
-Dữ liệu rời rạc mở rộng khả năng ghi nhận Thực tế ngoài ATS.
+Dữ liệu rời rạc mở rộng khả năng ghi nhận Thực tế.
 
-Dữ liệu rời rạc giúp bổ sung các thông tin không nằm trong mẫu ATS.
-
-Dữ liệu rời rạc không tham gia vào quá trình suy luận.
+Các dữ liệu rời rạc có thể được sử dụng độc lập hoặc được tổ chức trong ATS trước khi chuyển sang Hệ thống suy luận.
 
 ---
 
@@ -776,6 +775,10 @@ Dữ liệu rời rạc
 
 ↓
 
+Dữ liệu chuẩn hóa
+
+↓
+
 Hệ thống suy luận
 ```
 
@@ -786,4 +789,6 @@ Dữ liệu rời rạc chuẩn hóa:
 - Các sự kiện.
 - Các tập dữ liệu.
 
-Dữ liệu rời rạc là một nguồn dữ liệu của Hệ thống suy luận.
+Dữ liệu rời rạc bổ sung dữ liệu đầu vào cho Hệ thống suy luận.
+
+Dữ liệu rời rạc có thể được ghi nhận trong ATS hoặc độc lập tùy theo ngữ cảnh sử dụng.
