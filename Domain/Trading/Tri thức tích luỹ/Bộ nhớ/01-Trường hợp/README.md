@@ -1,29 +1,37 @@
-# Trường hợp
+# 01-Trường hợp
 
-> Dữ liệu gốc của Bộ nhớ.
+> Đơn vị tri thức cơ bản của Bộ nhớ.
 
 ---
 
 # Mục đích
 
-Trường hợp ghi nhận một chu kỳ suy luận đã được Thực tế kiểm chứng.
+Trường hợp ghi nhận một Hệ thống suy luận đã được Thực tế kiểm chứng.
 
-Mỗi Trường hợp lưu giữ đầy đủ bối cảnh, quá trình và kết quả của một lần vận hành, tạo nền tảng cho việc hình thành Mẫu, Bài học tích luỹ và Thống kê.
+Mỗi Trường hợp lưu giữ:
+
+- Bối cảnh.
+- Diễn biến chính.
+- Kết quả.
+- Các ghi nhận.
+- Liên kết tới Mẫu, Bài học tích luỹ và Thống kê.
+
+Các dữ liệu chi tiết được lưu trong Phụ lục của Trường hợp.
 
 ---
 
 # Vai trò
 
-Trường hợp là đơn vị dữ liệu cơ bản của Bộ nhớ.
+Trường hợp là đơn vị dữ liệu nhỏ nhất của Bộ nhớ.
 
-Tri thức tích luỹ sử dụng Trường hợp để:
+Thông qua Trường hợp, Tri thức tích luỹ có thể:
 
 - Tra cứu kinh nghiệm.
 - Nhận diện Mẫu.
 - Tổng hợp Bài học tích luỹ.
 - Cập nhật Thống kê.
 
-Mọi dữ liệu trong Bộ nhớ đều bắt đầu từ Trường hợp.
+Mọi tri thức trong Bộ nhớ đều bắt đầu từ Trường hợp.
 
 ---
 
@@ -32,45 +40,23 @@ Mọi dữ liệu trong Bộ nhớ đều bắt đầu từ Trường hợp.
 Một Trường hợp được ghi nhận sau khi:
 
 ```text
-Phân tích
+Hệ thống suy luận
 
 ↓
 
-Thực thi
+Hoàn tất
 
 ↓
 
-Phản hồi thực tế
-
-↓
-
-Kết thúc chu kỳ
+Trường hợp
 ```
-
-Mỗi Trường hợp phản ánh một diễn biến đã được Thực tế xác nhận.
 
 ---
 
 # Vòng đời
 
 ```text
-Thực tế
-
-↓
-
-Quan sát
-
-↓
-
 Hệ thống suy luận
-
-↓
-
-Kế hoạch thực thi
-
-↓
-
-Phản hồi thực tế
 
 ↓
 
@@ -82,7 +68,7 @@ Mẫu
 
 ↓
 
-Bài học
+Bài học tích luỹ
 
 ↓
 
@@ -91,23 +77,23 @@ Thống kê
 
 ---
 
-# Liên kết dữ liệu
+# Liên kết
 
 Một Trường hợp có thể liên kết với:
 
 - Chữ ký tín hiệu.
-- Không gian kịch bản.
-- Kế hoạch thực thi.
-- Một hoặc nhiều Mẫu.
-- Một hoặc nhiều Bài học tích luỹ.
+- Mẫu.
+- Bài học tích luỹ.
+- Thống kê.
+- Phụ lục của Trường hợp.
 
-Các Thống kê được tổng hợp từ nhiều Trường hợp.
+Nhiều Trường hợp tạo nên Thống kê.
 
 ---
 
 # Tra cứu
 
-Quá trình tra cứu bắt đầu từ Chữ ký tín hiệu.
+Quá trình tham khảo kinh nghiệm luôn bắt đầu từ Chữ ký tín hiệu.
 
 ```text
 Chữ ký tín hiệu
@@ -122,7 +108,7 @@ Mẫu
 
 ↓
 
-Bài học
+Bài học tích luỹ
 
 ↓
 
@@ -144,20 +130,20 @@ TH-0003
 
 # Quy ước
 
-Cấu trúc, nội dung và cách ghi nhận Trường hợp được định nghĩa trong:
+Cấu trúc và cách ghi nhận Trường hợp được định nghĩa trong:
 
 ```text
-Quy ước Trường hợp.md
+Example.md
 ```
 
 ---
 
 # Triết lý
 
-Trường hợp lưu giữ kinh nghiệm của từng chu kỳ suy luận.
+Một Trường hợp lưu giữ một kinh nghiệm đã được Thực tế kiểm chứng.
 
 Nhiều Trường hợp hình thành Mẫu.
 
-Nhiều Mẫu hình thành Bài học.
+Nhiều Mẫu hình thành Bài học tích luỹ.
 
-Nhiều Bài học góp phần phát triển Tri thức tích luỹ.
+Nhiều Bài học được tích lũy thành Tri thức tích luỹ.

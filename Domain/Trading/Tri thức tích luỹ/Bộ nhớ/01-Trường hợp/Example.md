@@ -1,35 +1,31 @@
-# Example · Trường hợp
+# Ví dụ · Trường hợp
 
 > Ví dụ về một Trường hợp hoàn chỉnh.
 
 ---
 
-# Template
+# Mẫu
 
 ```yaml
-id: TH-0001
+id:
 
-title:
+tiêu_đề:
 
-created:
+ngày_tạo:
 
-market:
+loại:
 
-symbol:
+tóm_tắt:
 
-timeframe:
+liên_kết:
 
-signature:
+  phụ_lục:
 
-summary:
+  mẫu:
 
-analysis:
+  bài_học:
 
-result:
-
-linked_patterns:
-
-linked_lessons:
+  thống_kê:
 ```
 
 ---
@@ -39,53 +35,35 @@ linked_lessons:
 ```yaml
 id: TH-0001
 
-title: BTC bật lên từ POC5 sau hấp thụ Long
+tiêu_đề: BTC bật lên từ POC5 sau hấp thụ Long
 
-created: 2026-07-25
+ngày_tạo: 2026-07-25
 
-market: Crypto
+loại: Tiếp diễn xu hướng tăng
 
-symbol: BTC
+tóm_tắt:
 
-timeframe: M5
+  Giá giữ được POC5 sau nhịp điều chỉnh.
 
-signature:
-  auction: POC5
-  cvd: âm
-  funding: dương
-  vpin: thấp
+  Dòng tiền đồng thuận.
 
-summary:
+  Xu hướng tăng được duy trì.
 
-Giá chạm POC5.
+liên_kết:
 
-Long bị thanh lý.
+  phụ_lục:
 
-Xuất hiện hấp thụ.
+    - PH-0001
 
-analysis:
+  mẫu:
 
-Kịch bản hồi kỹ thuật.
+    - M-0003
 
-Không xác nhận đảo chiều lớn.
+  bài_học:
 
-result:
+    - BH-0002
 
-Giá hồi về Auction Line.
+  thống_kê:
 
-linked_patterns:
-
-- M-0003
-
-linked_lessons:
-
-- BH-0002
+    - TK-0001
 ```
-
----
-
-# Giải thích
-
-Template chỉ ghi lại những gì đã xảy ra.
-
-Không thêm kết luận mới sau khi Trường hợp được hoàn tất.
