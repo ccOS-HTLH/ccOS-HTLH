@@ -6,11 +6,17 @@
 
 # Mục đích
 
-Build chịu trách nhiệm tổng hợp và đóng gói các tài liệu của Trading Domain.
+Build chịu trách nhiệm đóng gói các tài liệu nguồn của Trading Domain thành các gói sử dụng.
 
-Các gói Build được tạo từ các tài liệu nguồn và không phải là nơi chỉnh sửa nội dung.
+Các gói Build giúp:
 
-Mọi thay đổi phải được thực hiện trên tài liệu nguồn trước khi Build.
+- Tập hợp đúng phạm vi tài liệu cần sử dụng.
+- Giữ nguyên cấu trúc của tài liệu nguồn.
+- Phân phối Trading Domain theo từng mục đích sử dụng.
+
+Build không tạo tri thức mới và không phải là nơi chỉnh sửa nội dung.
+
+Mọi thay đổi đều phải được thực hiện trên tài liệu nguồn trước khi Build.
 
 ---
 
@@ -28,6 +34,10 @@ Cần một gói chuyên biệt hay toàn bộ Domain?
 
 Đóng gói các tài liệu nền tảng của Trading Domain.
 
+## Trading Knowledge
+
+Đóng gói toàn bộ Tri thức nền.
+
 ## Trading Data
 
 Đóng gói toàn bộ tài liệu thuộc Nguồn dữ liệu.
@@ -35,10 +45,6 @@ Cần một gói chuyên biệt hay toàn bộ Domain?
 ## Trading Reasoning
 
 Đóng gói toàn bộ Hệ thống suy luận.
-
-## Trading Knowledge
-
-Đóng gói toàn bộ Tri thức nền.
 
 ## Trading Memory
 
@@ -54,10 +60,10 @@ Cần một gói chuyên biệt hay toàn bộ Domain?
 
 Mỗi tệp tương ứng với một tầng:
 
-- 01 · Hành vi
-- 02 · Bối cảnh
+- 01-Hành vi
+- 02-Bối cảnh
 - ...
-- 10 · Phản hồi thực tế
+- 10-Phản hồi thực tế
 
 ---
 
@@ -72,17 +78,14 @@ Build
 
 ↓
 
-Trading Core
+Các gói Build
 
-Trading Data
-
-Trading Reasoning
-
-Trading Knowledge
-
-Trading Memory
-
-Trading Domain Full
+├── Trading Core
+├── Trading Knowledge
+├── Trading Data
+├── Trading Reasoning
+├── Trading Memory
+└── Trading Domain Full
 ```
 
 ---
@@ -100,7 +103,7 @@ Trading Domain Full
 
 Tài liệu nguồn là nơi phát triển tri thức.
 
-Build là nơi đóng gói tri thức.
+Build là nơi đóng gói tài liệu.
 
 Một nguồn có thể tạo ra nhiều gói Build.
 
