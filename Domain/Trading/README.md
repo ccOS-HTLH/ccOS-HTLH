@@ -25,26 +25,25 @@ tags:
 
 # Mục đích
 
-Trading chuẩn hóa toàn bộ quá trình vận hành của Trading Domain.
+Trading chuẩn hóa toàn bộ quá trình tiếp nhận Thực tế, suy luận, kiểm chứng và học hỏi.
 
 Trading cung cấp một kiến trúc thống nhất để:
 
-- Tiếp nhận Thực tế.
-- Chuẩn hóa dữ liệu.
+- Chuẩn hóa Tri thức nền.
+- Chuẩn hóa dữ liệu từ Thực tế.
 - Thực hiện suy luận.
-- Lập kế hoạch thực thi.
+- Thực thi phương án.
 - Kiểm chứng bằng Thực tế.
 - Tích luỹ và tái sử dụng kinh nghiệm.
 
 Mọi thành phần trong Trading đều được tổ chức theo cùng một kiến trúc và cùng một ngôn ngữ.
 
 ```text
-Thực tế
+Tri thức nền
 
 ↓
 
 Nguồn dữ liệu
-(chuẩn hóa theo Tri thức nền)
 
 ↓
 
