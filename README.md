@@ -17,4 +17,4 @@ Here are some ideas to get you started:
 
 [Domain](Domain/README.md)
 
-- 📈 [Trading Domain](Domain/Trading/README.md)
+- 📈 [Trading](Domain/Trading/README.md)
