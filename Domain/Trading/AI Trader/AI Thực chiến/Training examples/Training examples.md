@@ -1699,3 +1699,702 @@ Khi có thêm kết quả thực tế sau các setup tương tự, có thể c�
 - SL bị quét,
 - điều kiện nào làm setup thất bại,
 - và độ tin cậy của từng chữ ký tín hiệu.
+
+---
+
+# Training Example 05 — POC5 Rejection → Bearish Flow Confirmation
+
+## Mục tiêu
+
+Đây là mẫu thứ 5, tách riêng khỏi 4 pattern đã có trong `01.md` → `04.md`.
+
+Core pattern:
+
+> **POC5 bị reject + flow chuyển bearish**
+
+Mẫu này đặc biệt quan trọng vì nó cho AI Trader biết cách chuyển từ:
+
+> **“Giá chỉ đang test POC5”**
+
+sang:
+
+> **“POC5 đã thực sự bị reject và bearish flow đã xác nhận.”**
+
+---
+
+# 1. Pattern Structure
+
+Chuỗi mẫu điển hình:
+
+```text
+Giá hồi lên POC5
+        ↓
+POC5 test từ phía dưới
+        ↓
+Không reclaim được POC5
+        ↓
+Giá bị reject
+        ↓
+CVD + → 0 → -
+        ↓
+OI chuyển sang Bear In / bearish positioning
+        ↓
+Auction yếu / breakdown
+        ↓
+RSI mất 50
+        ↓
+Bearish continuation
+```
+
+### Core principle
+
+> **POC5 cho ta LOCATION.**
+>
+> **Reaction cho ta INFORMATION.**
+>
+> **Bearish flow confirmation cho ta ENTRY.**
+
+---
+
+# 2. Case Study
+
+Chuỗi thực tế:
+
+**76,540 → 77,355 → POC5 77,856 → 76,868**
+
+Trước khi test POC5:
+
+```text
+76,540
+↓
+77,355
+↓
+test POC5 77,856
+```
+
+Sau test:
+
+```text
+77,856
+↓
+76,868
+```
+
+=> Giá đã test POC5 từ phía dưới nhưng **không reclaim được**.
+
+Đây mới chỉ là:
+
+> **POC5 rejection candidate**
+
+Chưa đủ để Short ngay.
+
+---
+
+# 3. Flow trước rejection
+
+Snapshot trước khi test:
+
+```text
+Price: 77,355
+POC5: 77,856
+
+OI: -0.30%
+Flow Type: BeO
+
+CVD: +2.2K
+
+Agg Liq:
+Long 13.5M
+Short 12.6M
+
+Auction Line: 26K
+EMA20: 24.6K
+
+RSI: 56
+VPIN: 0.16
+```
+
+Đọc:
+
+- Price đang hồi.
+- CVD tăng.
+- AL > EMA20.
+- RSI > 50.
+- VPIN thấp.
+- OI giảm + BeO.
+
+=> Đây là **bullish recovery / short covering**.
+
+Quan trọng:
+
+> Chưa được gọi là healthy long buildup.
+
+Vì:
+
+**Price ↑ + CVD ↑ + OI ↓ + BeO**
+
+có thể là short covering.
+
+Do đó AI Trader phải chờ phản ứng tại POC5.
+
+---
+
+# 4. POC5 Rejection
+
+Giá chạm POC5:
+
+**77,856**
+
+sau đó:
+
+**→ 76,868**
+
+Đây là dấu hiệu đầu tiên:
+
+> **POC5 failed reclaim.**
+
+POC5 đang nằm phía trên giá.
+
+Vì vậy POC5 chuyển từ:
+
+> potential support
+
+thành:
+
+> **resistance / rejection location**
+
+Nhưng chưa được phép Short chỉ dựa trên location.
+
+---
+
+# 5. Flow chuyển bearish
+
+Snapshot sau rejection:
+
+```text
+Price: 76,868
+POC5: 77,856
+
+OI: +0.03%
+Flow Type: BeI
+
+CVD: +25
+
+Agg Liq:
+Long 9.8M
+Short 8.1M
+
+Auction Line: 24.3K
+EMA20: 26K
+
+RSI: 37
+VPIN: 0.08
+```
+
+Đây là phần quan trọng nhất của training example.
+
+## CVD
+
+Trước:
+
+**+2.2K**
+
+Sau:
+
+**+25**
+
+Chuỗi:
+
+> **CVD + → gần 0**
+
+Buyer flow gần như bị triệt tiêu.
+
+Nếu tiếp tục:
+
+> **+ → 0 → -**
+
+thì bearish confirmation mạnh hơn nữa.
+
+---
+
+## OI
+
+Trước:
+
+> **-0.30% BeO**
+
+Sau:
+
+> **+0.03% BeI**
+
+Đây là regime change:
+
+```text
+Short covering
+      ↓
+OI bắt đầu tăng
+      ↓
+Bear In
+```
+
+=> bắt đầu có evidence của bearish positioning mới.
+
+---
+
+## Auction Line vs EMA20
+
+Trước:
+
+**AL 26K > EMA20 24.6K**
+
+Sau:
+
+**AL 24.3K < EMA20 26K**
+
+Auction momentum đã yếu đi.
+
+Không diễn giải:
+
+> AL < EMA20 = Short
+
+một cách máy móc.
+
+Đúng hơn:
+
+> **Auction confirmation cho bullish continuation đã mất.**
+
+Nếu AL tiếp tục giảm/breakdown cùng CVD và price:
+
+→ bearish confirmation tăng mạnh.
+
+---
+
+## RSI
+
+**56 → 37**
+
+Đây là momentum deterioration rất rõ:
+
+> bullish recovery → bearish momentum.
+
+RSI 37 chưa phải extreme oversold.
+
+Vì vậy vẫn còn room cho bearish continuation.
+
+---
+
+## VPIN
+
+**0.16 → 0.08**
+
+VPIN vẫn thấp.
+
+Điều này rất quan trọng:
+
+> Đây chưa phải panic sell.
+
+Do đó bearish move hiện tại có thể là:
+
+> **controlled bearish transition**
+
+thay vì liquidation cascade.
+
+---
+
+# 6. Entry Quality
+
+## ❌ Không Short ngay tại 76,868
+
+Sau rejection:
+
+**77,856 → 76,868**
+
+giá đã giảm gần 1K.
+
+Short ngay đây có nguy cơ:
+
+> **chase the move**
+
+Location tốt nhất đã ở phía trên.
+
+---
+
+# 7. 🥇 A+ Short Entry — POC5 Retest
+
+Setup tốt nhất:
+
+```text
+POC5 77,856
+       ↓
+Rejection
+       ↓
+Price giảm
+       ↓
+Pullback
+       ↓
+Retest POC5 từ dưới
+       ↓
+Reject lần nữa
+       ↓
+Bearish flow confirmation
+       ↓
+SHORT
+```
+
+### Điều kiện ưu tiên
+
+Trong retest POC5:
+
+- Price không reclaim được POC5.
+- CVD không phục hồi rõ.
+- CVD có thể đi **+ → 0 → -**.
+- OI giữ/tăng theo BeI.
+- Auction tiếp tục yếu hoặc breakdown.
+- RSI không reclaim 50.
+- VPIN vẫn orderly hoặc tăng theo stress nếu breakdown bắt đầu.
+
+Đây là:
+
+> **Location + rejection + flow confirmation + retest**
+
+→ chất lượng entry cao.
+
+---
+
+# 8. Entry B — Aggressive
+
+Có thể cân nhắc entry sớm hơn nếu:
+
+- POC5 rejection rất rõ;
+- CVD đã mất mạnh;
+- OI chuyển BeI;
+- Auction breakdown;
+- RSI < 50;
+- price vẫn gần POC5;
+- R:R còn tốt.
+
+Nhưng:
+
+> Entry aggressive phải có risk nhỏ hơn entry A+.
+
+---
+
+# 9. Khi nào KHÔNG vào Short?
+
+## No Entry #1 — Chỉ chạm POC5
+
+```text
+Price → POC5
+```
+
+nhưng:
+
+- chưa reject;
+- CVD vẫn tăng;
+- OI không bearish;
+- Auction vẫn expansion.
+
+→ **WAIT**
+
+---
+
+## No Entry #2 — Rejection nhưng flow chưa xác nhận
+
+Ví dụ:
+
+```text
+POC5 reject
+CVD vẫn + mạnh
+OI flat
+AL > EMA20
+RSI > 50
+```
+
+→ chưa đủ.
+
+> **Location có, confirmation chưa có.**
+
+→ WAIT.
+
+---
+
+## No Entry #3 — Giá đã dump quá xa
+
+```text
+POC5
+↓
+↓
+↓
+large dump
+```
+
+Nếu đã cách xa POC5:
+
+→ không chase Short.
+
+Chờ pullback/retest.
+
+---
+
+## No Entry #4 — Panic liquidation
+
+Nếu xuất hiện:
+
+- Long liquidation cực lớn;
+- VPIN cực cao;
+- price dump nhanh;
+- RSI extreme.
+
+→ không tự động Short.
+
+Có thể đã ở cuối liquidation leg.
+
+Chờ:
+
+> reset → retest → confirmation.
+
+---
+
+# 10. TP Framework
+
+Không cố định một TP duy nhất.
+
+## TP1
+
+**76,200**
+
+Là reaction low trước đó.
+
+Nếu Short từ vùng retest POC5:
+
+→ TP1 là logical first target.
+
+## TP2
+
+**VP1 = 74,631**
+
+Đây là value reference quan trọng tiếp theo.
+
+Nếu price mất 76,200 và bearish flow tiếp tục:
+
+→ VP1 trở thành target chính.
+
+## TP3
+
+Nếu VP1 cũng bị phá:
+
+→ tìm:
+
+- lower value;
+- prior swing;
+- Profile Low;
+- liquidation/value reset zone.
+
+---
+
+# 11. SL Framework
+
+SL phải đặt tại **invalidation**.
+
+## Short từ POC5 retest
+
+Invalidation:
+
+> **POC5 được reclaim và hold lại.**
+
+SL có thể nằm:
+
+> trên failed-reclaim / rejection high.
+
+Không đặt SL quá sát khiến noise kích hoạt.
+
+Không nới SL khi thesis đã invalidated.
+
+---
+
+# 12. Risk/Reward
+
+Trước entry:
+
+```text
+Entry = POC5 rejection retest
+
+SL = trên POC5 / rejection high
+
+TP1 = prior low
+
+TP2 = VP1
+```
+
+Chỉ vào khi:
+
+> **Expected R:R đủ tốt.**
+
+Nếu entry đã quá thấp:
+
+> **Không cố Short chỉ vì bearish thesis đúng.**
+
+Thesis đúng không có nghĩa entry ở mọi giá đều tốt.
+
+---
+
+# 13. AI Trader State Machine
+
+```text
+STATE 1
+Price below POC5
+        ↓
+WAIT
+
+STATE 2
+Price approaches POC5
+        ↓
+OBSERVE
+
+STATE 3
+POC5 rejected
+        ↓
+WATCH FLOW
+
+STATE 4
+CVD + → 0
+OI → BeI
+AL weak
+RSI < 50
+        ↓
+BEARISH CONFIRMATION
+
+STATE 5
+Retest POC5
+        ↓
+Reject
+        ↓
+SHORT CANDIDATE
+
+STATE 6
+Price reaches TP1
+        ↓
+Protect position
+
+STATE 7
+Price reaches VP1
+        ↓
+Partial / exit / trail
+
+STATE INVALID
+POC5 reclaimed + accepted
+        ↓
+EXIT SHORT
+```
+
+---
+
+# 14. Pattern Recognition Formula
+
+AI Trader có thể nhận diện mẫu bằng logic:
+
+```text
+POC5 Test
++
+Failed Reclaim
++
+CVD Deterioration
++
+Bearish OI/Flow
++
+Auction Weakening
++
+Momentum Weakening
+=
+Bearish Setup
+```
+
+Nhưng:
+
+```text
+Bearish Setup
+≠
+Immediate Market Order
+```
+
+Cần thêm:
+
+```text
+Good Location
++
+Good R:R
++
+Retest / Confirmation
+=
+Entry
+```
+
+---
+
+# 15. Checklist cho AI Trader
+
+Trước khi Short pattern này:
+
+- [ ] Giá đang ở dưới POC5?
+- [ ] POC5 đã được test?
+- [ ] Test từ phía dưới?
+- [ ] Reclaim thất bại?
+- [ ] Giá đã reject khỏi POC5?
+- [ ] CVD có **+ → 0 → -**?
+- [ ] OI có chuyển sang BeI?
+- [ ] Có bearish positioning mới hay chỉ liquidation?
+- [ ] Agg Liq bên nào đang bị ép?
+- [ ] Auction đang yếu/breakdown?
+- [ ] AL/EMA20 được đọc theo behavior?
+- [ ] RSI đã mất 50?
+- [ ] VPIN có quá cao không?
+- [ ] Giá có đang quá xa POC5 không?
+- [ ] Có retest POC5 để entry không?
+- [ ] TP1 rõ?
+- [ ] VP1/TP2 rõ?
+- [ ] SL nằm tại invalidation?
+- [ ] R:R đủ tốt?
+
+Nếu chưa đủ:
+
+> **WAIT.**
+
+---
+
+# 16. Training Lesson
+
+Mẫu này phải dạy AI Trader một distinction cực quan trọng:
+
+### Location only
+
+> **Giá chạm POC5**
+
+→ chưa vào.
+
+### Location + reaction
+
+> **POC5 bị reject**
+
+→ bắt đầu chú ý.
+
+### Location + reaction + flow
+
+> **POC5 bị reject + CVD suy yếu + OI chuyển BeI + Auction yếu + RSI mất 50**
+
+→ **bearish setup**.
+
+### Location + reaction + flow + retest
+
+> **POC5 bị reject → bearish flow → retest POC5 → reject lần nữa**
+
+→ **A+ Short candidate**.
+
+---
+
+# Core Rule
+
+> ## **POC5 bị reject + flow chuyển bearish.**
+
+Nhưng phiên bản đầy đủ cho AI Trader là:
+
+> ## **POC5 cho LOCATION → Rejection cho SIGNAL CONTEXT → Bearish Flow cho CONFIRMATION → Retest cho ENTRY.**
