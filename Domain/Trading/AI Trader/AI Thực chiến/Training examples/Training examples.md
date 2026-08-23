@@ -2398,3 +2398,1321 @@ Mẫu này phải dạy AI Trader một distinction cực quan trọng:
 Nhưng phiên bản đầy đủ cho AI Trader là:
 
 > ## **POC5 cho LOCATION → Rejection cho SIGNAL CONTEXT → Bearish Flow cho CONFIRMATION → Retest cho ENTRY.**
+
+---
+
+# 06.md — Auction Early Warning → POC5 Failure → Bearish Continuation / Reset
+
+> Mẫu thứ 6 được rút ra từ chuỗi quan sát thực tế quanh vùng 77.9k → 77.5k.
+>
+> Đây là **mẫu kinh nghiệm cho AI Trader**, không phải một quy luật dự đoán giá. Chữ ký chỉ được xem là tri thức tích lũy sau khi được thực tế kiểm chứng qua nhiều mẫu tương tự.
+
+---
+
+## 01. Tên pattern
+
+**Auction Early Warning → POC5 Failure → Bearish Continuation / Reset**
+
+Tên rút gọn:
+
+**AEW → POC5 Failure → Bearish Follow-through**
+
+Ý tưởng cốt lõi:
+
+> **Auction Line và EMA20 có thể suy yếu trước khi giá thể hiện đầy đủ biến động.**
+
+Trong mẫu quan sát này, giá vẫn còn ở vùng cao và CVD/OI chưa chuyển bearish hoàn toàn, nhưng Auction Flow đã suy yếu liên tục:
+
+```text
+Auction Line:
++5.9k
+↓
++120
+↓
+-560
+↓
+-1.2k
+
+EMA20:
++5.2k
+↓
++3.9k
+↓
++3.4k
+↓
++2.9k
+```
+
+Sau đó giá:
+
+```text
+77,921
+↓
+77,987
+↓
+77,700
+↓
+77,571
+```
+
+Điểm cần ghi nhớ:
+
+> **Không coi Auction Line là công cụ dự đoán.**
+>
+> Xem nó là một **Early Warning Layer** cần được xác nhận bằng cấu trúc, hành vi, động lượng và phản ứng tại POC5/VP1.
+
+---
+
+## 02. Bối cảnh hình thành mẫu
+
+Mẫu này xuất hiện sau một pha bullish expansion:
+
+```text
+POC30 Reclaim
+→ Bullish Expansion
+→ Short Squeeze
+→ POC5 Migration lên cao
+→ Giá giữ trên POC5
+```
+
+Các dấu hiệu bullish ban đầu:
+
+- Giá trên POC30.
+- Giá trên POC5.
+- CVD dương và tăng.
+- OI chuyển BeO trong context short unwind.
+- Short liquidation lớn hơn Long liquidation.
+- RSI cao.
+- VPIN tăng nhưng chưa cực đoan.
+
+Sau đó xuất hiện dấu hiệu thay đổi:
+
+```text
+Giá vẫn cao
+nhưng
+Auction Line ↓↓↓
+EMA20 ↓
+```
+
+Đây là giai đoạn quan trọng nhất của pattern.
+
+---
+
+## 03. Chữ ký tín hiệu của mẫu
+
+### 3.1. Auction Early Warning — tín hiệu lõi
+
+Ưu tiên quan sát **diễn biến theo chuỗi**, không chỉ một snapshot.
+
+### Bullish → Warning
+
+```text
+Auction Line > EMA20
+        ↓
+Auction Line giảm
+        ↓
+Auction Line tiến về EMA20
+        ↓
+Auction Line < EMA20
+        ↓
+Auction Line < 0
+```
+
+Đặc biệt đáng chú ý nếu:
+
+```text
+Price:
+↑ / đi ngang / vẫn ở vùng cao
+
+trong khi
+
+Auction Line:
+↓↓↓
+
+EMA20:
+↓↓
+```
+
+Đây là:
+
+**Auction Early Warning — Bearish**
+
+---
+
+## 04. Vì sao Auction Line + EMA20 quan trọng?
+
+Auction Line có thể cho thấy sự thay đổi của Auction Flow trước khi giá phản ánh đầy đủ.
+
+EMA20 đóng vai trò đường nền để đánh giá:
+
+- Auction Line đang mạnh hơn hay yếu hơn nền.
+- Auction Line đang mở rộng hay co lại.
+- Auction Flow đang duy trì hay mất alignment.
+
+Không sử dụng quy tắc:
+
+```text
+AL âm = Short
+```
+
+Mà sử dụng:
+
+```text
+AL trajectory
++
+AL/EMA20 relationship
++
+Price structure
++
+CVD
++
+OI
++
+POC behavior
+```
+
+---
+
+## 05. Tín hiệu sớm nhất của mẫu
+
+### Cấp độ 1 — Early Warning
+
+Chưa được vào lệnh.
+
+Điều kiện:
+
+- Giá vẫn bullish hoặc đang ở vùng cao.
+- Auction Line bắt đầu giảm.
+- EMA20 bắt đầu giảm.
+- AL yếu dần so với EMA20.
+- AL có xu hướng tiến về 0.
+
+Ví dụ:
+
+```text
+Price:      ↑
+CVD:        +
+OI:         Bullish / BeO
+AL:         ↓
+EMA20:      ↓
+```
+
+### Quyết định:
+
+**WAIT / theo dõi.**
+
+Không Short chỉ vì Early Warning.
+
+---
+
+## 06. Cấp độ 2 — Auction Breakdown Warning
+
+Cảnh báo mạnh hơn.
+
+Các dấu hiệu:
+
+```text
+AL < EMA20
++
+AL tiếp tục giảm
++
+EMA20 tiếp tục giảm
+```
+
+Nếu đồng thời:
+
+- Giá không tạo được expansion mới.
+- POC5 bắt đầu bị test.
+- RSI giảm khỏi vùng quá nóng.
+- CVD không tiếp tục tăng.
+
+→ Bearish scenario tăng xác suất.
+
+### Quyết định:
+
+**Không chase Long.**
+**Chuẩn bị bearish scenario.**
+
+---
+
+## 07. Cấp độ 3 — POC5 Failure
+
+Đây là trigger cấu trúc quan trọng hơn Early Warning.
+
+Ví dụ:
+
+```text
+Price > POC5
+        ↓
+Pullback về POC5
+        ↓
+POC5 bị xuyên
+        ↓
+Không reclaim được
+        ↓
+POC5 trở thành resistance
+```
+
+Đây là thời điểm pattern chuyển từ:
+
+**Warning**
+
+sang:
+
+**Structural Failure Risk**
+
+---
+
+## 08. Điều kiện LONG còn được phép
+
+Khi Auction Early Warning xuất hiện nhưng POC5 vẫn giữ:
+
+- Giá giữ POC5.
+- POC5 được reclaim sau test.
+- CVD vẫn dương / quay tăng.
+- OI không chuyển sang bearish positioning.
+- Auction Line dừng giảm và hồi lại.
+- AL reclaim EMA20 hoặc ít nhất quay về alignment tích cực.
+- RSI giữ trên 50.
+
+Kịch bản:
+
+```text
+Auction Warning
+→ POC5 test
+→ POC5 Defense
+→ Auction Recovery
+→ CVD giữ dương
+→ Bullish continuation
+```
+
+### Đây là trường hợp KHÔNG được Short sớm.
+
+---
+
+## 09. Điều kiện KHÔNG LONG
+
+Không Long khi có tổ hợp:
+
+```text
+AL ↓↓↓
+AL < EMA20
+EMA20 ↓
++
+POC5 bị mất
++
+Không reclaim được POC5
+```
+
+Đặc biệt tránh Long nếu:
+
+- Giá dưới POC5.
+- Auction Line tiếp tục âm.
+- CVD giảm liên tục.
+- RSI mất 50.
+- OI chuyển Bear In / bearish positioning.
+- Giá hồi lên POC5 từ phía dưới nhưng bị reject.
+
+Đây là vùng:
+
+**WAIT / Bearish scenario preparation**
+
+---
+
+## 10. Điều kiện SHORT chất lượng cao
+
+Không Short chỉ vì AL âm.
+
+Ưu tiên Short khi Early Warning được chuyển thành cấu trúc xác nhận:
+
+```text
+Auction Early Warning
+        ↓
+AL < EMA20
+        ↓
+POC5 Failure
+        ↓
+Không reclaim POC5
+        ↓
+CVD suy yếu
+        ↓
+CVD + → 0 → -
+        ↓
+OI chuyển BeI / bearish positioning
+        ↓
+RSI mất 50
+        ↓
+Bearish continuation
+```
+
+Điểm khác với pattern #5:
+
+> **Pattern #6 nhấn mạnh Auction Line + EMA20 là lớp cảnh báo sớm xuất hiện trước khi cấu trúc giá hoàn tất.**
+
+---
+
+## 11. SHORT sớm — khi nào có thể cân nhắc?
+
+Chỉ cân nhắc khi chưa có toàn bộ confirmation nhưng có đủ tổ hợp:
+
+### Early Short Signature
+
+```text
+AL ↓↓↓
+EMA20 ↓
+AL < EMA20
++
+Giá không tạo được high mới
++
+POC5 bắt đầu mất
++
+CVD suy yếu rõ
++
+RSI giảm mạnh
+```
+
+Nếu chưa có OI bearish và CVD chưa âm:
+
+> **Quy mô nhỏ hơn / chờ thêm confirmation.**
+
+Nếu hệ thống chưa có đủ dữ liệu:
+
+> **WAIT.**
+
+Không suy diễn khi thiếu dữ liệu.
+
+---
+
+## 12. Những trường hợp KHÔNG SHORT
+
+### Trường hợp A
+
+```text
+AL ↓
+nhưng
+POC5 vẫn giữ
+CVD vẫn tăng
+OI vẫn hỗ trợ
+```
+
+→ Có thể chỉ là cooling.
+
+### Trường hợp B
+
+```text
+AL âm
+nhưng
+giá reclaim POC5
+CVD flip tăng
+AL hồi lại
+```
+
+→ Early Warning thất bại.
+
+### Trường hợp C
+
+```text
+RSI cao
+nhưng
+CVD tăng
+OI BeO
+Short liquidation tăng
+POC5 giữ
+```
+
+→ Không Short chỉ vì RSI overbought.
+
+---
+
+## 13. TP cho SHORT
+
+Ưu tiên các vùng cấu trúc có sẵn.
+
+### TP1 — vùng phản ứng gần nhất
+
+- Local low gần nhất.
+- Vùng POC/volume gần nhất nếu có.
+
+### TP2 — VP1
+
+Nếu VP1 nằm dưới giá:
+
+```text
+POC5 Failure
+→ Bearish continuation
+→ VP1
+```
+
+VP1 là target cấu trúc quan trọng.
+
+### TP3 — POC5 cũ / POC thấp hơn
+
+Nếu Auction tiếp tục breakdown và VP1 mất:
+
+→ theo dõi POC5/volume node tiếp theo.
+
+### Nguyên tắc
+
+Không cố định TP bằng số điểm nếu cấu trúc volume đã thay đổi.
+
+Ưu tiên:
+
+```text
+Reaction zone
+→ VP1
+→ POC / volume node tiếp theo
+```
+
+---
+
+## 14. SL cho SHORT
+
+SL phải nằm tại nơi **kịch bản bearish bị vô hiệu**, không phải một con số cố định.
+
+Ưu tiên:
+
+```text
+Short sau POC5 rejection
+→ SL trên vùng rejection / swing high gần nhất
+```
+
+Nếu Short sau breakdown VP1:
+
+```text
+→ SL trên vùng breakdown/retest
+```
+
+Điều kiện vô hiệu quan trọng:
+
+```text
+POC5 reclaim
++
+hold
++
+CVD recovery
++
+Auction recovery
+```
+
+Nếu xảy ra:
+
+> Bearish scenario bị vô hiệu.
+
+---
+
+## 15. TP / SL cho LONG trong trường hợp Early Warning thất bại
+
+Nếu:
+
+```text
+AL warning
+→ POC5 test
+→ POC5 defense
+→ Auction recovery
+```
+
+thì Long theo continuation.
+
+### Entry
+
+Ưu tiên:
+
+**Pullback về POC5 / vùng POC.**
+
+### SL
+
+Dưới vùng invalidation của POC5 defense / VAL tùy cấu trúc.
+
+### TP
+
+Ưu tiên:
+
+**VAH / vùng volume value phía trên.**
+
+Trading Domain minh họa một phương án tiếp diễn tăng bằng Pullback về POC, SL dưới VAL và TP tại VAH.
+
+---
+
+## 16. R/R
+
+Không vào chỉ vì pattern đúng.
+
+Phải kiểm tra:
+
+```text
+Potential Reward
+        /
+Potential Risk
+```
+
+Nếu POC5 quá gần vùng invalidation nhưng target quá xa hoặc bị chặn bởi resistance:
+
+→ **Không vào.**
+
+Nếu R/R không đủ hấp dẫn:
+
+→ **WAIT.**
+
+Kế hoạch thực thi phải xác định:
+
+- Vùng vào lệnh.
+- Điều kiện xác nhận.
+- Điều kiện vô hiệu.
+- SL.
+- TP.
+- Quy mô vị thế.
+- R/R.
+- Quản trị vị thế.
+
+---
+
+## 17. Quản trị vị thế
+
+### Nếu SHORT sau Early Warning + POC5 Failure:
+
+Không tăng vị thế chỉ vì giá đang giảm.
+
+Chỉ tăng conviction khi:
+
+```text
+POC5 rejection
++
+CVD negative
++
+OI bearish
++
+Auction breakdown
++
+RSI <50
+```
+
+Nếu một trong các lớp quan trọng quay lại bullish:
+
+→ giảm conviction / bảo vệ vị thế.
+
+---
+
+## 18. Flow Type của OI
+
+Không đọc OI độc lập.
+
+### BeO
+
+Trong context bullish expansion:
+
+```text
+Price ↑
+CVD ↑
+Short Liq ↑
+BeO
+```
+
+có thể là:
+
+**bearish positioning unwind / short covering**
+
+→ không tự động bearish.
+
+### BuO
+
+Sau khi bullish expansion đã nóng:
+
+```text
+Price ↓
+BuO
+AL ↓
+CVD yếu
+```
+
+có thể là:
+
+**bullish positioning unwind**
+
+→ cần theo dõi bearish continuation.
+
+### BeI
+
+Nếu xuất hiện sau POC5 failure:
+
+```text
+POC5 lost
++
+CVD ↓
++
+BeI
++
+AL ↓
+```
+
+→ bearish positioning mới có chất lượng cao hơn.
+
+### BuI
+
+Nếu xuất hiện sau POC5 defense:
+
+```text
+POC5 held
++
+CVD ↑
++
+BuI
++
+AL recovery
+```
+
+→ bullish continuation có chất lượng tốt hơn.
+
+---
+
+## 19. CVD trong pattern #6
+
+CVD là lớp xác nhận sau Early Warning.
+
+### Giai đoạn cảnh báo:
+
+```text
+AL ↓
+CVD vẫn +
+```
+
+→ chưa Short.
+
+### Giai đoạn chuyển tiếp:
+
+```text
+AL ↓↓↓
+CVD + → 0
+```
+
+→ bearish pressure tăng.
+
+### Xác nhận:
+
+```text
+CVD + → 0 → -
+```
+
+→ bearish execution được xác nhận tốt hơn.
+
+Đặc biệt nếu giá đồng thời:
+
+```text
+POC5 lost
++
+fail reclaim
+```
+
+→ Short quality tăng mạnh.
+
+---
+
+## 20. RSI trong pattern
+
+RSI không phải trigger đầu tiên.
+
+Nó chủ yếu xác nhận động lượng.
+
+### Bullish continuation:
+
+```text
+RSI >50
+```
+
+### Warning:
+
+```text
+RSI giảm khỏi vùng quá nóng
+```
+
+### Bearish confirmation:
+
+```text
+RSI <50
+```
+
+### Bearish continuation mạnh:
+
+```text
+RSI <45
+```
+
+Không Short chỉ vì:
+
+```text
+RSI >70
+```
+
+Overbought có thể tiếp tục tăng.
+
+---
+
+## 21. VPIN
+
+VPIN dùng để đánh giá chất lượng/execution intensity, không dùng độc lập để chọn hướng.
+
+### Cẩn thận khi:
+
+```text
+RSI rất cao
++
+VPIN tăng
++
+Short squeeze lớn
++
+AL divergence
+```
+
+→ chase risk tăng.
+
+### Nếu VPIN giảm trong khi POC5 defense giữ:
+
+→ execution có thể sạch hơn.
+
+### Nếu VPIN tăng mạnh trong breakdown:
+
+→ cần thận trọng với biến động mở rộng.
+
+---
+
+## 22. Signature quan trọng nhất
+
+Mẫu #6 nên được ghi nhận bằng signature:
+
+```text
+AEW-BEAR
+
+Price:
+High / expansion
+
+POC5:
+Held → Test → Lost / Fail Reclaim
+
+Auction Line:
+↓↓↓
+AL < EMA20
+AL → 0
+AL < 0
+
+EMA20:
+↓
+
+CVD:
++
+→ weakening
+→ 0
+→ -
+
+OI:
+BeO / BuO
+→ eventually BeI nếu bearish positioning xuất hiện
+
+RSI:
+High
+→ ↓
+→ <50
+
+VPIN:
+Variable
+
+Liquidation:
+Short squeeze trước đó
+→ Long liquidation tăng khi reversal thực sự xảy ra
+```
+
+---
+
+## 23. Signature đối nghịch — AEW FALSE
+
+Không phải mọi Auction Warning đều dẫn tới giảm.
+
+Ghi nhận riêng:
+
+```text
+AEW-FALSE
+
+AL ↓
+EMA20 ↓
+        ↓
+POC5 Defense
+        ↓
+CVD giữ / tăng
+        ↓
+AL Recovery
+        ↓
+POC5 Reclaim
+        ↓
+Bullish continuation
+```
+
+Đây là mẫu rất quan trọng để tránh AI Trader biến Early Warning thành tín hiệu Short máy móc.
+
+---
+
+## 24. Decision Tree
+
+```text
+Auction Line bắt đầu suy yếu
+            │
+            ▼
+     AL < EMA20?
+       │          │
+      NO         YES
+       │          │
+     WAIT         ▼
+              AL tiếp tục ↓?
+               │        │
+              NO       YES
+               │        │
+             WAIT       ▼
+                    POC5 còn giữ?
+                    │          │
+                   YES        NO
+                    │          │
+                    ▼          ▼
+              POC5 Defense   Fail Reclaim
+                    │          │
+                    ▼          ▼
+             Auction Recovery  CVD suy yếu?
+                    │          │
+                    │         YES
+                    │          │
+                    │          ▼
+                    │       OI BeI?
+                    │          │
+                    │         YES
+                    │          │
+                    │          ▼
+                    │      RSI <50?
+                    │          │
+                    │         YES
+                    │          │
+                    │          ▼
+                    │    SHORT continuation
+                    │
+                    ▼
+             LONG continuation
+```
+
+---
+
+## 25. Mẫu vào lệnh tốt nhất
+
+### SHORT A — POC5 Failure
+
+Điều kiện:
+
+```text
+AL < EMA20
++
+AL ↓
++
+POC5 lost
++
+retest POC5 fail
++
+CVD weakening
+```
+
+Nếu thêm:
+
+```text
+CVD < 0
++
+BeI
++
+RSI <50
+```
+
+→ **High-quality bearish confirmation.**
+
+### SHORT B — Breakdown VP1
+
+Nếu POC5 failure đã xảy ra:
+
+```text
+Price ↓
+→ VP1 test
+→ VP1 lost
+→ retest VP1 fail
+```
+
++
+
+```text
+AL ↓
+CVD ↓
+OI bearish
+```
+
+→ continuation setup.
+
+### LONG A — Early Warning Failure
+
+```text
+AL ↓
+        ↓
+POC5 test
+        ↓
+POC5 Defense
+        ↓
+CVD ↑
+        ↓
+AL Recovery
+        ↓
+POC5 Reclaim
+```
+
+→ bullish continuation.
+
+---
+
+## 26. Không vào lệnh
+
+AI Trader phải ưu tiên WAIT khi:
+
+- AL giảm nhưng POC5 chưa test.
+- AL âm một snapshot nhưng chưa có trajectory.
+- CVD vẫn mạnh và tăng.
+- OI chưa xác nhận.
+- POC5 vẫn giữ.
+- POC5 bị mất nhưng chưa có retest.
+- POC5 reclaim lại quá nhanh và flow chưa rõ.
+- RSI chỉ mới mất 50 nhưng Auction chưa xác nhận.
+- R/R không đủ.
+- Dữ liệu thiếu.
+
+Nguyên tắc của Domain:
+
+> Nếu dữ liệu chưa đủ thì dừng, không suy diễn.
+
+---
+
+## 27. Điều kiện vô hiệu pattern #6
+
+Pattern Bearish bị vô hiệu nếu:
+
+```text
+POC5 reclaim
++
+hold
++
+CVD recovery
++
+Auction Line recovery
++
+AL > EMA20
+```
+
+Đặc biệt:
+
+```text
+AL ↓↓↓
+→ sudden recovery
+→ AL > EMA20
+→ price reclaim POC5
+```
+
+thì phải chuyển từ:
+
+**Bearish Warning**
+
+sang:
+
+**Bullish Recovery / WAIT confirmation**
+
+Không được giữ bias bearish chỉ vì trước đó đã có Early Warning.
+
+---
+
+## 28. Điều kiện xác nhận mạnh nhất
+
+Một bearish continuation chất lượng cao:
+
+```text
+1. Auction Line ↓↓↓
+2. EMA20 ↓
+3. AL < EMA20
+4. POC5 lost
+5. POC5 fail reclaim
+6. CVD + → 0 → -
+7. OI → BeI
+8. RSI <50
+9. VP1 breaks
+10. Retest fails
+```
+
+Không nhất thiết phải có đủ 10 điều kiện.
+
+Nhưng:
+
+> **Càng nhiều lớp độc lập đồng thuận, chất lượng quyết định càng cao.**
+
+---
+
+## 29. Thứ tự ưu tiên tín hiệu trong pattern #6
+
+Không dùng một chỉ báo đơn lẻ.
+
+Ưu tiên:
+
+```text
+1. Auction trajectory
+        ↓
+2. POC5 behavior
+        ↓
+3. Price structure
+        ↓
+4. CVD
+        ↓
+5. OI Flow Type
+        ↓
+6. RSI
+        ↓
+7. VPIN / Liquidation
+        ↓
+8. Entry location / R:R
+```
+
+Đặc biệt:
+
+> **Auction Early Warning không phải entry trigger.**
+>
+> **POC5 failure + confirmation mới biến warning thành tradeable scenario.**
+
+---
+
+## 30. Bài học cốt lõi cho AI
+
+### Bài học 01
+
+**Auction Line trajectory quan trọng hơn một snapshot đơn lẻ.**
+
+### Bài học 02
+
+**AL < EMA20 là warning, không phải Short trigger.**
+
+### Bài học 03
+
+**POC5 là điểm chuyển từ warning sang structural evidence.**
+
+### Bài học 04
+
+**CVD + → 0 → - xác nhận aggressive selling rõ hơn.**
+
+### Bài học 05
+
+**BeO không tự động bearish.**
+
+Trong short squeeze, BeO có thể là bearish positioning unwind.
+
+### Bài học 06
+
+**RSI >70 không phải lý do để Short.**
+
+### Bài học 07
+
+**Nếu POC5 giữ và Auction phục hồi, Early Warning có thể thất bại.**
+
+### Bài học 08
+
+**Không chase Long khi Auction Warning đang tăng nhưng giá chưa xác nhận.**
+
+### Bài học 09
+
+**Không Short sớm chỉ vì thấy AL âm.**
+
+### Bài học 10
+
+**Pattern chỉ trở thành tri thức đáng tin cậy sau khi thực tế xác nhận.**
+
+---
+
+## 31. Cấu trúc kinh nghiệm cho AI Trader
+
+```text
+PATTERN #06
+
+Auction Early Warning
+        ↓
+AL ↓ / EMA20 ↓
+        ↓
+AL < EMA20
+        ↓
+Không chase Long
+        ↓
+POC5 Test
+        │
+        ├── POC5 Defense
+        │       ↓
+        │   Auction Recovery
+        │       ↓
+        │   CVD Recovery
+        │       ↓
+        │   LONG continuation
+        │
+        └── POC5 Failure
+                ↓
+          Fail Reclaim
+                ↓
+          CVD weakening
+                ↓
+           CVD < 0
+                ↓
+           OI → BeI
+                ↓
+           RSI < 50
+                ↓
+          Bearish continuation
+                ↓
+               VP1
+                ↓
+        VP1 Breakdown / Retest
+                ↓
+             Reset
+```
+
+---
+
+## 32. Nguyên tắc TP/SL cuối cùng
+
+Kế hoạch thực thi phải xác định trước:
+
+```text
+Entry
+Confirmation
+Invalidation
+SL
+TP
+Position Size
+R/R
+Position Management
+```
+
+Một phương án không đảm bảo kết quả; nó chỉ chuẩn bị cách hành động phù hợp cho từng kịch bản.
+
+Với continuation tăng, ví dụ chuẩn của Domain dùng:
+
+```text
+Entry = Pullback về POC
+SL = dưới VAL
+TP = VAH
+```
+
+Với bearish reversal, ví dụ chuẩn dùng:
+
+```text
+Entry = sau xác nhận phá vỡ
+SL = trên đỉnh gần nhất
+```
+
+Các mức cụ thể phải được lấy từ cấu trúc thực tế của snapshot, không hard-code.
+
+---
+
+## 33. Nguyên tắc tích lũy
+
+Mẫu #6 hiện tại nên được xem là:
+
+**Observed / Candidate Knowledge**
+
+chứ chưa phải một quy luật đã thống kê.
+
+Mỗi lần xuất hiện, ghi:
+
+```text
+Signature:
+AEW-BEAR
+
+AL:
+trajectory
+
+EMA20:
+trajectory
+
+POC5:
+Defense / Lost / Reclaim / Fail
+
+CVD:
++
+
+OI:
+BuI / BuO / BeI / BeO
+
+RSI:
+trajectory
+
+VPIN:
+trajectory
+
+Price reaction:
+time + distance
+
+Entry:
+valid / invalid
+
+TP:
+result
+
+SL:
+result
+
+Outcome:
+Confirmed / Invalidated / Unexpected
+```
+
+Sau nhiều mẫu, mới tính:
+
+- số lượng mẫu,
+- xác suất,
+- thời gian lead,
+- excursion,
+- MAE/MFE,
+- tỷ lệ TP/SL,
+- false warning,
+- false breakdown.
+
+Tri thức tích lũy chỉ nên được dùng để **tham khảo, đánh giá và hiệu chỉnh** sau khi hệ thống suy luận đã hình thành phương án; không dùng kinh nghiệm để tự tạo ra một kịch bản mới.
+
+---
+
+## 34. Kết luận
+
+**Pattern #06 = Auction Early Warning → POC5 Failure → Bearish Continuation / Reset**
+
+Điểm khác biệt quan trọng nhất so với 5 pattern trước:
+
+> **Pattern #06 không bắt đầu từ một biến động giá rõ ràng. Nó bắt đầu từ sự suy yếu của Auction Flow trong khi giá vẫn còn bullish.**
+
+Do đó AI Trader cần học:
+
+```text
+Auction Flow thay đổi
+        ↓
+Early Warning
+        ↓
+KHÔNG vội vào
+        ↓
+Quan sát POC5
+        ↓
+POC5 Defense → bỏ bearish thesis
+        │
+        └── POC5 Failure
+                ↓
+          CVD / OI confirmation
+                ↓
+          RSI confirmation
+                ↓
+          Bearish entry
+```
+
+**Từ khóa của mẫu:**
+
+> **“Auction cảnh báo trước — POC5 xác nhận cấu trúc — CVD/OI xác nhận lực — RSI xác nhận momentum — VP1 xác nhận continuation.”**
+
+---
+
+## Nguyên tắc Domain
+
+Mẫu này phải được xem là **tri thức tích lũy**, không thay thế Hệ thống suy luận. Trading Domain yêu cầu suy luận đi theo thứ tự **Hành vi → Bối cảnh → Động lượng → Cấu trúc → Chất lượng → Quyết định → Trọng số tín hiệu → Không gian kịch bản → Kế hoạch thực thi → Phản hồi thực tế**.
+
+Thực tế là tiêu chuẩn cuối cùng; sau mỗi lần mẫu xuất hiện, kết quả thực tế phải được ghi nhận để tiếp tục kiểm chứng hoặc bác bỏ chữ ký này.
