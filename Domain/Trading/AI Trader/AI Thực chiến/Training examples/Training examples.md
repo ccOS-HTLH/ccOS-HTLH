@@ -2401,19 +2401,23 @@ Nhưng phiên bản đầy đủ cho AI Trader là:
 
 ---
 
-# 06.md — Auction Early Warning → POC5 Failure → Bearish Continuation / Reset
+# 06.md — Auction Early Warning → POC5 Decision → Continuation / Reset
 
 > Mẫu thứ 6 được rút ra từ chuỗi quan sát thực tế quanh vùng 77.9k → 77.5k.
 >
-> Đây là **mẫu kinh nghiệm cho AI Trader**, không phải một quy luật dự đoán giá. Chữ ký chỉ được xem là tri thức tích lũy sau khi được thực tế kiểm chứng qua nhiều mẫu tương tự.
+> Đây là **mẫu kinh nghiệm cho AI Trader**, không phải một quy luật dự đoán. Chữ ký chỉ được xem là tri thức tích lũy sau khi được thực tế kiểm chứng qua nhiều mẫu tương tự.
 
 ---
 
 ## 01. Tên pattern
 
-**Auction Early Warning → POC5 Failure → Bearish Continuation / Reset**
+**Auction Early Warning → POC5 Decision → Continuation / Reset**
 
 Tên rút gọn:
+
+**AEW → POC5 Decision**
+
+Trong đó nhánh bearish chính vẫn là:
 
 **AEW → POC5 Failure → Bearish Follow-through**
 
@@ -2421,38 +2425,22 @@ Tên rút gọn:
 
 > **Auction Line và EMA20 có thể suy yếu trước khi giá thể hiện đầy đủ biến động.**
 
-Trong mẫu quan sát này, giá vẫn còn ở vùng cao và CVD/OI chưa chuyển bearish hoàn toàn, nhưng Auction Flow đã suy yếu liên tục:
+Auction Early Warning không phải một bearish entry signal độc lập.
+
+Nó là một **Early Warning Layer** cho biết chất lượng của Auction Flow đang suy yếu và yêu cầu AI chuyển sang trạng thái quan sát cấu trúc tiếp theo, đặc biệt là phản ứng tại POC5.
 
 ```text
-Auction Line:
-+5.9k
-↓
-+120
-↓
--560
-↓
--1.2k
-
-EMA20:
-+5.2k
-↓
-+3.9k
-↓
-+3.4k
-↓
-+2.9k
-```
-
-Sau đó giá:
-
-```text
-77,921
-↓
-77,987
-↓
-77,700
-↓
-77,571
+Auction Early Warning
+        ↓
+     POC5 Test
+      /      \\
+     /        \\
+POC5 Defense  POC5 Failure
+     ↓             ↓
+Auction Recovery  Fail Reclaim
+     ↓             ↓
+Bullish           Bearish
+Continuation      Continuation / Reset
 ```
 
 Điểm cần ghi nhớ:
@@ -2587,16 +2575,6 @@ Chưa được vào lệnh.
 - AL yếu dần so với EMA20.
 - AL có xu hướng tiến về 0.
 
-Ví dụ:
-
-```text
-Price:      ↑
-CVD:        +
-OI:         Bullish / BeO
-AL:         ↓
-EMA20:      ↓
-```
-
 ### Quyết định:
 
 **WAIT / theo dõi.**
@@ -2635,11 +2613,201 @@ Nếu đồng thời:
 
 ---
 
-## 07. Cấp độ 3 — POC5 Failure
+## 06A. VAH / Profile High Variant
 
-Đây là trigger cấu trúc quan trọng hơn Early Warning.
+Auction Early Warning có giá trị đáng chú ý hơn khi xuất hiện tại vùng:
 
-Ví dụ:
+- VAH
+- Profile High
+- vùng extreme của Volume Profile
+- vùng giá vừa trải qua bullish expansion mạnh
+
+Một chữ ký quan sát được:
+
+```text
+Bullish Expansion
+        ↓
+Approach VAH / Profile High
+        ↓
+VAH / Profile High Touch
+        ↓
+Auction Line ↓
+EMA20 ↓
+AL < EMA20
+        ↓
+OI bắt đầu chuyển bearish
+        ↓
+CVD deterioration
+        ↓
+RSI deterioration
+        ↓
+VAH Rejection
+        ↓
+POC5 Test
+```
+
+### Ý nghĩa
+
+VAH / Profile High không tự động tạo bearish signal.
+
+Nó đóng vai trò **Context Amplifier**:
+
+```text
+AEW giữa vùng giá
+→ Early Warning
+
+AEW + VAH / Profile High Rejection
+→ Early Warning có context mạnh hơn
+```
+
+Nếu đồng thời xuất hiện:
+
+```text
+AL ↓
++
+AL < EMA20
++
+OI BuI → BeI
++
+CVD ↓
++
+RSI ↓
+```
+
+→ bearish scenario được nâng trọng số.
+
+Nhưng vẫn:
+
+> **Chưa được coi là Bearish Confirmation nếu POC5 chưa bị phá và chưa có failed reclaim.**
+
+### 06A.1. Case điển hình
+
+Một chuỗi quan sát:
+
+```text
+79,700
+↓
+79,805 — VAH / Profile High
+↓
+79,300
+```
+
+Trong quá trình đó:
+
+```text
+OI:
++0.69 BuI
+→
++0.40 BeI
+
+CVD:
++2.9k
+→
++2.6k
+
+Auction Line:
++6.4k
+→
++4.2k
+
+EMA20:
++5.3k
+→
++5.1k
+
+RSI:
+70
+→
+58
+```
+
+Điểm đáng chú ý:
+
+```text
+Auction Line:
++6.4k → +4.2k
+
+EMA20:
++5.3k → +5.1k
+```
+
+Auction Line chuyển từ:
+
+```text
+AL > EMA20
+```
+
+sang:
+
+```text
+AL < EMA20
+```
+
+ngay sau khi giá chạm VAH / Profile High.
+
+Đây là:
+
+**VAH Rejection + Auction Early Warning**
+
+chứ chưa phải:
+
+**Bearish Confirmation.**
+
+POC5 tiếp tục là điểm quyết định.
+
+---
+
+## 07. Cấp độ 3 — POC5 Decision
+
+Sau Auction Early Warning, POC5 trở thành **Structural Decision Point**.
+
+Không mặc định rằng Early Warning sẽ dẫn đến bearish continuation.
+
+Có hai nhánh:
+
+```text
+Auction Early Warning
+        ↓
+     POC5 Test
+      /      \\
+     /        \\
+Defense      Failure
+  ↓             ↓
+Recovery     Fail Reclaim
+  ↓             ↓
+Bullish       Bearish
+Continuation  Continuation
+```
+
+### Nhánh A — POC5 Defense
+
+```text
+Price > POC5
+        ↓
+Pullback về POC5
+        ↓
+POC5 giữ
+        ↓
+Reclaim / Hold
+        ↓
+Auction Recovery
+```
+
+Nếu đồng thời:
+
+- CVD vẫn dương hoặc hồi tăng.
+- OI không chuyển bearish rõ ràng.
+- AL dừng giảm.
+- AL hồi về EMA20.
+- RSI giữ trên 50.
+
+→ Early Warning có thể thất bại.
+
+Kịch bản:
+
+**Bullish continuation**
+
+### Nhánh B — POC5 Failure
 
 ```text
 Price > POC5
@@ -2653,13 +2821,25 @@ Không reclaim được
 POC5 trở thành resistance
 ```
 
-Đây là thời điểm pattern chuyển từ:
+Nếu tiếp tục có:
 
-**Warning**
+```text
+CVD ↓
++
+CVD + → 0 → -
++
+OI → BeI
++
+RSI <50
++
+AL < EMA20
+```
 
-sang:
+→ Bearish scenario được xác nhận mạnh hơn.
 
-**Structural Failure Risk**
+Kịch bản:
+
+**Bearish continuation / Reset**
 
 ---
 
@@ -2675,18 +2855,46 @@ Khi Auction Early Warning xuất hiện nhưng POC5 vẫn giữ:
 - AL reclaim EMA20 hoặc ít nhất quay về alignment tích cực.
 - RSI giữ trên 50.
 
+### Bổ sung — VAH Rejection nhưng POC5 vẫn giữ
+
+Không Short sớm nếu:
+
+```text
+VAH / Profile High Rejection
++
+Auction Early Warning
+```
+
+nhưng:
+
+```text
+POC5 vẫn giữ
++
+POC5 được reclaim
++
+CVD giữ dương / hồi tăng
++
+OI không xác nhận bearish
++
+Auction Line dừng giảm / hồi
++
+RSI giữ trên 50
+```
+
 Kịch bản:
 
 ```text
-Auction Warning
-→ POC5 test
+VAH Rejection
+→ Auction Early Warning
+→ POC5 Test
 → POC5 Defense
 → Auction Recovery
-→ CVD giữ dương
 → Bullish continuation
 ```
 
-### Đây là trường hợp KHÔNG được Short sớm.
+Đây là một **Early Warning thất bại**, không phải một bearish setup.
+
+> **VAH rejection không đủ để phủ định bullish structure khi POC5 vẫn được bảo vệ.**
 
 ---
 
@@ -2744,6 +2952,50 @@ RSI mất 50
         ↓
 Bearish continuation
 ```
+
+### VAH / Profile High Bearish Setup
+
+VAH / Profile High Rejection chỉ làm tăng chất lượng bearish setup khi được nối tiếp bằng:
+
+```text
+VAH / Profile High Rejection
+        ↓
+Auction Line ↓
+        ↓
+AL < EMA20
+        ↓
+POC5 Test
+        ↓
+POC5 Failure
+        ↓
+Fail Reclaim
+        ↓
+CVD weakening
+        ↓
+OI → BeI
+        ↓
+RSI <50
+```
+
+Ưu tiên:
+
+> **POC5 Failure + Failed Reclaim**
+
+hơn:
+
+> **VAH Rejection đơn độc.**
+
+Không Short chỉ vì:
+
+```text
+Price chạm VAH
++
+Auction Line giảm
+```
+
+Nếu POC5 chưa bị mất:
+
+→ **WAIT / Bearish scenario preparation**
 
 Điểm khác với pattern #5:
 
@@ -2821,6 +3073,30 @@ POC5 giữ
 ```
 
 → Không Short chỉ vì RSI overbought.
+
+### Trường hợp D — VAH Rejection nhưng POC5 chưa mất
+
+```text
+VAH / Profile High Rejection
++
+AL ↓
++
+AL < EMA20
+```
+
+nhưng:
+
+```text
+POC5 vẫn giữ
++
+CVD chưa suy yếu đủ
++
+OI chưa xác nhận bearish
+```
+
+→ **WAIT.**
+
+Không biến VAH rejection thành Short trigger độc lập.
 
 ---
 
@@ -2928,8 +3204,6 @@ Dưới vùng invalidation của POC5 defense / VAL tùy cấu trúc.
 Ưu tiên:
 
 **VAH / vùng volume value phía trên.**
-
-Trading Domain minh họa một phương án tiếp diễn tăng bằng Pullback về POC, SL dưới VAL và TP tại VAH.
 
 ---
 
@@ -3221,6 +3495,69 @@ Short squeeze trước đó
 
 ---
 
+## 22A. Signature — AEW at VAH / Profile High
+
+Một biến thể quan trọng của Pattern #6:
+
+```text
+AEW-VAH
+
+Price:
+Bullish expansion
+→ VAH / Profile High
+→ Rejection
+
+Auction Line:
+↓↓↓
+
+EMA20:
+↓↓
+
+AL:
+> EMA20
+→
+< EMA20
+
+OI:
+BuI
+→
+BeI / bearish positioning
+
+CVD:
++
+→ weakening
+
+RSI:
+High
+→ ↓
+
+POC5:
+Chưa mất
+→ Test
+```
+
+Đây là:
+
+**Context Amplification**
+
+chứ chưa phải bearish confirmation.
+
+Sau đó:
+
+```text
+POC5 Defense
+→ AEW-FALSE
+→ Bullish Recovery
+
+hoặc
+
+POC5 Failure
+→ Fail Reclaim
+→ Bearish Confirmation
+```
+
+---
+
 ## 23. Signature đối nghịch — AEW FALSE
 
 Không phải mọi Auction Warning đều dẫn tới giảm.
@@ -3254,43 +3591,56 @@ Bullish continuation
 Auction Line bắt đầu suy yếu
             │
             ▼
-     AL < EMA20?
-       │          │
-      NO         YES
-       │          │
-     WAIT         ▼
-              AL tiếp tục ↓?
+      Giá đang ở VAH /
+      Profile High?
+        │          │
+       YES        NO
+        │          │
+        ▼          ▼
+  VAH Rejection   Early Warning
+        │          │
+        └────┬─────┘
+             ▼
+       AL < EMA20?
+         │       │
+        NO      YES
+         │       │
+       WAIT      ▼
+             AL tiếp tục ↓?
                │        │
               NO       YES
                │        │
              WAIT       ▼
-                    POC5 còn giữ?
-                    │          │
-                   YES        NO
-                    │          │
-                    ▼          ▼
-              POC5 Defense   Fail Reclaim
-                    │          │
-                    ▼          ▼
-             Auction Recovery  CVD suy yếu?
-                    │          │
-                    │         YES
-                    │          │
-                    │          ▼
-                    │       OI BeI?
-                    │          │
-                    │         YES
-                    │          │
-                    │          ▼
-                    │      RSI <50?
-                    │          │
-                    │         YES
-                    │          │
-                    │          ▼
-                    │    SHORT continuation
-                    │
-                    ▼
-             LONG continuation
+                    POC5 Test
+                         │
+                    ┌────┴────┐
+                    │         │
+                    ▼         ▼
+              POC5 Defense  POC5 Failure
+                    │         │
+                    ▼         ▼
+             Auction Recovery  Fail Reclaim
+                    │         │
+              ┌─────┴────┐     ▼
+              │          │   CVD suy yếu?
+              ▼          ▼      │
+           CVD ↑      CVD ↓    YES
+              │          │      │
+              ▼          ▼      ▼
+        Bullish       WAIT    OI BeI?
+        Recovery                │
+                               YES
+                                │
+                                ▼
+                            RSI <50?
+                                │
+                               YES
+                                │
+                                ▼
+                       Bearish continuation
+                                │
+                                ▼
+                               VP1
 ```
 
 ---
@@ -3380,6 +3730,7 @@ AI Trader phải ưu tiên WAIT khi:
 - RSI chỉ mới mất 50 nhưng Auction chưa xác nhận.
 - R/R không đủ.
 - Dữ liệu thiếu.
+- VAH / Profile High bị reject nhưng POC5 chưa mất và bearish flow chưa xác nhận.
 
 Nguyên tắc của Domain:
 
@@ -3481,6 +3832,53 @@ Không dùng một chỉ báo đơn lẻ.
 
 ---
 
+## 29A. Thứ tự ưu tiên trong VAH / Profile High Variant
+
+Khi Auction Early Warning xuất hiện tại VAH / Profile High:
+
+```text
+1. Auction trajectory
+        ↓
+2. VAH / Profile High reaction
+        ↓
+3. POC5 behavior
+        ↓
+4. Price structure
+        ↓
+5. CVD
+        ↓
+6. OI Flow Type
+        ↓
+7. RSI
+        ↓
+8. VPIN / Liquidation
+        ↓
+9. Entry location / R:R
+```
+
+Điểm đặc biệt:
+
+> **VAH / Profile High làm tăng trọng số của Early Warning, nhưng POC5 vẫn là structural decision point.**
+
+Không đảo thành:
+
+```text
+VAH rejection
+→ Short
+```
+
+Mà phải là:
+
+```text
+VAH rejection
+→ Auction Early Warning
+→ POC5 Test
+→ POC5 Defense hoặc POC5 Failure
+→ xác nhận tiếp theo
+```
+
+---
+
 ## 30. Bài học cốt lõi cho AI
 
 ### Bài học 01
@@ -3524,6 +3922,48 @@ Trong short squeeze, BeO có thể là bearish positioning unwind.
 ### Bài học 10
 
 **Pattern chỉ trở thành tri thức đáng tin cậy sau khi thực tế xác nhận.**
+
+### Bài học 11
+
+**VAH / Profile High có thể làm Auction Early Warning đáng chú ý hơn, nhưng không tự động tạo bearish signal.**
+
+### Bài học 12
+
+**Auction Early Warning là một state transition, không phải một entry trigger.**
+
+### Bài học 13
+
+**Sau VAH Rejection, POC5 là Structural Decision Point.**
+
+### Bài học 14
+
+**AEW có hai nhánh chính:**
+
+```text
+AEW
+→ POC5 Defense
+→ Auction Recovery
+→ Bullish continuation
+
+hoặc
+
+AEW
+→ POC5 Failure
+→ Failed Reclaim
+→ Bearish continuation
+```
+
+### Bài học 15
+
+**Không Short tại VAH chỉ vì Auction Line bắt đầu giảm.**
+
+### Bài học 16
+
+**Không giữ bearish bias nếu POC5 được defend và Auction phục hồi.**
+
+### Bài học 17
+
+**VAH / Profile High là Context Amplifier; POC5 mới là Structural Decision Point.**
 
 ---
 
@@ -3621,13 +4061,16 @@ Mỗi lần xuất hiện, ghi:
 
 ```text
 Signature:
-AEW-BEAR
+AEW-BEAR / AEW-VAH / AEW-FALSE
 
 AL:
 trajectory
 
 EMA20:
 trajectory
+
+VAH / Profile High:
+Touch / Rejection / Acceptance
 
 POC5:
 Defense / Lost / Reclaim / Fail
@@ -3677,7 +4120,7 @@ Tri thức tích lũy chỉ nên được dùng để **tham khảo, đánh giá
 
 ## 34. Kết luận
 
-**Pattern #06 = Auction Early Warning → POC5 Failure → Bearish Continuation / Reset**
+**Pattern #06 = Auction Early Warning → POC5 Decision → Continuation / Reset**
 
 Điểm khác biệt quan trọng nhất so với 5 pattern trước:
 
@@ -3707,12 +4150,101 @@ POC5 Defense → bỏ bearish thesis
 
 **Từ khóa của mẫu:**
 
-> **“Auction cảnh báo trước — POC5 xác nhận cấu trúc — CVD/OI xác nhận lực — RSI xác nhận momentum — VP1 xác nhận continuation.”**
+> **“Auction cảnh báo trước — VAH cung cấp context — POC5 quyết định cấu trúc — CVD/OI xác nhận lực — RSI xác nhận momentum — VP1 xác nhận continuation.”**
 
 ---
 
-## Nguyên tắc Domain
+## 35. VAH / Profile High Variant — Nguyên tắc tổng hợp
 
-Mẫu này phải được xem là **tri thức tích lũy**, không thay thế Hệ thống suy luận. Trading Domain yêu cầu suy luận đi theo thứ tự **Hành vi → Bối cảnh → Động lượng → Cấu trúc → Chất lượng → Quyết định → Trọng số tín hiệu → Không gian kịch bản → Kế hoạch thực thi → Phản hồi thực tế**.
+Một trong những biến thể đáng chú ý của Pattern #6:
 
-Thực tế là tiêu chuẩn cuối cùng; sau mỗi lần mẫu xuất hiện, kết quả thực tế phải được ghi nhận để tiếp tục kiểm chứng hoặc bác bỏ chữ ký này.
+```text
+Bullish Expansion
+        ↓
+VAH / Profile High
+        ↓
+Rejection
+        ↓
+Auction Early Warning
+        ↓
+POC5 Test
+```
+
+Từ đây không được mặc định kết quả.
+
+```text
+                  POC5 Test
+                 /         \\
+                /           \\
+               ▼             ▼
+        POC5 Defense      POC5 Failure
+              ↓                ↓
+       Auction Recovery    Fail Reclaim
+              ↓                ↓
+       CVD/OI Recovery      CVD/OI Bearish
+              ↓                ↓
+       Bullish continuation  RSI <50
+                                  ↓
+                          Bearish continuation
+```
+
+### Nguyên tắc AI
+
+> **Auction cảnh báo trước — VAH cung cấp context — POC5 quyết định cấu trúc — CVD/OI xác nhận lực — RSI xác nhận momentum.**
+
+Không sử dụng:
+
+```text
+VAH rejection = Short
+```
+
+Không sử dụng:
+
+```text
+AL < EMA20 = Short
+```
+
+Không sử dụng:
+
+```text
+RSI giảm = Short
+```
+
+Mà sử dụng:
+
+```text
+VAH / Profile High context
++
+Auction trajectory
++
+POC5 behavior
++
+Price structure
++
+CVD
++
+OI
++
+RSI
++
+R/R
+```
+
+Pattern #6 vì vậy không chỉ mô tả một đường:
+
+```text
+AEW → POC5 Failure → Bearish
+```
+
+mà mô tả một **decision framework**:
+
+```text
+AEW
+ ↓
+POC5 Decision
+ ├── Defense → Recovery → Bullish continuation
+ │
+ └── Failure → Failed Reclaim → Bearish continuation / Reset
+```
+
+Đây là cấu trúc cần được tiếp tục kiểm chứng bằng thực tế trước khi xem là tri thức có độ tin cậy cao.
