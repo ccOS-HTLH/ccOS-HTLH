@@ -4251,6 +4251,1327 @@ POC5 Decision
 
 ---
 
+# 06+.md — Auction Early Warning → Price Resilience → Confirmation → Trade Timing
+
+> **Auction có thể đi trước giá về hướng, nhưng không nhất thiết đi trước giá về timing.**
+
+## 01. Mục đích
+
+`06+` là meta-principle mở rộng từ Pattern #06. Nó không phải một pattern Long/Short riêng, mà mô tả cách AI Trader chuyển một **Auction Early Warning** thành một kịch bản có thể giao dịch.
+
+Chuỗi suy luận:
+
+```text
+Auction Change
+→ Early Warning
+→ Price Response
+→ Resilience / Absorption
+→ Location Test
+→ Confirmation
+→ Entry
+```
+
+Không dùng:
+
+```text
+AL < EMA20 → Short
+AL > EMA20 → Long
+```
+
+Mà dùng:
+
+```text
+Auction
++
+Price Response
++
+Location
++
+Confirmation
++
+R/R
+```
+
+---
+
+## 02. Bốn tầng suy luận
+
+### Level 1 — Auction Early Warning
+
+Bearish:
+
+```text
+AL ↓
+AL < EMA20
+```
+
+Bullish:
+
+```text
+AL ↑
+AL > EMA20
+```
+
+→ **WAIT.**
+
+Đây chưa phải entry trigger.
+
+### Level 2 — Price Resilience / Absorption
+
+Bearish warning nhưng giá vẫn giữ hoặc tăng:
+
+```text
+AL < EMA20
++
+Price ↑ / giữ
+```
+
+Bullish warning nhưng giá vẫn giảm nhẹ hoặc giữ:
+
+```text
+AL > EMA20
++
+Price ↓ / giữ
+```
+
+→ Đây là **Resilience / Absorption**.
+
+Không chase theo Auction.
+
+### Level 3 — Location Reaction
+
+Chờ giá tới vùng có ý nghĩa:
+
+- POC5
+- VP1
+- VAH / VAL
+- Previous POC
+- Profile High / Low
+- Local swing
+- Volume node
+
+Quan sát:
+
+```text
+Location
++
+Price reaction
++
+Auction response
+```
+
+### Level 4 — Tradeable Confirmation
+
+Chỉ khi:
+
+```text
+Auction
++
+Price
++
+Location
++
+Flow / Momentum
+```
+
+đồng thuận mới chuyển sang:
+
+**EXECUTE**
+
+---
+
+## 03. Nguyên tắc cốt lõi
+
+Auction có thể cho thấy **điều gì đang thay đổi** trước khi giá thể hiện đầy đủ biến động.
+
+Nhưng Auction không nhất thiết cho biết **khi nào nên vào**.
+
+Timing phải được xác nhận bằng:
+
+- Price structure
+- POC5 / VP1 / VAH / VAL
+- CVD
+- OI Flow Type
+- RSI / momentum
+- Auction trajectory
+- R/R
+- Phản ứng thực tế sau location test
+
+> **Auction Lead ≠ Entry Signal.**
+
+---
+
+# SHORT
+
+## 04. Short — Early Warning
+
+Sequence:
+
+```text
+Price đang cao / bullish
+→ AL bắt đầu giảm
+→ AL < EMA20
+→ Price chưa giảm
+```
+
+→ **Bearish Early Warning**
+
+Không Short ngay.
+
+## 05. Short — Price Resilience
+
+Ví dụ:
+
+```text
+AL < EMA20
+```
+
+nhưng:
+
+```text
+Price:
+80,360
+→
+80,780
+```
+
+Đây là:
+
+**Bearish Auction Warning + Bullish Price Resilience.**
+
+Không Short chỉ vì AL bearish.
+
+Có thể thị trường đang absorb selling, short-cover, reposition hoặc trì hoãn price reaction.
+
+→ **WAIT.**
+
+## 06. Short — Auction Pressure Persistence
+
+Nếu sau resilience:
+
+```text
+AL vẫn < EMA20
++
+AL tiếp tục giảm
++
+EMA20 suy yếu
+```
+
+warning trở nên đáng tin cậy hơn.
+
+Ví dụ:
+
+```text
+AL:
+-0.5k
+→
+-6.4k
+
+EMA20:
++11k
+→
++1.5k
+```
+
+Đây là:
+
+**Persistent Auction Deterioration.**
+
+## 07. Short — Location Test
+
+Chờ:
+
+```text
+Previous POC5
+VAH
+VP1
+Profile High
+Resistance
+```
+
+Nếu:
+
+```text
+Price ↑
+→ Location
+→ Reject
+```
+
+thì bearish thesis mạnh lên.
+
+Đặc biệt:
+
+```text
+POC5 lost
+→ retest from below
+→ fail reclaim
+```
+
+là location quan trọng.
+
+## 08. Short — Confirmation
+
+Ưu tiên:
+
+```text
+Auction bearish
++
+Location rejection
++
+CVD weakening
++
+OI confirmation
++
+RSI <50
+```
+
+CVD:
+
+```text
++ → 0 → -
+```
+
+làm confirmation mạnh hơn.
+
+OI:
+
+```text
+BeI
+```
+
+sau location failure → bearish positioning mới.
+
+OI:
+
+```text
+BuO
+```
+
+→ **Bull Out**, bullish positions đang thoát; không gọi BuO là bearish positioning mới.
+
+## 09. Short — Execution
+
+```text
+Auction Warning
+→ Price Resilience
+→ Resistance / POC5 Test
+→ Reject
+→ Auction Pressure Expands
+→ CVD ↓
+→ OI confirms
+→ RSI confirms
+→ SHORT
+```
+
+Entry tốt hơn thường là **sau location rejection / failed reclaim**, không phải snapshot đầu tiên của Auction Warning.
+
+---
+
+# LONG
+
+## 10. Long — Early Warning
+
+Logic đối xứng:
+
+```text
+Price đang yếu / bearish
+→ AL bắt đầu tăng
+→ AL > EMA20
+→ Price chưa tăng
+```
+
+→ **Bullish Early Warning**
+
+Chưa Long ngay.
+
+## 11. Long — Price Resilience
+
+Ví dụ:
+
+```text
+AL > EMA20
+```
+
+nhưng:
+
+```text
+Price:
+76,900
+→
+76,500
+```
+
+Đây là:
+
+**Bullish Auction Warning + Bearish Price Resilience.**
+
+Không Long chỉ vì AL bullish.
+
+→ **WAIT.**
+
+## 12. Long — Auction Pressure Persistence
+
+Nếu:
+
+```text
+AL > EMA20
++
+AL tiếp tục tăng
++
+EMA20 tăng
+```
+
+và giá không còn tạo lower low:
+
+→ bullish pressure có khả năng chuẩn bị được giải phóng.
+
+## 13. Long — Location Test
+
+Chờ:
+
+```text
+POC5
+VP1
+VAL
+Previous POC
+Volume node
+Local swing low
+```
+
+Ví dụ:
+
+```text
+Price ↓
+→ POC5
+→ rút râu
+→ đóng lại trên POC5
+```
+
+→ **POC5 Defense.**
+
+Nếu Auction đồng thời hồi:
+
+→ Long quality tăng.
+
+## 14. Long — Confirmation
+
+Ưu tiên:
+
+```text
+Auction bullish
++
+POC5 / VP1 Defense
++
+CVD recovery
++
+OI BuI hoặc bullish positioning
++
+RSI reclaim 50
+```
+
+CVD:
+
+```text
+- → 0 → +
+```
+
+làm confirmation mạnh hơn.
+
+OI:
+
+```text
+BuI
+```
+
+sau support defense → bullish positioning mới.
+
+## 15. Long — Execution
+
+```text
+Auction Bullish Warning
+→ Price Resilience
+→ Support / POC5 Test
+→ Defense
+→ Auction Recovery
+→ CVD ↑
+→ OI confirms
+→ RSI >50
+→ LONG
+```
+
+Entry tốt hơn là sau **support/POC5 defense**, không phải mua ngay khi AL vừa chuyển bullish.
+
+---
+
+# TIMING & LOCATION
+
+## 16. POC5 là Location Center
+
+POC5 không phải tín hiệu Long/Short.
+
+POC5 là location để kiểm tra:
+
+**Acceptance / Rejection.**
+
+### Support
+
+```text
+Price ↓
+→ POC5
+→ Defense
+→ Reclaim
+→ Hold
+```
+
+→ bullish evidence.
+
+### Resistance
+
+```text
+Price ↑
+→ POC5
+→ Reject
+→ Fail Reclaim
+```
+
+→ bearish evidence.
+
+Do đó:
+
+```text
+Auction + POC5
+```
+
+có ý nghĩa lớn hơn:
+
+```text
+Auction alone
+```
+
+## 17. VP1
+
+VP1 là:
+
+- Secondary structure
+- Continuation target
+- Retest location
+- Breakdown / reclaim level
+
+Short:
+
+```text
+POC5 Failure
+→ VP1
+→ VP1 break
+→ failed reclaim
+```
+
+Long:
+
+```text
+Price ↓
+→ VP1
+→ defense
+→ reclaim
+```
+
+## 18. VAH / VAL / Profile High / Profile Low
+
+Đây là **Location / Boundary**, không phải trigger độc lập.
+
+Không dùng:
+
+```text
+Price chạm VAH → Short
+Price chạm VAL → Long
+```
+
+Mà:
+
+```text
+Price + Location
++
+Auction
++
+CVD
++
+Reaction
++
+Acceptance / Rejection
+```
+
+## 19. Entry Location vs Confirmation
+
+Entry tốt cần:
+
+```text
+LOCATION
++
+CONFIRMATION
+```
+
+Location tốt nhưng confirmation xấu:
+
+→ **WAIT**
+
+Confirmation tốt nhưng location xấu:
+
+→ có thể đã quá muộn → **WAIT / giảm R/R**
+
+Location + Confirmation đồng thuận:
+
+→ **EXECUTE**
+
+## 20. Chase Risk
+
+Không chase khi:
+
+```text
+Auction vừa confirm
++
+Price đã chạy xa location
+```
+
+Ví dụ bearish:
+
+```text
+POC5 rejection
+→ price giảm mạnh
+→ RSI 30
+```
+
+Bias có thể đúng nhưng entry mới có R/R xấu.
+
+Tốt hơn:
+
+```text
+Pullback
+→ retest
+→ rejection
+```
+
+Tương tự Long sau expansion mạnh cũng không nên chase.
+
+---
+
+# FLOW & CONFIRMATION
+
+## 21. OI Flow Type
+
+Đọc đúng semantics:
+
+```text
+BuI = Bull In
+BuO = Bull Out
+BeI = Bear In
+BeO = Bear Out
+```
+
+### BuI
+
+```text
+POC5 Defense
++
+CVD ↑
++
+AL ↑
++
+BuI
+```
+
+→ bullish continuation tốt hơn.
+
+### BuO
+
+```text
+Price ↓
++
+CVD ↓
++
+AL ↓
++
+BuO
+```
+
+→ bullish deleveraging / unwind.
+
+### BeI
+
+```text
+POC5 Failure
++
+CVD ↓
++
+AL ↓
++
+BeI
+```
+
+→ bearish positioning confirmation.
+
+### BeO
+
+Trong bullish recovery:
+
+```text
+Price ↑
++
+CVD ↑
++
+AL ↑
++
+BeO
+```
+
+→ short-covering có thể hỗ trợ expansion.
+
+**Không đọc Flow Type độc lập với Price.**
+
+## 22. CVD
+
+Bearish:
+
+```text
++ → 0 → -
+```
+
+Bullish:
+
+```text
+- → 0 → +
+```
+
+Nếu CVD và Price conflict:
+
+→ ghi nhận divergence / absorption và chờ thêm dữ liệu.
+
+## 23. RSI
+
+RSI xác nhận momentum.
+
+Bullish:
+
+```text
+RSI >50
+```
+
+Bearish:
+
+```text
+RSI <50
+```
+
+Nhưng:
+
+```text
+RSI >70
+```
+
+không tự động Short.
+
+```text
+RSI <30
+```
+
+không tự động Long.
+
+## 24. VPIN
+
+VPIN đánh giá intensity / execution condition.
+
+Không dùng:
+
+```text
+VPIN cao → Long/Short
+```
+
+Mà:
+
+```text
+Direction
++
+Location
++
+Auction
++
+VPIN
+```
+
+## 25. Liquidation
+
+Liquidation giúp nhận diện:
+
+- Deleveraging
+- Short squeeze
+- Long flush
+- Forced exit
+
+Nhưng không tự xác định hướng tiếp theo.
+
+---
+
+# FALSE WARNING
+
+## 26. Bearish Warning False
+
+```text
+AL < EMA20
+→ POC5 Defense
+→ AL Recovery
+→ CVD Recovery
+→ RSI >50
+→ Bullish continuation
+```
+
+## 27. Bullish Warning False
+
+```text
+AL > EMA20
+→ Resistance holds
+→ AL deteriorates
+→ CVD weakens
+→ RSI <50
+→ Bearish continuation
+```
+
+AI phải học cả **false warning**.
+
+## 28. Failure of Warning vs Failure of Price Structure
+
+### Failure of Warning
+
+```text
+Auction cảnh báo
+→ Price không follow
+→ Auction recovery
+```
+
+→ warning bị vô hiệu.
+
+### Failure of Price Structure
+
+```text
+Auction vẫn cảnh báo
+→ POC5 / support bị mất
+```
+
+→ structural failure.
+
+> **Auction failure không nhất thiết là Price failure.**
+
+---
+
+# DECISION TREE
+
+## 29. Short
+
+```text
+Auction bearish warning
+          │
+          ▼
+Price có follow-through?
+      │           │
+     YES         NO
+      │           │
+      ▼           ▼
+Location      Resilience
+break         / absorption
+      │           │
+      ▼           ▼
+Confirmation   WAIT
+      │
+      ▼
+POC5 / resistance reject?
+      │           │
+     YES          NO
+      │           │
+      ▼           ▼
+CVD/OI/RSI     WAIT
+confirm
+      │
+      ▼
+SHORT
+```
+
+## 30. Long
+
+```text
+Auction bullish warning
+          │
+          ▼
+Price có follow-through?
+      │           │
+     YES         NO
+      │           │
+      ▼           ▼
+Location      Resilience
+break         / absorption
+      │           │
+      ▼           ▼
+Confirmation   WAIT
+      │
+      ▼
+POC5 / support defend?
+      │           │
+     YES          NO
+      │           │
+      ▼           ▼
+CVD/OI/RSI     WAIT
+confirm
+      │
+      ▼
+LONG
+```
+
+---
+
+# ENTRY QUALITY
+
+## 31. Entry Quality Matrix
+
+| Location | Confirmation | Decision |
+|---|---|---|
+| Tốt | Tốt | **EXECUTE** |
+| Tốt | Chưa rõ | **WAIT** |
+| Xấu | Tốt | **WAIT / không chase** |
+| Xấu | Xấu | **NO TRADE** |
+| Không rõ | Không rõ | **WAIT** |
+
+> Confirmation tốt không thể bù hoàn toàn cho entry location xấu.
+
+## 32. TP / SL
+
+### Short
+
+Entry:
+
+```text
+Resistance / POC5 rejection
+```
+
+SL:
+
+```text
+trên vùng invalidation / swing high
+```
+
+TP:
+
+```text
+VP1
+POC
+volume node
+support
+```
+
+### Long
+
+Entry:
+
+```text
+Support / POC5 defense
+```
+
+SL:
+
+```text
+dưới vùng invalidation / swing low
+```
+
+TP:
+
+```text
+VAH
+POC
+VP1
+resistance
+```
+
+Mức cụ thể lấy từ snapshot thực tế, không hard-code.
+
+## 33. R/R và Timing
+
+Một setup có thể:
+
+```text
+Direction = đúng
+```
+
+nhưng:
+
+```text
+Entry = sai timing
+```
+
+Ví dụ:
+
+```text
+Bearish confirmation
+→ Short tại đáy expansion
+```
+
+Bias đúng nhưng R/R xấu.
+
+Tốt hơn:
+
+```text
+Bearish confirmation
+→ Pullback về POC5
+→ rejection
+→ Short
+```
+
+> **Đúng hướng chưa đủ; phải đúng location và timing.**
+
+---
+
+# META-PATTERN
+
+## 34. General Framework
+
+```text
+                    AUCTION CHANGE
+                         ↓
+                EARLY WARNING
+                         ↓
+              ┌──────────┴──────────┐
+              ↓                     ↓
+       PRICE FOLLOWS          PRICE RESILIENCE
+              ↓                     ↓
+        Location Test           WAIT
+              ↓                     ↓
+       Confirmation        Auction Persistence?
+              ↓                     ↓
+           ENTRY              YES → Location
+                                    ↓
+                              Confirmation
+                                    ↓
+                                  ENTRY
+```
+
+## 35. Long / Short Symmetry
+
+Short:
+
+```text
+Auction bearish
+→ Resilience
+→ Resistance / POC5 rejection
+→ Confirmation
+→ Short
+```
+
+Long:
+
+```text
+Auction bullish
+→ Resilience
+→ Support / POC5 defense
+→ Confirmation
+→ Long
+```
+
+---
+
+# CASE STUDY
+
+## 36. Observed Short Example
+
+Chuỗi thực tế:
+
+```text
+80,890
+↓
+80,360
+```
+
+Tại đây:
+
+```text
+AL ≈ -0.5k
+EMA20 ≈ +11k
+```
+
+→ **Early Warning**
+
+Nhưng:
+
+```text
+80,360
+→
+80,780
+```
+
+→ **Price Resilience**
+
+Không Short.
+
+Sau đó:
+
+```text
+AL ≈ -6.4k
+EMA20 ≈ +1.5k
+```
+
+→ Auction pressure mở rộng.
+
+Rồi:
+
+```text
+80,780
+↓
+79,275
+```
+
+→ **Bearish Follow-through**
+
+Bài học:
+
+> Auction đã cảnh báo sớm hơn price expansion, nhưng trade timing tốt hơn chỉ xuất hiện sau khi Auction pressure persist và price/location xác nhận.
+
+---
+
+# AI TRAINING RULES
+
+## 37. Không vào lệnh
+
+Ưu tiên WAIT khi:
+
+- Chỉ có Auction Warning.
+- AL < EMA20 nhưng giá vẫn resilience.
+- AL > EMA20 nhưng giá vẫn breakdown.
+- Location chưa được test.
+- POC5 chưa phản ứng rõ.
+- CVD và Price conflict.
+- OI chưa rõ.
+- Momentum chưa xác nhận.
+- Price đã chạy quá xa location.
+- R/R không đủ.
+- Dữ liệu thiếu.
+
+> **Không cần phải trade mọi warning.**
+
+## 38. Expected AI Behavior
+
+Khi nhận:
+
+```text
+AL < EMA20
+```
+
+AI không nên kết luận ngay:
+
+> SHORT
+
+Mà phải hỏi:
+
+```text
+1. Auction đang cảnh báo gì?
+2. Price có follow-through không?
+3. Price có resilience không?
+4. Location gần nhất là gì?
+5. POC5 đang support hay resistance?
+6. CVD đang xác nhận hay conflict?
+7. OI Flow Type là gì?
+8. RSI có xác nhận momentum không?
+9. Entry location còn tốt không?
+10. R/R có đủ không?
+```
+
+Sau đó mới:
+
+```text
+LONG
+SHORT
+WAIT
+```
+
+---
+
+# SIGNATURES
+
+## 39. Short Signature
+
+```text
+AEW-SHORT
+
+Auction:
+↓↓
+AL < EMA20
+
+Price:
+Resilience / delayed response
+
+Location:
+POC5 / VAH / resistance
+
+Reaction:
+Reject / Fail Reclaim
+
+Auction:
+Further deterioration
+
+CVD:
++ → 0 → -
+
+OI:
+BeI
+hoặc BuO trong context deleveraging
+
+RSI:
+<50
+
+Execution:
+Pullback / rejection
+
+Target:
+VP1 / POC / next volume node
+```
+
+## 40. Long Signature
+
+```text
+AEW-LONG
+
+Auction:
+↑↑
+AL > EMA20
+
+Price:
+Resilience / delayed response
+
+Location:
+POC5 / VP1 / VAL / support
+
+Reaction:
+Defense / Reclaim
+
+Auction:
+Further recovery
+
+CVD:
+- → 0 → +
+
+OI:
+BuI
+hoặc BeO trong context short-covering
+
+RSI:
+>50
+
+Execution:
+Pullback / defense
+
+Target:
+VAH / POC / next resistance
+```
+
+---
+
+# 41. Bài học cốt lõi
+
+1. **Auction có thể đi trước giá về direction.**
+2. **Auction không đảm bảo timing.**
+3. **AL < EMA20 là warning, không phải Short trigger.**
+4. **AL > EMA20 là warning, không phải Long trigger.**
+5. **Price Resilience là một state cần quan sát.**
+6. **POC5 là location center để kiểm tra acceptance/rejection.**
+7. **CVD/OI/RSI giúp chuyển warning thành confirmation.**
+8. **BuO = Bull Out.**
+9. **BeO = Bear Out.**
+10. **BeI = Bear In.**
+11. **BuI = Bull In.**
+12. **Không chase một move đã chạy xa location.**
+13. **False Warning phải được ghi nhận.**
+14. **Trade quality = Direction + Location + Confirmation + R/R + Timing.**
+
+---
+
+# 42. Kết luận
+
+`06+` không phải một pattern Long hoặc Short riêng.
+
+Đây là **meta-principle về timing**:
+
+> **Auction có thể đi trước giá, nhưng Price + Location + Confirmation quyết định khi nào warning trở thành một tradeable scenario.**
+
+Chuỗi:
+
+```text
+Auction
+→ Warning
+
+Price
+→ Response
+
+Location
+→ Test
+
+Flow
+→ Confirmation
+
+Momentum
+→ Confirmation
+
+R/R
+→ Execution quality
+
+Reality
+→ Feedback
+```
+
+Từ khóa:
+
+> **“Auction cảnh báo sớm — Price cho biết phản ứng — Location cho biết nơi kiểm chứng — Flow xác nhận lực — Momentum xác nhận trạng thái — R/R quyết định có đáng vào hay không.”**
+
+---
+
+## Nguyên tắc Domain
+
+`06+` là tri thức hỗ trợ cho hệ thống suy luận, không thay thế hệ thống.
+
+Trading Domain yêu cầu:
+
+**Hành vi → Bối cảnh → Động lượng → Cấu trúc → Chất lượng → Quyết định → Trọng số tín hiệu → Không gian kịch bản → Kế hoạch thực thi → Phản hồi thực tế.**
+
+Thực tế là tiêu chuẩn cuối cùng.
+
+Mỗi lần Auction Early Warning xuất hiện phải ghi nhận:
+
+```text
+Auction trajectory
+Price response
+Resilience / absorption
+Location
+Acceptance / rejection
+CVD
+OI Flow Type
+RSI
+VPIN
+Liquidation
+Entry timing
+R/R
+Outcome
+```
+
+Sau nhiều mẫu mới đánh giá:
+
+- Lead time
+- False-warning rate
+- MAE / MFE
+- Follow-through probability
+- Long / Short asymmetry
+- Optimal entry location
+- R/R distribution
+
+Mục tiêu không phải biến Auction thành một trigger máy móc.
+
+Mục tiêu là giúp AI Trader hiểu:
+
+> **Warning → Observation → Confirmation → Timing → Execution → Feedback.**
+
+---
+
 # 07.md — VAH30 / Profile High Rejection → Auction Early Warning → POC5 Reversion
 
 > Mẫu thứ 7 được rút ra từ chuỗi quan sát quanh VAH30 / Profile High ~79.8k–80k.
